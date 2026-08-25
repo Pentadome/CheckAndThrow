@@ -1,0 +1,31 @@
+### YamlMime:TableOfContent
+items:
+- uid: CheckAndThrow
+  name: CheckAndThrow
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Check
+    name: Check
+    type: Class
+  - uid: CheckAndThrow.Check.Arg
+    name: Check.Arg
+    type: Class
+  - uid: CheckAndThrow.Check.Args
+    name: Check.Args
+    type: Class
+  - uid: CheckAndThrow.Check.Expression
+    name: Check.Expression
+    type: Class
+  - uid: CheckAndThrow.Check.State
+    name: Check.State
+    type: Class
+  - uid: CheckAndThrow.Throw
+    name: Throw
+    type: Class
+  - uid: CheckAndThrow.Throw.Arg
+    name: Throw.Arg
+    type: Class
+  - uid: CheckAndThrow.Throw.State
+    name: Throw.State
+    type: Class
+memberLayout: SamePage

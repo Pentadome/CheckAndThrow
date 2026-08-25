@@ -1,0 +1,4606 @@
+### YamlMime:ManagedReference
+items:
+- uid: CheckAndThrow.Check.Arg
+  commentId: T:CheckAndThrow.Check.Arg
+  id: Check.Arg
+  parent: CheckAndThrow
+  children:
+  - CheckAndThrow.Check.Arg.Contains``2(``0,``1,System.String)
+  - CheckAndThrow.Check.Arg.HasAllFlags``1(``0,``0,System.String)
+  - CheckAndThrow.Check.Arg.HasAnyOfFlags``1(``0,``0,System.String)
+  - CheckAndThrow.Check.Arg.HasCount``1(``0,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasLength(System.String,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasMaxCount``1(``0,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasMaxLength(System.String,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasMinCount``1(``0,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasMinLength(System.String,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasTheAttribute(System.Type,System.Type,System.Boolean,System.String)
+  - CheckAndThrow.Check.Arg.HasTheAttribute``1(System.Type,System.Boolean,System.String)
+  - CheckAndThrow.Check.Arg.HasValidIndex(System.Int32,System.Collections.ICollection,System.String)
+  - CheckAndThrow.Check.Arg.HasValidIndex(System.Int32,System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.HasValidState``1(``0,System.Func{``0,System.Boolean},System.String,System.String)
+  - CheckAndThrow.Check.Arg.HasValidState``2(``0,``1,System.Func{``0,``1,System.Boolean},System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.Byte,System.Byte,System.Byte,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.Decimal,System.Decimal,System.Decimal,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.Double,System.Double,System.Double,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.Int64,System.Int64,System.Int64,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.SByte,System.SByte,System.SByte,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.Single,System.Single,System.Single,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.UInt32,System.UInt32,System.UInt32,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.InRange(System.UInt64,System.UInt64,System.UInt64,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.IsAssignableFrom``1(System.Type,System.String)
+  - CheckAndThrow.Check.Arg.IsAssignableTo``1(System.Object,System.String)
+  - CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTime,System.DateTime,System.String)
+  - CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  - CheckAndThrow.Check.Arg.IsEmail(System.String,System.String)
+  - CheckAndThrow.Check.Arg.IsInFuture(System.DateTime,System.TimeProvider,System.String)
+  - CheckAndThrow.Check.Arg.IsInFuture(System.DateTimeOffset,System.TimeProvider,System.String)
+  - CheckAndThrow.Check.Arg.IsInFutureUtc(System.DateTime,System.TimeProvider,System.String)
+  - CheckAndThrow.Check.Arg.IsInPast(System.DateTime,System.TimeProvider,System.String)
+  - CheckAndThrow.Check.Arg.IsInPast(System.DateTimeOffset,System.TimeProvider,System.String)
+  - CheckAndThrow.Check.Arg.IsInPastUtc(System.DateTime,System.TimeProvider,System.String)
+  - CheckAndThrow.Check.Arg.IsLaterThan(System.DateTime,System.DateTime,System.String)
+  - CheckAndThrow.Check.Arg.IsLaterThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  - CheckAndThrow.Check.Arg.IsNotGuidEmpty(System.Guid,System.String)
+  - CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls``1(``0,System.String)
+  - CheckAndThrow.Check.Arg.IsNotNullOrEmpty(System.String,System.String)
+  - CheckAndThrow.Check.Arg.IsNotNullOrEmpty``1(``0,System.String)
+  - CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace(System.String,System.String)
+  - CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase``1(System.String,System.String)
+  - CheckAndThrow.Check.Arg.IsValidEnumValueName``1(System.String,System.String)
+  - CheckAndThrow.Check.Arg.IsValidEnumValue``1(``0,System.String)
+  - CheckAndThrow.Check.Arg.Matches(System.String,System.String,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.Decimal,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.Double,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.Int64,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.IntPtr,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.SByte,System.String)
+  - CheckAndThrow.Check.Arg.Negative(System.Single,System.String)
+  - CheckAndThrow.Check.Arg.NotNull``1(``0,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.Byte,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.Decimal,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.Double,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.Int64,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.IntPtr,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.SByte,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.Single,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.UInt32,System.String)
+  - CheckAndThrow.Check.Arg.Positive(System.UInt64,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.Decimal,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.Double,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.Int64,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.IntPtr,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.SByte,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrNegative(System.Single,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.Decimal,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.Double,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.Int32,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.Int64,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.IntPtr,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.SByte,System.String)
+  - CheckAndThrow.Check.Arg.ZeroOrPositive(System.Single,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Check.Arg
+  nameWithType: Check.Arg
+  fullName: CheckAndThrow.Check.Arg
+  type: Class
+  source:
+    id: Arg
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Type.cs
+    startLine: 6
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Provides methods to check single arguments.
+  example: []
+  syntax:
+    content: public static class Check.Arg
+    content.vb: Public Module Check.Arg
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CheckAndThrow.Check.Arg.IsNotNullOrEmpty``1(``0,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsNotNullOrEmpty``1(``0,System.String)
+  id: IsNotNullOrEmpty``1(``0,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsNotNullOrEmpty<T>(T, string)
+  nameWithType: Check.Arg.IsNotNullOrEmpty<T>(T, string)
+  fullName: CheckAndThrow.Check.Arg.IsNotNullOrEmpty<T>(T, string)
+  type: Method
+  source:
+    id: IsNotNullOrEmpty
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 17
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified collection is not null and not empty.
+  example: []
+  syntax:
+    content: 'public static T IsNotNullOrEmpty<T>(T collection, string paramName = "") where T : ICollection'
+    parameters:
+    - id: collection
+      type: '{T}'
+      description: The collection to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the collection.
+    return:
+      type: '{T}'
+      description: The original collection if it is not null and not empty.
+    content.vb: Public Shared Function IsNotNullOrEmpty(Of T As ICollection)(collection As T, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.IsNotNullOrEmpty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">collection</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">collection</code> is empty.
+  nameWithType.vb: Check.Arg.IsNotNullOrEmpty(Of T)(T, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsNotNullOrEmpty(Of T)(T, String)
+  name.vb: IsNotNullOrEmpty(Of T)(T, String)
+- uid: CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls``1(``0,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls``1(``0,System.String)
+  id: IsNotNullAndHasNoNulls``1(``0,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsNotNullAndHasNoNulls<T>(T, string)
+  nameWithType: Check.Arg.IsNotNullAndHasNoNulls<T>(T, string)
+  fullName: CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls<T>(T, string)
+  type: Method
+  source:
+    id: IsNotNullAndHasNoNulls
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 41
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified enumerable is not null and does not contain any null elements.
+  example: []
+  syntax:
+    content: 'public static T IsNotNullAndHasNoNulls<T>(T enumerable, string paramName = "") where T : IEnumerable'
+    parameters:
+    - id: enumerable
+      type: '{T}'
+      description: The enumerable to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the enumerable.
+    return:
+      type: '{T}'
+      description: The original enumerable if it is not null and contains no null elements.
+    content.vb: Public Shared Function IsNotNullAndHasNoNulls(Of T As IEnumerable)(enumerable As T, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">enumerable</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">enumerable</code> contains a null element.
+  nameWithType.vb: Check.Arg.IsNotNullAndHasNoNulls(Of T)(T, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls(Of T)(T, String)
+  name.vb: IsNotNullAndHasNoNulls(Of T)(T, String)
+- uid: CheckAndThrow.Check.Arg.HasCount``1(``0,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasCount``1(``0,System.Int32,System.String)
+  id: HasCount``1(``0,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasCount<T>(T, int, string)
+  nameWithType: Check.Arg.HasCount<T>(T, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasCount<T>(T, int, string)
+  type: Method
+  source:
+    id: HasCount
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 68
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified collection has the required count of items.
+  example: []
+  syntax:
+    content: 'public static T HasCount<T>(T collection, int count, string paramName = "") where T : ICollection'
+    parameters:
+    - id: collection
+      type: '{T}'
+      description: The collection to check.
+    - id: count
+      type: System.Int32
+      description: The required count of items.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the collection.
+    return:
+      type: '{T}'
+      description: The original collection if it has the required count of items.
+    content.vb: Public Shared Function HasCount(Of T As ICollection)(collection As T, count As Integer, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.HasCount*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">collection</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">collection</code> does not have the required count of items.
+  nameWithType.vb: Check.Arg.HasCount(Of T)(T, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasCount(Of T)(T, Integer, String)
+  name.vb: HasCount(Of T)(T, Integer, String)
+- uid: CheckAndThrow.Check.Arg.HasMinCount``1(``0,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasMinCount``1(``0,System.Int32,System.String)
+  id: HasMinCount``1(``0,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasMinCount<T>(T, int, string)
+  nameWithType: Check.Arg.HasMinCount<T>(T, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasMinCount<T>(T, int, string)
+  type: Method
+  source:
+    id: HasMinCount
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 93
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified collection has at least the required minimum count of items.
+  example: []
+  syntax:
+    content: 'public static T HasMinCount<T>(T collection, int minCount, string paramName = "") where T : ICollection'
+    parameters:
+    - id: collection
+      type: '{T}'
+      description: The collection to check.
+    - id: minCount
+      type: System.Int32
+      description: The minimum required count of items.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the collection.
+    return:
+      type: '{T}'
+      description: The original collection if it has at least the required minimum count of items.
+    content.vb: Public Shared Function HasMinCount(Of T As ICollection)(collection As T, minCount As Integer, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.HasMinCount*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">collection</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">collection</code> has fewer than <code class="paramref">minCount</code> items.
+  nameWithType.vb: Check.Arg.HasMinCount(Of T)(T, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasMinCount(Of T)(T, Integer, String)
+  name.vb: HasMinCount(Of T)(T, Integer, String)
+- uid: CheckAndThrow.Check.Arg.HasMaxCount``1(``0,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasMaxCount``1(``0,System.Int32,System.String)
+  id: HasMaxCount``1(``0,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasMaxCount<T>(T, int, string)
+  nameWithType: Check.Arg.HasMaxCount<T>(T, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasMaxCount<T>(T, int, string)
+  type: Method
+  source:
+    id: HasMaxCount
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 118
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified collection has at most the required maximum count of items.
+  example: []
+  syntax:
+    content: 'public static T HasMaxCount<T>(T collection, int maxCount, string paramName = "") where T : ICollection'
+    parameters:
+    - id: collection
+      type: '{T}'
+      description: The collection to check.
+    - id: maxCount
+      type: System.Int32
+      description: The maximum required count of items.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the collection.
+    return:
+      type: '{T}'
+      description: The original collection if it has at most the required maximum count of items.
+    content.vb: Public Shared Function HasMaxCount(Of T As ICollection)(collection As T, maxCount As Integer, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.HasMaxCount*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">collection</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">collection</code> has more than <code class="paramref">maxCount</code> items.
+  nameWithType.vb: Check.Arg.HasMaxCount(Of T)(T, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasMaxCount(Of T)(T, Integer, String)
+  name.vb: HasMaxCount(Of T)(T, Integer, String)
+- uid: CheckAndThrow.Check.Arg.Contains``2(``0,``1,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Contains``2(``0,``1,System.String)
+  id: Contains``2(``0,``1,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Contains<TCollection, TItem>(TCollection, TItem, string)
+  nameWithType: Check.Arg.Contains<TCollection, TItem>(TCollection, TItem, string)
+  fullName: CheckAndThrow.Check.Arg.Contains<TCollection, TItem>(TCollection, TItem, string)
+  type: Method
+  source:
+    id: Contains
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 144
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified collection contains the required item.
+  example: []
+  syntax:
+    content: 'public static TCollection Contains<TCollection, TItem>(TCollection collection, TItem item, string paramName = "") where TCollection : ICollection<TItem>'
+    parameters:
+    - id: collection
+      type: '{TCollection}'
+      description: The collection to check.
+    - id: item
+      type: '{TItem}'
+      description: The item that must be in the collection.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: TCollection
+      description: The type of the collection.
+    - id: TItem
+      description: The type of the item.
+    return:
+      type: '{TCollection}'
+      description: The original collection if it contains the item.
+    content.vb: Public Shared Function Contains(Of TCollection As ICollection(Of TItem), TItem)(collection As TCollection, item As TItem, paramName As String = "") As TCollection
+  overload: CheckAndThrow.Check.Arg.Contains*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">collection</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">collection</code> does not contain the <code class="paramref">item</code>.
+  nameWithType.vb: Check.Arg.Contains(Of TCollection, TItem)(TCollection, TItem, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Contains(Of TCollection, TItem)(TCollection, TItem, String)
+  name.vb: Contains(Of TCollection, TItem)(TCollection, TItem, String)
+- uid: CheckAndThrow.Check.Arg.HasValidIndex(System.Int32,System.Collections.ICollection,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasValidIndex(System.Int32,System.Collections.ICollection,System.String)
+  id: HasValidIndex(System.Int32,System.Collections.ICollection,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasValidIndex(int, ICollection, string)
+  nameWithType: Check.Arg.HasValidIndex(int, ICollection, string)
+  fullName: CheckAndThrow.Check.Arg.HasValidIndex(int, System.Collections.ICollection, string)
+  type: Method
+  source:
+    id: HasValidIndex
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 167
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified index is valid for the given collection.
+  example: []
+  syntax:
+    content: public static int HasValidIndex(int indexArgument, ICollection collection, string paramName = "")
+    parameters:
+    - id: indexArgument
+      type: System.Int32
+      description: The index to validate.
+    - id: collection
+      type: System.Collections.ICollection
+      description: The collection to check the index against.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int32
+      description: The original index if it is valid.
+    content.vb: Public Shared Function HasValidIndex(indexArgument As Integer, collection As ICollection, paramName As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.HasValidIndex*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">indexArgument</code> is less than 0 or greater than or equal to the collection count.
+  nameWithType.vb: Check.Arg.HasValidIndex(Integer, ICollection, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasValidIndex(Integer, System.Collections.ICollection, String)
+  name.vb: HasValidIndex(Integer, ICollection, String)
+- uid: CheckAndThrow.Check.Arg.HasValidIndex(System.Int32,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasValidIndex(System.Int32,System.Int32,System.String)
+  id: HasValidIndex(System.Int32,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasValidIndex(int, int, string)
+  nameWithType: Check.Arg.HasValidIndex(int, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasValidIndex(int, int, string)
+  type: Method
+  source:
+    id: HasValidIndex
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Collection.cs
+    startLine: 189
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified index is valid for the given collection size.
+  example: []
+  syntax:
+    content: public static int HasValidIndex(int indexArgument, int collectionSize, string paramName = "")
+    parameters:
+    - id: indexArgument
+      type: System.Int32
+      description: The index to validate.
+    - id: collectionSize
+      type: System.Int32
+      description: The size of the collection to check the index against.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int32
+      description: The original index if it is valid.
+    content.vb: Public Shared Function HasValidIndex(indexArgument As Integer, collectionSize As Integer, paramName As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.HasValidIndex*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">indexArgument</code> is less than 0 or greater than or equal to <code class="paramref">collectionSize</code>.
+  nameWithType.vb: Check.Arg.HasValidIndex(Integer, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasValidIndex(Integer, Integer, String)
+  name.vb: HasValidIndex(Integer, Integer, String)
+- uid: CheckAndThrow.Check.Arg.IsInPast(System.DateTime,System.TimeProvider,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsInPast(System.DateTime,System.TimeProvider,System.String)
+  id: IsInPast(System.DateTime,System.TimeProvider,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsInPast(DateTime, TimeProvider?, string)
+  nameWithType: Check.Arg.IsInPast(DateTime, TimeProvider?, string)
+  fullName: CheckAndThrow.Check.Arg.IsInPast(System.DateTime, System.TimeProvider?, string)
+  type: Method
+  source:
+    id: IsInPast
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 14
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTime is in the past.
+  example: []
+  syntax:
+    content: public static DateTime IsInPast(DateTime argument, TimeProvider? timeProvider = null, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTime
+      description: The DateTime to check.
+    - id: timeProvider
+      type: System.TimeProvider
+      description: The <xref href="System.TimeProvider" data-throw-if-not-resolved="false"></xref> to use. Uses <xref href="CheckAndThrow.Check.DefaultTimeProvider" data-throw-if-not-resolved="false"></xref> by default.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTime
+      description: The original DateTime if it is in the past.
+    content.vb: Public Shared Function IsInPast(argument As Date, timeProvider As TimeProvider = Nothing, paramName As String = "") As Date
+  overload: CheckAndThrow.Check.Arg.IsInPast*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not in the past.
+  nameWithType.vb: Check.Arg.IsInPast(Date, TimeProvider, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsInPast(Date, System.TimeProvider, String)
+  name.vb: IsInPast(Date, TimeProvider, String)
+- uid: CheckAndThrow.Check.Arg.IsInPast(System.DateTimeOffset,System.TimeProvider,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsInPast(System.DateTimeOffset,System.TimeProvider,System.String)
+  id: IsInPast(System.DateTimeOffset,System.TimeProvider,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsInPast(DateTimeOffset, TimeProvider?, string)
+  nameWithType: Check.Arg.IsInPast(DateTimeOffset, TimeProvider?, string)
+  fullName: CheckAndThrow.Check.Arg.IsInPast(System.DateTimeOffset, System.TimeProvider?, string)
+  type: Method
+  source:
+    id: IsInPast
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 38
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTimeOffset is in the past.
+  example: []
+  syntax:
+    content: public static DateTimeOffset IsInPast(DateTimeOffset argument, TimeProvider? timeProvider = null, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTimeOffset
+      description: The DateTimeOffset to check.
+    - id: timeProvider
+      type: System.TimeProvider
+      description: The <xref href="System.TimeProvider" data-throw-if-not-resolved="false"></xref> to use. Uses <xref href="CheckAndThrow.Check.DefaultTimeProvider" data-throw-if-not-resolved="false"></xref> by default.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTimeOffset
+      description: The original DateTimeOffset if it is in the past.
+    content.vb: Public Shared Function IsInPast(argument As DateTimeOffset, timeProvider As TimeProvider = Nothing, paramName As String = "") As DateTimeOffset
+  overload: CheckAndThrow.Check.Arg.IsInPast*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not in the past.
+  nameWithType.vb: Check.Arg.IsInPast(DateTimeOffset, TimeProvider, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsInPast(System.DateTimeOffset, System.TimeProvider, String)
+  name.vb: IsInPast(DateTimeOffset, TimeProvider, String)
+- uid: CheckAndThrow.Check.Arg.IsInPastUtc(System.DateTime,System.TimeProvider,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsInPastUtc(System.DateTime,System.TimeProvider,System.String)
+  id: IsInPastUtc(System.DateTime,System.TimeProvider,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsInPastUtc(DateTime, TimeProvider?, string)
+  nameWithType: Check.Arg.IsInPastUtc(DateTime, TimeProvider?, string)
+  fullName: CheckAndThrow.Check.Arg.IsInPastUtc(System.DateTime, System.TimeProvider?, string)
+  type: Method
+  source:
+    id: IsInPastUtc
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 61
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTime is in the past (Utc).
+  example: []
+  syntax:
+    content: public static DateTime IsInPastUtc(DateTime argument, TimeProvider? timeProvider = null, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTime
+      description: The DateTime to check.
+    - id: timeProvider
+      type: System.TimeProvider
+      description: The <xref href="System.TimeProvider" data-throw-if-not-resolved="false"></xref> to use. Uses <xref href="CheckAndThrow.Check.DefaultTimeProvider" data-throw-if-not-resolved="false"></xref> by default.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTime
+      description: The original DateTime if it is in the past.
+    content.vb: Public Shared Function IsInPastUtc(argument As Date, timeProvider As TimeProvider = Nothing, paramName As String = "") As Date
+  overload: CheckAndThrow.Check.Arg.IsInPastUtc*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not in the past.
+  nameWithType.vb: Check.Arg.IsInPastUtc(Date, TimeProvider, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsInPastUtc(Date, System.TimeProvider, String)
+  name.vb: IsInPastUtc(Date, TimeProvider, String)
+- uid: CheckAndThrow.Check.Arg.IsInFuture(System.DateTime,System.TimeProvider,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsInFuture(System.DateTime,System.TimeProvider,System.String)
+  id: IsInFuture(System.DateTime,System.TimeProvider,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsInFuture(DateTime, TimeProvider?, string)
+  nameWithType: Check.Arg.IsInFuture(DateTime, TimeProvider?, string)
+  fullName: CheckAndThrow.Check.Arg.IsInFuture(System.DateTime, System.TimeProvider?, string)
+  type: Method
+  source:
+    id: IsInFuture
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 84
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTime is in the future.
+  example: []
+  syntax:
+    content: public static DateTime IsInFuture(DateTime argument, TimeProvider? timeProvider = null, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTime
+      description: The DateTime to check.
+    - id: timeProvider
+      type: System.TimeProvider
+      description: The <xref href="System.TimeProvider" data-throw-if-not-resolved="false"></xref> to use. Uses <xref href="CheckAndThrow.Check.DefaultTimeProvider" data-throw-if-not-resolved="false"></xref> by default.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTime
+      description: The original DateTime if it is in the future.
+    content.vb: Public Shared Function IsInFuture(argument As Date, timeProvider As TimeProvider = Nothing, paramName As String = "") As Date
+  overload: CheckAndThrow.Check.Arg.IsInFuture*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not in the future.
+  nameWithType.vb: Check.Arg.IsInFuture(Date, TimeProvider, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsInFuture(Date, System.TimeProvider, String)
+  name.vb: IsInFuture(Date, TimeProvider, String)
+- uid: CheckAndThrow.Check.Arg.IsInFuture(System.DateTimeOffset,System.TimeProvider,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsInFuture(System.DateTimeOffset,System.TimeProvider,System.String)
+  id: IsInFuture(System.DateTimeOffset,System.TimeProvider,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsInFuture(DateTimeOffset, TimeProvider?, string)
+  nameWithType: Check.Arg.IsInFuture(DateTimeOffset, TimeProvider?, string)
+  fullName: CheckAndThrow.Check.Arg.IsInFuture(System.DateTimeOffset, System.TimeProvider?, string)
+  type: Method
+  source:
+    id: IsInFuture
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 107
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTimeOffset is in the future.
+  example: []
+  syntax:
+    content: public static DateTimeOffset IsInFuture(DateTimeOffset argument, TimeProvider? timeProvider = null, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTimeOffset
+      description: The DateTimeOffset to check.
+    - id: timeProvider
+      type: System.TimeProvider
+      description: The <xref href="System.TimeProvider" data-throw-if-not-resolved="false"></xref> to use. Uses <xref href="CheckAndThrow.Check.DefaultTimeProvider" data-throw-if-not-resolved="false"></xref> by default.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTimeOffset
+      description: The original DateTimeOffset if it is in the future.
+    content.vb: Public Shared Function IsInFuture(argument As DateTimeOffset, timeProvider As TimeProvider = Nothing, paramName As String = "") As DateTimeOffset
+  overload: CheckAndThrow.Check.Arg.IsInFuture*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not in the future.
+  nameWithType.vb: Check.Arg.IsInFuture(DateTimeOffset, TimeProvider, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsInFuture(System.DateTimeOffset, System.TimeProvider, String)
+  name.vb: IsInFuture(DateTimeOffset, TimeProvider, String)
+- uid: CheckAndThrow.Check.Arg.IsInFutureUtc(System.DateTime,System.TimeProvider,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsInFutureUtc(System.DateTime,System.TimeProvider,System.String)
+  id: IsInFutureUtc(System.DateTime,System.TimeProvider,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsInFutureUtc(DateTime, TimeProvider?, string)
+  nameWithType: Check.Arg.IsInFutureUtc(DateTime, TimeProvider?, string)
+  fullName: CheckAndThrow.Check.Arg.IsInFutureUtc(System.DateTime, System.TimeProvider?, string)
+  type: Method
+  source:
+    id: IsInFutureUtc
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 130
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTime is in the future (Utc).
+  example: []
+  syntax:
+    content: public static DateTime IsInFutureUtc(DateTime argument, TimeProvider? timeProvider = null, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTime
+      description: The DateTime to check.
+    - id: timeProvider
+      type: System.TimeProvider
+      description: The <xref href="System.TimeProvider" data-throw-if-not-resolved="false"></xref> to use. Uses <xref href="CheckAndThrow.Check.DefaultTimeProvider" data-throw-if-not-resolved="false"></xref> by default.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTime
+      description: The original DateTime if it is in the future.
+    content.vb: Public Shared Function IsInFutureUtc(argument As Date, timeProvider As TimeProvider = Nothing, paramName As String = "") As Date
+  overload: CheckAndThrow.Check.Arg.IsInFutureUtc*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not in the future.
+  nameWithType.vb: Check.Arg.IsInFutureUtc(Date, TimeProvider, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsInFutureUtc(Date, System.TimeProvider, String)
+  name.vb: IsInFutureUtc(Date, TimeProvider, String)
+- uid: CheckAndThrow.Check.Arg.IsLaterThan(System.DateTime,System.DateTime,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsLaterThan(System.DateTime,System.DateTime,System.String)
+  id: IsLaterThan(System.DateTime,System.DateTime,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsLaterThan(DateTime, DateTime, string)
+  nameWithType: Check.Arg.IsLaterThan(DateTime, DateTime, string)
+  fullName: CheckAndThrow.Check.Arg.IsLaterThan(System.DateTime, System.DateTime, string)
+  type: Method
+  source:
+    id: IsLaterThan
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 153
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTime is later than the comparison DateTime.
+  example: []
+  syntax:
+    content: public static DateTime IsLaterThan(DateTime argument, DateTime comparison, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTime
+      description: The DateTime to check.
+    - id: comparison
+      type: System.DateTime
+      description: The DateTime to compare against.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTime
+      description: The original DateTime if it is later than the comparison value.
+    content.vb: Public Shared Function IsLaterThan(argument As Date, comparison As Date, paramName As String = "") As Date
+  overload: CheckAndThrow.Check.Arg.IsLaterThan*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not later than <code class="paramref">comparison</code>.
+  nameWithType.vb: Check.Arg.IsLaterThan(Date, Date, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsLaterThan(Date, Date, String)
+  name.vb: IsLaterThan(Date, Date, String)
+- uid: CheckAndThrow.Check.Arg.IsLaterThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsLaterThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  id: IsLaterThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsLaterThan(DateTimeOffset, DateTimeOffset, string)
+  nameWithType: Check.Arg.IsLaterThan(DateTimeOffset, DateTimeOffset, string)
+  fullName: CheckAndThrow.Check.Arg.IsLaterThan(System.DateTimeOffset, System.DateTimeOffset, string)
+  type: Method
+  source:
+    id: IsLaterThan
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 174
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTimeOffset is later than the comparison DateTimeOffset.
+  example: []
+  syntax:
+    content: public static DateTimeOffset IsLaterThan(DateTimeOffset argument, DateTimeOffset comparison, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTimeOffset
+      description: The DateTimeOffset to check.
+    - id: comparison
+      type: System.DateTimeOffset
+      description: The DateTimeOffset to compare against.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTimeOffset
+      description: The original DateTimeOffset if it is later than the comparison value.
+    content.vb: Public Shared Function IsLaterThan(argument As DateTimeOffset, comparison As DateTimeOffset, paramName As String = "") As DateTimeOffset
+  overload: CheckAndThrow.Check.Arg.IsLaterThan*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not later than <code class="paramref">comparison</code>.
+  nameWithType.vb: Check.Arg.IsLaterThan(DateTimeOffset, DateTimeOffset, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsLaterThan(System.DateTimeOffset, System.DateTimeOffset, String)
+  name.vb: IsLaterThan(DateTimeOffset, DateTimeOffset, String)
+- uid: CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTime,System.DateTime,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTime,System.DateTime,System.String)
+  id: IsEarlierThan(System.DateTime,System.DateTime,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsEarlierThan(DateTime, DateTime, string)
+  nameWithType: Check.Arg.IsEarlierThan(DateTime, DateTime, string)
+  fullName: CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTime, System.DateTime, string)
+  type: Method
+  source:
+    id: IsEarlierThan
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 195
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTime is earlier than the comparison DateTime.
+  example: []
+  syntax:
+    content: public static DateTime IsEarlierThan(DateTime argument, DateTime comparison, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTime
+      description: The DateTime to check.
+    - id: comparison
+      type: System.DateTime
+      description: The DateTime to compare against.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTime
+      description: The original DateTime if it is earlier than the comparison value.
+    content.vb: Public Shared Function IsEarlierThan(argument As Date, comparison As Date, paramName As String = "") As Date
+  overload: CheckAndThrow.Check.Arg.IsEarlierThan*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not earlier than <code class="paramref">comparison</code>.
+  nameWithType.vb: Check.Arg.IsEarlierThan(Date, Date, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsEarlierThan(Date, Date, String)
+  name.vb: IsEarlierThan(Date, Date, String)
+- uid: CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  id: IsEarlierThan(System.DateTimeOffset,System.DateTimeOffset,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsEarlierThan(DateTimeOffset, DateTimeOffset, string)
+  nameWithType: Check.Arg.IsEarlierThan(DateTimeOffset, DateTimeOffset, string)
+  fullName: CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTimeOffset, System.DateTimeOffset, string)
+  type: Method
+  source:
+    id: IsEarlierThan
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\DateTime.cs
+    startLine: 216
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified DateTimeOffset is earlier than the comparison DateTimeOffset.
+  example: []
+  syntax:
+    content: public static DateTimeOffset IsEarlierThan(DateTimeOffset argument, DateTimeOffset comparison, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.DateTimeOffset
+      description: The DateTimeOffset to check.
+    - id: comparison
+      type: System.DateTimeOffset
+      description: The DateTimeOffset to compare against.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.DateTimeOffset
+      description: The original DateTimeOffset if it is earlier than the comparison value.
+    content.vb: Public Shared Function IsEarlierThan(argument As DateTimeOffset, comparison As DateTimeOffset, paramName As String = "") As DateTimeOffset
+  overload: CheckAndThrow.Check.Arg.IsEarlierThan*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not earlier than <code class="paramref">comparison</code>.
+  nameWithType.vb: Check.Arg.IsEarlierThan(DateTimeOffset, DateTimeOffset, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsEarlierThan(System.DateTimeOffset, System.DateTimeOffset, String)
+  name.vb: IsEarlierThan(DateTimeOffset, DateTimeOffset, String)
+- uid: CheckAndThrow.Check.Arg.IsValidEnumValue``1(``0,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsValidEnumValue``1(``0,System.String)
+  id: IsValidEnumValue``1(``0,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsValidEnumValue<T>(T, string)
+  nameWithType: Check.Arg.IsValidEnumValue<T>(T, string)
+  fullName: CheckAndThrow.Check.Arg.IsValidEnumValue<T>(T, string)
+  type: Method
+  source:
+    id: IsValidEnumValue
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Enum.cs
+    startLine: 17
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified enum value is defined in the enum type.
+  example: []
+  syntax:
+    content: 'public static T IsValidEnumValue<T>(T enumValue, string paramName = "") where T : struct, Enum, IConvertible'
+    parameters:
+    - id: enumValue
+      type: '{T}'
+      description: The enum value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the enum.
+    return:
+      type: '{T}'
+      description: The original enum value if it is defined.
+    content.vb: Public Shared Function IsValidEnumValue(Of T As {Structure, [Enum], IConvertible})(enumValue As T, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.IsValidEnumValue*
+  exceptions:
+  - type: System.ComponentModel.InvalidEnumArgumentException
+    commentId: T:System.ComponentModel.InvalidEnumArgumentException
+    description: Thrown when <code class="paramref">enumValue</code> is not defined in <code class="typeparamref">T</code>.
+  nameWithType.vb: Check.Arg.IsValidEnumValue(Of T)(T, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsValidEnumValue(Of T)(T, String)
+  name.vb: IsValidEnumValue(Of T)(T, String)
+- uid: CheckAndThrow.Check.Arg.IsValidEnumValueName``1(System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsValidEnumValueName``1(System.String,System.String)
+  id: IsValidEnumValueName``1(System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsValidEnumValueName<T>(string?, string)
+  nameWithType: Check.Arg.IsValidEnumValueName<T>(string?, string)
+  fullName: CheckAndThrow.Check.Arg.IsValidEnumValueName<T>(string?, string)
+  type: Method
+  source:
+    id: IsValidEnumValueName
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Enum.cs
+    startLine: 40
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string represents a defined enum value in the enum type.
+  example: []
+  syntax:
+    content: 'public static T IsValidEnumValueName<T>(string? enumValue, string paramName = "") where T : struct, Enum, IConvertible'
+    parameters:
+    - id: enumValue
+      type: System.String
+      description: The string representation of the enum value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the enum.
+    return:
+      type: '{T}'
+      description: The enum value corresponding to the specified string.
+    content.vb: Public Shared Function IsValidEnumValueName(Of T As {Structure, [Enum], IConvertible})(enumValue As String, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.IsValidEnumValueName*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">enumValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">enumValue</code> is not defined in <code class="typeparamref">T</code>.
+  nameWithType.vb: Check.Arg.IsValidEnumValueName(Of T)(String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsValidEnumValueName(Of T)(String, String)
+  name.vb: IsValidEnumValueName(Of T)(String, String)
+- uid: CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase``1(System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase``1(System.String,System.String)
+  id: IsValidEnumValueNameIgnoreCase``1(System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsValidEnumValueNameIgnoreCase<T>(string?, string)
+  nameWithType: Check.Arg.IsValidEnumValueNameIgnoreCase<T>(string?, string)
+  fullName: CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase<T>(string?, string)
+  type: Method
+  source:
+    id: IsValidEnumValueNameIgnoreCase
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Enum.cs
+    startLine: 63
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string represents a defined enum value in the enum type, ignoring case.
+  example: []
+  syntax:
+    content: 'public static T IsValidEnumValueNameIgnoreCase<T>(string? enumValue, string paramName = "") where T : struct, Enum, IConvertible'
+    parameters:
+    - id: enumValue
+      type: System.String
+      description: The string representation of the enum value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the enum.
+    return:
+      type: '{T}'
+      description: The enum value corresponding to the specified string.
+    content.vb: Public Shared Function IsValidEnumValueNameIgnoreCase(Of T As {Structure, [Enum], IConvertible})(enumValue As String, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">enumValue</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">enumValue</code> is not defined in <code class="typeparamref">T</code>.
+  nameWithType.vb: Check.Arg.IsValidEnumValueNameIgnoreCase(Of T)(String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase(Of T)(String, String)
+  name.vb: IsValidEnumValueNameIgnoreCase(Of T)(String, String)
+- uid: CheckAndThrow.Check.Arg.HasAllFlags``1(``0,``0,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasAllFlags``1(``0,``0,System.String)
+  id: HasAllFlags``1(``0,``0,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasAllFlags<T>(T, T, string)
+  nameWithType: Check.Arg.HasAllFlags<T>(T, T, string)
+  fullName: CheckAndThrow.Check.Arg.HasAllFlags<T>(T, T, string)
+  type: Method
+  source:
+    id: HasAllFlags
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Enum.cs
+    startLine: 91
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified enum value has all of the specified flags.
+  example: []
+  syntax:
+    content: 'public static T HasAllFlags<T>(T value, T flags, string paramName = "") where T : struct, Enum, IConvertible'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    - id: flags
+      type: '{T}'
+      description: The flags that the value must have.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the enum.
+    return:
+      type: '{T}'
+      description: The original enum value if it has all specified flags.
+    content.vb: Public Shared Function HasAllFlags(Of T As {Structure, [Enum], IConvertible})(value As T, flags As T, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.HasAllFlags*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">value</code> does not have all of the specified <code class="paramref">flags</code>.
+  nameWithType.vb: Check.Arg.HasAllFlags(Of T)(T, T, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasAllFlags(Of T)(T, T, String)
+  name.vb: HasAllFlags(Of T)(T, T, String)
+- uid: CheckAndThrow.Check.Arg.HasAnyOfFlags``1(``0,``0,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasAnyOfFlags``1(``0,``0,System.String)
+  id: HasAnyOfFlags``1(``0,``0,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasAnyOfFlags<T>(T, T, string)
+  nameWithType: Check.Arg.HasAnyOfFlags<T>(T, T, string)
+  fullName: CheckAndThrow.Check.Arg.HasAnyOfFlags<T>(T, T, string)
+  type: Method
+  source:
+    id: HasAnyOfFlags
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Enum.cs
+    startLine: 114
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified enum value has any of the specified flags.
+  example: []
+  syntax:
+    content: 'public static T HasAnyOfFlags<T>(T value, T flags, string paramName = "") where T : struct, Enum, IConvertible'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    - id: flags
+      type: '{T}'
+      description: The flags that the value must have at least one of.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the enum.
+    return:
+      type: '{T}'
+      description: The original enum value if it has any of the specified flags.
+    content.vb: Public Shared Function HasAnyOfFlags(Of T As {Structure, [Enum], IConvertible})(value As T, flags As T, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.HasAnyOfFlags*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">value</code> does not have any of the specified <code class="paramref">flags</code>.
+  nameWithType.vb: Check.Arg.HasAnyOfFlags(Of T)(T, T, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasAnyOfFlags(Of T)(T, T, String)
+  name.vb: HasAnyOfFlags(Of T)(T, T, String)
+- uid: CheckAndThrow.Check.Arg.IsNotGuidEmpty(System.Guid,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsNotGuidEmpty(System.Guid,System.String)
+  id: IsNotGuidEmpty(System.Guid,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsNotGuidEmpty(Guid, string)
+  nameWithType: Check.Arg.IsNotGuidEmpty(Guid, string)
+  fullName: CheckAndThrow.Check.Arg.IsNotGuidEmpty(System.Guid, string)
+  type: Method
+  source:
+    id: IsNotGuidEmpty
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Guid.cs
+    startLine: 13
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified Guid is not empty.
+  example: []
+  syntax:
+    content: public static Guid IsNotGuidEmpty(Guid argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.Guid
+      description: The Guid to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Guid
+      description: The original Guid if it is not empty.
+    content.vb: Public Shared Function IsNotGuidEmpty(argument As Guid, paramName As String = "") As Guid
+  overload: CheckAndThrow.Check.Arg.IsNotGuidEmpty*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is an empty Guid.
+  nameWithType.vb: Check.Arg.IsNotGuidEmpty(Guid, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsNotGuidEmpty(System.Guid, String)
+  name.vb: IsNotGuidEmpty(Guid, String)
+- uid: CheckAndThrow.Check.Arg.NotNull``1(``0,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.NotNull``1(``0,System.String)
+  id: NotNull``1(``0,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: NotNull<T>(T, string)
+  nameWithType: Check.Arg.NotNull<T>(T, string)
+  fullName: CheckAndThrow.Check.Arg.NotNull<T>(T, string)
+  type: Method
+  source:
+    id: NotNull
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\NotNull.cs
+    startLine: 14
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified argument is not null.
+  example: []
+  syntax:
+    content: public static T NotNull<T>(T argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: '{T}'
+      description: The argument to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The type of the argument.
+    return:
+      type: '{T}'
+      description: The original argument if it is not null.
+    content.vb: Public Shared Function NotNull(Of T)(argument As T, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.NotNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  nameWithType.vb: Check.Arg.NotNull(Of T)(T, String)
+  fullName.vb: CheckAndThrow.Check.Arg.NotNull(Of T)(T, String)
+  name.vb: NotNull(Of T)(T, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.Int32,System.String)
+  id: Negative(System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(int, string)
+  nameWithType: Check.Arg.Negative(int, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(int, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 15
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static int Negative(int value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int32
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As Integer, paramName As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(Integer, String)
+  name.vb: Negative(Integer, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.Double,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.Double,System.String)
+  id: Negative(System.Double,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(double, string)
+  nameWithType: Check.Arg.Negative(double, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(double, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 33
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static double Negative(double value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Double
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As Double, paramName As String = "") As Double
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(Double, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(Double, String)
+  name.vb: Negative(Double, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.Int64,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.Int64,System.String)
+  id: Negative(System.Int64,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(long, string)
+  nameWithType: Check.Arg.Negative(long, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(long, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 51
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static long Negative(long value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int64
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As Long, paramName As String = "") As Long
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(Long, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(Long, String)
+  name.vb: Negative(Long, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.Single,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.Single,System.String)
+  id: Negative(System.Single,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(float, string)
+  nameWithType: Check.Arg.Negative(float, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(float, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 69
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static float Negative(float value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Single
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As Single, paramName As String = "") As Single
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(Single, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(Single, String)
+  name.vb: Negative(Single, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.Decimal,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.Decimal,System.String)
+  id: Negative(System.Decimal,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(decimal, string)
+  nameWithType: Check.Arg.Negative(decimal, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(decimal, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 87
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static decimal Negative(decimal value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Decimal
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As Decimal, paramName As String = "") As Decimal
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(Decimal, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(Decimal, String)
+  name.vb: Negative(Decimal, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.SByte,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.SByte,System.String)
+  id: Negative(System.SByte,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(sbyte, string)
+  nameWithType: Check.Arg.Negative(sbyte, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(sbyte, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 105
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static sbyte Negative(sbyte value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.SByte
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As SByte, paramName As String = "") As SByte
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(SByte, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(SByte, String)
+  name.vb: Negative(SByte, String)
+- uid: CheckAndThrow.Check.Arg.Negative(System.IntPtr,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Negative(System.IntPtr,System.String)
+  id: Negative(System.IntPtr,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Negative(nint, string)
+  nameWithType: Check.Arg.Negative(nint, string)
+  fullName: CheckAndThrow.Check.Arg.Negative(nint, string)
+  type: Method
+  source:
+    id: Negative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Negative.cs
+    startLine: 123
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is negative.
+  example: []
+  syntax:
+    content: public static nint Negative(nint value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.IntPtr
+      description: The value if it is negative.
+    content.vb: Public Shared Function Negative(value As IntPtr, paramName As String = "") As IntPtr
+  overload: CheckAndThrow.Check.Arg.Negative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not negative.
+  nameWithType.vb: Check.Arg.Negative(IntPtr, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Negative(System.IntPtr, String)
+  name.vb: Negative(IntPtr, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.Int32,System.String)
+  id: Positive(System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(int, string)
+  nameWithType: Check.Arg.Positive(int, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(int, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 15
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static int Positive(int value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int32
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As Integer, paramName As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(Integer, String)
+  name.vb: Positive(Integer, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.Double,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.Double,System.String)
+  id: Positive(System.Double,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(double, string)
+  nameWithType: Check.Arg.Positive(double, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(double, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 33
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static double Positive(double value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Double
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As Double, paramName As String = "") As Double
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(Double, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(Double, String)
+  name.vb: Positive(Double, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.Int64,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.Int64,System.String)
+  id: Positive(System.Int64,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(long, string)
+  nameWithType: Check.Arg.Positive(long, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(long, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 51
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static long Positive(long value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int64
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As Long, paramName As String = "") As Long
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(Long, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(Long, String)
+  name.vb: Positive(Long, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.Single,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.Single,System.String)
+  id: Positive(System.Single,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(float, string)
+  nameWithType: Check.Arg.Positive(float, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(float, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 69
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static float Positive(float value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Single
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As Single, paramName As String = "") As Single
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(Single, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(Single, String)
+  name.vb: Positive(Single, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.UInt32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.UInt32,System.String)
+  id: Positive(System.UInt32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(uint, string)
+  nameWithType: Check.Arg.Positive(uint, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(uint, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 87
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static uint Positive(uint value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.UInt32
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As UInteger, paramName As String = "") As UInteger
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(UInteger, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(UInteger, String)
+  name.vb: Positive(UInteger, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.UInt64,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.UInt64,System.String)
+  id: Positive(System.UInt64,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(ulong, string)
+  nameWithType: Check.Arg.Positive(ulong, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(ulong, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 105
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static ulong Positive(ulong value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.UInt64
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As ULong, paramName As String = "") As ULong
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(ULong, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(ULong, String)
+  name.vb: Positive(ULong, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.Decimal,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.Decimal,System.String)
+  id: Positive(System.Decimal,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(decimal, string)
+  nameWithType: Check.Arg.Positive(decimal, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(decimal, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 123
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static decimal Positive(decimal value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Decimal
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As Decimal, paramName As String = "") As Decimal
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(Decimal, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(Decimal, String)
+  name.vb: Positive(Decimal, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.Byte,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.Byte,System.String)
+  id: Positive(System.Byte,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(byte, string)
+  nameWithType: Check.Arg.Positive(byte, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(byte, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 141
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static byte Positive(byte value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Byte
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As Byte, paramName As String = "") As Byte
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(Byte, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(Byte, String)
+  name.vb: Positive(Byte, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.SByte,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.SByte,System.String)
+  id: Positive(System.SByte,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(sbyte, string)
+  nameWithType: Check.Arg.Positive(sbyte, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(sbyte, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 159
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static sbyte Positive(sbyte value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.SByte
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As SByte, paramName As String = "") As SByte
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(SByte, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(SByte, String)
+  name.vb: Positive(SByte, String)
+- uid: CheckAndThrow.Check.Arg.Positive(System.IntPtr,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Positive(System.IntPtr,System.String)
+  id: Positive(System.IntPtr,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Positive(nint, string)
+  nameWithType: Check.Arg.Positive(nint, string)
+  fullName: CheckAndThrow.Check.Arg.Positive(nint, string)
+  type: Method
+  source:
+    id: Positive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Positive.cs
+    startLine: 177
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is positive.
+  example: []
+  syntax:
+    content: public static nint Positive(nint value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.IntPtr
+      description: The value if it is positive.
+    content.vb: Public Shared Function Positive(value As IntPtr, paramName As String = "") As IntPtr
+  overload: CheckAndThrow.Check.Arg.Positive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not positive.
+  nameWithType.vb: Check.Arg.Positive(IntPtr, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Positive(System.IntPtr, String)
+  name.vb: Positive(IntPtr, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)
+  id: InRange(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(int, int, int, string, string, string)
+  nameWithType: Check.Arg.InRange(int, int, int, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(int, int, int, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 19
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static int InRange(int value, int min = -2147483648, int max = 2147483647, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to check.
+    - id: min
+      type: System.Int32
+      description: The minimum value.
+    - id: max
+      type: System.Int32
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.Int32
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As Integer, min As Integer = -2147483648, max As Integer = 2147483647, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(Integer, Integer, Integer, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(Integer, Integer, Integer, String, String, String)
+  name.vb: InRange(Integer, Integer, Integer, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.Double,System.Double,System.Double,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.Double,System.Double,System.Double,System.String,System.String,System.String)
+  id: InRange(System.Double,System.Double,System.Double,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(double, double, double, string, string, string)
+  nameWithType: Check.Arg.InRange(double, double, double, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(double, double, double, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 52
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static double InRange(double value, double min = -1.7976931348623157E+308, double max = 1.7976931348623157E+308, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to check.
+    - id: min
+      type: System.Double
+      description: The minimum value.
+    - id: max
+      type: System.Double
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.Double
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As Double, min As Double = -1.7976931348623157E+308, max As Double = 1.7976931348623157E+308, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As Double
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(Double, Double, Double, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(Double, Double, Double, String, String, String)
+  name.vb: InRange(Double, Double, Double, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.Int64,System.Int64,System.Int64,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.Int64,System.Int64,System.Int64,System.String,System.String,System.String)
+  id: InRange(System.Int64,System.Int64,System.Int64,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(long, long, long, string, string, string)
+  nameWithType: Check.Arg.InRange(long, long, long, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(long, long, long, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 85
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static long InRange(long value, long min = -9223372036854775808, long max = 9223372036854775807, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to check.
+    - id: min
+      type: System.Int64
+      description: The minimum value.
+    - id: max
+      type: System.Int64
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.Int64
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As Long, min As Long = -9223372036854775808, max As Long = 9223372036854775807, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As Long
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(Long, Long, Long, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(Long, Long, Long, String, String, String)
+  name.vb: InRange(Long, Long, Long, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.Single,System.Single,System.Single,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.Single,System.Single,System.Single,System.String,System.String,System.String)
+  id: InRange(System.Single,System.Single,System.Single,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(float, float, float, string, string, string)
+  nameWithType: Check.Arg.InRange(float, float, float, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(float, float, float, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 118
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static float InRange(float value, float min = -3.4028235E+38, float max = 3.4028235E+38, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to check.
+    - id: min
+      type: System.Single
+      description: The minimum value.
+    - id: max
+      type: System.Single
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.Single
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As Single, min As Single = -3.4028235E+38, max As Single = 3.4028235E+38, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As Single
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(Single, Single, Single, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(Single, Single, Single, String, String, String)
+  name.vb: InRange(Single, Single, Single, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.UInt32,System.UInt32,System.UInt32,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.UInt32,System.UInt32,System.UInt32,System.String,System.String,System.String)
+  id: InRange(System.UInt32,System.UInt32,System.UInt32,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(uint, uint, uint, string, string, string)
+  nameWithType: Check.Arg.InRange(uint, uint, uint, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(uint, uint, uint, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 151
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static uint InRange(uint value, uint min = 0, uint max = 4294967295, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The value to check.
+    - id: min
+      type: System.UInt32
+      description: The minimum value.
+    - id: max
+      type: System.UInt32
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.UInt32
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As UInteger, min As UInteger = 0, max As UInteger = 4294967295, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As UInteger
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(UInteger, UInteger, UInteger, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(UInteger, UInteger, UInteger, String, String, String)
+  name.vb: InRange(UInteger, UInteger, UInteger, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.UInt64,System.UInt64,System.UInt64,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.UInt64,System.UInt64,System.UInt64,System.String,System.String,System.String)
+  id: InRange(System.UInt64,System.UInt64,System.UInt64,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(ulong, ulong, ulong, string, string, string)
+  nameWithType: Check.Arg.InRange(ulong, ulong, ulong, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(ulong, ulong, ulong, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 184
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static ulong InRange(ulong value, ulong min = 0, ulong max = 18446744073709551615, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The value to check.
+    - id: min
+      type: System.UInt64
+      description: The minimum value.
+    - id: max
+      type: System.UInt64
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.UInt64
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As ULong, min As ULong = 0, max As ULong = 18446744073709551615, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As ULong
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(ULong, ULong, ULong, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(ULong, ULong, ULong, String, String, String)
+  name.vb: InRange(ULong, ULong, ULong, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.Decimal,System.Decimal,System.Decimal,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.Decimal,System.Decimal,System.Decimal,System.String,System.String,System.String)
+  id: InRange(System.Decimal,System.Decimal,System.Decimal,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(decimal, decimal, decimal, string, string, string)
+  nameWithType: Check.Arg.InRange(decimal, decimal, decimal, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(decimal, decimal, decimal, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 217
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static decimal InRange(decimal value, decimal min = -79228162514264337593543950335, decimal max = 79228162514264337593543950335, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The value to check.
+    - id: min
+      type: System.Decimal
+      description: The minimum value.
+    - id: max
+      type: System.Decimal
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.Decimal
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As Decimal, min As Decimal = -79228162514264337593543950335, max As Decimal = 79228162514264337593543950335, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As Decimal
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(Decimal, Decimal, Decimal, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(Decimal, Decimal, Decimal, String, String, String)
+  name.vb: InRange(Decimal, Decimal, Decimal, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.Byte,System.Byte,System.Byte,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.Byte,System.Byte,System.Byte,System.String,System.String,System.String)
+  id: InRange(System.Byte,System.Byte,System.Byte,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(byte, byte, byte, string, string, string)
+  nameWithType: Check.Arg.InRange(byte, byte, byte, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(byte, byte, byte, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 250
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static byte InRange(byte value, byte min = 0, byte max = 255, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The value to check.
+    - id: min
+      type: System.Byte
+      description: The minimum value.
+    - id: max
+      type: System.Byte
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.Byte
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As Byte, min As Byte = 0, max As Byte = 255, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As Byte
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(Byte, Byte, Byte, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(Byte, Byte, Byte, String, String, String)
+  name.vb: InRange(Byte, Byte, Byte, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.SByte,System.SByte,System.SByte,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.SByte,System.SByte,System.SByte,System.String,System.String,System.String)
+  id: InRange(System.SByte,System.SByte,System.SByte,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(sbyte, sbyte, sbyte, string, string, string)
+  nameWithType: Check.Arg.InRange(sbyte, sbyte, sbyte, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(sbyte, sbyte, sbyte, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 283
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static sbyte InRange(sbyte value, sbyte min = -128, sbyte max = 127, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value to check.
+    - id: min
+      type: System.SByte
+      description: The minimum value.
+    - id: max
+      type: System.SByte
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.SByte
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As SByte, min As SByte = -128, max As SByte = 127, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As SByte
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(SByte, SByte, SByte, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(SByte, SByte, SByte, String, String, String)
+  name.vb: InRange(SByte, SByte, SByte, String, String, String)
+- uid: CheckAndThrow.Check.Arg.InRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.InRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String,System.String,System.String)
+  id: InRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: InRange(nint, nint, nint, string, string, string)
+  nameWithType: Check.Arg.InRange(nint, nint, nint, string, string, string)
+  fullName: CheckAndThrow.Check.Arg.InRange(nint, nint, nint, string, string, string)
+  type: Method
+  source:
+    id: InRange
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\Range.cs
+    startLine: 316
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is within a range.
+  example: []
+  syntax:
+    content: public static nint InRange(nint value, nint min, nint max, string paramName = "", string minArgumentExpression = "", string maxArgumentExpression = "")
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The value to check.
+    - id: min
+      type: System.IntPtr
+      description: The minimum value.
+    - id: max
+      type: System.IntPtr
+      description: The maximum value.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: minArgumentExpression
+      type: System.String
+      description: The expression of the minimum value.
+    - id: maxArgumentExpression
+      type: System.String
+      description: The expression of the maximum value.
+    return:
+      type: System.IntPtr
+      description: The value if it is within the range.
+    content.vb: Public Shared Function InRange(value As IntPtr, min As IntPtr, max As IntPtr, paramName As String = "", minArgumentExpression As String = "", maxArgumentExpression As String = "") As IntPtr
+  overload: CheckAndThrow.Check.Arg.InRange*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is out of range.
+  nameWithType.vb: Check.Arg.InRange(IntPtr, IntPtr, IntPtr, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.InRange(System.IntPtr, System.IntPtr, System.IntPtr, String, String, String)
+  name.vb: InRange(IntPtr, IntPtr, IntPtr, String, String, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.Int32,System.String)
+  id: ZeroOrNegative(System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(int, string)
+  nameWithType: Check.Arg.ZeroOrNegative(int, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(int, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 15
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static int ZeroOrNegative(int value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int32
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As Integer, paramName As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(Integer, String)
+  name.vb: ZeroOrNegative(Integer, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.Double,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.Double,System.String)
+  id: ZeroOrNegative(System.Double,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(double, string)
+  nameWithType: Check.Arg.ZeroOrNegative(double, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(double, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 33
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static double ZeroOrNegative(double value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Double
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As Double, paramName As String = "") As Double
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(Double, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(Double, String)
+  name.vb: ZeroOrNegative(Double, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.Int64,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.Int64,System.String)
+  id: ZeroOrNegative(System.Int64,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(long, string)
+  nameWithType: Check.Arg.ZeroOrNegative(long, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(long, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 51
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static long ZeroOrNegative(long value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int64
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As Long, paramName As String = "") As Long
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(Long, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(Long, String)
+  name.vb: ZeroOrNegative(Long, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.Single,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.Single,System.String)
+  id: ZeroOrNegative(System.Single,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(float, string)
+  nameWithType: Check.Arg.ZeroOrNegative(float, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(float, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 69
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static float ZeroOrNegative(float value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Single
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As Single, paramName As String = "") As Single
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(Single, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(Single, String)
+  name.vb: ZeroOrNegative(Single, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.Decimal,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.Decimal,System.String)
+  id: ZeroOrNegative(System.Decimal,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(decimal, string)
+  nameWithType: Check.Arg.ZeroOrNegative(decimal, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(decimal, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 87
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static decimal ZeroOrNegative(decimal value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Decimal
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As Decimal, paramName As String = "") As Decimal
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(Decimal, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(Decimal, String)
+  name.vb: ZeroOrNegative(Decimal, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.SByte,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.SByte,System.String)
+  id: ZeroOrNegative(System.SByte,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(sbyte, string)
+  nameWithType: Check.Arg.ZeroOrNegative(sbyte, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(sbyte, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 105
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static sbyte ZeroOrNegative(sbyte value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.SByte
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As SByte, paramName As String = "") As SByte
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(SByte, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(SByte, String)
+  name.vb: ZeroOrNegative(SByte, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative(System.IntPtr,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrNegative(System.IntPtr,System.String)
+  id: ZeroOrNegative(System.IntPtr,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrNegative(nint, string)
+  nameWithType: Check.Arg.ZeroOrNegative(nint, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative(nint, string)
+  type: Method
+  source:
+    id: ZeroOrNegative
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrNegative.cs
+    startLine: 123
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or negative.
+  example: []
+  syntax:
+    content: public static nint ZeroOrNegative(nint value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.IntPtr
+      description: The value if it is zero or negative.
+    content.vb: Public Shared Function ZeroOrNegative(value As IntPtr, paramName As String = "") As IntPtr
+  overload: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or negative.
+  nameWithType.vb: Check.Arg.ZeroOrNegative(IntPtr, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrNegative(System.IntPtr, String)
+  name.vb: ZeroOrNegative(IntPtr, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.Int32,System.String)
+  id: ZeroOrPositive(System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(int, string)
+  nameWithType: Check.Arg.ZeroOrPositive(int, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(int, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 15
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static int ZeroOrPositive(int value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int32
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As Integer, paramName As String = "") As Integer
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(Integer, String)
+  name.vb: ZeroOrPositive(Integer, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.Double,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.Double,System.String)
+  id: ZeroOrPositive(System.Double,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(double, string)
+  nameWithType: Check.Arg.ZeroOrPositive(double, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(double, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 33
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static double ZeroOrPositive(double value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Double
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As Double, paramName As String = "") As Double
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(Double, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(Double, String)
+  name.vb: ZeroOrPositive(Double, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.Int64,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.Int64,System.String)
+  id: ZeroOrPositive(System.Int64,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(long, string)
+  nameWithType: Check.Arg.ZeroOrPositive(long, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(long, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 51
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static long ZeroOrPositive(long value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Int64
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As Long, paramName As String = "") As Long
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(Long, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(Long, String)
+  name.vb: ZeroOrPositive(Long, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.Single,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.Single,System.String)
+  id: ZeroOrPositive(System.Single,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(float, string)
+  nameWithType: Check.Arg.ZeroOrPositive(float, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(float, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 69
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static float ZeroOrPositive(float value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Single
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As Single, paramName As String = "") As Single
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(Single, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(Single, String)
+  name.vb: ZeroOrPositive(Single, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.Decimal,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.Decimal,System.String)
+  id: ZeroOrPositive(System.Decimal,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(decimal, string)
+  nameWithType: Check.Arg.ZeroOrPositive(decimal, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(decimal, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 87
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static decimal ZeroOrPositive(decimal value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Decimal
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As Decimal, paramName As String = "") As Decimal
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(Decimal, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(Decimal, String)
+  name.vb: ZeroOrPositive(Decimal, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.SByte,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.SByte,System.String)
+  id: ZeroOrPositive(System.SByte,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(sbyte, string)
+  nameWithType: Check.Arg.ZeroOrPositive(sbyte, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(sbyte, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 105
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static sbyte ZeroOrPositive(sbyte value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.SByte
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As SByte, paramName As String = "") As SByte
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(SByte, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(SByte, String)
+  name.vb: ZeroOrPositive(SByte, String)
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive(System.IntPtr,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.ZeroOrPositive(System.IntPtr,System.String)
+  id: ZeroOrPositive(System.IntPtr,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: ZeroOrPositive(nint, string)
+  nameWithType: Check.Arg.ZeroOrPositive(nint, string)
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive(nint, string)
+  type: Method
+  source:
+    id: ZeroOrPositive
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Range\ZeroOrPositive.cs
+    startLine: 123
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the argument is zero or positive.
+  example: []
+  syntax:
+    content: public static nint ZeroOrPositive(nint value, string paramName = "")
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The value to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.IntPtr
+      description: The value if it is zero or positive.
+    content.vb: Public Shared Function ZeroOrPositive(value As IntPtr, paramName As String = "") As IntPtr
+  overload: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">value</code> is not zero or positive.
+  nameWithType.vb: Check.Arg.ZeroOrPositive(IntPtr, String)
+  fullName.vb: CheckAndThrow.Check.Arg.ZeroOrPositive(System.IntPtr, String)
+  name.vb: ZeroOrPositive(IntPtr, String)
+- uid: CheckAndThrow.Check.Arg.HasValidState``1(``0,System.Func{``0,System.Boolean},System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasValidState``1(``0,System.Func{``0,System.Boolean},System.String,System.String)
+  id: HasValidState``1(``0,System.Func{``0,System.Boolean},System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasValidState<T>(T, Func<T, bool>, string, string)
+  nameWithType: Check.Arg.HasValidState<T>(T, Func<T, bool>, string, string)
+  fullName: CheckAndThrow.Check.Arg.HasValidState<T>(T, System.Func<T, bool>, string, string)
+  type: Method
+  source:
+    id: HasValidState
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\State.cs
+    startLine: 16
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified argument satisfies the specified predicate.
+  example: []
+  syntax:
+    content: public static T HasValidState<T>(T argument, Func<T, bool> predicate, string paramName = "", string predicateString = "")
+    parameters:
+    - id: argument
+      type: '{T}'
+      description: The argument to check.
+    - id: predicate
+      type: System.Func{{T},System.Boolean}
+      description: The predicate to satisfy.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: predicateString
+      type: System.String
+      description: The string representation of the predicate.
+    typeParameters:
+    - id: T
+      description: The type of the argument.
+    return:
+      type: '{T}'
+      description: The original argument if it satisfies the predicate.
+    content.vb: Public Shared Function HasValidState(Of T)(argument As T, predicate As Func(Of T, Boolean), paramName As String = "", predicateString As String = "") As T
+  overload: CheckAndThrow.Check.Arg.HasValidState*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> does not satisfy the <code class="paramref">predicate</code>.
+  nameWithType.vb: Check.Arg.HasValidState(Of T)(T, Func(Of T, Boolean), String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasValidState(Of T)(T, System.Func(Of T, Boolean), String, String)
+  name.vb: HasValidState(Of T)(T, Func(Of T, Boolean), String, String)
+- uid: CheckAndThrow.Check.Arg.HasValidState``2(``0,``1,System.Func{``0,``1,System.Boolean},System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasValidState``2(``0,``1,System.Func{``0,``1,System.Boolean},System.String,System.String)
+  id: HasValidState``2(``0,``1,System.Func{``0,``1,System.Boolean},System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasValidState<TArg, TPredicateArg>(TArg, TPredicateArg, Func<TArg, TPredicateArg, bool>, string, string)
+  nameWithType: Check.Arg.HasValidState<TArg, TPredicateArg>(TArg, TPredicateArg, Func<TArg, TPredicateArg, bool>, string, string)
+  fullName: CheckAndThrow.Check.Arg.HasValidState<TArg, TPredicateArg>(TArg, TPredicateArg, System.Func<TArg, TPredicateArg, bool>, string, string)
+  type: Method
+  source:
+    id: HasValidState
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\State.cs
+    startLine: 46
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified argument satisfies the specified predicate with the provided additional argument.
+  example: []
+  syntax:
+    content: public static TArg HasValidState<TArg, TPredicateArg>(TArg argument, TPredicateArg predicateArg, Func<TArg, TPredicateArg, bool> predicate, string paramName = "", string predicateString = "")
+    parameters:
+    - id: argument
+      type: '{TArg}'
+      description: The argument to check.
+    - id: predicateArg
+      type: '{TPredicateArg}'
+      description: The additional argument to pass to the predicate.
+    - id: predicate
+      type: System.Func{{TArg},{TPredicateArg},System.Boolean}
+      description: The predicate to satisfy.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: predicateString
+      type: System.String
+      description: The string representation of the predicate.
+    typeParameters:
+    - id: TArg
+      description: The type of the argument to check.
+    - id: TPredicateArg
+      description: The type of the additional argument for the predicate.
+    return:
+      type: '{TArg}'
+      description: The original argument if it satisfies the predicate.
+    content.vb: Public Shared Function HasValidState(Of TArg, TPredicateArg)(argument As TArg, predicateArg As TPredicateArg, predicate As Func(Of TArg, TPredicateArg, Boolean), paramName As String = "", predicateString As String = "") As TArg
+  overload: CheckAndThrow.Check.Arg.HasValidState*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> does not satisfy the <code class="paramref">predicate</code>.
+  nameWithType.vb: Check.Arg.HasValidState(Of TArg, TPredicateArg)(TArg, TPredicateArg, Func(Of TArg, TPredicateArg, Boolean), String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasValidState(Of TArg, TPredicateArg)(TArg, TPredicateArg, System.Func(Of TArg, TPredicateArg, Boolean), String, String)
+  name.vb: HasValidState(Of TArg, TPredicateArg)(TArg, TPredicateArg, Func(Of TArg, TPredicateArg, Boolean), String, String)
+- uid: CheckAndThrow.Check.Arg.IsNotNullOrEmpty(System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsNotNullOrEmpty(System.String,System.String)
+  id: IsNotNullOrEmpty(System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsNotNullOrEmpty(string, string)
+  nameWithType: Check.Arg.IsNotNullOrEmpty(string, string)
+  fullName: CheckAndThrow.Check.Arg.IsNotNullOrEmpty(string, string)
+  type: Method
+  source:
+    id: IsNotNullOrEmpty
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 14
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string is not null or empty.
+  example: []
+  syntax:
+    content: public static string IsNotNullOrEmpty(string argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it is not null or empty.
+    content.vb: Public Shared Function IsNotNullOrEmpty(argument As String, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.IsNotNullOrEmpty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is empty.
+  nameWithType.vb: Check.Arg.IsNotNullOrEmpty(String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsNotNullOrEmpty(String, String)
+  name.vb: IsNotNullOrEmpty(String, String)
+- uid: CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace(System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace(System.String,System.String)
+  id: IsNotNullOrWhiteSpace(System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsNotNullOrWhiteSpace(string, string)
+  nameWithType: Check.Arg.IsNotNullOrWhiteSpace(string, string)
+  fullName: CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace(string, string)
+  type: Method
+  source:
+    id: IsNotNullOrWhiteSpace
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 34
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string is not null, empty, or consists only of white-space characters.
+  example: []
+  syntax:
+    content: public static string IsNotNullOrWhiteSpace(string argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it is not null, empty, or whitespace.
+    content.vb: Public Shared Function IsNotNullOrWhiteSpace(argument As String, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is empty or whitespace.
+  nameWithType.vb: Check.Arg.IsNotNullOrWhiteSpace(String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace(String, String)
+  name.vb: IsNotNullOrWhiteSpace(String, String)
+- uid: CheckAndThrow.Check.Arg.Matches(System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.Matches(System.String,System.String,System.String)
+  id: Matches(System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: Matches(string, string, string)
+  nameWithType: Check.Arg.Matches(string, string, string)
+  fullName: CheckAndThrow.Check.Arg.Matches(string, string, string)
+  type: Method
+  source:
+    id: Matches
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 55
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string matches the required pattern.
+  example: []
+  syntax:
+    content: public static string Matches(string argument, string pattern, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it matches the pattern.
+    content.vb: Public Shared Function Matches(argument As String, pattern As String, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.Matches*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> or <code class="paramref">pattern</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> does not match the <code class="paramref">pattern</code>.
+  nameWithType.vb: Check.Arg.Matches(String, String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.Matches(String, String, String)
+  name.vb: Matches(String, String, String)
+- uid: CheckAndThrow.Check.Arg.HasLength(System.String,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasLength(System.String,System.Int32,System.String)
+  id: HasLength(System.String,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasLength(string, int, string)
+  nameWithType: Check.Arg.HasLength(string, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasLength(string, int, string)
+  type: Method
+  source:
+    id: HasLength
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 81
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string has the required length.
+  example: []
+  syntax:
+    content: public static string HasLength(string argument, int length, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: length
+      type: System.Int32
+      description: The required length.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it has the required length.
+    content.vb: Public Shared Function HasLength(argument As String, length As Integer, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.HasLength*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> does not have the required length.
+  nameWithType.vb: Check.Arg.HasLength(String, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasLength(String, Integer, String)
+  name.vb: HasLength(String, Integer, String)
+- uid: CheckAndThrow.Check.Arg.HasMinLength(System.String,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasMinLength(System.String,System.Int32,System.String)
+  id: HasMinLength(System.String,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasMinLength(string, int, string)
+  nameWithType: Check.Arg.HasMinLength(string, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasMinLength(string, int, string)
+  type: Method
+  source:
+    id: HasMinLength
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 104
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string has at least the required minimum length.
+  example: []
+  syntax:
+    content: public static string HasMinLength(string argument, int minLength, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: minLength
+      type: System.Int32
+      description: The minimum required length.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it has at least the required minimum length.
+    content.vb: Public Shared Function HasMinLength(argument As String, minLength As Integer, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.HasMinLength*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is shorter than <code class="paramref">minLength</code>.
+  nameWithType.vb: Check.Arg.HasMinLength(String, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasMinLength(String, Integer, String)
+  name.vb: HasMinLength(String, Integer, String)
+- uid: CheckAndThrow.Check.Arg.HasMaxLength(System.String,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasMaxLength(System.String,System.Int32,System.String)
+  id: HasMaxLength(System.String,System.Int32,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasMaxLength(string, int, string)
+  nameWithType: Check.Arg.HasMaxLength(string, int, string)
+  fullName: CheckAndThrow.Check.Arg.HasMaxLength(string, int, string)
+  type: Method
+  source:
+    id: HasMaxLength
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 127
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string has at most the required maximum length.
+  example: []
+  syntax:
+    content: public static string HasMaxLength(string argument, int maxLength, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: maxLength
+      type: System.Int32
+      description: The maximum required length.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it has at most the required maximum length.
+    content.vb: Public Shared Function HasMaxLength(argument As String, maxLength As Integer, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.HasMaxLength*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is longer than <code class="paramref">maxLength</code>.
+  nameWithType.vb: Check.Arg.HasMaxLength(String, Integer, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasMaxLength(String, Integer, String)
+  name.vb: HasMaxLength(String, Integer, String)
+- uid: CheckAndThrow.Check.Arg.IsEmail(System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsEmail(System.String,System.String)
+  id: IsEmail(System.String,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsEmail(string, string)
+  nameWithType: Check.Arg.IsEmail(string, string)
+  fullName: CheckAndThrow.Check.Arg.IsEmail(string, string)
+  type: Method
+  source:
+    id: IsEmail
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\String.cs
+    startLine: 149
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified string is a valid email address.
+  example: []
+  syntax:
+    content: public static string IsEmail(string argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.String
+      description: The string to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.String
+      description: The original string if it is a valid email address.
+    content.vb: Public Shared Function IsEmail(argument As String, paramName As String = "") As String
+  overload: CheckAndThrow.Check.Arg.IsEmail*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not a valid email address.
+  nameWithType.vb: Check.Arg.IsEmail(String, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsEmail(String, String)
+  name.vb: IsEmail(String, String)
+- uid: CheckAndThrow.Check.Arg.IsAssignableTo``1(System.Object,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsAssignableTo``1(System.Object,System.String)
+  id: IsAssignableTo``1(System.Object,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsAssignableTo<T>(object, string)
+  nameWithType: Check.Arg.IsAssignableTo<T>(object, string)
+  fullName: CheckAndThrow.Check.Arg.IsAssignableTo<T>(object, string)
+  type: Method
+  source:
+    id: IsAssignableTo
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Type.cs
+    startLine: 17
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified argument is an instance of the specified type.
+  example: []
+  syntax:
+    content: public static T IsAssignableTo<T>(object argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.Object
+      description: The argument to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: T
+      description: The required type.
+    return:
+      type: '{T}'
+      description: The original argument cast to the required type if it is an instance of that type.
+    content.vb: Public Shared Function IsAssignableTo(Of T)(argument As Object, paramName As String = "") As T
+  overload: CheckAndThrow.Check.Arg.IsAssignableTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not an instance of the required type.
+  nameWithType.vb: Check.Arg.IsAssignableTo(Of T)(Object, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsAssignableTo(Of T)(Object, String)
+  name.vb: IsAssignableTo(Of T)(Object, String)
+- uid: CheckAndThrow.Check.Arg.IsAssignableFrom``1(System.Type,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.IsAssignableFrom``1(System.Type,System.String)
+  id: IsAssignableFrom``1(System.Type,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: IsAssignableFrom<TTarget>(Type, string)
+  nameWithType: Check.Arg.IsAssignableFrom<TTarget>(Type, string)
+  fullName: CheckAndThrow.Check.Arg.IsAssignableFrom<TTarget>(System.Type, string)
+  type: Method
+  source:
+    id: IsAssignableFrom
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Type.cs
+    startLine: 40
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified type is assignable from the required type.
+  example: []
+  syntax:
+    content: public static Type IsAssignableFrom<TTarget>(Type argument, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.Type
+      description: The type to check.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: TTarget
+      description: The required type.
+    return:
+      type: System.Type
+      description: The original type if it is assignable from the required type.
+    content.vb: Public Shared Function IsAssignableFrom(Of TTarget)(argument As Type, paramName As String = "") As Type
+  overload: CheckAndThrow.Check.Arg.IsAssignableFrom*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> is not assignable from the required type.
+  nameWithType.vb: Check.Arg.IsAssignableFrom(Of TTarget)(Type, String)
+  fullName.vb: CheckAndThrow.Check.Arg.IsAssignableFrom(Of TTarget)(System.Type, String)
+  name.vb: IsAssignableFrom(Of TTarget)(Type, String)
+- uid: CheckAndThrow.Check.Arg.HasTheAttribute``1(System.Type,System.Boolean,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasTheAttribute``1(System.Type,System.Boolean,System.String)
+  id: HasTheAttribute``1(System.Type,System.Boolean,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasTheAttribute<TAttribute>(Type, bool, string)
+  nameWithType: Check.Arg.HasTheAttribute<TAttribute>(Type, bool, string)
+  fullName: CheckAndThrow.Check.Arg.HasTheAttribute<TAttribute>(System.Type, bool, string)
+  type: Method
+  source:
+    id: HasTheAttribute
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Type.cs
+    startLine: 66
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified type has the required attribute.
+  example: []
+  syntax:
+    content: 'public static TAttribute HasTheAttribute<TAttribute>(Type argument, bool includeAncestors = false, string paramName = "") where TAttribute : Attribute'
+    parameters:
+    - id: argument
+      type: System.Type
+      description: The type to check.
+    - id: includeAncestors
+      type: System.Boolean
+      description: Whether to include attributes from ancestor types.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: TAttribute
+      description: The type of the attribute.
+    return:
+      type: '{TAttribute}'
+      description: The attribute instance if the type has the required attribute.
+    content.vb: Public Shared Function HasTheAttribute(Of TAttribute As Attribute)(argument As Type, includeAncestors As Boolean = False, paramName As String = "") As TAttribute
+  overload: CheckAndThrow.Check.Arg.HasTheAttribute*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> does not have the required attribute.
+  nameWithType.vb: Check.Arg.HasTheAttribute(Of TAttribute)(Type, Boolean, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasTheAttribute(Of TAttribute)(System.Type, Boolean, String)
+  name.vb: HasTheAttribute(Of TAttribute)(Type, Boolean, String)
+- uid: CheckAndThrow.Check.Arg.HasTheAttribute(System.Type,System.Type,System.Boolean,System.String)
+  commentId: M:CheckAndThrow.Check.Arg.HasTheAttribute(System.Type,System.Type,System.Boolean,System.String)
+  id: HasTheAttribute(System.Type,System.Type,System.Boolean,System.String)
+  parent: CheckAndThrow.Check.Arg
+  langs:
+  - csharp
+  - vb
+  name: HasTheAttribute(Type, Type, bool, string)
+  nameWithType: Check.Arg.HasTheAttribute(Type, Type, bool, string)
+  fullName: CheckAndThrow.Check.Arg.HasTheAttribute(System.Type, System.Type, bool, string)
+  type: Method
+  source:
+    id: HasTheAttribute
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Arg\Type.cs
+    startLine: 98
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified type has the required attribute.
+  example: []
+  syntax:
+    content: public static Attribute HasTheAttribute(Type argument, Type attributeType, bool includeAncestors = false, string paramName = "")
+    parameters:
+    - id: argument
+      type: System.Type
+      description: The type to check.
+    - id: attributeType
+      type: System.Type
+      description: The type of the attribute.
+    - id: includeAncestors
+      type: System.Boolean
+      description: Whether to include attributes from ancestor types.
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    return:
+      type: System.Attribute
+      description: The attribute instance if the type has the required attribute.
+    content.vb: Public Shared Function HasTheAttribute(argument As Type, attributeType As Type, includeAncestors As Boolean = False, paramName As String = "") As Attribute
+  overload: CheckAndThrow.Check.Arg.HasTheAttribute*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">argument</code> or <code class="paramref">attributeType</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">argument</code> does not have the required attribute.
+  nameWithType.vb: Check.Arg.HasTheAttribute(Type, Type, Boolean, String)
+  fullName.vb: CheckAndThrow.Check.Arg.HasTheAttribute(System.Type, System.Type, Boolean, String)
+  name.vb: HasTheAttribute(Type, Type, Boolean, String)
+references:
+- uid: CheckAndThrow
+  commentId: N:CheckAndThrow
+  href: CheckAndThrow.html
+  name: CheckAndThrow
+  nameWithType: CheckAndThrow
+  fullName: CheckAndThrow
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: CheckAndThrow.Check.Arg.IsNotNullOrEmpty*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsNotNullOrEmpty
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsNotNullOrEmpty__1___0_System_String_
+  name: IsNotNullOrEmpty
+  nameWithType: Check.Arg.IsNotNullOrEmpty
+  fullName: CheckAndThrow.Check.Arg.IsNotNullOrEmpty
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsNotNullAndHasNoNulls__1___0_System_String_
+  name: IsNotNullAndHasNoNulls
+  nameWithType: Check.Arg.IsNotNullAndHasNoNulls
+  fullName: CheckAndThrow.Check.Arg.IsNotNullAndHasNoNulls
+- uid: CheckAndThrow.Check.Arg.HasCount*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasCount
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasCount__1___0_System_Int32_System_String_
+  name: HasCount
+  nameWithType: Check.Arg.HasCount
+  fullName: CheckAndThrow.Check.Arg.HasCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CheckAndThrow.Check.Arg.HasMinCount*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasMinCount
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasMinCount__1___0_System_Int32_System_String_
+  name: HasMinCount
+  nameWithType: Check.Arg.HasMinCount
+  fullName: CheckAndThrow.Check.Arg.HasMinCount
+- uid: CheckAndThrow.Check.Arg.HasMaxCount*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasMaxCount
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasMaxCount__1___0_System_Int32_System_String_
+  name: HasMaxCount
+  nameWithType: Check.Arg.HasMaxCount
+  fullName: CheckAndThrow.Check.Arg.HasMaxCount
+- uid: CheckAndThrow.Check.Arg.Contains*
+  commentId: Overload:CheckAndThrow.Check.Arg.Contains
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_Contains__2___0___1_System_String_
+  name: Contains
+  nameWithType: Check.Arg.Contains
+  fullName: CheckAndThrow.Check.Arg.Contains
+- uid: '{TCollection}'
+  commentId: '!:TCollection'
+  definition: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: '{TItem}'
+  commentId: '!:TItem'
+  definition: TItem
+  name: TItem
+  nameWithType: TItem
+  fullName: TItem
+- uid: TCollection
+  name: TCollection
+  nameWithType: TCollection
+  fullName: TCollection
+- uid: TItem
+  commentId: '!:TItem'
+  name: TItem
+  nameWithType: TItem
+  fullName: TItem
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: CheckAndThrow.Check.Arg.HasValidIndex*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasValidIndex
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasValidIndex_System_Int32_System_Collections_ICollection_System_String_
+  name: HasValidIndex
+  nameWithType: Check.Arg.HasValidIndex
+  fullName: CheckAndThrow.Check.Arg.HasValidIndex
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.TimeProvider
+  commentId: T:System.TimeProvider
+  parent: System
+  isExternal: true
+  name: TimeProvider
+  nameWithType: TimeProvider
+  fullName: System.TimeProvider
+- uid: CheckAndThrow.Check.DefaultTimeProvider
+  commentId: P:CheckAndThrow.Check.DefaultTimeProvider
+  href: CheckAndThrow.Check.html#CheckAndThrow_Check_DefaultTimeProvider
+  name: DefaultTimeProvider
+  nameWithType: Check.DefaultTimeProvider
+  fullName: CheckAndThrow.Check.DefaultTimeProvider
+- uid: CheckAndThrow.Check.Arg.IsInPast*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsInPast
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsInPast_System_DateTime_System_TimeProvider_System_String_
+  name: IsInPast
+  nameWithType: Check.Arg.IsInPast
+  fullName: CheckAndThrow.Check.Arg.IsInPast
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: CheckAndThrow.Check.Arg.IsInPastUtc*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsInPastUtc
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsInPastUtc_System_DateTime_System_TimeProvider_System_String_
+  name: IsInPastUtc
+  nameWithType: Check.Arg.IsInPastUtc
+  fullName: CheckAndThrow.Check.Arg.IsInPastUtc
+- uid: CheckAndThrow.Check.Arg.IsInFuture*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsInFuture
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsInFuture_System_DateTime_System_TimeProvider_System_String_
+  name: IsInFuture
+  nameWithType: Check.Arg.IsInFuture
+  fullName: CheckAndThrow.Check.Arg.IsInFuture
+- uid: CheckAndThrow.Check.Arg.IsInFutureUtc*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsInFutureUtc
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsInFutureUtc_System_DateTime_System_TimeProvider_System_String_
+  name: IsInFutureUtc
+  nameWithType: Check.Arg.IsInFutureUtc
+  fullName: CheckAndThrow.Check.Arg.IsInFutureUtc
+- uid: CheckAndThrow.Check.Arg.IsLaterThan*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsLaterThan
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsLaterThan_System_DateTime_System_DateTime_System_String_
+  name: IsLaterThan
+  nameWithType: Check.Arg.IsLaterThan
+  fullName: CheckAndThrow.Check.Arg.IsLaterThan
+- uid: CheckAndThrow.Check.Arg.IsEarlierThan*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsEarlierThan
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsEarlierThan_System_DateTime_System_DateTime_System_String_
+  name: IsEarlierThan
+  nameWithType: Check.Arg.IsEarlierThan
+  fullName: CheckAndThrow.Check.Arg.IsEarlierThan
+- uid: System.ComponentModel.InvalidEnumArgumentException
+  commentId: T:System.ComponentModel.InvalidEnumArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.invalidenumargumentexception
+  name: InvalidEnumArgumentException
+  nameWithType: InvalidEnumArgumentException
+  fullName: System.ComponentModel.InvalidEnumArgumentException
+- uid: CheckAndThrow.Check.Arg.IsValidEnumValue*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsValidEnumValue
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsValidEnumValue__1___0_System_String_
+  name: IsValidEnumValue
+  nameWithType: Check.Arg.IsValidEnumValue
+  fullName: CheckAndThrow.Check.Arg.IsValidEnumValue
+- uid: CheckAndThrow.Check.Arg.IsValidEnumValueName*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsValidEnumValueName
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsValidEnumValueName__1_System_String_System_String_
+  name: IsValidEnumValueName
+  nameWithType: Check.Arg.IsValidEnumValueName
+  fullName: CheckAndThrow.Check.Arg.IsValidEnumValueName
+- uid: CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsValidEnumValueNameIgnoreCase__1_System_String_System_String_
+  name: IsValidEnumValueNameIgnoreCase
+  nameWithType: Check.Arg.IsValidEnumValueNameIgnoreCase
+  fullName: CheckAndThrow.Check.Arg.IsValidEnumValueNameIgnoreCase
+- uid: CheckAndThrow.Check.Arg.HasAllFlags*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasAllFlags
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasAllFlags__1___0___0_System_String_
+  name: HasAllFlags
+  nameWithType: Check.Arg.HasAllFlags
+  fullName: CheckAndThrow.Check.Arg.HasAllFlags
+- uid: CheckAndThrow.Check.Arg.HasAnyOfFlags*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasAnyOfFlags
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasAnyOfFlags__1___0___0_System_String_
+  name: HasAnyOfFlags
+  nameWithType: Check.Arg.HasAnyOfFlags
+  fullName: CheckAndThrow.Check.Arg.HasAnyOfFlags
+- uid: CheckAndThrow.Check.Arg.IsNotGuidEmpty*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsNotGuidEmpty
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsNotGuidEmpty_System_Guid_System_String_
+  name: IsNotGuidEmpty
+  nameWithType: Check.Arg.IsNotGuidEmpty
+  fullName: CheckAndThrow.Check.Arg.IsNotGuidEmpty
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: CheckAndThrow.Check.Arg.NotNull*
+  commentId: Overload:CheckAndThrow.Check.Arg.NotNull
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_NotNull__1___0_System_String_
+  name: NotNull
+  nameWithType: Check.Arg.NotNull
+  fullName: CheckAndThrow.Check.Arg.NotNull
+- uid: CheckAndThrow.Check.Arg.Negative*
+  commentId: Overload:CheckAndThrow.Check.Arg.Negative
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_Negative_System_Int32_System_String_
+  name: Negative
+  nameWithType: Check.Arg.Negative
+  fullName: CheckAndThrow.Check.Arg.Negative
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: CheckAndThrow.Check.Arg.Positive*
+  commentId: Overload:CheckAndThrow.Check.Arg.Positive
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_Positive_System_Int32_System_String_
+  name: Positive
+  nameWithType: Check.Arg.Positive
+  fullName: CheckAndThrow.Check.Arg.Positive
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: CheckAndThrow.Check.Arg.InRange*
+  commentId: Overload:CheckAndThrow.Check.Arg.InRange
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_InRange_System_Int32_System_Int32_System_Int32_System_String_System_String_System_String_
+  name: InRange
+  nameWithType: Check.Arg.InRange
+  fullName: CheckAndThrow.Check.Arg.InRange
+- uid: CheckAndThrow.Check.Arg.ZeroOrNegative*
+  commentId: Overload:CheckAndThrow.Check.Arg.ZeroOrNegative
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_ZeroOrNegative_System_Int32_System_String_
+  name: ZeroOrNegative
+  nameWithType: Check.Arg.ZeroOrNegative
+  fullName: CheckAndThrow.Check.Arg.ZeroOrNegative
+- uid: CheckAndThrow.Check.Arg.ZeroOrPositive*
+  commentId: Overload:CheckAndThrow.Check.Arg.ZeroOrPositive
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_ZeroOrPositive_System_Int32_System_String_
+  name: ZeroOrPositive
+  nameWithType: Check.Arg.ZeroOrPositive
+  fullName: CheckAndThrow.Check.Arg.ZeroOrPositive
+- uid: CheckAndThrow.Check.Arg.HasValidState*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasValidState
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasValidState__1___0_System_Func___0_System_Boolean__System_String_System_String_
+  name: HasValidState
+  nameWithType: Check.Arg.HasValidState
+  fullName: CheckAndThrow.Check.Arg.HasValidState
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, bool>
+  nameWithType: Func<T, bool>
+  fullName: System.Func<T, bool>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: '{TArg}'
+  commentId: '!:TArg'
+  definition: TArg
+  name: TArg
+  nameWithType: TArg
+  fullName: TArg
+- uid: '{TPredicateArg}'
+  commentId: '!:TPredicateArg'
+  definition: TPredicateArg
+  name: TPredicateArg
+  nameWithType: TPredicateArg
+  fullName: TPredicateArg
+- uid: System.Func{{TArg},{TPredicateArg},System.Boolean}
+  commentId: T:System.Func{``0,``1,System.Boolean}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TArg, TPredicateArg, bool>
+  nameWithType: Func<TArg, TPredicateArg, bool>
+  fullName: System.Func<TArg, TPredicateArg, bool>
+  nameWithType.vb: Func(Of TArg, TPredicateArg, Boolean)
+  fullName.vb: System.Func(Of TArg, TPredicateArg, Boolean)
+  name.vb: Func(Of TArg, TPredicateArg, Boolean)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TArg
+  - name: ','
+  - name: " "
+  - name: TPredicateArg
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArg
+  - name: ','
+  - name: " "
+  - name: TPredicateArg
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TArg
+  name: TArg
+  nameWithType: TArg
+  fullName: TArg
+- uid: TPredicateArg
+  commentId: '!:TPredicateArg'
+  name: TPredicateArg
+  nameWithType: TPredicateArg
+  fullName: TPredicateArg
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsNotNullOrWhiteSpace_System_String_System_String_
+  name: IsNotNullOrWhiteSpace
+  nameWithType: Check.Arg.IsNotNullOrWhiteSpace
+  fullName: CheckAndThrow.Check.Arg.IsNotNullOrWhiteSpace
+- uid: CheckAndThrow.Check.Arg.Matches*
+  commentId: Overload:CheckAndThrow.Check.Arg.Matches
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_Matches_System_String_System_String_System_String_
+  name: Matches
+  nameWithType: Check.Arg.Matches
+  fullName: CheckAndThrow.Check.Arg.Matches
+- uid: CheckAndThrow.Check.Arg.HasLength*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasLength
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasLength_System_String_System_Int32_System_String_
+  name: HasLength
+  nameWithType: Check.Arg.HasLength
+  fullName: CheckAndThrow.Check.Arg.HasLength
+- uid: CheckAndThrow.Check.Arg.HasMinLength*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasMinLength
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasMinLength_System_String_System_Int32_System_String_
+  name: HasMinLength
+  nameWithType: Check.Arg.HasMinLength
+  fullName: CheckAndThrow.Check.Arg.HasMinLength
+- uid: CheckAndThrow.Check.Arg.HasMaxLength*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasMaxLength
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasMaxLength_System_String_System_Int32_System_String_
+  name: HasMaxLength
+  nameWithType: Check.Arg.HasMaxLength
+  fullName: CheckAndThrow.Check.Arg.HasMaxLength
+- uid: CheckAndThrow.Check.Arg.IsEmail*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsEmail
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsEmail_System_String_System_String_
+  name: IsEmail
+  nameWithType: Check.Arg.IsEmail
+  fullName: CheckAndThrow.Check.Arg.IsEmail
+- uid: CheckAndThrow.Check.Arg.IsAssignableTo*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsAssignableTo
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsAssignableTo__1_System_Object_System_String_
+  name: IsAssignableTo
+  nameWithType: Check.Arg.IsAssignableTo
+  fullName: CheckAndThrow.Check.Arg.IsAssignableTo
+- uid: CheckAndThrow.Check.Arg.IsAssignableFrom*
+  commentId: Overload:CheckAndThrow.Check.Arg.IsAssignableFrom
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_IsAssignableFrom__1_System_Type_System_String_
+  name: IsAssignableFrom
+  nameWithType: Check.Arg.IsAssignableFrom
+  fullName: CheckAndThrow.Check.Arg.IsAssignableFrom
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: CheckAndThrow.Check.Arg.HasTheAttribute*
+  commentId: Overload:CheckAndThrow.Check.Arg.HasTheAttribute
+  href: CheckAndThrow.Check.Arg.html#CheckAndThrow_Check_Arg_HasTheAttribute__1_System_Type_System_Boolean_System_String_
+  name: HasTheAttribute
+  nameWithType: Check.Arg.HasTheAttribute
+  fullName: CheckAndThrow.Check.Arg.HasTheAttribute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: '{TAttribute}'
+  commentId: '!:TAttribute'
+  definition: TAttribute
+  name: TAttribute
+  nameWithType: TAttribute
+  fullName: TAttribute
+- uid: TAttribute
+  commentId: '!:TAttribute'
+  name: TAttribute
+  nameWithType: TAttribute
+  fullName: TAttribute
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.attribute
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute

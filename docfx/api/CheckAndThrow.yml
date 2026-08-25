@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: CheckAndThrow
+  commentId: N:CheckAndThrow
+  id: CheckAndThrow
+  children:
+  - CheckAndThrow.Check
+  - CheckAndThrow.Check.Arg
+  - CheckAndThrow.Check.Args
+  - CheckAndThrow.Check.Expression
+  - CheckAndThrow.Check.State
+  - CheckAndThrow.Throw
+  - CheckAndThrow.Throw.Arg
+  - CheckAndThrow.Throw.State
+  langs:
+  - csharp
+  - vb
+  name: CheckAndThrow
+  nameWithType: CheckAndThrow
+  fullName: CheckAndThrow
+  type: Namespace
+  assemblies:
+  - CheckAndThrow
+references:
+- uid: CheckAndThrow.Check
+  commentId: T:CheckAndThrow.Check
+  href: CheckAndThrow.Check.html
+  name: Check
+  nameWithType: Check
+  fullName: CheckAndThrow.Check
+- uid: CheckAndThrow.Check.Args
+  commentId: T:CheckAndThrow.Check.Args
+  href: CheckAndThrow.Check.html
+  name: Check.Args
+  nameWithType: Check.Args
+  fullName: CheckAndThrow.Check.Args
+  spec.csharp:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.Args
+    name: Args
+    href: CheckAndThrow.Check.Args.html
+  spec.vb:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.Args
+    name: Args
+    href: CheckAndThrow.Check.Args.html
+- uid: CheckAndThrow.Check.Arg
+  commentId: T:CheckAndThrow.Check.Arg
+  href: CheckAndThrow.Check.html
+  name: Check.Arg
+  nameWithType: Check.Arg
+  fullName: CheckAndThrow.Check.Arg
+  spec.csharp:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.Arg
+    name: Arg
+    href: CheckAndThrow.Check.Arg.html
+  spec.vb:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.Arg
+    name: Arg
+    href: CheckAndThrow.Check.Arg.html
+- uid: CheckAndThrow.Check.Expression
+  commentId: T:CheckAndThrow.Check.Expression
+  href: CheckAndThrow.Check.html
+  name: Check.Expression
+  nameWithType: Check.Expression
+  fullName: CheckAndThrow.Check.Expression
+  spec.csharp:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.Expression
+    name: Expression
+    href: CheckAndThrow.Check.Expression.html
+  spec.vb:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.Expression
+    name: Expression
+    href: CheckAndThrow.Check.Expression.html
+- uid: CheckAndThrow.Check.State
+  commentId: T:CheckAndThrow.Check.State
+  href: CheckAndThrow.Check.html
+  name: Check.State
+  nameWithType: Check.State
+  fullName: CheckAndThrow.Check.State
+  spec.csharp:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.State
+    name: State
+    href: CheckAndThrow.Check.State.html
+  spec.vb:
+  - uid: CheckAndThrow.Check
+    name: Check
+    href: CheckAndThrow.Check.html
+  - name: .
+  - uid: CheckAndThrow.Check.State
+    name: State
+    href: CheckAndThrow.Check.State.html
+- uid: CheckAndThrow.Throw
+  commentId: T:CheckAndThrow.Throw
+  href: CheckAndThrow.Throw.html
+  name: Throw
+  nameWithType: Throw
+  fullName: CheckAndThrow.Throw
+- uid: CheckAndThrow.Throw.Arg
+  commentId: T:CheckAndThrow.Throw.Arg
+  href: CheckAndThrow.Throw.html
+  name: Throw.Arg
+  nameWithType: Throw.Arg
+  fullName: CheckAndThrow.Throw.Arg
+  spec.csharp:
+  - uid: CheckAndThrow.Throw
+    name: Throw
+    href: CheckAndThrow.Throw.html
+  - name: .
+  - uid: CheckAndThrow.Throw.Arg
+    name: Arg
+    href: CheckAndThrow.Throw.Arg.html
+  spec.vb:
+  - uid: CheckAndThrow.Throw
+    name: Throw
+    href: CheckAndThrow.Throw.html
+  - name: .
+  - uid: CheckAndThrow.Throw.Arg
+    name: Arg
+    href: CheckAndThrow.Throw.Arg.html
+- uid: CheckAndThrow.Throw.State
+  commentId: T:CheckAndThrow.Throw.State
+  href: CheckAndThrow.Throw.html
+  name: Throw.State
+  nameWithType: Throw.State
+  fullName: CheckAndThrow.Throw.State
+  spec.csharp:
+  - uid: CheckAndThrow.Throw
+    name: Throw
+    href: CheckAndThrow.Throw.html
+  - name: .
+  - uid: CheckAndThrow.Throw.State
+    name: State
+    href: CheckAndThrow.Throw.State.html
+  spec.vb:
+  - uid: CheckAndThrow.Throw
+    name: Throw
+    href: CheckAndThrow.Throw.html
+  - name: .
+  - uid: CheckAndThrow.Throw.State
+    name: State
+    href: CheckAndThrow.Throw.State.html

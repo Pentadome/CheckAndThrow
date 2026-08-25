@@ -1,0 +1,573 @@
+### YamlMime:ManagedReference
+items:
+- uid: CheckAndThrow.Check.Expression
+  commentId: T:CheckAndThrow.Check.Expression
+  id: Check.Expression
+  parent: CheckAndThrow
+  children:
+  - CheckAndThrow.Check.Expression.EqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  - CheckAndThrow.Check.Expression.NotEqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  - CheckAndThrow.Check.Expression.NotNull``1(``0,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Check.Expression
+  nameWithType: Check.Expression
+  fullName: CheckAndThrow.Check.Expression
+  type: Class
+  source:
+    id: Expression
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    startLine: 7
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Provides methods to check expressions.
+  example: []
+  syntax:
+    content: public static class Check.Expression
+    content.vb: Public Module Check.Expression
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CheckAndThrow.Check.Expression.NotNull``1(``0,System.String)
+  commentId: M:CheckAndThrow.Check.Expression.NotNull``1(``0,System.String)
+  id: NotNull``1(``0,System.String)
+  parent: CheckAndThrow.Check.Expression
+  langs:
+  - csharp
+  - vb
+  name: NotNull<T>(T, string)
+  nameWithType: Check.Expression.NotNull<T>(T, string)
+  fullName: CheckAndThrow.Check.Expression.NotNull<T>(T, string)
+  type: Method
+  source:
+    id: NotNull
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    startLine: 17
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified expression does not evaluate to null.
+  example: []
+  syntax:
+    content: 'public static T NotNull<T>(T expression, string expressionString = "") where T : class'
+    parameters:
+    - id: expression
+      type: '{T}'
+      description: The expression to check.
+    - id: expressionString
+      type: System.String
+      description: The string representation of the expression.
+    typeParameters:
+    - id: T
+      description: The type of the expression.
+    return:
+      type: '{T}'
+      description: The result of the expression if it is not null.
+    content.vb: Public Shared Function NotNull(Of T As Class)(expression As T, expressionString As String = "") As T
+  overload: CheckAndThrow.Check.Expression.NotNull*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the expression evaluates to null.
+  nameWithType.vb: Check.Expression.NotNull(Of T)(T, String)
+  fullName.vb: CheckAndThrow.Check.Expression.NotNull(Of T)(T, String)
+  name.vb: NotNull(Of T)(T, String)
+- uid: CheckAndThrow.Check.Expression.NotEqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Expression.NotEqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  id: NotEqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  parent: CheckAndThrow.Check.Expression
+  langs:
+  - csharp
+  - vb
+  name: NotEqualTo<T>(T, T, IEqualityComparer<T>?, string, string)
+  nameWithType: Check.Expression.NotEqualTo<T>(T, T, IEqualityComparer<T>?, string, string)
+  fullName: CheckAndThrow.Check.Expression.NotEqualTo<T>(T, T, System.Collections.Generic.IEqualityComparer<T>?, string, string)
+  type: Method
+  source:
+    id: NotEqualTo
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    startLine: 45
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified expression does not evaluate to a value equal to the specified value.
+  example: []
+  syntax:
+    content: public static T NotEqualTo<T>(T expression, T notEqualToValue, IEqualityComparer<T>? equalityComparer = null, string expressionString = "", string notEqualToValueString = "")
+    parameters:
+    - id: expression
+      type: '{T}'
+      description: The expression to check.
+    - id: notEqualToValue
+      type: '{T}'
+      description: The value that the expression should not be equal to.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use, or null to use the default comparer.
+    - id: expressionString
+      type: System.String
+      description: The string representation of the expression.
+    - id: notEqualToValueString
+      type: System.String
+      description: The string representation of the value.
+    typeParameters:
+    - id: T
+      description: The type of the expression.
+    return:
+      type: '{T}'
+      description: The result of the expression if it is not equal to the specified value.
+    content.vb: Public Shared Function NotEqualTo(Of T)(expression As T, notEqualToValue As T, equalityComparer As IEqualityComparer(Of T) = Nothing, expressionString As String = "", notEqualToValueString As String = "") As T
+  overload: CheckAndThrow.Check.Expression.NotEqualTo*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the expression evaluates to a value equal to the specified value.
+  nameWithType.vb: Check.Expression.NotEqualTo(Of T)(T, T, IEqualityComparer(Of T), String, String)
+  fullName.vb: CheckAndThrow.Check.Expression.NotEqualTo(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String, String)
+  name.vb: NotEqualTo(Of T)(T, T, IEqualityComparer(Of T), String, String)
+- uid: CheckAndThrow.Check.Expression.EqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Expression.EqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  id: EqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  parent: CheckAndThrow.Check.Expression
+  langs:
+  - csharp
+  - vb
+  name: EqualTo<T>(T, T, IEqualityComparer<T>?, string, string)
+  nameWithType: Check.Expression.EqualTo<T>(T, T, IEqualityComparer<T>?, string, string)
+  fullName: CheckAndThrow.Check.Expression.EqualTo<T>(T, T, System.Collections.Generic.IEqualityComparer<T>?, string, string)
+  type: Method
+  source:
+    id: EqualTo
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    startLine: 75
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified expression evaluates to a value equal to the specified value.
+  example: []
+  syntax:
+    content: public static T EqualTo<T>(T expression, T equalToValue, IEqualityComparer<T>? equalityComparer = null, string expressionString = "", string equalToValueString = "")
+    parameters:
+    - id: expression
+      type: '{T}'
+      description: The expression to check.
+    - id: equalToValue
+      type: '{T}'
+      description: The value that the expression should be equal to.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use, or null to use the default comparer.
+    - id: expressionString
+      type: System.String
+      description: The string representation of the expression.
+    - id: equalToValueString
+      type: System.String
+      description: The string representation of the value.
+    typeParameters:
+    - id: T
+      description: The type of the expression.
+    return:
+      type: '{T}'
+      description: The result of the expression if it is equal to the specified value.
+    content.vb: Public Shared Function EqualTo(Of T)(expression As T, equalToValue As T, equalityComparer As IEqualityComparer(Of T) = Nothing, expressionString As String = "", equalToValueString As String = "") As T
+  overload: CheckAndThrow.Check.Expression.EqualTo*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the expression evaluates to a value not equal to the specified value.
+  nameWithType.vb: Check.Expression.EqualTo(Of T)(T, T, IEqualityComparer(Of T), String, String)
+  fullName.vb: CheckAndThrow.Check.Expression.EqualTo(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String, String)
+  name.vb: EqualTo(Of T)(T, T, IEqualityComparer(Of T), String, String)
+references:
+- uid: CheckAndThrow
+  commentId: N:CheckAndThrow
+  href: CheckAndThrow.html
+  name: CheckAndThrow
+  nameWithType: CheckAndThrow
+  fullName: CheckAndThrow
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: CheckAndThrow.Check.Expression.NotNull*
+  commentId: Overload:CheckAndThrow.Check.Expression.NotNull
+  href: CheckAndThrow.Check.Expression.html#CheckAndThrow_Check_Expression_NotNull__1___0_System_String_
+  name: NotNull
+  nameWithType: Check.Expression.NotNull
+  fullName: CheckAndThrow.Check.Expression.NotNull
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: CheckAndThrow.Check.Expression.NotEqualTo*
+  commentId: Overload:CheckAndThrow.Check.Expression.NotEqualTo
+  href: CheckAndThrow.Check.Expression.html#CheckAndThrow_Check_Expression_NotEqualTo__1___0___0_System_Collections_Generic_IEqualityComparer___0__System_String_System_String_
+  name: NotEqualTo
+  nameWithType: Check.Expression.NotEqualTo
+  fullName: CheckAndThrow.Check.Expression.NotEqualTo
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  commentId: T:System.Collections.Generic.IEqualityComparer{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CheckAndThrow.Check.Expression.EqualTo*
+  commentId: Overload:CheckAndThrow.Check.Expression.EqualTo
+  href: CheckAndThrow.Check.Expression.html#CheckAndThrow_Check_Expression_EqualTo__1___0___0_System_Collections_Generic_IEqualityComparer___0__System_String_System_String_
+  name: EqualTo
+  nameWithType: Check.Expression.EqualTo
+  fullName: CheckAndThrow.Check.Expression.EqualTo

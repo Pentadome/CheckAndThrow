@@ -1,0 +1,786 @@
+### YamlMime:ManagedReference
+items:
+- uid: CheckAndThrow.Check.Args
+  commentId: T:CheckAndThrow.Check.Args
+  id: Check.Args
+  parent: CheckAndThrow
+  children:
+  - CheckAndThrow.Check.Args.NotNull``2(``0,``1,System.String,System.String)
+  - CheckAndThrow.Check.Args.NotNull``3(``0,``1,``2,System.String,System.String,System.String)
+  - CheckAndThrow.Check.Args.NotNull``4(``0,``1,``2,``3,System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Check.Args
+  nameWithType: Check.Args
+  fullName: CheckAndThrow.Check.Args
+  type: Class
+  source:
+    id: Args
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    startLine: 4
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Provides methods to check multiple arguments.
+  example: []
+  syntax:
+    content: public static class Check.Args
+    content.vb: Public Module Check.Args
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CheckAndThrow.Check.Args.NotNull``2(``0,``1,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Args.NotNull``2(``0,``1,System.String,System.String)
+  id: NotNull``2(``0,``1,System.String,System.String)
+  parent: CheckAndThrow.Check.Args
+  langs:
+  - csharp
+  - vb
+  name: NotNull<T1, T2>(T1, T2, string, string)
+  nameWithType: Check.Args.NotNull<T1, T2>(T1, T2, string, string)
+  fullName: CheckAndThrow.Check.Args.NotNull<T1, T2>(T1, T2, string, string)
+  type: Method
+  source:
+    id: NotNull
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    startLine: 17
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the arguments are not null.
+  example: []
+  syntax:
+    content: public static (T1 arg1, T2 arg2) NotNull<T1, T2>(T1 arg1, T2 arg2, string paramName1 = "", string paramName2 = "")
+    parameters:
+    - id: arg1
+      type: '{T1}'
+      description: The first argument to check.
+    - id: arg2
+      type: '{T2}'
+      description: The second argument to check.
+    - id: paramName1
+      type: System.String
+      description: The name of the first parameter.
+    - id: paramName2
+      type: System.String
+      description: The name of the second parameter.
+    typeParameters:
+    - id: T1
+      description: The type of the first argument.
+    - id: T2
+      description: The type of the second argument.
+    return:
+      type: System.ValueTuple{{T1},{T2}}
+      description: A tuple containing the arguments if they are not null.
+    content.vb: Public Shared Function NotNull(Of T1, T2)(arg1 As T1, arg2 As T2, paramName1 As String = "", paramName2 As String = "") As (arg1 As T1, arg2 As T2)
+  overload: CheckAndThrow.Check.Args.NotNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">arg1</code> or <code class="paramref">arg2</code> is null.
+  nameWithType.vb: Check.Args.NotNull(Of T1, T2)(T1, T2, String, String)
+  fullName.vb: CheckAndThrow.Check.Args.NotNull(Of T1, T2)(T1, T2, String, String)
+  name.vb: NotNull(Of T1, T2)(T1, T2, String, String)
+- uid: CheckAndThrow.Check.Args.NotNull``3(``0,``1,``2,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Args.NotNull``3(``0,``1,``2,System.String,System.String,System.String)
+  id: NotNull``3(``0,``1,``2,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Args
+  langs:
+  - csharp
+  - vb
+  name: NotNull<T1, T2, T3>(T1, T2, T3, string, string, string)
+  nameWithType: Check.Args.NotNull<T1, T2, T3>(T1, T2, T3, string, string, string)
+  fullName: CheckAndThrow.Check.Args.NotNull<T1, T2, T3>(T1, T2, T3, string, string, string)
+  type: Method
+  source:
+    id: NotNull
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    startLine: 44
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the arguments are not null.
+  example: []
+  syntax:
+    content: public static (T1 arg1, T2 arg2, T3 arg3) NotNull<T1, T2, T3>(T1 arg1, T2 arg2, T3 arg3, string paramName1 = "", string paramName2 = "", string paramName3 = "")
+    parameters:
+    - id: arg1
+      type: '{T1}'
+      description: The first argument to check.
+    - id: arg2
+      type: '{T2}'
+      description: The second argument to check.
+    - id: arg3
+      type: '{T3}'
+      description: The third argument to check.
+    - id: paramName1
+      type: System.String
+      description: The name of the first parameter.
+    - id: paramName2
+      type: System.String
+      description: The name of the second parameter.
+    - id: paramName3
+      type: System.String
+      description: The name of the third parameter.
+    typeParameters:
+    - id: T1
+      description: The type of the first argument.
+    - id: T2
+      description: The type of the second argument.
+    - id: T3
+      description: The type of the third argument.
+    return:
+      type: System.ValueTuple{{T1},{T2},{T3}}
+      description: A tuple containing the arguments if they are not null.
+    content.vb: Public Shared Function NotNull(Of T1, T2, T3)(arg1 As T1, arg2 As T2, arg3 As T3, paramName1 As String = "", paramName2 As String = "", paramName3 As String = "") As (arg1 As T1, arg2 As T2, arg3 As T3)
+  overload: CheckAndThrow.Check.Args.NotNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">arg1</code>, <code class="paramref">arg2</code>, or <code class="paramref">arg3</code> is null.
+  nameWithType.vb: Check.Args.NotNull(Of T1, T2, T3)(T1, T2, T3, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Args.NotNull(Of T1, T2, T3)(T1, T2, T3, String, String, String)
+  name.vb: NotNull(Of T1, T2, T3)(T1, T2, T3, String, String, String)
+- uid: CheckAndThrow.Check.Args.NotNull``4(``0,``1,``2,``3,System.String,System.String,System.String,System.String)
+  commentId: M:CheckAndThrow.Check.Args.NotNull``4(``0,``1,``2,``3,System.String,System.String,System.String,System.String)
+  id: NotNull``4(``0,``1,``2,``3,System.String,System.String,System.String,System.String)
+  parent: CheckAndThrow.Check.Args
+  langs:
+  - csharp
+  - vb
+  name: NotNull<T1, T2, T3, T4>(T1, T2, T3, T4, string, string, string, string)
+  nameWithType: Check.Args.NotNull<T1, T2, T3, T4>(T1, T2, T3, T4, string, string, string, string)
+  fullName: CheckAndThrow.Check.Args.NotNull<T1, T2, T3, T4>(T1, T2, T3, T4, string, string, string, string)
+  type: Method
+  source:
+    id: NotNull
+    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    startLine: 77
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Checks if the arguments are not null.
+  example: []
+  syntax:
+    content: public static (T1 arg1, T2 arg2, T3 arg3, T4 arg4) NotNull<T1, T2, T3, T4>(T1 arg1, T2 arg2, T3 arg3, T4 arg4, string paramName1 = "", string paramName2 = "", string paramName3 = "", string paramName4 = "")
+    parameters:
+    - id: arg1
+      type: '{T1}'
+      description: The first argument to check.
+    - id: arg2
+      type: '{T2}'
+      description: The second argument to check.
+    - id: arg3
+      type: '{T3}'
+      description: The third argument to check.
+    - id: arg4
+      type: '{T4}'
+      description: The fourth argument to check.
+    - id: paramName1
+      type: System.String
+      description: The name of the first parameter.
+    - id: paramName2
+      type: System.String
+      description: The name of the second parameter.
+    - id: paramName3
+      type: System.String
+      description: The name of the third parameter.
+    - id: paramName4
+      type: System.String
+      description: The name of the fourth parameter.
+    typeParameters:
+    - id: T1
+      description: The type of the first argument.
+    - id: T2
+      description: The type of the second argument.
+    - id: T3
+      description: The type of the third argument.
+    - id: T4
+      description: The type of the fourth argument.
+    return:
+      type: System.ValueTuple{{T1},{T2},{T3},{T4}}
+      description: A tuple containing the arguments if they are not null.
+    content.vb: Public Shared Function NotNull(Of T1, T2, T3, T4)(arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4, paramName1 As String = "", paramName2 As String = "", paramName3 As String = "", paramName4 As String = "") As (arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4)
+  overload: CheckAndThrow.Check.Args.NotNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">arg1</code>, <code class="paramref">arg2</code>, <code class="paramref">arg3</code>, or <code class="paramref">arg4</code> is null.
+  nameWithType.vb: Check.Args.NotNull(Of T1, T2, T3, T4)(T1, T2, T3, T4, String, String, String, String)
+  fullName.vb: CheckAndThrow.Check.Args.NotNull(Of T1, T2, T3, T4)(T1, T2, T3, T4, String, String, String, String)
+  name.vb: NotNull(Of T1, T2, T3, T4)(T1, T2, T3, T4, String, String, String, String)
+references:
+- uid: CheckAndThrow
+  commentId: N:CheckAndThrow
+  href: CheckAndThrow.html
+  name: CheckAndThrow
+  nameWithType: CheckAndThrow
+  fullName: CheckAndThrow
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: CheckAndThrow.Check.Args.NotNull*
+  commentId: Overload:CheckAndThrow.Check.Args.NotNull
+  href: CheckAndThrow.Check.Args.html#CheckAndThrow_Check_Args_NotNull__2___0___1_System_String_System_String_
+  name: NotNull
+  nameWithType: Check.Args.NotNull
+  fullName: CheckAndThrow.Check.Args.NotNull
+- uid: '{T1}'
+  commentId: '!:T1'
+  definition: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: '{T2}'
+  commentId: '!:T2'
+  definition: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueTuple{{T1},{T2}}
+  commentId: T:System.ValueTuple{``0,``1}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.arg1
+  name: (T1 arg1, T2 arg2)
+  nameWithType: (T1 arg1, T2 arg2)
+  fullName: (T1 arg1, T2 arg2)
+  nameWithType.vb: (arg1 As T1, arg2 As T2)
+  fullName.vb: (arg1 As T1, arg2 As T2)
+  name.vb: (arg1 As T1, arg2 As T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.arg1
+    name: arg1
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.arg1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.arg2
+    name: arg2
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.arg2
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{``0,``1}.arg1
+    name: arg1
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.arg1
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.arg2
+    name: arg2
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.arg2
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T2
+  - name: )
+- uid: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: '{T3}'
+  commentId: '!:T3'
+  definition: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: System.ValueTuple{{T1},{T2},{T3}}
+  commentId: T:System.ValueTuple{``0,``1,``2}
+  parent: System
+  definition: System.ValueTuple`3
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg1
+  name: (T1 arg1, T2 arg2, T3 arg3)
+  nameWithType: (T1 arg1, T2 arg2, T3 arg3)
+  fullName: (T1 arg1, T2 arg2, T3 arg3)
+  nameWithType.vb: (arg1 As T1, arg2 As T2, arg3 As T3)
+  fullName.vb: (arg1 As T1, arg2 As T2, arg3 As T3)
+  name.vb: (arg1 As T1, arg2 As T2, arg3 As T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2}.arg1
+    name: arg1
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2}.arg2
+    name: arg2
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2}.arg3
+    name: arg3
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg3
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{``0,``1,``2}.arg1
+    name: arg1
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg1
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2}.arg2
+    name: arg2
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg2
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2}.arg3
+    name: arg3
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2-.arg3
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T3
+  - name: )
+- uid: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: System.ValueTuple`3
+  commentId: T:System.ValueTuple`3
+  name: (T1, T2, T3)
+  nameWithType: (T1, T2, T3)
+  fullName: (T1, T2, T3)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: )
+- uid: '{T4}'
+  commentId: '!:T4'
+  definition: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4
+- uid: System.ValueTuple{{T1},{T2},{T3},{T4}}
+  commentId: T:System.ValueTuple{``0,``1,``2,``3}
+  parent: System
+  definition: System.ValueTuple`4
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg1
+  name: (T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+  nameWithType: (T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+  fullName: (T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+  nameWithType.vb: (arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4)
+  fullName.vb: (arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4)
+  name.vb: (arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg1
+    name: arg1
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg2
+    name: arg2
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg3
+    name: arg3
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg4
+    name: arg4
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg4
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg1
+    name: arg1
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg1
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg2
+    name: arg2
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg2
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg3
+    name: arg3
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg3
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1,``2,``3}.arg4
+    name: arg4
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1,--2,--3-.arg4
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T4
+  - name: )
+- uid: T4
+  commentId: '!:T4'
+  name: T4
+  nameWithType: T4
+  fullName: T4
+- uid: System.ValueTuple`4
+  commentId: T:System.ValueTuple`4
+  name: (T1, T2, T3, T4)
+  nameWithType: (T1, T2, T3, T4)
+  fullName: (T1, T2, T3, T4)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )

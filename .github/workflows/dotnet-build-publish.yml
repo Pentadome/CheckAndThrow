@@ -77,7 +77,7 @@ jobs:
     
       # Push the package
       - name: NuGet push
-        run: dotnet nuget push artifacts/my-sdk.nupkg --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source ${{ env.NUGET_SOURCE }}
+        run: dotnet nuget push "./nupkgs/*.nupkg" --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source ${{ env.NUGET_SOURCE }} --skip-duplicate
 
   docs:
     name: Build & Deploy Docs (docfx)

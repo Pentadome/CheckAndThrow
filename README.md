@@ -2,6 +2,10 @@
 
 A high-performance .NET library for defensive argument validation and exception handling. Provides two complementary APIs: **`Check`** for performance-critical validation and **`Throw`** for detailed exception reporting.
 
+```bash
+dotnet add package CheckAndThrow
+```
+
 ## Overview
 
 **CheckAndThrow** implements a philosophy that separates concerns when validating inputs and handling errors:
@@ -88,6 +92,8 @@ dotnet add package CheckAndThrow
 ```
 
 ## API Documentation
+
+[Full API can be found here](https://pentadome.github.io/CheckAndThrow/)
 
 ## DotNet Targets
 

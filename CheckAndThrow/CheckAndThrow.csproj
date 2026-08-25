@@ -6,9 +6,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-	  <RepositoryUrl>https://github.com/Pentadome/CheckAndThrow</RepositoryUrl>
-	  <RepositoryType>git</RepositoryType>
-	</PropertyGroup>
+    <PackageVersion>1.0.1</PackageVersion>
+    <RepositoryUrl>https://github.com/Pentadome/CheckAndThrow</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework)' != 'net10.0'">
     <PackageReference Include="Polyfill" Version="11.2.0">
       <PrivateAssets>all</PrivateAssets>

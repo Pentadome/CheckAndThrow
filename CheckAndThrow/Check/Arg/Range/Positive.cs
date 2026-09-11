@@ -37,7 +37,7 @@ public static partial class Check
             [CallerArgumentExpression(nameof(value))] string paramName = ""
         )
         {
-            if (value <= 0)
+            if (double.IsNaN(value) || double.IsPositiveInfinity(value) || value <= 0)
                 NotPositive(value, paramName);
 
             return value;
@@ -73,7 +73,7 @@ public static partial class Check
             [CallerArgumentExpression(nameof(value))] string paramName = ""
         )
         {
-            if (value <= 0)
+            if (float.IsNaN(value) || float.IsPositiveInfinity(value) || value <= 0)
                 NotPositive(value, paramName);
 
             return value;
@@ -186,6 +186,38 @@ public static partial class Check
 
             return value;
         }
+        /// <summary>Checks if the argument is positive or positive infinity.</summary>
+        /// <param name="value">The value to check.</param>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>The value if it is positive or positive infinity.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not positive or positive infinity.</exception>
+        public static double PositiveOrInfinity(
+            double value,
+            [CallerArgumentExpression(nameof(value))] string paramName = ""
+        )
+        {
+            if (double.IsNaN(value) || value <= 0)
+                NotPositive(value, paramName);
+
+            return value;
+        }
+
+        /// <summary>Checks if the argument is positive or positive infinity.</summary>
+        /// <param name="value">The value to check.</param>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>The value if it is positive or positive infinity.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not positive or positive infinity.</exception>
+        public static float PositiveOrInfinity(
+            float value,
+            [CallerArgumentExpression(nameof(value))] string paramName = ""
+        )
+        {
+            if (float.IsNaN(value) || value <= 0)
+                NotPositive(value, paramName);
+
+            return value;
+        }
+
         #if NET7_0_OR_GREATER
         /// <summary>
         /// Checks if the argument is positive.
@@ -196,6 +228,24 @@ public static partial class Check
         /// <returns>The value if it is positive.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not positive.</exception>
         public static TNumber Positive<TNumber>(
+            TNumber value,
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
+        )
+            where TNumber : INumberBase<TNumber>
+        {
+            if (TNumber.IsNaN(value) || TNumber.IsPositiveInfinity(value) || TNumber.IsZero(value) || !TNumber.IsPositive(value))
+                NotPositive(value, paramName);
+
+            return value;
+        }
+
+        /// <summary>Checks if the argument is positive or positive infinity.</summary>
+        /// <typeparam name="TNumber">The type of the number value.</typeparam>
+        /// <param name="value">The value to check.</param>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>The value if it is positive or positive infinity.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not positive or positive infinity.</exception>
+        public static TNumber PositiveOrInfinity<TNumber>(
             TNumber value,
             [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
         )

@@ -17,12 +17,7 @@ public static partial class Check
         public static T NotDisposed<T>([DoesNotReturnIf(true)] bool isDisposed, T instance)
             where T : notnull
         {
-            if (!isDisposed)
-                return instance;
-
-            Throw.State.IsDisposed(instance);
-
-            throw new UnreachableException();
+            return !isDisposed ? instance : Throw.State.IsDisposed<T>();
         }
 
         /// <summary>
@@ -77,12 +72,7 @@ public static partial class Check
         public static T IsInitialized<T>([DoesNotReturnIf(false)] bool isInitialized, T instance)
             where T : notnull
         {
-            if (isInitialized)
-                return instance;
-
-            Throw.State.IsNotInitialized(instance);
-
-            throw new UnreachableException();
+            return isInitialized ? instance : Throw.State.IsNotInitialized<T>();
         }
 
         /// <summary>
@@ -143,12 +133,7 @@ public static partial class Check
         public static T IsMutable<T>([DoesNotReturnIf(false)] bool isMutable, T instance)
             where T : notnull
         {
-            if (isMutable)
-                return instance;
-
-            Throw.State.IsNotMutable(instance);
-
-            throw new UnreachableException();
+            return isMutable ? instance : Throw.State.IsNotMutable<T>();
         }
 
         /// <summary>

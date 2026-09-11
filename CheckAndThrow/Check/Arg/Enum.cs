@@ -109,7 +109,7 @@ public static partial class Check
         )
             where T : struct, Enum, IConvertible
         {
-            if (EnumCache<T>.UnderlyingType == typeof(int))
+            if (EnumCache<T>.UnderlyingType == typeof(int) || EnumCache<T>.UnderlyingType == typeof(uint))
             {
                 var valueInt = Unsafe.As<T, int>(ref value);
                 var flagsInt = Unsafe.As<T, int>(ref flags);
@@ -117,7 +117,7 @@ public static partial class Check
                 if (flagsInt == 0 || (valueInt & flagsInt) != 0)
                     return value;
             }
-            else if (EnumCache<T>.UnderlyingType == typeof(long))
+            else if (EnumCache<T>.UnderlyingType == typeof(long) || EnumCache<T>.UnderlyingType == typeof(ulong))
             {
                 var valueLong = Unsafe.As<T, long>(ref value);
                 var flagsLong = Unsafe.As<T, long>(ref flags);

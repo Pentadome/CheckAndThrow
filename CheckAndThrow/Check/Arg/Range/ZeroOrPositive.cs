@@ -37,7 +37,7 @@ public static partial class Check
             [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
         )
         {
-            if (value < 0)
+            if (double.IsNaN(value) || double.IsPositiveInfinity(value) || value < 0)
                 NotZeroOrPositive(value, paramName);
 
             return value;
@@ -73,7 +73,7 @@ public static partial class Check
             [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
         )
         {
-            if (value < 0)
+            if (float.IsNaN(value) || float.IsPositiveInfinity(value) || value < 0)
                 NotZeroOrPositive(value, paramName);
 
             return value;
@@ -147,7 +147,7 @@ public static partial class Check
         )
             where TNumber : INumberBase<TNumber>
         {
-            if (TNumber.IsNaN(value) || (!TNumber.IsZero(value) && !TNumber.IsPositive(value) && !TNumber.IsPositiveInfinity(value)))
+            if (TNumber.IsNaN(value) || TNumber.IsPositiveInfinity(value) || (!TNumber.IsZero(value) && !TNumber.IsPositive(value)))
                 NotZeroOrPositive(value, paramName);
 
             return value;

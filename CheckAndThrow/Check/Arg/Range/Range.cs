@@ -60,7 +60,7 @@ public static partial class Check
             [CallerArgumentExpression(nameof(max))] string maxArgumentExpression = ""
         )
         {
-            if (value < min || value > max)
+            if (double.IsNaN(value) || value < min || value > max)
                 OutOfRange(
                     value,
                     min,
@@ -126,7 +126,7 @@ public static partial class Check
             [CallerArgumentExpression(nameof(max))] string maxArgumentExpression = ""
         )
         {
-            if (value < min || value > max)
+            if (float.IsNaN(value) || value < min || value > max)
                 OutOfRange(
                     value,
                     min,

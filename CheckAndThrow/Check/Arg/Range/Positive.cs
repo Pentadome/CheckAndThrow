@@ -1,4 +1,5 @@
-﻿using static CheckAndThrow.Throw.Arg;
+﻿using System.Numerics;
+using static CheckAndThrow.Throw.Arg;
 
 namespace CheckAndThrow;
 
@@ -185,5 +186,26 @@ public static partial class Check
 
             return value;
         }
+        #if NET7_0_OR_GREATER
+        /// <summary>
+        /// Checks if the argument is positive.
+        /// </summary>
+        /// <typeparam name="TNumber">The type of the number value.</typeparam>
+        /// <param name="value">The value to check.</param>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>The value if it is positive.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not positive.</exception>
+        public static TNumber Positive<TNumber>(
+            TNumber value,
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
+        )
+            where TNumber : INumberBase<TNumber>
+        {
+            if (TNumber.IsNaN(value) || TNumber.IsZero(value) || (!TNumber.IsPositive(value) && !TNumber.IsPositiveInfinity(value)))
+                NotPositive(value, paramName);
+
+            return value;
+        }
+        #endif
     }
 }

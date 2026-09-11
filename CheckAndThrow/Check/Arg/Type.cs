@@ -25,8 +25,7 @@ public static partial class Check
                 return result;
             }
 
-            Throw.Arg.IsNotAssignableTo(paramName, typeof(T), argument.GetType());
-            throw new UnreachableException();
+            return Throw.Arg.IsNotAssignableTo<T>(paramName, typeof(T), argument.GetType());
         }
 
         /// <summary>
@@ -43,13 +42,9 @@ public static partial class Check
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )
         {
-            if (NotNull(argument, paramName).IsAssignableFrom(typeof(TTarget)))
-            {
-                return argument;
-            }
-
-            Throw.Arg.IsNotAssignableFrom(paramName);
-            throw new UnreachableException();
+            return NotNull(argument, paramName).IsAssignableFrom(typeof(TTarget))
+                ? argument
+                : Throw.Arg.IsNotAssignableFrom<Type>(paramName);
         }
 
         /// <summary>
@@ -79,9 +74,11 @@ public static partial class Check
                 return attribute;
             }
 
-            Throw.Arg.DoesNotHaveAttribute(paramName, typeof(TAttribute), argument);
-
-            throw new UnreachableException();
+            return Throw.Arg.DoesNotHaveAttribute<TAttribute>(
+                paramName,
+                typeof(TAttribute),
+                argument
+            );
         }
 
         /// <summary>
@@ -112,9 +109,7 @@ public static partial class Check
                 return attribute;
             }
 
-            Throw.Arg.DoesNotHaveAttribute(paramName, attributeType, argument);
-
-            throw new UnreachableException();
+            return Throw.Arg.DoesNotHaveAttribute<Attribute>(paramName, attributeType, argument);
         }
     }
 }

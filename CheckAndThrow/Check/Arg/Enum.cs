@@ -22,11 +22,9 @@ public static partial class Check
         )
             where T : struct, Enum, IConvertible
         {
-            if (EnumCache<T>.Values.ContainsValue(enumValue))
-                return enumValue;
-
-            IsInvalidEnumValue(typeof(T), enumValue, paramName);
-            throw new UnreachableException();
+            return EnumCache<T>.Values.ContainsValue(enumValue)
+                ? enumValue
+                : IsInvalidEnumValue<T>(typeof(T), enumValue, paramName);
         }
 
         /// <summary>
@@ -45,11 +43,9 @@ public static partial class Check
         )
             where T : struct, Enum, IConvertible
         {
-            if (EnumCache<T>.Values.TryGetValue(NotNull(enumValue, paramName), out var value))
-                return value;
-
-            IsInvalidEnumValue(typeof(T), enumValue, paramName);
-            throw new UnreachableException();
+            return EnumCache<T>.Values.TryGetValue(NotNull(enumValue, paramName), out var value)
+                ? value
+                : IsInvalidEnumValue<T>(typeof(T), enumValue, paramName);
         }
 
         /// <summary>
@@ -68,16 +64,12 @@ public static partial class Check
         )
             where T : struct, Enum, IConvertible
         {
-            if (
-                EnumCache<T>.ValuesIgnoreCase.TryGetValue(
-                    NotNull(enumValue, paramName),
-                    out var value
-                )
+            return EnumCache<T>.ValuesIgnoreCase.TryGetValue(
+                NotNull(enumValue, paramName),
+                out var value
             )
-                return value;
-
-            IsInvalidEnumValue(typeof(T), enumValue, paramName);
-            throw new UnreachableException();
+                ? value
+                : IsInvalidEnumValue<T>(typeof(T), enumValue, paramName);
         }
 
         /// <summary>
@@ -96,11 +88,9 @@ public static partial class Check
         )
             where T : struct, Enum, IConvertible
         {
-            if (value.HasFlag(flags))
-                return value;
-
-            MissesAnyOfTheFlags(typeof(T), flags.ToString(), paramName);
-            throw new UnreachableException();
+            return value.HasFlag(flags)
+                ? value
+                : MissesAnyOfTheFlags<T>(typeof(T), flags.ToString(), paramName);
         }
 
         /// <summary>
@@ -152,9 +142,7 @@ public static partial class Check
                     return value;
             }
 
-            MissesAllFlags(typeof(T), flags.ToString(), paramName);
-
-            throw new UnreachableException();
+            return MissesAllFlags<T>(typeof(T), flags.ToString(), paramName);
         }
     }
 }

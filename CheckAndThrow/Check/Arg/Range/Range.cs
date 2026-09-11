@@ -1,4 +1,5 @@
-﻿using static CheckAndThrow.Throw.Arg;
+﻿using System.Numerics;
+using static CheckAndThrow.Throw.Arg;
 
 namespace CheckAndThrow;
 
@@ -332,6 +333,45 @@ public static partial class Check
                     minArgumentExpression,
                     maxArgumentExpression
                 );
+
+            return value;
+        }
+
+        /// <summary>
+        /// Checks if the argument is within a range.
+        /// </summary>
+        /// <param name="value">The value to check.</param>
+        /// <param name="min">The minimum value.</param>
+        /// <param name="max">The maximum value.</param>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <param name="minArgumentExpression">The expression of the minimum value.</param>
+        /// <param name="maxArgumentExpression">The expression of the maximum value.</param>
+        /// <returns>The value if it is within the range.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is out of range.</exception>
+        public static TNumber InRange<TNumber>(
+            TNumber value,
+            TNumber min,
+            TNumber max,
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = "",
+            [CallerArgumentExpression(nameof(min))] string minArgumentExpression = "",
+            [CallerArgumentExpression(nameof(max))] string maxArgumentExpression = ""
+        )
+            where TNumber : IComparable<TNumber>
+        {
+            var isMinOrBigger = value.CompareTo(min) >= 0;
+            var isMaxOrSmaller = value.CompareTo(max) <= 0;
+
+            if (!isMinOrBigger || !isMaxOrSmaller)
+            {
+                OutOfRange(
+                    value,
+                    min,
+                    max,
+                    paramName,
+                    minArgumentExpression,
+                    maxArgumentExpression
+                );
+            }
 
             return value;
         }

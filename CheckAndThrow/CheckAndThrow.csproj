@@ -9,6 +9,7 @@
     <PackageVersion>1.0.1</PackageVersion>
     <RepositoryUrl>https://github.com/Pentadome/CheckAndThrow</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework)' != 'net10.0'">
     <PackageReference Include="Polyfill" Version="11.2.0">
@@ -20,5 +21,9 @@
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netstandard2.1'">
     <PackageReference Include="Microsoft.Bcl.TimeProvider" Version="10.0.11" />
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>

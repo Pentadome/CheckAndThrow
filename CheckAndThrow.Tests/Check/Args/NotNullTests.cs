@@ -291,4 +291,104 @@ public class NotNullTests
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("missing");
     }
+
+    [Test]
+    public async Task NotNull_5_NullAt5()
+    {
+        var exception = await Assert
+            .That(() =>
+                C.Args.NotNull<object, object, object, object, object>(
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    null!,
+                    "arg1",
+                    "arg2",
+                    "arg3",
+                    "arg4",
+                    "arg5"
+                )
+            )
+            .ThrowsExactly<ArgumentNullException>();
+        await Assert.That(exception!.ParamName).IsEqualTo("arg5");
+    }
+
+    [Test]
+    public async Task NotNull_6_NullAt6()
+    {
+        var exception = await Assert
+            .That(() =>
+                C.Args.NotNull<object, object, object, object, object, object>(
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    null!,
+                    "arg1",
+                    "arg2",
+                    "arg3",
+                    "arg4",
+                    "arg5",
+                    "arg6"
+                )
+            )
+            .ThrowsExactly<ArgumentNullException>();
+        await Assert.That(exception!.ParamName).IsEqualTo("arg6");
+    }
+
+    [Test]
+    public async Task NotNull_7_NullAt7()
+    {
+        var exception = await Assert
+            .That(() =>
+                C.Args.NotNull<object, object, object, object, object, object, object>(
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    null!,
+                    "arg1",
+                    "arg2",
+                    "arg3",
+                    "arg4",
+                    "arg5",
+                    "arg6",
+                    "arg7"
+                )
+            )
+            .ThrowsExactly<ArgumentNullException>();
+        await Assert.That(exception!.ParamName).IsEqualTo("arg7");
+    }
+
+    [Test]
+    public async Task NotNull_8_NullAt8()
+    {
+        var exception = await Assert
+            .That(() =>
+                C.Args.NotNull<object, object, object, object, object, object, object, object>(
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    new(),
+                    null!,
+                    "arg1",
+                    "arg2",
+                    "arg3",
+                    "arg4",
+                    "arg5",
+                    "arg6",
+                    "arg7",
+                    "arg8"
+                )
+            )
+            .ThrowsExactly<ArgumentNullException>();
+        await Assert.That(exception!.ParamName).IsEqualTo("arg8");
+    }
 }

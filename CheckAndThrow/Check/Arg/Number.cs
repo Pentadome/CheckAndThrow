@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Check
 {
@@ -15,7 +15,7 @@ public static partial class Check
         )
         {
             if (double.IsNaN(value))
-                Throw.Arg.IsNaN(paramName);
+                Throw.Arg.NaN(paramName);
 
             return value;
         }
@@ -31,7 +31,7 @@ public static partial class Check
         )
         {
             if (float.IsNaN(value))
-                Throw.Arg.IsNaN(paramName);
+                Throw.Arg.NaN(paramName);
 
             return value;
         }
@@ -47,7 +47,7 @@ public static partial class Check
         )
         {
             if (double.IsInfinity(value))
-                Throw.Arg.IsInfinity(paramName);
+                Throw.Arg.Infinity(paramName);
 
             return value;
         }
@@ -63,7 +63,7 @@ public static partial class Check
         )
         {
             if (float.IsInfinity(value))
-                Throw.Arg.IsInfinity(paramName);
+                Throw.Arg.Infinity(paramName);
 
             return value;
         }
@@ -79,9 +79,9 @@ public static partial class Check
         )
         {
             if (double.IsNaN(value))
-                Throw.Arg.IsNaN(paramName);
+                Throw.Arg.NaN(paramName);
             if (double.IsInfinity(value))
-                Throw.Arg.IsInfinity(paramName);
+                Throw.Arg.Infinity(paramName);
 
             return value;
         }
@@ -97,9 +97,9 @@ public static partial class Check
         )
         {
             if (float.IsNaN(value))
-                Throw.Arg.IsNaN(paramName);
+                Throw.Arg.NaN(paramName);
             if (float.IsInfinity(value))
-                Throw.Arg.IsInfinity(paramName);
+                Throw.Arg.Infinity(paramName);
 
             return value;
         }

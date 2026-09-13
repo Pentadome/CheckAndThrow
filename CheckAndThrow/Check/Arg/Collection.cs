@@ -16,7 +16,7 @@ public static partial class Check
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="collection"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="collection"/> is empty.</exception>
         [return: NotNull]
-        public static T IsNotNullOrEmpty<T>(
+        public static T NotNullOrEmpty<T>(
             [NoEnumeration, NotNull] T collection,
             [CallerArgumentExpression(nameof(collection)), InvokerParameterName]
                 string paramName = ""
@@ -25,7 +25,7 @@ public static partial class Check
         {
             if (NotNull(collection, paramName).Count == 0)
             {
-                Throw.Arg.IsEmpty(paramName);
+                Throw.Arg.Empty(paramName);
             }
             return collection;
         }
@@ -39,7 +39,7 @@ public static partial class Check
         /// <returns>The original enumerable if it is not null and contains no null elements.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="enumerable"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="enumerable"/> contains a null element.</exception>
-        public static T IsNotNullAndHasNoNulls<T>(
+        public static T NotNullAndHasNoNulls<T>(
             [InstantHandle, NotNull] T enumerable,
             [CallerArgumentExpression(nameof(enumerable)), InvokerParameterName]
                 string paramName = ""
@@ -174,7 +174,7 @@ public static partial class Check
         {
             if (indexArgument < 0 || indexArgument >= collection.Count)
             {
-                Throw.Arg.IsInvalidIndex(indexArgument, collection.Count, paramName);
+                Throw.Arg.InvalidIndex(indexArgument, collection.Count, paramName);
             }
             return indexArgument;
         }
@@ -196,7 +196,7 @@ public static partial class Check
         {
             if (indexArgument < 0 || indexArgument >= collectionSize)
             {
-                Throw.Arg.IsInvalidIndex(indexArgument, collectionSize, paramName);
+                Throw.Arg.InvalidIndex(indexArgument, collectionSize, paramName);
             }
             return indexArgument;
         }

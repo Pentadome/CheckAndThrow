@@ -1,4 +1,4 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check.Arg;
 
@@ -15,19 +15,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsInPast_DateTime(int offset)
+    public async Task InPast_DateTime(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow().UtcDateTime;
         var value = now.AddTicks(offset);
         if (offset < 0)
         {
-            await Assert.That(C.Arg.IsInPast(value, provider)).IsEqualTo(value);
+            await Assert.That(C.Arg.InPast(value, provider)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsInPast(value, provider))
+                .That(() => C.Arg.InPast(value, provider))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -37,19 +37,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsInPast_DateTimeOffset(int offset)
+    public async Task InPast_DateTimeOffset(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow();
         var value = now.AddTicks(offset);
         if (offset < 0)
         {
-            await Assert.That(C.Arg.IsInPast(value, provider)).IsEqualTo(value);
+            await Assert.That(C.Arg.InPast(value, provider)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsInPast(value, provider))
+                .That(() => C.Arg.InPast(value, provider))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -59,19 +59,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsInPastUtc_DateTime(int offset)
+    public async Task InPastUtc_DateTime(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow().UtcDateTime;
         var value = now.AddTicks(offset);
         if (offset < 0)
         {
-            await Assert.That(C.Arg.IsInPastUtc(value, provider)).IsEqualTo(value);
+            await Assert.That(C.Arg.InPastUtc(value, provider)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsInPastUtc(value, provider))
+                .That(() => C.Arg.InPastUtc(value, provider))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -81,19 +81,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsInFuture_DateTime(int offset)
+    public async Task InFuture_DateTime(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow().UtcDateTime;
         var value = now.AddTicks(offset);
         if (offset > 0)
         {
-            await Assert.That(C.Arg.IsInFuture(value, provider)).IsEqualTo(value);
+            await Assert.That(C.Arg.InFuture(value, provider)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsInFuture(value, provider))
+                .That(() => C.Arg.InFuture(value, provider))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -103,19 +103,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsInFuture_DateTimeOffset(int offset)
+    public async Task InFuture_DateTimeOffset(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow();
         var value = now.AddTicks(offset);
         if (offset > 0)
         {
-            await Assert.That(C.Arg.IsInFuture(value, provider)).IsEqualTo(value);
+            await Assert.That(C.Arg.InFuture(value, provider)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsInFuture(value, provider))
+                .That(() => C.Arg.InFuture(value, provider))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -125,19 +125,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsInFutureUtc_DateTime(int offset)
+    public async Task InFutureUtc_DateTime(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow().UtcDateTime;
         var value = now.AddTicks(offset);
         if (offset > 0)
         {
-            await Assert.That(C.Arg.IsInFutureUtc(value, provider)).IsEqualTo(value);
+            await Assert.That(C.Arg.InFutureUtc(value, provider)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsInFutureUtc(value, provider))
+                .That(() => C.Arg.InFutureUtc(value, provider))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -147,19 +147,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsLaterThan_DateTime(int offset)
+    public async Task LaterThan_DateTime(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow().UtcDateTime;
         var value = now.AddTicks(offset);
         if (offset > 0)
         {
-            await Assert.That(C.Arg.IsLaterThan(value, now)).IsEqualTo(value);
+            await Assert.That(C.Arg.LaterThan(value, now)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsLaterThan(value, now))
+                .That(() => C.Arg.LaterThan(value, now))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -169,19 +169,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsLaterThan_DateTimeOffset(int offset)
+    public async Task LaterThan_DateTimeOffset(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow();
         var value = now.AddTicks(offset);
         if (offset > 0)
         {
-            await Assert.That(C.Arg.IsLaterThan(value, now)).IsEqualTo(value);
+            await Assert.That(C.Arg.LaterThan(value, now)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsLaterThan(value, now))
+                .That(() => C.Arg.LaterThan(value, now))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -191,19 +191,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsEarlierThan_DateTime(int offset)
+    public async Task EarlierThan_DateTime(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow().UtcDateTime;
         var value = now.AddTicks(offset);
         if (offset < 0)
         {
-            await Assert.That(C.Arg.IsEarlierThan(value, now)).IsEqualTo(value);
+            await Assert.That(C.Arg.EarlierThan(value, now)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsEarlierThan(value, now))
+                .That(() => C.Arg.EarlierThan(value, now))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -213,19 +213,19 @@ public class DateTimeTests
     [Arguments(-1)]
     [Arguments(0)]
     [Arguments(1)]
-    public async Task IsEarlierThan_DateTimeOffset(int offset)
+    public async Task EarlierThan_DateTimeOffset(int offset)
     {
         var provider = new FixedTimeProvider();
         var now = provider.GetUtcNow();
         var value = now.AddTicks(offset);
         if (offset < 0)
         {
-            await Assert.That(C.Arg.IsEarlierThan(value, now)).IsEqualTo(value);
+            await Assert.That(C.Arg.EarlierThan(value, now)).IsEqualTo(value);
         }
         else
         {
             var exception = await Assert
-                .That(() => C.Arg.IsEarlierThan(value, now))
+                .That(() => C.Arg.EarlierThan(value, now))
                 .ThrowsExactly<ArgumentException>();
             await Assert.That(exception!.ParamName).IsEqualTo("value");
         }
@@ -236,7 +236,7 @@ public class DateTimeTests
     {
         var provider = new FixedTimeProvider();
         var value = provider.GetUtcNow().AddMinutes(-1).ToOffset(TimeSpan.FromHours(5));
-        await Assert.That(C.Arg.IsInPast(value, provider)).IsEqualTo(value);
-        await Assert.That(C.Arg.IsEarlierThan(value, provider.GetUtcNow())).IsEqualTo(value);
+        await Assert.That(C.Arg.InPast(value, provider)).IsEqualTo(value);
+        await Assert.That(C.Arg.EarlierThan(value, provider.GetUtcNow())).IsEqualTo(value);
     }
 }

@@ -1,4 +1,4 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check;
 
@@ -46,83 +46,83 @@ public class StateTests
     }
 
     [Test]
-    public async Task IsInitialized_Instance()
+    public async Task Initialized_Instance()
     {
         var instance = new object();
-        await Assert.That(C.State.IsInitialized(true, instance)).IsSameReferenceAs(instance);
+        await Assert.That(C.State.Initialized(true, instance)).IsSameReferenceAs(instance);
         var exception = await Assert
-            .That(() => C.State.IsInitialized<object>(false, new object()))
+            .That(() => C.State.Initialized<object>(false, new object()))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("System.Object");
     }
 
     [Test]
-    public async Task IsInitialized_Type()
+    public async Task Initialized_Type()
     {
-        C.State.IsInitialized(true, typeof(object));
+        C.State.Initialized(true, typeof(object));
         var exception = await Assert
-            .That(() => C.State.IsInitialized(false, typeof(object)))
+            .That(() => C.State.Initialized(false, typeof(object)))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("System.Object");
     }
 
     [Test]
-    public async Task IsInitialized_Name()
+    public async Task Initialized_Name()
     {
-        C.State.IsInitialized(true, "instance");
+        C.State.Initialized(true, "instance");
         var exception = await Assert
-            .That(() => C.State.IsInitialized(false, "instance"))
+            .That(() => C.State.Initialized(false, "instance"))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("instance");
     }
 
     [Test]
-    public async Task IsInitialized_Generic()
+    public async Task Initialized_Generic()
     {
-        C.State.IsInitialized<object>(true);
+        C.State.Initialized<object>(true);
         var exception = await Assert
-            .That(() => C.State.IsInitialized<object>(false))
+            .That(() => C.State.Initialized<object>(false))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("System.Object");
     }
 
     [Test]
-    public async Task IsMutable_Instance()
+    public async Task Mutable_Instance()
     {
         var instance = new object();
-        await Assert.That(C.State.IsMutable(true, instance)).IsSameReferenceAs(instance);
+        await Assert.That(C.State.Mutable(true, instance)).IsSameReferenceAs(instance);
         var exception = await Assert
-            .That(() => C.State.IsMutable<object>(false, new object()))
+            .That(() => C.State.Mutable<object>(false, new object()))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("System.Object");
     }
 
     [Test]
-    public async Task IsMutable_Type()
+    public async Task Mutable_Type()
     {
-        C.State.IsMutable(true, typeof(object));
+        C.State.Mutable(true, typeof(object));
         var exception = await Assert
-            .That(() => C.State.IsMutable(false, typeof(object)))
+            .That(() => C.State.Mutable(false, typeof(object)))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("System.Object");
     }
 
     [Test]
-    public async Task IsMutable_Name()
+    public async Task Mutable_Name()
     {
-        C.State.IsMutable(true, "instance");
+        C.State.Mutable(true, "instance");
         var exception = await Assert
-            .That(() => C.State.IsMutable(false, "instance"))
+            .That(() => C.State.Mutable(false, "instance"))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("instance");
     }
 
     [Test]
-    public async Task IsMutable_Generic()
+    public async Task Mutable_Generic()
     {
-        C.State.IsMutable<object>(true);
+        C.State.Mutable<object>(true);
         var exception = await Assert
-            .That(() => C.State.IsMutable<object>(false))
+            .That(() => C.State.Mutable<object>(false))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("System.Object");
     }

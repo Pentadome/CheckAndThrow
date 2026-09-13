@@ -12,14 +12,14 @@ public static partial class Check
         /// <returns>The original string if it is not null or empty.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="argument"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is empty.</exception>
-        public static string IsNotNullOrEmpty(
+        public static string NotNullOrEmpty(
             string argument,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )
         {
             if (NotNull(argument, paramName) == "")
             {
-                Throw.Arg.IsNullOrEmpty(paramName);
+                Throw.Arg.NullOrEmpty(paramName);
             }
             return argument;
         }
@@ -32,14 +32,14 @@ public static partial class Check
         /// <returns>The original string if it is not null, empty, or whitespace.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="argument"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is empty or whitespace.</exception>
-        public static string IsNotNullOrWhiteSpace(
+        public static string NotNullOrWhiteSpace(
             string argument,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )
         {
             if (string.IsNullOrWhiteSpace(NotNull(argument, paramName)))
             {
-                Throw.Arg.IsNullOrWhiteSpace(paramName);
+                Throw.Arg.NullOrWhiteSpace(paramName);
             }
             return argument;
         }
@@ -147,7 +147,7 @@ public static partial class Check
         /// <returns>The original string if it is a valid email address.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="argument"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not a valid email address.</exception>
-        public static string IsEmail(
+        public static string Email(
             string argument,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )

@@ -31,7 +31,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the string is null or empty.</exception>
         [DoesNotReturn]
-        public static void IsNullOrEmpty([InvokerParameterName] string paramName) =>
+        public static void NullOrEmpty([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotNullOrEmptyMessage, paramName);
 
         /// <summary>
@@ -42,7 +42,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the string is null or empty.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNullOrEmpty<TFakeReturn>(
+        public static TFakeReturn NullOrEmpty<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotNullOrEmptyMessage, paramName);
 
@@ -52,7 +52,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the string is null or white space.</exception>
         [DoesNotReturn]
-        public static void IsNullOrWhiteSpace([InvokerParameterName] string paramName) =>
+        public static void NullOrWhiteSpace([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotNullOrWhiteSpaceMessage, paramName);
 
         /// <summary>
@@ -63,7 +63,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the string is null or white space.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNullOrWhiteSpace<TFakeReturn>(
+        public static TFakeReturn NullOrWhiteSpace<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotNullOrWhiteSpaceMessage, paramName);
 

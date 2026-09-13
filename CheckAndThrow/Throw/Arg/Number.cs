@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Throw
 {
@@ -8,7 +8,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the NaN parameter.</param>
         /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNaN([InvokerParameterName] string paramName) =>
+        public static void NaN([InvokerParameterName] string paramName) =>
             throw new ArgumentOutOfRangeException(paramName, $"{paramName} must not be NaN.");
 
         /// <summary>Throws an <see cref="ArgumentOutOfRangeException"/> when an argument is NaN.</summary>
@@ -17,14 +17,14 @@ public static partial class Throw
         /// <returns>This method never returns.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNaN<TFakeReturn>([InvokerParameterName] string paramName) =>
+        public static TFakeReturn NaN<TFakeReturn>([InvokerParameterName] string paramName) =>
             throw new ArgumentOutOfRangeException(paramName, $"{paramName} must not be NaN.");
 
         /// <summary>Throws an <see cref="ArgumentOutOfRangeException"/> when an argument is infinite.</summary>
         /// <param name="paramName">The name of the infinite parameter.</param>
         /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsInfinity([InvokerParameterName] string paramName) =>
+        public static void Infinity([InvokerParameterName] string paramName) =>
             throw new ArgumentOutOfRangeException(paramName, $"{paramName} must not be infinite.");
 
         /// <summary>Throws an <see cref="ArgumentOutOfRangeException"/> when an argument is infinite.</summary>
@@ -33,8 +33,7 @@ public static partial class Throw
         /// <returns>This method never returns.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsInfinity<TFakeReturn>(
-            [InvokerParameterName] string paramName
-        ) => throw new ArgumentOutOfRangeException(paramName, $"{paramName} must not be infinite.");
+        public static TFakeReturn Infinity<TFakeReturn>([InvokerParameterName] string paramName) =>
+            throw new ArgumentOutOfRangeException(paramName, $"{paramName} must not be infinite.");
     }
 }

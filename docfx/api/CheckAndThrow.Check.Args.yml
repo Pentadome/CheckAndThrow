@@ -16,8 +16,12 @@ items:
   fullName: CheckAndThrow.Check.Args
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Check/Args/NotNull.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Args
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    path: ../CheckAndThrow/Check/Args/NotNull.cs
     startLine: 4
   assemblies:
   - CheckAndThrow
@@ -49,8 +53,12 @@ items:
   fullName: CheckAndThrow.Check.Args.NotNull<T1, T2>(T1, T2, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/Args/NotNull.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotNull
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    path: ../CheckAndThrow/Check/Args/NotNull.cs
     startLine: 17
   assemblies:
   - CheckAndThrow
@@ -101,8 +109,12 @@ items:
   fullName: CheckAndThrow.Check.Args.NotNull<T1, T2, T3>(T1, T2, T3, string, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/Args/NotNull.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotNull
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    path: ../CheckAndThrow/Check/Args/NotNull.cs
     startLine: 44
   assemblies:
   - CheckAndThrow
@@ -161,8 +173,12 @@ items:
   fullName: CheckAndThrow.Check.Args.NotNull<T1, T2, T3, T4>(T1, T2, T3, T4, string, string, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/Args/NotNull.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotNull
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Args\NotNull.cs
+    path: ../CheckAndThrow/Check/Args/NotNull.cs
     startLine: 77
   assemblies:
   - CheckAndThrow

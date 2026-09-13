@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Throw
 {
@@ -22,7 +22,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the past.</exception>
         [DoesNotReturn]
-        public static void IsNotInPast([InvokerParameterName] string paramName) =>
+        public static void NotInPast([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotInPastMessage, paramName);
 
         /// <summary>
@@ -33,9 +33,8 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the past.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotInPast<TFakeReturn>(
-            [InvokerParameterName] string paramName
-        ) => throw new ArgumentException(NotInPastMessage, paramName);
+        public static TFakeReturn NotInPast<TFakeReturn>([InvokerParameterName] string paramName) =>
+            throw new ArgumentException(NotInPastMessage, paramName);
 
         /// <summary>
         /// Throws an <see cref="ArgumentException"/> because the DateTime argument is not in the past.
@@ -45,7 +44,7 @@ public static partial class Throw
         /// <param name="currentTime">The current time at the moment of the check.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the past.</exception>
         [DoesNotReturn]
-        public static void IsNotInPast(
+        public static void NotInPast(
             [InvokerParameterName] string paramName,
             object actual,
             object currentTime
@@ -65,7 +64,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the past.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotInPast<TFakeReturn>(
+        public static TFakeReturn NotInPast<TFakeReturn>(
             [InvokerParameterName] string paramName,
             object actual,
             object currentTime
@@ -81,7 +80,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the future.</exception>
         [DoesNotReturn]
-        public static void IsNotInFuture([InvokerParameterName] string paramName) =>
+        public static void NotInFuture([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotInFutureMessage, paramName);
 
         /// <summary>
@@ -92,7 +91,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the future.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotInFuture<TFakeReturn>(
+        public static TFakeReturn NotInFuture<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotInFutureMessage, paramName);
 
@@ -104,7 +103,7 @@ public static partial class Throw
         /// <param name="currentTime">The current time at the moment of the check.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the future.</exception>
         [DoesNotReturn]
-        public static void IsNotInFuture(
+        public static void NotInFuture(
             [InvokerParameterName] string paramName,
             object actual,
             object currentTime
@@ -124,7 +123,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not in the future.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotInFuture<TFakeReturn>(
+        public static TFakeReturn NotInFuture<TFakeReturn>(
             [InvokerParameterName] string paramName,
             object actual,
             object currentTime
@@ -140,7 +139,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not later than the comparison value.</exception>
         [DoesNotReturn]
-        public static void IsNotLaterThan([InvokerParameterName] string paramName) =>
+        public static void NotLaterThan([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotLaterThanMessage, paramName);
 
         /// <summary>
@@ -151,7 +150,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not later than the comparison value.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotLaterThan<TFakeReturn>(
+        public static TFakeReturn NotLaterThan<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotLaterThanMessage, paramName);
 
@@ -163,7 +162,7 @@ public static partial class Throw
         /// <param name="actual">The actual value that was checked.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not later than the comparison value.</exception>
         [DoesNotReturn]
-        public static void IsNotLaterThan(
+        public static void NotLaterThan(
             [InvokerParameterName] string paramName,
             object comparison,
             object actual
@@ -184,7 +183,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not later than the comparison value.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotLaterThan<TFakeReturn>(
+        public static TFakeReturn NotLaterThan<TFakeReturn>(
             [InvokerParameterName] string paramName,
             object? comparison,
             object? actual
@@ -200,7 +199,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not earlier than the comparison value.</exception>
         [DoesNotReturn]
-        public static void IsNotEarlierThan([InvokerParameterName] string paramName) =>
+        public static void NotEarlierThan([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotEarlierThanMessage, paramName);
 
         /// <summary>
@@ -211,7 +210,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not earlier than the comparison value.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotEarlierThan<TFakeReturn>(
+        public static TFakeReturn NotEarlierThan<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotEarlierThanMessage, paramName);
 
@@ -223,7 +222,7 @@ public static partial class Throw
         /// <param name="actual">The actual value that was checked.</param>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not earlier than the comparison value.</exception>
         [DoesNotReturn]
-        public static void IsNotEarlierThan(
+        public static void NotEarlierThan(
             [InvokerParameterName] string paramName,
             object? comparison,
             object? actual
@@ -244,7 +243,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the DateTime is not earlier than the comparison value.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotEarlierThan<TFakeReturn>(
+        public static TFakeReturn NotEarlierThan<TFakeReturn>(
             [InvokerParameterName] string paramName,
             object? comparison,
             object? actual

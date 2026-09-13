@@ -1,55 +1,55 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check.Arg;
 
 public class StringTests
 {
     [Test]
-    public async Task IsNotNullOrEmpty_Accepts()
+    public async Task NotNullOrEmpty_Accepts()
     {
         var value = "aa";
-        await Assert.That(C.Arg.IsNotNullOrEmpty(value)).IsEqualTo(value);
+        await Assert.That(C.Arg.NotNullOrEmpty(value)).IsEqualTo(value);
     }
 
     [Test]
-    public async Task IsNotNullOrEmpty_Rejects()
+    public async Task NotNullOrEmpty_Rejects()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrEmpty("", paramName: "input"))
+            .That(() => C.Arg.NotNullOrEmpty("", paramName: "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsNotNullOrEmpty_RejectsNull()
+    public async Task NotNullOrEmpty_RejectsNull()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrEmpty(null!, paramName: "input"))
+            .That(() => C.Arg.NotNullOrEmpty(null!, paramName: "input"))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsNotNullOrWhiteSpace_Accepts()
+    public async Task NotNullOrWhiteSpace_Accepts()
     {
         var value = "aa";
-        await Assert.That(C.Arg.IsNotNullOrWhiteSpace(value)).IsEqualTo(value);
+        await Assert.That(C.Arg.NotNullOrWhiteSpace(value)).IsEqualTo(value);
     }
 
     [Test]
-    public async Task IsNotNullOrWhiteSpace_Rejects()
+    public async Task NotNullOrWhiteSpace_Rejects()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrWhiteSpace("", paramName: "input"))
+            .That(() => C.Arg.NotNullOrWhiteSpace("", paramName: "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsNotNullOrWhiteSpace_RejectsNull()
+    public async Task NotNullOrWhiteSpace_RejectsNull()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrWhiteSpace(null!, paramName: "input"))
+            .That(() => C.Arg.NotNullOrWhiteSpace(null!, paramName: "input"))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
@@ -155,26 +155,26 @@ public class StringTests
     }
 
     [Test]
-    public async Task IsEmail_Accepts()
+    public async Task Email_Accepts()
     {
         var value = "a@b.co";
-        await Assert.That(C.Arg.IsEmail(value)).IsEqualTo(value);
+        await Assert.That(C.Arg.Email(value)).IsEqualTo(value);
     }
 
     [Test]
-    public async Task IsEmail_Rejects()
+    public async Task Email_Rejects()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsEmail("a@", paramName: "input"))
+            .That(() => C.Arg.Email("a@", paramName: "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsEmail_RejectsNull()
+    public async Task Email_RejectsNull()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsEmail(null!, paramName: "input"))
+            .That(() => C.Arg.Email(null!, paramName: "input"))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
@@ -182,9 +182,9 @@ public class StringTests
     [Test]
     public async Task Whitespace_IsEmptyOnlyWhenRequired()
     {
-        await Assert.That(C.Arg.IsNotNullOrEmpty(" ")).IsEqualTo(" ");
+        await Assert.That(C.Arg.NotNullOrEmpty(" ")).IsEqualTo(" ");
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrWhiteSpace(" ", "input"))
+            .That(() => C.Arg.NotNullOrWhiteSpace(" ", "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }

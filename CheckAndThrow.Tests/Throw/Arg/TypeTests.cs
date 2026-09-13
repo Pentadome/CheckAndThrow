@@ -1,14 +1,14 @@
-using Th = CheckAndThrow.Throw;
+﻿using Th = CheckAndThrow.Throw;
 
 namespace CheckAndThrow.Tests.Throw.Arg;
 
 public class TypeTests
 {
     [Test]
-    public async Task IsNotAssignableTo_string()
+    public async Task NotAssignableTo_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableTo("input"))
+            .That(() => Th.Arg.NotAssignableTo("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -17,10 +17,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableTo_Generic_string()
+    public async Task NotAssignableTo_Generic_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableTo<object>("input"))
+            .That(() => Th.Arg.NotAssignableTo<object>("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -29,10 +29,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableTo_string_Type_Type()
+    public async Task NotAssignableTo_string_Type_Type()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableTo("input", typeof(string), typeof(int)))
+            .That(() => Th.Arg.NotAssignableTo("input", typeof(string), typeof(int)))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -43,10 +43,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableTo_Generic_string_Type_Type()
+    public async Task NotAssignableTo_Generic_string_Type_Type()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableTo<object>("input", typeof(string), typeof(int)))
+            .That(() => Th.Arg.NotAssignableTo<object>("input", typeof(string), typeof(int)))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -57,10 +57,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableFrom_string()
+    public async Task NotAssignableFrom_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableFrom("input"))
+            .That(() => Th.Arg.NotAssignableFrom("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -69,10 +69,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableFrom_Generic_string()
+    public async Task NotAssignableFrom_Generic_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableFrom<object>("input"))
+            .That(() => Th.Arg.NotAssignableFrom<object>("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -81,10 +81,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableFrom_string_Type_Type()
+    public async Task NotAssignableFrom_string_Type_Type()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableFrom("input", typeof(string), typeof(int)))
+            .That(() => Th.Arg.NotAssignableFrom("input", typeof(string), typeof(int)))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -95,10 +95,10 @@ public class TypeTests
     }
 
     [Test]
-    public async Task IsNotAssignableFrom_Generic_string_Type_Type()
+    public async Task NotAssignableFrom_Generic_string_Type_Type()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNotAssignableFrom<object>("input", typeof(string), typeof(int)))
+            .That(() => Th.Arg.NotAssignableFrom<object>("input", typeof(string), typeof(int)))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert

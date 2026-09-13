@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Check
 {
@@ -11,14 +11,14 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original Guid if it is not empty.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is an empty Guid.</exception>
-        public static Guid IsNotGuidEmpty(
+        public static Guid NotGuidEmpty(
             Guid argument,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )
         {
             if (argument == Guid.Empty)
             {
-                Throw.Arg.IsGuidEmpty(paramName);
+                Throw.Arg.GuidEmpty(paramName);
             }
             return argument;
         }

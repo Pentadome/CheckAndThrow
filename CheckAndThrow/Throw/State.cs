@@ -13,7 +13,7 @@ public static partial class Throw
         /// <param name="instance">The instance that is disposed.</param>
         /// <exception cref="ObjectDisposedException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsDisposed(object instance)
+        public static void Disposed(object instance)
         {
             var name = Check.Arg.NotNull(instance).GetType().FullName!;
 
@@ -26,7 +26,7 @@ public static partial class Throw
         /// <param name="type">The type that is disposed.</param>
         /// <exception cref="ObjectDisposedException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsDisposed(Type type)
+        public static void Disposed(Type type)
         {
             var name = Check.Arg.NotNull(type).FullName!;
 
@@ -39,9 +39,9 @@ public static partial class Throw
         /// <param name="instanceName">The name of the instance that is disposed.</param>
         /// <exception cref="ObjectDisposedException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsDisposed(string instanceName)
+        public static void Disposed(string instanceName)
         {
-            var name = Check.Arg.IsNotNullOrWhiteSpace(instanceName);
+            var name = Check.Arg.NotNullOrWhiteSpace(instanceName);
 
             throw new ObjectDisposedException(name);
         }
@@ -53,7 +53,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ObjectDisposedException">Always thrown.</exception>
         [DoesNotReturn]
-        public static T IsDisposed<T>()
+        public static T Disposed<T>()
         {
             var name = typeof(T).FullName!;
 
@@ -66,7 +66,7 @@ public static partial class Throw
         /// <param name="instance">The instance that is not initialized.</param>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNotInitialized(object instance)
+        public static void NotInitialized(object instance)
         {
             var name = Check.Arg.NotNull(instance).GetType().FullName!;
 
@@ -79,7 +79,7 @@ public static partial class Throw
         /// <param name="type">The type that is not initialized.</param>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNotInitialized(Type type)
+        public static void NotInitialized(Type type)
         {
             var name = Check.Arg.NotNull(type).FullName!;
 
@@ -92,9 +92,9 @@ public static partial class Throw
         /// <param name="instanceName">The name of the instance that is not initialized.</param>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNotInitialized(string instanceName)
+        public static void NotInitialized(string instanceName)
         {
-            var name = Check.Arg.IsNotNullOrWhiteSpace(instanceName);
+            var name = Check.Arg.NotNullOrWhiteSpace(instanceName);
 
             throw new InvalidOperationException($"{name} is not initialized.");
         }
@@ -106,7 +106,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static T IsNotInitialized<T>()
+        public static T NotInitialized<T>()
         {
             var name = typeof(T).FullName!;
 
@@ -119,7 +119,7 @@ public static partial class Throw
         /// <param name="instance">The instance that is not mutable.</param>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNotMutable(object instance)
+        public static void NotMutable(object instance)
         {
             var name = Check.Arg.NotNull(instance).GetType().FullName!;
 
@@ -132,7 +132,7 @@ public static partial class Throw
         /// <param name="instanceType">The type that is not mutable.</param>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNotMutable(Type instanceType)
+        public static void NotMutable(Type instanceType)
         {
             var name = Check.Arg.NotNull(instanceType).FullName!;
 
@@ -145,9 +145,9 @@ public static partial class Throw
         /// <param name="instanceName">The name of the instance that is not mutable.</param>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static void IsNotMutable(string instanceName)
+        public static void NotMutable(string instanceName)
         {
-            var name = Check.Arg.IsNotNullOrWhiteSpace(instanceName);
+            var name = Check.Arg.NotNullOrWhiteSpace(instanceName);
 
             throw new InvalidOperationException($"{name} is not mutable.");
         }
@@ -159,7 +159,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="InvalidOperationException">Always thrown.</exception>
         [DoesNotReturn]
-        public static T IsNotMutable<T>()
+        public static T NotMutable<T>()
         {
             var name = typeof(T).FullName!;
 

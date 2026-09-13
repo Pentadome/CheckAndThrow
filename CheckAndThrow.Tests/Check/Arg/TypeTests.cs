@@ -1,4 +1,4 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check.Arg;
 
@@ -13,31 +13,29 @@ public class TypeTests
     public class Derived : Marked;
 
     [Test]
-    public async Task IsAssignableTo_ReturnsReference()
+    public async Task AssignableTo_ReturnsReference()
     {
         var value = new Derived();
-        await Assert.That(C.Arg.IsAssignableTo<Marked>(value)).IsSameReferenceAs(value);
+        await Assert.That(C.Arg.AssignableTo<Marked>(value)).IsSameReferenceAs(value);
         var exception = await Assert
-            .That(() => C.Arg.IsAssignableTo<string>(value))
+            .That(() => C.Arg.AssignableTo<string>(value))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("value");
         await Assert
-            .That(() => C.Arg.IsAssignableTo<string>(null!))
+            .That(() => C.Arg.AssignableTo<string>(null!))
             .ThrowsExactly<ArgumentNullException>();
     }
 
     [Test]
-    public async Task IsAssignableFrom_UsesCorrectDirection()
+    public async Task AssignableFrom_UsesCorrectDirection()
     {
-        await Assert
-            .That(C.Arg.IsAssignableFrom<Derived>(typeof(Marked)))
-            .IsEqualTo(typeof(Marked));
+        await Assert.That(C.Arg.AssignableFrom<Derived>(typeof(Marked))).IsEqualTo(typeof(Marked));
         var exception = await Assert
-            .That(() => C.Arg.IsAssignableFrom<Marked>(typeof(Derived), "input"))
+            .That(() => C.Arg.AssignableFrom<Marked>(typeof(Derived), "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
-            .That(() => C.Arg.IsAssignableFrom<Marked>(null!))
+            .That(() => C.Arg.AssignableFrom<Marked>(null!))
             .ThrowsExactly<ArgumentNullException>();
     }
 

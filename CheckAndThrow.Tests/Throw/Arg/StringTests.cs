@@ -1,34 +1,34 @@
-using Th = CheckAndThrow.Throw;
+﻿using Th = CheckAndThrow.Throw;
 
 namespace CheckAndThrow.Tests.Throw.Arg;
 
 public class StringTests
 {
     [Test]
-    public async Task IsNullOrEmpty_string()
+    public async Task NullOrEmpty_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNullOrEmpty("input"))
+            .That(() => Th.Arg.NullOrEmpty("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Message).StartsWith("Argument cannot be null or empty.");
     }
 
     [Test]
-    public async Task IsNullOrEmpty_Generic_string()
+    public async Task NullOrEmpty_Generic_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNullOrEmpty<object>("input"))
+            .That(() => Th.Arg.NullOrEmpty<object>("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Message).StartsWith("Argument cannot be null or empty.");
     }
 
     [Test]
-    public async Task IsNullOrWhiteSpace_string()
+    public async Task NullOrWhiteSpace_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNullOrWhiteSpace("input"))
+            .That(() => Th.Arg.NullOrWhiteSpace("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
@@ -39,10 +39,10 @@ public class StringTests
     }
 
     [Test]
-    public async Task IsNullOrWhiteSpace_Generic_string()
+    public async Task NullOrWhiteSpace_Generic_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsNullOrWhiteSpace<object>("input"))
+            .That(() => Th.Arg.NullOrWhiteSpace<object>("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert

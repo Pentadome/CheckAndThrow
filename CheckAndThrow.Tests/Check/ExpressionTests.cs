@@ -1,4 +1,4 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check;
 
@@ -69,21 +69,21 @@ public class ExpressionTests
     }
 
     [Test]
-    public async Task IsTrue_BothBranches()
+    public async Task True_BothBranches()
     {
-        C.Expression.IsTrue(true);
+        C.Expression.True(true);
         var exception = await Assert
-            .That(() => C.Expression.IsTrue(false, "condition"))
+            .That(() => C.Expression.True(false, "condition"))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("condition");
     }
 
     [Test]
-    public async Task IsFalse_BothBranches()
+    public async Task False_BothBranches()
     {
-        C.Expression.IsFalse(false);
+        C.Expression.False(false);
         var exception = await Assert
-            .That(() => C.Expression.IsFalse(true, "condition"))
+            .That(() => C.Expression.False(true, "condition"))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).Contains("condition");
     }

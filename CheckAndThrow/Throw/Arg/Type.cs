@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Throw
 {
@@ -22,7 +22,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the argument is not an instance of the type.</exception>
         [DoesNotReturn]
-        public static void IsNotAssignableTo([InvokerParameterName] string paramName) =>
+        public static void NotAssignableTo([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotAssignableToMessage, paramName);
 
         /// <summary>
@@ -33,7 +33,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the argument is not an instance of the type.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotAssignableTo<TFakeReturn>(
+        public static TFakeReturn NotAssignableTo<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotAssignableToMessage, paramName);
 
@@ -45,7 +45,7 @@ public static partial class Throw
         /// <param name="argumentType">The type of the argument.</param>
         /// <exception cref="ArgumentException">Thrown because the argument is not an instance of the type.</exception>
         [DoesNotReturn]
-        public static void IsNotAssignableTo(
+        public static void NotAssignableTo(
             [InvokerParameterName] string paramName,
             Type expectedType,
             Type argumentType
@@ -65,7 +65,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the argument is not an instance of the type.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotAssignableTo<TFakeReturn>(
+        public static TFakeReturn NotAssignableTo<TFakeReturn>(
             [InvokerParameterName] string paramName,
             Type expectedType,
             Type argumentType
@@ -81,7 +81,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the argument type is not assignable from the type.</exception>
         [DoesNotReturn]
-        public static void IsNotAssignableFrom([InvokerParameterName] string paramName) =>
+        public static void NotAssignableFrom([InvokerParameterName] string paramName) =>
             throw new ArgumentException(NotAssignableFromMessage, paramName);
 
         /// <summary>
@@ -92,7 +92,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the argument type is not assignable from the type.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotAssignableFrom<TFakeReturn>(
+        public static TFakeReturn NotAssignableFrom<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(NotAssignableFromMessage, paramName);
 
@@ -104,7 +104,7 @@ public static partial class Throw
         /// <param name="argumentType">The type of the argument.</param>
         /// <exception cref="ArgumentException">Thrown because the argument type is not assignable from the type.</exception>
         [DoesNotReturn]
-        public static void IsNotAssignableFrom(
+        public static void NotAssignableFrom(
             [InvokerParameterName] string paramName,
             Type expectedType,
             Type argumentType
@@ -124,7 +124,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the argument type is not assignable from the type.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsNotAssignableFrom<TFakeReturn>(
+        public static TFakeReturn NotAssignableFrom<TFakeReturn>(
             [InvokerParameterName] string paramName,
             Type expectedType,
             Type argumentType

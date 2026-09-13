@@ -14,8 +14,18 @@ items:
   - CheckAndThrow.Throw.Arg.DoesNotMatch(System.String,System.String,System.String)
   - CheckAndThrow.Throw.Arg.DoesNotMatch``1(System.String)
   - CheckAndThrow.Throw.Arg.DoesNotMatch``1(System.String,System.String,System.String)
+  - CheckAndThrow.Throw.Arg.Empty(System.String)
+  - CheckAndThrow.Throw.Arg.Empty``1(System.String)
+  - CheckAndThrow.Throw.Arg.Exception(System.String)
+  - CheckAndThrow.Throw.Arg.Exception(System.String,System.String)
+  - CheckAndThrow.Throw.Arg.Exception``1(System.String)
+  - CheckAndThrow.Throw.Arg.Exception``1(System.String,System.String)
+  - CheckAndThrow.Throw.Arg.GuidEmpty(System.String)
+  - CheckAndThrow.Throw.Arg.GuidEmpty``1(System.String)
   - CheckAndThrow.Throw.Arg.HasNullValue(System.String)
   - CheckAndThrow.Throw.Arg.HasNullValue``1(System.String)
+  - CheckAndThrow.Throw.Arg.Infinity(System.String)
+  - CheckAndThrow.Throw.Arg.Infinity``1(System.String)
   - CheckAndThrow.Throw.Arg.InvalidCount(System.Object,System.Object,System.String)
   - CheckAndThrow.Throw.Arg.InvalidCount(System.String)
   - CheckAndThrow.Throw.Arg.InvalidCount``1(System.Object,System.Object,System.String)
@@ -24,58 +34,50 @@ items:
   - CheckAndThrow.Throw.Arg.InvalidEmail(System.String,System.String)
   - CheckAndThrow.Throw.Arg.InvalidEmail``1(System.String)
   - CheckAndThrow.Throw.Arg.InvalidEmail``1(System.String,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.Enum,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.Int32,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.String,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.Enum,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.Int32,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.String,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidIndex(System.Object,System.Object,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidIndex(System.String)
+  - CheckAndThrow.Throw.Arg.InvalidIndex``1(System.Object,System.Object,System.String)
+  - CheckAndThrow.Throw.Arg.InvalidIndex``1(System.String)
   - CheckAndThrow.Throw.Arg.InvalidLength(System.String)
   - CheckAndThrow.Throw.Arg.InvalidLength(System.String,System.Object,System.Object)
   - CheckAndThrow.Throw.Arg.InvalidLength``1(System.String)
   - CheckAndThrow.Throw.Arg.InvalidLength``1(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsEmpty(System.String)
-  - CheckAndThrow.Throw.Arg.IsEmpty``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsGuidEmpty(System.String)
-  - CheckAndThrow.Throw.Arg.IsGuidEmpty``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.Enum,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.Int32,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.String,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.Enum,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.Int32,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.String,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidIndex(System.Object,System.Object,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidIndex(System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidIndex``1(System.Object,System.Object,System.String)
-  - CheckAndThrow.Throw.Arg.IsInvalidIndex``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableFrom(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableFrom(System.String,System.Type,System.Type)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableFrom``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableFrom``1(System.String,System.Type,System.Type)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableTo(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableTo(System.String,System.Type,System.Type)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableTo``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotAssignableTo``1(System.String,System.Type,System.Type)
-  - CheckAndThrow.Throw.Arg.IsNotEarlierThan(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotEarlierThan(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotEarlierThan``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotEarlierThan``1(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotInFuture(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotInFuture(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotInFuture``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotInFuture``1(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotInPast(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotInPast(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotInPast``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotInPast``1(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotLaterThan(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotLaterThan(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNotLaterThan``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNotLaterThan``1(System.String,System.Object,System.Object)
-  - CheckAndThrow.Throw.Arg.IsNull(System.String)
-  - CheckAndThrow.Throw.Arg.IsNullOrEmpty(System.String)
-  - CheckAndThrow.Throw.Arg.IsNullOrEmpty``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace(System.String)
-  - CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace``1(System.String)
-  - CheckAndThrow.Throw.Arg.IsNull``1(System.String)
   - CheckAndThrow.Throw.Arg.MissesAllFlags(System.Type,System.String,System.String)
   - CheckAndThrow.Throw.Arg.MissesAllFlags``1(System.Type,System.String,System.String)
   - CheckAndThrow.Throw.Arg.MissesAnyOfTheFlags(System.Type,System.String,System.String)
   - CheckAndThrow.Throw.Arg.MissesAnyOfTheFlags``1(System.Type,System.String,System.String)
+  - CheckAndThrow.Throw.Arg.NaN(System.String)
+  - CheckAndThrow.Throw.Arg.NaN``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotAssignableFrom(System.String)
+  - CheckAndThrow.Throw.Arg.NotAssignableFrom(System.String,System.Type,System.Type)
+  - CheckAndThrow.Throw.Arg.NotAssignableFrom``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotAssignableFrom``1(System.String,System.Type,System.Type)
+  - CheckAndThrow.Throw.Arg.NotAssignableTo(System.String)
+  - CheckAndThrow.Throw.Arg.NotAssignableTo(System.String,System.Type,System.Type)
+  - CheckAndThrow.Throw.Arg.NotAssignableTo``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotAssignableTo``1(System.String,System.Type,System.Type)
+  - CheckAndThrow.Throw.Arg.NotEarlierThan(System.String)
+  - CheckAndThrow.Throw.Arg.NotEarlierThan(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotEarlierThan``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotEarlierThan``1(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotInFuture(System.String)
+  - CheckAndThrow.Throw.Arg.NotInFuture(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotInFuture``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotInFuture``1(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotInPast(System.String)
+  - CheckAndThrow.Throw.Arg.NotInPast(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotInPast``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotInPast``1(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotLaterThan(System.String)
+  - CheckAndThrow.Throw.Arg.NotLaterThan(System.String,System.Object,System.Object)
+  - CheckAndThrow.Throw.Arg.NotLaterThan``1(System.String)
+  - CheckAndThrow.Throw.Arg.NotLaterThan``1(System.String,System.Object,System.Object)
   - CheckAndThrow.Throw.Arg.NotNegative(System.Object,System.String)
   - CheckAndThrow.Throw.Arg.NotNegative``1(System.Object,System.String)
   - CheckAndThrow.Throw.Arg.NotPositive(System.Object,System.String)
@@ -84,6 +86,12 @@ items:
   - CheckAndThrow.Throw.Arg.NotZeroOrNegative``1(System.Object,System.String)
   - CheckAndThrow.Throw.Arg.NotZeroOrPositive(System.Object,System.String)
   - CheckAndThrow.Throw.Arg.NotZeroOrPositive``1(System.Object,System.String)
+  - CheckAndThrow.Throw.Arg.Null(System.String)
+  - CheckAndThrow.Throw.Arg.NullOrEmpty(System.String)
+  - CheckAndThrow.Throw.Arg.NullOrEmpty``1(System.String)
+  - CheckAndThrow.Throw.Arg.NullOrWhiteSpace(System.String)
+  - CheckAndThrow.Throw.Arg.NullOrWhiteSpace``1(System.String)
+  - CheckAndThrow.Throw.Arg.Null``1(System.String)
   - CheckAndThrow.Throw.Arg.OutOfRange(System.Object,System.Object,System.Object,System.String,System.String,System.String)
   - CheckAndThrow.Throw.Arg.OutOfRange``1(System.Object,System.Object,System.Object,System.String,System.String,System.String)
   - CheckAndThrow.Throw.Arg.TooFewItems(System.Object,System.Object,System.String)
@@ -110,8 +118,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Arg
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 4
   assemblies:
   - CheckAndThrow
@@ -131,63 +143,71 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: CheckAndThrow.Throw.Arg.IsEmpty(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsEmpty(System.String)
-  id: IsEmpty(System.String)
+- uid: CheckAndThrow.Throw.Arg.Exception(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Exception(System.String)
+  id: Exception(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsEmpty(string)
-  nameWithType: Throw.Arg.IsEmpty(string)
-  fullName: CheckAndThrow.Throw.Arg.IsEmpty(string)
+  name: Exception(string)
+  nameWithType: Throw.Arg.Exception(string)
+  fullName: CheckAndThrow.Throw.Arg.Exception(string)
   type: Method
   source:
-    id: IsEmpty
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
-    startLine: 26
+    remote:
+      path: CheckAndThrow/Throw/Arg/Arg.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Exception
+    path: ../CheckAndThrow/Throw/Arg/Arg.cs
+    startLine: 14
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
-  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the collection argument is empty.
+  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> for the specified parameter.
   example: []
   syntax:
-    content: public static void IsEmpty(string paramName)
+    content: public static void Exception(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsEmpty(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsEmpty*
+    content.vb: Public Shared Sub Exception(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.Exception*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: Thrown because the collection is empty.
-  nameWithType.vb: Throw.Arg.IsEmpty(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsEmpty(String)
-  name.vb: IsEmpty(String)
-- uid: CheckAndThrow.Throw.Arg.IsEmpty``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsEmpty``1(System.String)
-  id: IsEmpty``1(System.String)
+    description: The exception that is thrown.
+  nameWithType.vb: Throw.Arg.Exception(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Exception(String)
+  name.vb: Exception(String)
+- uid: CheckAndThrow.Throw.Arg.Exception``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Exception``1(System.String)
+  id: Exception``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsEmpty<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsEmpty<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsEmpty<TFakeReturn>(string)
+  name: Exception<TFakeReturn>(string)
+  nameWithType: Throw.Arg.Exception<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.Exception<TFakeReturn>(string)
   type: Method
   source:
-    id: IsEmpty
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
-    startLine: 37
+    remote:
+      path: CheckAndThrow/Throw/Arg/Arg.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Exception
+    path: ../CheckAndThrow/Throw/Arg/Arg.cs
+    startLine: 27
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
-  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the collection argument is empty.
+  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> for the specified parameter.
   example: []
   syntax:
-    content: public static TFakeReturn IsEmpty<TFakeReturn>(string paramName)
+    content: public static TFakeReturn Exception<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -198,15 +218,189 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsEmpty(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsEmpty*
+    content.vb: Public Shared Function Exception(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.Exception*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The exception that is thrown.
+  nameWithType.vb: Throw.Arg.Exception(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Exception(Of TFakeReturn)(String)
+  name.vb: Exception(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.Exception(System.String,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Exception(System.String,System.String)
+  id: Exception(System.String,System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: Exception(string, string)
+  nameWithType: Throw.Arg.Exception(string, string)
+  fullName: CheckAndThrow.Throw.Arg.Exception(string, string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Arg.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Exception
+    path: ../CheckAndThrow/Throw/Arg/Arg.cs
+    startLine: 39
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> for the specified parameter.
+  example: []
+  syntax:
+    content: public static void Exception(string paramName, string message)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: message
+      type: System.String
+      description: The message for the exception.
+    content.vb: Public Shared Sub Exception(paramName As String, message As String)
+  overload: CheckAndThrow.Throw.Arg.Exception*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The exception that is thrown.
+  nameWithType.vb: Throw.Arg.Exception(String, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Exception(String, String)
+  name.vb: Exception(String, String)
+- uid: CheckAndThrow.Throw.Arg.Exception``1(System.String,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Exception``1(System.String,System.String)
+  id: Exception``1(System.String,System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: Exception<TFakeReturn>(string, string)
+  nameWithType: Throw.Arg.Exception<TFakeReturn>(string, string)
+  fullName: CheckAndThrow.Throw.Arg.Exception<TFakeReturn>(string, string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Arg.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Exception
+    path: ../CheckAndThrow/Throw/Arg/Arg.cs
+    startLine: 53
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> for the specified parameter.
+  example: []
+  syntax:
+    content: public static TFakeReturn Exception<TFakeReturn>(string paramName, string message)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    - id: message
+      type: System.String
+      description: The message for the exception.
+    typeParameters:
+    - id: TFakeReturn
+      description: The type of the fake return value.
+    return:
+      type: '{TFakeReturn}'
+      description: Nothing is returned as the method always throws.
+    content.vb: Public Shared Function Exception(Of TFakeReturn)(paramName As String, message As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.Exception*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The exception that is thrown.
+  nameWithType.vb: Throw.Arg.Exception(Of TFakeReturn)(String, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Exception(Of TFakeReturn)(String, String)
+  name.vb: Exception(Of TFakeReturn)(String, String)
+- uid: CheckAndThrow.Throw.Arg.Empty(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Empty(System.String)
+  id: Empty(System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: Empty(string)
+  nameWithType: Throw.Arg.Empty(string)
+  fullName: CheckAndThrow.Throw.Arg.Empty(string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Empty
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
+    startLine: 26
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the collection argument is empty.
+  example: []
+  syntax:
+    content: public static void Empty(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    content.vb: Public Shared Sub Empty(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.Empty*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the collection is empty.
-  nameWithType.vb: Throw.Arg.IsEmpty(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsEmpty(Of TFakeReturn)(String)
-  name.vb: IsEmpty(Of TFakeReturn)(String)
+  nameWithType.vb: Throw.Arg.Empty(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Empty(String)
+  name.vb: Empty(String)
+- uid: CheckAndThrow.Throw.Arg.Empty``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Empty``1(System.String)
+  id: Empty``1(System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: Empty<TFakeReturn>(string)
+  nameWithType: Throw.Arg.Empty<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.Empty<TFakeReturn>(string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Empty
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
+    startLine: 37
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the collection argument is empty.
+  example: []
+  syntax:
+    content: public static TFakeReturn Empty<TFakeReturn>(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the parameter.
+    typeParameters:
+    - id: TFakeReturn
+      description: The type of the fake return value.
+    return:
+      type: '{TFakeReturn}'
+      description: Nothing is returned as the method always throws.
+    content.vb: Public Shared Function Empty(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.Empty*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown because the collection is empty.
+  nameWithType.vb: Throw.Arg.Empty(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Empty(Of TFakeReturn)(String)
+  name.vb: Empty(Of TFakeReturn)(String)
 - uid: CheckAndThrow.Throw.Arg.HasNullValue(System.String)
   commentId: M:CheckAndThrow.Throw.Arg.HasNullValue(System.String)
   id: HasNullValue(System.String)
@@ -219,8 +413,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.HasNullValue(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: HasNullValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 46
   assemblies:
   - CheckAndThrow
@@ -254,8 +452,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.HasNullValue<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: HasNullValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 57
   assemblies:
   - CheckAndThrow
@@ -295,8 +497,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidCount(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidCount
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 67
   assemblies:
   - CheckAndThrow
@@ -330,8 +536,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidCount<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidCount
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 78
   assemblies:
   - CheckAndThrow
@@ -371,8 +581,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidCount(object, object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidCount
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 90
   assemblies:
   - CheckAndThrow
@@ -412,8 +626,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidCount<TFakeReturn>(object, object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidCount
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 110
   assemblies:
   - CheckAndThrow
@@ -459,8 +677,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooFewItems(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooFewItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 126
   assemblies:
   - CheckAndThrow
@@ -494,8 +716,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooFewItems<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooFewItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 137
   assemblies:
   - CheckAndThrow
@@ -535,8 +761,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooFewItems(object, object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooFewItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 149
   assemblies:
   - CheckAndThrow
@@ -576,8 +806,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooFewItems<TFakeReturn>(object, object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooFewItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 169
   assemblies:
   - CheckAndThrow
@@ -623,8 +857,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooManyItems(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooManyItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 185
   assemblies:
   - CheckAndThrow
@@ -658,8 +896,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooManyItems<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooManyItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 196
   assemblies:
   - CheckAndThrow
@@ -699,8 +941,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooManyItems(object, object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooManyItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 208
   assemblies:
   - CheckAndThrow
@@ -740,8 +986,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooManyItems<TFakeReturn>(object, object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooManyItems
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 228
   assemblies:
   - CheckAndThrow
@@ -787,8 +1037,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotContain(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotContain
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 244
   assemblies:
   - CheckAndThrow
@@ -810,20 +1064,24 @@ items:
   nameWithType.vb: Throw.Arg.DoesNotContain(String)
   fullName.vb: CheckAndThrow.Throw.Arg.DoesNotContain(String)
   name.vb: DoesNotContain(String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidIndex(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidIndex(System.String)
-  id: IsInvalidIndex(System.String)
+- uid: CheckAndThrow.Throw.Arg.InvalidIndex(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidIndex(System.String)
+  id: InvalidIndex(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidIndex(string)
-  nameWithType: Throw.Arg.IsInvalidIndex(string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidIndex(string)
+  name: InvalidIndex(string)
+  nameWithType: Throw.Arg.InvalidIndex(string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidIndex(string)
   type: Method
   source:
-    id: IsInvalidIndex
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidIndex
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 252
   assemblies:
   - CheckAndThrow
@@ -831,33 +1089,37 @@ items:
   summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> because the index argument is out of range for the collection.
   example: []
   syntax:
-    content: public static void IsInvalidIndex(string paramName)
+    content: public static void InvalidIndex(string paramName)
     parameters:
     - id: paramName
       type: System.String
-    content.vb: Public Shared Sub IsInvalidIndex(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsInvalidIndex*
+    content.vb: Public Shared Sub InvalidIndex(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.InvalidIndex*
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: Thrown because the index is out of range.
-  nameWithType.vb: Throw.Arg.IsInvalidIndex(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidIndex(String)
-  name.vb: IsInvalidIndex(String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidIndex``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidIndex``1(System.String)
-  id: IsInvalidIndex``1(System.String)
+  nameWithType.vb: Throw.Arg.InvalidIndex(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidIndex(String)
+  name.vb: InvalidIndex(String)
+- uid: CheckAndThrow.Throw.Arg.InvalidIndex``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidIndex``1(System.String)
+  id: InvalidIndex``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidIndex<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsInvalidIndex<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidIndex<TFakeReturn>(string)
+  name: InvalidIndex<TFakeReturn>(string)
+  nameWithType: Throw.Arg.InvalidIndex<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidIndex<TFakeReturn>(string)
   type: Method
   source:
-    id: IsInvalidIndex
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidIndex
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 263
   assemblies:
   - CheckAndThrow
@@ -865,7 +1127,7 @@ items:
   summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> because the index argument is out of range for the collection.
   example: []
   syntax:
-    content: public static TFakeReturn IsInvalidIndex<TFakeReturn>(string paramName)
+    content: public static TFakeReturn InvalidIndex<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -876,29 +1138,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsInvalidIndex(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsInvalidIndex*
+    content.vb: Public Shared Function InvalidIndex(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.InvalidIndex*
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: Thrown because the index is out of range.
-  nameWithType.vb: Throw.Arg.IsInvalidIndex(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidIndex(Of TFakeReturn)(String)
-  name.vb: IsInvalidIndex(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidIndex(System.Object,System.Object,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidIndex(System.Object,System.Object,System.String)
-  id: IsInvalidIndex(System.Object,System.Object,System.String)
+  nameWithType.vb: Throw.Arg.InvalidIndex(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidIndex(Of TFakeReturn)(String)
+  name.vb: InvalidIndex(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.InvalidIndex(System.Object,System.Object,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidIndex(System.Object,System.Object,System.String)
+  id: InvalidIndex(System.Object,System.Object,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidIndex(object, object, string)
-  nameWithType: Throw.Arg.IsInvalidIndex(object, object, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidIndex(object, object, string)
+  name: InvalidIndex(object, object, string)
+  nameWithType: Throw.Arg.InvalidIndex(object, object, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidIndex(object, object, string)
   type: Method
   source:
-    id: IsInvalidIndex
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidIndex
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 275
   assemblies:
   - CheckAndThrow
@@ -906,7 +1172,7 @@ items:
   summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> because the index argument is out of range for the collection.
   example: []
   syntax:
-    content: public static void IsInvalidIndex(object index, object collectionSize, string paramName)
+    content: public static void InvalidIndex(object index, object collectionSize, string paramName)
     parameters:
     - id: index
       type: System.Object
@@ -917,29 +1183,33 @@ items:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsInvalidIndex(index As Object, collectionSize As Object, paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsInvalidIndex*
+    content.vb: Public Shared Sub InvalidIndex(index As Object, collectionSize As Object, paramName As String)
+  overload: CheckAndThrow.Throw.Arg.InvalidIndex*
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: Thrown because the index is out of range.
-  nameWithType.vb: Throw.Arg.IsInvalidIndex(Object, Object, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidIndex(Object, Object, String)
-  name.vb: IsInvalidIndex(Object, Object, String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidIndex``1(System.Object,System.Object,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidIndex``1(System.Object,System.Object,System.String)
-  id: IsInvalidIndex``1(System.Object,System.Object,System.String)
+  nameWithType.vb: Throw.Arg.InvalidIndex(Object, Object, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidIndex(Object, Object, String)
+  name.vb: InvalidIndex(Object, Object, String)
+- uid: CheckAndThrow.Throw.Arg.InvalidIndex``1(System.Object,System.Object,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidIndex``1(System.Object,System.Object,System.String)
+  id: InvalidIndex``1(System.Object,System.Object,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidIndex<TFakeReturn>(object, object, string)
-  nameWithType: Throw.Arg.IsInvalidIndex<TFakeReturn>(object, object, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidIndex<TFakeReturn>(object, object, string)
+  name: InvalidIndex<TFakeReturn>(object, object, string)
+  nameWithType: Throw.Arg.InvalidIndex<TFakeReturn>(object, object, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidIndex<TFakeReturn>(object, object, string)
   type: Method
   source:
-    id: IsInvalidIndex
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Collection.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Collection.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidIndex
+    path: ../CheckAndThrow/Throw/Arg/Collection.cs
     startLine: 296
   assemblies:
   - CheckAndThrow
@@ -947,7 +1217,7 @@ items:
   summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> because the index argument is out of range for the collection.
   example: []
   syntax:
-    content: public static TFakeReturn IsInvalidIndex<TFakeReturn>(object index, object collectionSize, string paramName)
+    content: public static TFakeReturn InvalidIndex<TFakeReturn>(object index, object collectionSize, string paramName)
     parameters:
     - id: index
       type: System.Object
@@ -964,29 +1234,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsInvalidIndex(Of TFakeReturn)(index As Object, collectionSize As Object, paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsInvalidIndex*
+    content.vb: Public Shared Function InvalidIndex(Of TFakeReturn)(index As Object, collectionSize As Object, paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.InvalidIndex*
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
     description: Thrown because the index is out of range.
-  nameWithType.vb: Throw.Arg.IsInvalidIndex(Of TFakeReturn)(Object, Object, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidIndex(Of TFakeReturn)(Object, Object, String)
-  name.vb: IsInvalidIndex(Of TFakeReturn)(Object, Object, String)
-- uid: CheckAndThrow.Throw.Arg.IsNotInPast(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInPast(System.String)
-  id: IsNotInPast(System.String)
+  nameWithType.vb: Throw.Arg.InvalidIndex(Of TFakeReturn)(Object, Object, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidIndex(Of TFakeReturn)(Object, Object, String)
+  name.vb: InvalidIndex(Of TFakeReturn)(Object, Object, String)
+- uid: CheckAndThrow.Throw.Arg.NotInPast(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInPast(System.String)
+  id: NotInPast(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInPast(string)
-  nameWithType: Throw.Arg.IsNotInPast(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInPast(string)
+  name: NotInPast(string)
+  nameWithType: Throw.Arg.NotInPast(string)
+  fullName: CheckAndThrow.Throw.Arg.NotInPast(string)
   type: Method
   source:
-    id: IsNotInPast
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInPast
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 23
   assemblies:
   - CheckAndThrow
@@ -994,34 +1268,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the past.
   example: []
   syntax:
-    content: public static void IsNotInPast(string paramName)
+    content: public static void NotInPast(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNotInPast(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNotInPast*
+    content.vb: Public Shared Sub NotInPast(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NotInPast*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the past.
-  nameWithType.vb: Throw.Arg.IsNotInPast(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInPast(String)
-  name.vb: IsNotInPast(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotInPast``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInPast``1(System.String)
-  id: IsNotInPast``1(System.String)
+  nameWithType.vb: Throw.Arg.NotInPast(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInPast(String)
+  name.vb: NotInPast(String)
+- uid: CheckAndThrow.Throw.Arg.NotInPast``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInPast``1(System.String)
+  id: NotInPast``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInPast<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNotInPast<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInPast<TFakeReturn>(string)
+  name: NotInPast<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NotInPast<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NotInPast<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNotInPast
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInPast
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 34
   assemblies:
   - CheckAndThrow
@@ -1029,7 +1307,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the past.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotInPast<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NotInPast<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -1040,29 +1318,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotInPast(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotInPast*
+    content.vb: Public Shared Function NotInPast(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotInPast*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the past.
-  nameWithType.vb: Throw.Arg.IsNotInPast(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInPast(Of TFakeReturn)(String)
-  name.vb: IsNotInPast(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotInPast(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInPast(System.String,System.Object,System.Object)
-  id: IsNotInPast(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotInPast(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInPast(Of TFakeReturn)(String)
+  name.vb: NotInPast(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NotInPast(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInPast(System.String,System.Object,System.Object)
+  id: NotInPast(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInPast(string, object, object)
-  nameWithType: Throw.Arg.IsNotInPast(string, object, object)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInPast(string, object, object)
+  name: NotInPast(string, object, object)
+  nameWithType: Throw.Arg.NotInPast(string, object, object)
+  fullName: CheckAndThrow.Throw.Arg.NotInPast(string, object, object)
   type: Method
   source:
-    id: IsNotInPast
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInPast
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 46
   assemblies:
   - CheckAndThrow
@@ -1070,7 +1352,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the past.
   example: []
   syntax:
-    content: public static void IsNotInPast(string paramName, object actual, object currentTime)
+    content: public static void NotInPast(string paramName, object actual, object currentTime)
     parameters:
     - id: paramName
       type: System.String
@@ -1081,29 +1363,33 @@ items:
     - id: currentTime
       type: System.Object
       description: The current time at the moment of the check.
-    content.vb: Public Shared Sub IsNotInPast(paramName As String, actual As Object, currentTime As Object)
-  overload: CheckAndThrow.Throw.Arg.IsNotInPast*
+    content.vb: Public Shared Sub NotInPast(paramName As String, actual As Object, currentTime As Object)
+  overload: CheckAndThrow.Throw.Arg.NotInPast*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the past.
-  nameWithType.vb: Throw.Arg.IsNotInPast(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInPast(String, Object, Object)
-  name.vb: IsNotInPast(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotInPast``1(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInPast``1(System.String,System.Object,System.Object)
-  id: IsNotInPast``1(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotInPast(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInPast(String, Object, Object)
+  name.vb: NotInPast(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotInPast``1(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInPast``1(System.String,System.Object,System.Object)
+  id: NotInPast``1(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInPast<TFakeReturn>(string, object, object)
-  nameWithType: Throw.Arg.IsNotInPast<TFakeReturn>(string, object, object)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInPast<TFakeReturn>(string, object, object)
+  name: NotInPast<TFakeReturn>(string, object, object)
+  nameWithType: Throw.Arg.NotInPast<TFakeReturn>(string, object, object)
+  fullName: CheckAndThrow.Throw.Arg.NotInPast<TFakeReturn>(string, object, object)
   type: Method
   source:
-    id: IsNotInPast
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInPast
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 66
   assemblies:
   - CheckAndThrow
@@ -1111,7 +1397,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the past.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotInPast<TFakeReturn>(string paramName, object actual, object currentTime)
+    content: public static TFakeReturn NotInPast<TFakeReturn>(string paramName, object actual, object currentTime)
     parameters:
     - id: paramName
       type: System.String
@@ -1128,29 +1414,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotInPast(Of TFakeReturn)(paramName As String, actual As Object, currentTime As Object) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotInPast*
+    content.vb: Public Shared Function NotInPast(Of TFakeReturn)(paramName As String, actual As Object, currentTime As Object) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotInPast*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the past.
-  nameWithType.vb: Throw.Arg.IsNotInPast(Of TFakeReturn)(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInPast(Of TFakeReturn)(String, Object, Object)
-  name.vb: IsNotInPast(Of TFakeReturn)(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotInFuture(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInFuture(System.String)
-  id: IsNotInFuture(System.String)
+  nameWithType.vb: Throw.Arg.NotInPast(Of TFakeReturn)(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInPast(Of TFakeReturn)(String, Object, Object)
+  name.vb: NotInPast(Of TFakeReturn)(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotInFuture(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInFuture(System.String)
+  id: NotInFuture(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInFuture(string)
-  nameWithType: Throw.Arg.IsNotInFuture(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInFuture(string)
+  name: NotInFuture(string)
+  nameWithType: Throw.Arg.NotInFuture(string)
+  fullName: CheckAndThrow.Throw.Arg.NotInFuture(string)
   type: Method
   source:
-    id: IsNotInFuture
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInFuture
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 82
   assemblies:
   - CheckAndThrow
@@ -1158,34 +1448,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the future.
   example: []
   syntax:
-    content: public static void IsNotInFuture(string paramName)
+    content: public static void NotInFuture(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNotInFuture(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNotInFuture*
+    content.vb: Public Shared Sub NotInFuture(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NotInFuture*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the future.
-  nameWithType.vb: Throw.Arg.IsNotInFuture(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInFuture(String)
-  name.vb: IsNotInFuture(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotInFuture``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInFuture``1(System.String)
-  id: IsNotInFuture``1(System.String)
+  nameWithType.vb: Throw.Arg.NotInFuture(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInFuture(String)
+  name.vb: NotInFuture(String)
+- uid: CheckAndThrow.Throw.Arg.NotInFuture``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInFuture``1(System.String)
+  id: NotInFuture``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInFuture<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNotInFuture<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInFuture<TFakeReturn>(string)
+  name: NotInFuture<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NotInFuture<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NotInFuture<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNotInFuture
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInFuture
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 93
   assemblies:
   - CheckAndThrow
@@ -1193,7 +1487,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the future.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotInFuture<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NotInFuture<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -1204,29 +1498,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotInFuture(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotInFuture*
+    content.vb: Public Shared Function NotInFuture(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotInFuture*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the future.
-  nameWithType.vb: Throw.Arg.IsNotInFuture(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInFuture(Of TFakeReturn)(String)
-  name.vb: IsNotInFuture(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotInFuture(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInFuture(System.String,System.Object,System.Object)
-  id: IsNotInFuture(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotInFuture(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInFuture(Of TFakeReturn)(String)
+  name.vb: NotInFuture(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NotInFuture(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInFuture(System.String,System.Object,System.Object)
+  id: NotInFuture(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInFuture(string, object, object)
-  nameWithType: Throw.Arg.IsNotInFuture(string, object, object)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInFuture(string, object, object)
+  name: NotInFuture(string, object, object)
+  nameWithType: Throw.Arg.NotInFuture(string, object, object)
+  fullName: CheckAndThrow.Throw.Arg.NotInFuture(string, object, object)
   type: Method
   source:
-    id: IsNotInFuture
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInFuture
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 105
   assemblies:
   - CheckAndThrow
@@ -1234,7 +1532,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the future.
   example: []
   syntax:
-    content: public static void IsNotInFuture(string paramName, object actual, object currentTime)
+    content: public static void NotInFuture(string paramName, object actual, object currentTime)
     parameters:
     - id: paramName
       type: System.String
@@ -1245,29 +1543,33 @@ items:
     - id: currentTime
       type: System.Object
       description: The current time at the moment of the check.
-    content.vb: Public Shared Sub IsNotInFuture(paramName As String, actual As Object, currentTime As Object)
-  overload: CheckAndThrow.Throw.Arg.IsNotInFuture*
+    content.vb: Public Shared Sub NotInFuture(paramName As String, actual As Object, currentTime As Object)
+  overload: CheckAndThrow.Throw.Arg.NotInFuture*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the future.
-  nameWithType.vb: Throw.Arg.IsNotInFuture(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInFuture(String, Object, Object)
-  name.vb: IsNotInFuture(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotInFuture``1(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotInFuture``1(System.String,System.Object,System.Object)
-  id: IsNotInFuture``1(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotInFuture(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInFuture(String, Object, Object)
+  name.vb: NotInFuture(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotInFuture``1(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotInFuture``1(System.String,System.Object,System.Object)
+  id: NotInFuture``1(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotInFuture<TFakeReturn>(string, object, object)
-  nameWithType: Throw.Arg.IsNotInFuture<TFakeReturn>(string, object, object)
-  fullName: CheckAndThrow.Throw.Arg.IsNotInFuture<TFakeReturn>(string, object, object)
+  name: NotInFuture<TFakeReturn>(string, object, object)
+  nameWithType: Throw.Arg.NotInFuture<TFakeReturn>(string, object, object)
+  fullName: CheckAndThrow.Throw.Arg.NotInFuture<TFakeReturn>(string, object, object)
   type: Method
   source:
-    id: IsNotInFuture
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInFuture
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 125
   assemblies:
   - CheckAndThrow
@@ -1275,7 +1577,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not in the future.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotInFuture<TFakeReturn>(string paramName, object actual, object currentTime)
+    content: public static TFakeReturn NotInFuture<TFakeReturn>(string paramName, object actual, object currentTime)
     parameters:
     - id: paramName
       type: System.String
@@ -1292,29 +1594,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotInFuture(Of TFakeReturn)(paramName As String, actual As Object, currentTime As Object) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotInFuture*
+    content.vb: Public Shared Function NotInFuture(Of TFakeReturn)(paramName As String, actual As Object, currentTime As Object) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotInFuture*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not in the future.
-  nameWithType.vb: Throw.Arg.IsNotInFuture(Of TFakeReturn)(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotInFuture(Of TFakeReturn)(String, Object, Object)
-  name.vb: IsNotInFuture(Of TFakeReturn)(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotLaterThan(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotLaterThan(System.String)
-  id: IsNotLaterThan(System.String)
+  nameWithType.vb: Throw.Arg.NotInFuture(Of TFakeReturn)(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotInFuture(Of TFakeReturn)(String, Object, Object)
+  name.vb: NotInFuture(Of TFakeReturn)(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotLaterThan(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotLaterThan(System.String)
+  id: NotLaterThan(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotLaterThan(string)
-  nameWithType: Throw.Arg.IsNotLaterThan(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotLaterThan(string)
+  name: NotLaterThan(string)
+  nameWithType: Throw.Arg.NotLaterThan(string)
+  fullName: CheckAndThrow.Throw.Arg.NotLaterThan(string)
   type: Method
   source:
-    id: IsNotLaterThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotLaterThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 141
   assemblies:
   - CheckAndThrow
@@ -1322,34 +1628,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not later than the comparison value.
   example: []
   syntax:
-    content: public static void IsNotLaterThan(string paramName)
+    content: public static void NotLaterThan(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNotLaterThan(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNotLaterThan*
+    content.vb: Public Shared Sub NotLaterThan(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NotLaterThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not later than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotLaterThan(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotLaterThan(String)
-  name.vb: IsNotLaterThan(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotLaterThan``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotLaterThan``1(System.String)
-  id: IsNotLaterThan``1(System.String)
+  nameWithType.vb: Throw.Arg.NotLaterThan(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotLaterThan(String)
+  name.vb: NotLaterThan(String)
+- uid: CheckAndThrow.Throw.Arg.NotLaterThan``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotLaterThan``1(System.String)
+  id: NotLaterThan``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotLaterThan<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNotLaterThan<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotLaterThan<TFakeReturn>(string)
+  name: NotLaterThan<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NotLaterThan<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NotLaterThan<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNotLaterThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotLaterThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 152
   assemblies:
   - CheckAndThrow
@@ -1357,7 +1667,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not later than the comparison value.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotLaterThan<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NotLaterThan<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -1368,29 +1678,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotLaterThan(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotLaterThan*
+    content.vb: Public Shared Function NotLaterThan(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotLaterThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not later than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotLaterThan(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotLaterThan(Of TFakeReturn)(String)
-  name.vb: IsNotLaterThan(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotLaterThan(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotLaterThan(System.String,System.Object,System.Object)
-  id: IsNotLaterThan(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotLaterThan(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotLaterThan(Of TFakeReturn)(String)
+  name.vb: NotLaterThan(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NotLaterThan(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotLaterThan(System.String,System.Object,System.Object)
+  id: NotLaterThan(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotLaterThan(string, object, object)
-  nameWithType: Throw.Arg.IsNotLaterThan(string, object, object)
-  fullName: CheckAndThrow.Throw.Arg.IsNotLaterThan(string, object, object)
+  name: NotLaterThan(string, object, object)
+  nameWithType: Throw.Arg.NotLaterThan(string, object, object)
+  fullName: CheckAndThrow.Throw.Arg.NotLaterThan(string, object, object)
   type: Method
   source:
-    id: IsNotLaterThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotLaterThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 164
   assemblies:
   - CheckAndThrow
@@ -1398,7 +1712,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not later than the comparison value.
   example: []
   syntax:
-    content: public static void IsNotLaterThan(string paramName, object comparison, object actual)
+    content: public static void NotLaterThan(string paramName, object comparison, object actual)
     parameters:
     - id: paramName
       type: System.String
@@ -1409,29 +1723,33 @@ items:
     - id: actual
       type: System.Object
       description: The actual value that was checked.
-    content.vb: Public Shared Sub IsNotLaterThan(paramName As String, comparison As Object, actual As Object)
-  overload: CheckAndThrow.Throw.Arg.IsNotLaterThan*
+    content.vb: Public Shared Sub NotLaterThan(paramName As String, comparison As Object, actual As Object)
+  overload: CheckAndThrow.Throw.Arg.NotLaterThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not later than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotLaterThan(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotLaterThan(String, Object, Object)
-  name.vb: IsNotLaterThan(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotLaterThan``1(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotLaterThan``1(System.String,System.Object,System.Object)
-  id: IsNotLaterThan``1(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotLaterThan(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotLaterThan(String, Object, Object)
+  name.vb: NotLaterThan(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotLaterThan``1(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotLaterThan``1(System.String,System.Object,System.Object)
+  id: NotLaterThan``1(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotLaterThan<TFakeReturn>(string, object?, object?)
-  nameWithType: Throw.Arg.IsNotLaterThan<TFakeReturn>(string, object?, object?)
-  fullName: CheckAndThrow.Throw.Arg.IsNotLaterThan<TFakeReturn>(string, object?, object?)
+  name: NotLaterThan<TFakeReturn>(string, object?, object?)
+  nameWithType: Throw.Arg.NotLaterThan<TFakeReturn>(string, object?, object?)
+  fullName: CheckAndThrow.Throw.Arg.NotLaterThan<TFakeReturn>(string, object?, object?)
   type: Method
   source:
-    id: IsNotLaterThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotLaterThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 185
   assemblies:
   - CheckAndThrow
@@ -1439,7 +1757,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not later than the comparison value.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotLaterThan<TFakeReturn>(string paramName, object? comparison, object? actual)
+    content: public static TFakeReturn NotLaterThan<TFakeReturn>(string paramName, object? comparison, object? actual)
     parameters:
     - id: paramName
       type: System.String
@@ -1456,29 +1774,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotLaterThan(Of TFakeReturn)(paramName As String, comparison As Object, actual As Object) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotLaterThan*
+    content.vb: Public Shared Function NotLaterThan(Of TFakeReturn)(paramName As String, comparison As Object, actual As Object) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotLaterThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not later than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotLaterThan(Of TFakeReturn)(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotLaterThan(Of TFakeReturn)(String, Object, Object)
-  name.vb: IsNotLaterThan(Of TFakeReturn)(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotEarlierThan(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotEarlierThan(System.String)
-  id: IsNotEarlierThan(System.String)
+  nameWithType.vb: Throw.Arg.NotLaterThan(Of TFakeReturn)(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotLaterThan(Of TFakeReturn)(String, Object, Object)
+  name.vb: NotLaterThan(Of TFakeReturn)(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotEarlierThan(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotEarlierThan(System.String)
+  id: NotEarlierThan(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotEarlierThan(string)
-  nameWithType: Throw.Arg.IsNotEarlierThan(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotEarlierThan(string)
+  name: NotEarlierThan(string)
+  nameWithType: Throw.Arg.NotEarlierThan(string)
+  fullName: CheckAndThrow.Throw.Arg.NotEarlierThan(string)
   type: Method
   source:
-    id: IsNotEarlierThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotEarlierThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 201
   assemblies:
   - CheckAndThrow
@@ -1486,34 +1808,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not earlier than the comparison value.
   example: []
   syntax:
-    content: public static void IsNotEarlierThan(string paramName)
+    content: public static void NotEarlierThan(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNotEarlierThan(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNotEarlierThan*
+    content.vb: Public Shared Sub NotEarlierThan(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NotEarlierThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not earlier than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotEarlierThan(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotEarlierThan(String)
-  name.vb: IsNotEarlierThan(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotEarlierThan``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotEarlierThan``1(System.String)
-  id: IsNotEarlierThan``1(System.String)
+  nameWithType.vb: Throw.Arg.NotEarlierThan(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotEarlierThan(String)
+  name.vb: NotEarlierThan(String)
+- uid: CheckAndThrow.Throw.Arg.NotEarlierThan``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotEarlierThan``1(System.String)
+  id: NotEarlierThan``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotEarlierThan<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNotEarlierThan<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotEarlierThan<TFakeReturn>(string)
+  name: NotEarlierThan<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NotEarlierThan<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NotEarlierThan<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNotEarlierThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotEarlierThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 212
   assemblies:
   - CheckAndThrow
@@ -1521,7 +1847,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not earlier than the comparison value.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotEarlierThan<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NotEarlierThan<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -1532,29 +1858,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotEarlierThan(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotEarlierThan*
+    content.vb: Public Shared Function NotEarlierThan(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotEarlierThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not earlier than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotEarlierThan(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotEarlierThan(Of TFakeReturn)(String)
-  name.vb: IsNotEarlierThan(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotEarlierThan(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotEarlierThan(System.String,System.Object,System.Object)
-  id: IsNotEarlierThan(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotEarlierThan(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotEarlierThan(Of TFakeReturn)(String)
+  name.vb: NotEarlierThan(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NotEarlierThan(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotEarlierThan(System.String,System.Object,System.Object)
+  id: NotEarlierThan(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotEarlierThan(string, object?, object?)
-  nameWithType: Throw.Arg.IsNotEarlierThan(string, object?, object?)
-  fullName: CheckAndThrow.Throw.Arg.IsNotEarlierThan(string, object?, object?)
+  name: NotEarlierThan(string, object?, object?)
+  nameWithType: Throw.Arg.NotEarlierThan(string, object?, object?)
+  fullName: CheckAndThrow.Throw.Arg.NotEarlierThan(string, object?, object?)
   type: Method
   source:
-    id: IsNotEarlierThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotEarlierThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 224
   assemblies:
   - CheckAndThrow
@@ -1562,7 +1892,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not earlier than the comparison value.
   example: []
   syntax:
-    content: public static void IsNotEarlierThan(string paramName, object? comparison, object? actual)
+    content: public static void NotEarlierThan(string paramName, object? comparison, object? actual)
     parameters:
     - id: paramName
       type: System.String
@@ -1573,29 +1903,33 @@ items:
     - id: actual
       type: System.Object
       description: The actual value that was checked.
-    content.vb: Public Shared Sub IsNotEarlierThan(paramName As String, comparison As Object, actual As Object)
-  overload: CheckAndThrow.Throw.Arg.IsNotEarlierThan*
+    content.vb: Public Shared Sub NotEarlierThan(paramName As String, comparison As Object, actual As Object)
+  overload: CheckAndThrow.Throw.Arg.NotEarlierThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not earlier than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotEarlierThan(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotEarlierThan(String, Object, Object)
-  name.vb: IsNotEarlierThan(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsNotEarlierThan``1(System.String,System.Object,System.Object)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotEarlierThan``1(System.String,System.Object,System.Object)
-  id: IsNotEarlierThan``1(System.String,System.Object,System.Object)
+  nameWithType.vb: Throw.Arg.NotEarlierThan(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotEarlierThan(String, Object, Object)
+  name.vb: NotEarlierThan(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.NotEarlierThan``1(System.String,System.Object,System.Object)
+  commentId: M:CheckAndThrow.Throw.Arg.NotEarlierThan``1(System.String,System.Object,System.Object)
+  id: NotEarlierThan``1(System.String,System.Object,System.Object)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotEarlierThan<TFakeReturn>(string, object?, object?)
-  nameWithType: Throw.Arg.IsNotEarlierThan<TFakeReturn>(string, object?, object?)
-  fullName: CheckAndThrow.Throw.Arg.IsNotEarlierThan<TFakeReturn>(string, object?, object?)
+  name: NotEarlierThan<TFakeReturn>(string, object?, object?)
+  nameWithType: Throw.Arg.NotEarlierThan<TFakeReturn>(string, object?, object?)
+  fullName: CheckAndThrow.Throw.Arg.NotEarlierThan<TFakeReturn>(string, object?, object?)
   type: Method
   source:
-    id: IsNotEarlierThan
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\DateTime.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/DateTime.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotEarlierThan
+    path: ../CheckAndThrow/Throw/Arg/DateTime.cs
     startLine: 245
   assemblies:
   - CheckAndThrow
@@ -1603,7 +1937,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the DateTime argument is not earlier than the comparison value.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotEarlierThan<TFakeReturn>(string paramName, object? comparison, object? actual)
+    content: public static TFakeReturn NotEarlierThan<TFakeReturn>(string paramName, object? comparison, object? actual)
     parameters:
     - id: paramName
       type: System.String
@@ -1620,29 +1954,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotEarlierThan(Of TFakeReturn)(paramName As String, comparison As Object, actual As Object) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotEarlierThan*
+    content.vb: Public Shared Function NotEarlierThan(Of TFakeReturn)(paramName As String, comparison As Object, actual As Object) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotEarlierThan*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the DateTime is not earlier than the comparison value.
-  nameWithType.vb: Throw.Arg.IsNotEarlierThan(Of TFakeReturn)(String, Object, Object)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotEarlierThan(Of TFakeReturn)(String, Object, Object)
-  name.vb: IsNotEarlierThan(Of TFakeReturn)(String, Object, Object)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.Int32,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.Int32,System.String)
-  id: IsInvalidEnumValue(System.Type,System.Int32,System.String)
+  nameWithType.vb: Throw.Arg.NotEarlierThan(Of TFakeReturn)(String, Object, Object)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotEarlierThan(Of TFakeReturn)(String, Object, Object)
+  name.vb: NotEarlierThan(Of TFakeReturn)(String, Object, Object)
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.Int32,System.String)
+  id: InvalidEnumValue(System.Type,System.Int32,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidEnumValue(Type, int, string)
-  nameWithType: Throw.Arg.IsInvalidEnumValue(Type, int, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type, int, string)
+  name: InvalidEnumValue(Type, int, string)
+  nameWithType: Throw.Arg.InvalidEnumValue(Type, int, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type, int, string)
   type: Method
   source:
-    id: IsInvalidEnumValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidEnumValue
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 59
   assemblies:
   - CheckAndThrow
@@ -1650,7 +1988,7 @@ items:
   summary: Throws an <xref href="System.ComponentModel.InvalidEnumArgumentException" data-throw-if-not-resolved="false"></xref> because the enum value is not defined.
   example: []
   syntax:
-    content: public static void IsInvalidEnumValue(Type enumType, int enumValue, string paramName = "")
+    content: public static void InvalidEnumValue(Type enumType, int enumValue, string paramName = "")
     parameters:
     - id: enumType
       type: System.Type
@@ -1661,29 +1999,33 @@ items:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsInvalidEnumValue(enumType As Type, enumValue As Integer, paramName As String = "")
-  overload: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
+    content.vb: Public Shared Sub InvalidEnumValue(enumType As Type, enumValue As Integer, paramName As String = "")
+  overload: CheckAndThrow.Throw.Arg.InvalidEnumValue*
   exceptions:
   - type: System.ComponentModel.InvalidEnumArgumentException
     commentId: T:System.ComponentModel.InvalidEnumArgumentException
     description: Thrown because the enum value is not defined.
-  nameWithType.vb: Throw.Arg.IsInvalidEnumValue(Type, Integer, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type, Integer, String)
-  name.vb: IsInvalidEnumValue(Type, Integer, String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.Int32,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.Int32,System.String)
-  id: IsInvalidEnumValue``1(System.Type,System.Int32,System.String)
+  nameWithType.vb: Throw.Arg.InvalidEnumValue(Type, Integer, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type, Integer, String)
+  name.vb: InvalidEnumValue(Type, Integer, String)
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.Int32,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.Int32,System.String)
+  id: InvalidEnumValue``1(System.Type,System.Int32,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidEnumValue<TFakeReturn>(Type, int, string)
-  nameWithType: Throw.Arg.IsInvalidEnumValue<TFakeReturn>(Type, int, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue<TFakeReturn>(System.Type, int, string)
+  name: InvalidEnumValue<TFakeReturn>(Type, int, string)
+  nameWithType: Throw.Arg.InvalidEnumValue<TFakeReturn>(Type, int, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue<TFakeReturn>(System.Type, int, string)
   type: Method
   source:
-    id: IsInvalidEnumValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidEnumValue
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 76
   assemblies:
   - CheckAndThrow
@@ -1691,7 +2033,7 @@ items:
   summary: Throws an <xref href="System.ComponentModel.InvalidEnumArgumentException" data-throw-if-not-resolved="false"></xref> because the enum value is not defined.
   example: []
   syntax:
-    content: public static TFakeReturn IsInvalidEnumValue<TFakeReturn>(Type enumType, int enumValue, string paramName = "")
+    content: public static TFakeReturn InvalidEnumValue<TFakeReturn>(Type enumType, int enumValue, string paramName = "")
     parameters:
     - id: enumType
       type: System.Type
@@ -1708,29 +2050,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsInvalidEnumValue(Of TFakeReturn)(enumType As Type, enumValue As Integer, paramName As String = "") As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
+    content.vb: Public Shared Function InvalidEnumValue(Of TFakeReturn)(enumType As Type, enumValue As Integer, paramName As String = "") As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.InvalidEnumValue*
   exceptions:
   - type: System.ComponentModel.InvalidEnumArgumentException
     commentId: T:System.ComponentModel.InvalidEnumArgumentException
     description: Thrown because the enum value is not defined.
-  nameWithType.vb: Throw.Arg.IsInvalidEnumValue(Of TFakeReturn)(Type, Integer, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(Of TFakeReturn)(System.Type, Integer, String)
-  name.vb: IsInvalidEnumValue(Of TFakeReturn)(Type, Integer, String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.Enum,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.Enum,System.String)
-  id: IsInvalidEnumValue(System.Type,System.Enum,System.String)
+  nameWithType.vb: Throw.Arg.InvalidEnumValue(Of TFakeReturn)(Type, Integer, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidEnumValue(Of TFakeReturn)(System.Type, Integer, String)
+  name.vb: InvalidEnumValue(Of TFakeReturn)(Type, Integer, String)
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.Enum,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.Enum,System.String)
+  id: InvalidEnumValue(System.Type,System.Enum,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidEnumValue(Type, Enum, string)
-  nameWithType: Throw.Arg.IsInvalidEnumValue(Type, Enum, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type, System.Enum, string)
+  name: InvalidEnumValue(Type, Enum, string)
+  nameWithType: Throw.Arg.InvalidEnumValue(Type, Enum, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type, System.Enum, string)
   type: Method
   source:
-    id: IsInvalidEnumValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidEnumValue
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 91
   assemblies:
   - CheckAndThrow
@@ -1738,7 +2084,7 @@ items:
   summary: Throws an <xref href="System.ComponentModel.InvalidEnumArgumentException" data-throw-if-not-resolved="false"></xref> because the enum value is not defined.
   example: []
   syntax:
-    content: public static void IsInvalidEnumValue(Type enumType, Enum enumValue, string paramName = "")
+    content: public static void InvalidEnumValue(Type enumType, Enum enumValue, string paramName = "")
     parameters:
     - id: enumType
       type: System.Type
@@ -1749,29 +2095,33 @@ items:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsInvalidEnumValue(enumType As Type, enumValue As [Enum], paramName As String = "")
-  overload: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
+    content.vb: Public Shared Sub InvalidEnumValue(enumType As Type, enumValue As [Enum], paramName As String = "")
+  overload: CheckAndThrow.Throw.Arg.InvalidEnumValue*
   exceptions:
   - type: System.ComponentModel.InvalidEnumArgumentException
     commentId: T:System.ComponentModel.InvalidEnumArgumentException
     description: Thrown because the enum value is not defined.
-  nameWithType.vb: Throw.Arg.IsInvalidEnumValue(Type, Enum, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type, System.Enum, String)
-  name.vb: IsInvalidEnumValue(Type, Enum, String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.Enum,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.Enum,System.String)
-  id: IsInvalidEnumValue``1(System.Type,System.Enum,System.String)
+  nameWithType.vb: Throw.Arg.InvalidEnumValue(Type, Enum, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type, System.Enum, String)
+  name.vb: InvalidEnumValue(Type, Enum, String)
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.Enum,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.Enum,System.String)
+  id: InvalidEnumValue``1(System.Type,System.Enum,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidEnumValue<TFakeReturn>(Type, Enum, string)
-  nameWithType: Throw.Arg.IsInvalidEnumValue<TFakeReturn>(Type, Enum, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue<TFakeReturn>(System.Type, System.Enum, string)
+  name: InvalidEnumValue<TFakeReturn>(Type, Enum, string)
+  nameWithType: Throw.Arg.InvalidEnumValue<TFakeReturn>(Type, Enum, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue<TFakeReturn>(System.Type, System.Enum, string)
   type: Method
   source:
-    id: IsInvalidEnumValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidEnumValue
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 113
   assemblies:
   - CheckAndThrow
@@ -1779,7 +2129,7 @@ items:
   summary: Throws an <xref href="System.ComponentModel.InvalidEnumArgumentException" data-throw-if-not-resolved="false"></xref> because the enum value is not defined.
   example: []
   syntax:
-    content: public static TFakeReturn IsInvalidEnumValue<TFakeReturn>(Type enumType, Enum enumValue, string paramName = "")
+    content: public static TFakeReturn InvalidEnumValue<TFakeReturn>(Type enumType, Enum enumValue, string paramName = "")
     parameters:
     - id: enumType
       type: System.Type
@@ -1796,29 +2146,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsInvalidEnumValue(Of TFakeReturn)(enumType As Type, enumValue As [Enum], paramName As String = "") As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
+    content.vb: Public Shared Function InvalidEnumValue(Of TFakeReturn)(enumType As Type, enumValue As [Enum], paramName As String = "") As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.InvalidEnumValue*
   exceptions:
   - type: System.ComponentModel.InvalidEnumArgumentException
     commentId: T:System.ComponentModel.InvalidEnumArgumentException
     description: Thrown because the enum value is not defined.
-  nameWithType.vb: Throw.Arg.IsInvalidEnumValue(Of TFakeReturn)(Type, Enum, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(Of TFakeReturn)(System.Type, System.Enum, String)
-  name.vb: IsInvalidEnumValue(Of TFakeReturn)(Type, Enum, String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.String,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type,System.String,System.String)
-  id: IsInvalidEnumValue(System.Type,System.String,System.String)
+  nameWithType.vb: Throw.Arg.InvalidEnumValue(Of TFakeReturn)(Type, Enum, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidEnumValue(Of TFakeReturn)(System.Type, System.Enum, String)
+  name.vb: InvalidEnumValue(Of TFakeReturn)(Type, Enum, String)
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.String,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type,System.String,System.String)
+  id: InvalidEnumValue(System.Type,System.String,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidEnumValue(Type, string, string)
-  nameWithType: Throw.Arg.IsInvalidEnumValue(Type, string, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type, string, string)
+  name: InvalidEnumValue(Type, string, string)
+  nameWithType: Throw.Arg.InvalidEnumValue(Type, string, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type, string, string)
   type: Method
   source:
-    id: IsInvalidEnumValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidEnumValue
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 133
   assemblies:
   - CheckAndThrow
@@ -1826,7 +2180,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the enum value is not defined.
   example: []
   syntax:
-    content: public static void IsInvalidEnumValue(Type enumType, string enumValue, string paramName = "")
+    content: public static void InvalidEnumValue(Type enumType, string enumValue, string paramName = "")
     parameters:
     - id: enumType
       type: System.Type
@@ -1837,29 +2191,33 @@ items:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsInvalidEnumValue(enumType As Type, enumValue As String, paramName As String = "")
-  overload: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
+    content.vb: Public Shared Sub InvalidEnumValue(enumType As Type, enumValue As String, paramName As String = "")
+  overload: CheckAndThrow.Throw.Arg.InvalidEnumValue*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the enum value is not defined.
-  nameWithType.vb: Throw.Arg.IsInvalidEnumValue(Type, String, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(System.Type, String, String)
-  name.vb: IsInvalidEnumValue(Type, String, String)
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.String,System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsInvalidEnumValue``1(System.Type,System.String,System.String)
-  id: IsInvalidEnumValue``1(System.Type,System.String,System.String)
+  nameWithType.vb: Throw.Arg.InvalidEnumValue(Type, String, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidEnumValue(System.Type, String, String)
+  name.vb: InvalidEnumValue(Type, String, String)
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.String,System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.InvalidEnumValue``1(System.Type,System.String,System.String)
+  id: InvalidEnumValue``1(System.Type,System.String,System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsInvalidEnumValue<TFakeReturn>(Type, string, string)
-  nameWithType: Throw.Arg.IsInvalidEnumValue<TFakeReturn>(Type, string, string)
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue<TFakeReturn>(System.Type, string, string)
+  name: InvalidEnumValue<TFakeReturn>(Type, string, string)
+  nameWithType: Throw.Arg.InvalidEnumValue<TFakeReturn>(Type, string, string)
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue<TFakeReturn>(System.Type, string, string)
   type: Method
   source:
-    id: IsInvalidEnumValue
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: InvalidEnumValue
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 150
   assemblies:
   - CheckAndThrow
@@ -1867,7 +2225,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the enum value is not defined.
   example: []
   syntax:
-    content: public static TFakeReturn IsInvalidEnumValue<TFakeReturn>(Type enumType, string enumValue, string paramName = "")
+    content: public static TFakeReturn InvalidEnumValue<TFakeReturn>(Type enumType, string enumValue, string paramName = "")
     parameters:
     - id: enumType
       type: System.Type
@@ -1884,15 +2242,15 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsInvalidEnumValue(Of TFakeReturn)(enumType As Type, enumValue As String, paramName As String = "") As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
+    content.vb: Public Shared Function InvalidEnumValue(Of TFakeReturn)(enumType As Type, enumValue As String, paramName As String = "") As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.InvalidEnumValue*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the enum value is not defined.
-  nameWithType.vb: Throw.Arg.IsInvalidEnumValue(Of TFakeReturn)(Type, String, String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsInvalidEnumValue(Of TFakeReturn)(System.Type, String, String)
-  name.vb: IsInvalidEnumValue(Of TFakeReturn)(Type, String, String)
+  nameWithType.vb: Throw.Arg.InvalidEnumValue(Of TFakeReturn)(Type, String, String)
+  fullName.vb: CheckAndThrow.Throw.Arg.InvalidEnumValue(Of TFakeReturn)(System.Type, String, String)
+  name.vb: InvalidEnumValue(Of TFakeReturn)(Type, String, String)
 - uid: CheckAndThrow.Throw.Arg.MissesAnyOfTheFlags(System.Type,System.String,System.String)
   commentId: M:CheckAndThrow.Throw.Arg.MissesAnyOfTheFlags(System.Type,System.String,System.String)
   id: MissesAnyOfTheFlags(System.Type,System.String,System.String)
@@ -1905,8 +2263,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.MissesAnyOfTheFlags(System.Type, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: MissesAnyOfTheFlags
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 165
   assemblies:
   - CheckAndThrow
@@ -1946,8 +2308,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.MissesAnyOfTheFlags<TFakeReturn>(System.Type, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: MissesAnyOfTheFlags
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 181
   assemblies:
   - CheckAndThrow
@@ -1993,8 +2359,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.MissesAllFlags(System.Type, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: MissesAllFlags
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 195
   assemblies:
   - CheckAndThrow
@@ -2034,8 +2404,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.MissesAllFlags<TFakeReturn>(System.Type, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Enum.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: MissesAllFlags
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Enum.cs
+    path: ../CheckAndThrow/Throw/Arg/Enum.cs
     startLine: 211
   assemblies:
   - CheckAndThrow
@@ -2069,20 +2443,24 @@ items:
   nameWithType.vb: Throw.Arg.MissesAllFlags(Of TFakeReturn)(Type, String, String)
   fullName.vb: CheckAndThrow.Throw.Arg.MissesAllFlags(Of TFakeReturn)(System.Type, String, String)
   name.vb: MissesAllFlags(Of TFakeReturn)(Type, String, String)
-- uid: CheckAndThrow.Throw.Arg.IsGuidEmpty(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsGuidEmpty(System.String)
-  id: IsGuidEmpty(System.String)
+- uid: CheckAndThrow.Throw.Arg.GuidEmpty(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.GuidEmpty(System.String)
+  id: GuidEmpty(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsGuidEmpty(string)
-  nameWithType: Throw.Arg.IsGuidEmpty(string)
-  fullName: CheckAndThrow.Throw.Arg.IsGuidEmpty(string)
+  name: GuidEmpty(string)
+  nameWithType: Throw.Arg.GuidEmpty(string)
+  fullName: CheckAndThrow.Throw.Arg.GuidEmpty(string)
   type: Method
   source:
-    id: IsGuidEmpty
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Guid.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Guid.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: GuidEmpty
+    path: ../CheckAndThrow/Throw/Arg/Guid.cs
     startLine: 13
   assemblies:
   - CheckAndThrow
@@ -2090,34 +2468,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the Guid argument is empty.
   example: []
   syntax:
-    content: public static void IsGuidEmpty(string paramName)
+    content: public static void GuidEmpty(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsGuidEmpty(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsGuidEmpty*
+    content.vb: Public Shared Sub GuidEmpty(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.GuidEmpty*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the Guid is empty.
-  nameWithType.vb: Throw.Arg.IsGuidEmpty(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsGuidEmpty(String)
-  name.vb: IsGuidEmpty(String)
-- uid: CheckAndThrow.Throw.Arg.IsGuidEmpty``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsGuidEmpty``1(System.String)
-  id: IsGuidEmpty``1(System.String)
+  nameWithType.vb: Throw.Arg.GuidEmpty(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.GuidEmpty(String)
+  name.vb: GuidEmpty(String)
+- uid: CheckAndThrow.Throw.Arg.GuidEmpty``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.GuidEmpty``1(System.String)
+  id: GuidEmpty``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsGuidEmpty<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsGuidEmpty<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsGuidEmpty<TFakeReturn>(string)
+  name: GuidEmpty<TFakeReturn>(string)
+  nameWithType: Throw.Arg.GuidEmpty<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.GuidEmpty<TFakeReturn>(string)
   type: Method
   source:
-    id: IsGuidEmpty
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Guid.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Guid.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: GuidEmpty
+    path: ../CheckAndThrow/Throw/Arg/Guid.cs
     startLine: 24
   assemblies:
   - CheckAndThrow
@@ -2125,7 +2507,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the Guid argument is empty.
   example: []
   syntax:
-    content: public static TFakeReturn IsGuidEmpty<TFakeReturn>(string paramName)
+    content: public static TFakeReturn GuidEmpty<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -2136,29 +2518,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsGuidEmpty(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsGuidEmpty*
+    content.vb: Public Shared Function GuidEmpty(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.GuidEmpty*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the Guid is empty.
-  nameWithType.vb: Throw.Arg.IsGuidEmpty(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsGuidEmpty(Of TFakeReturn)(String)
-  name.vb: IsGuidEmpty(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNull(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNull(System.String)
-  id: IsNull(System.String)
+  nameWithType.vb: Throw.Arg.GuidEmpty(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.GuidEmpty(Of TFakeReturn)(String)
+  name.vb: GuidEmpty(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.Null(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Null(System.String)
+  id: Null(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNull(string)
-  nameWithType: Throw.Arg.IsNull(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNull(string)
+  name: Null(string)
+  nameWithType: Throw.Arg.Null(string)
+  fullName: CheckAndThrow.Throw.Arg.Null(string)
   type: Method
   source:
-    id: IsNull
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\NotNull.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/NotNull.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: "Null"
+    path: ../CheckAndThrow/Throw/Arg/NotNull.cs
     startLine: 11
   assemblies:
   - CheckAndThrow
@@ -2166,34 +2552,38 @@ items:
   summary: Throws an <xref href="System.ArgumentNullException" data-throw-if-not-resolved="false"></xref> because the argument is null.
   example: []
   syntax:
-    content: public static void IsNull(string paramName)
+    content: public static void Null(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNull(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNull*
+    content.vb: Public Shared Sub Null(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.Null*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown because the argument is null.
-  nameWithType.vb: Throw.Arg.IsNull(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNull(String)
-  name.vb: IsNull(String)
-- uid: CheckAndThrow.Throw.Arg.IsNull``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNull``1(System.String)
-  id: IsNull``1(System.String)
+  nameWithType.vb: Throw.Arg.Null(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Null(String)
+  name.vb: Null(String)
+- uid: CheckAndThrow.Throw.Arg.Null``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Null``1(System.String)
+  id: Null``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNull<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNull<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNull<TFakeReturn>(string)
+  name: Null<TFakeReturn>(string)
+  nameWithType: Throw.Arg.Null<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.Null<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNull
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\NotNull.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/NotNull.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: "Null"
+    path: ../CheckAndThrow/Throw/Arg/NotNull.cs
     startLine: 22
   assemblies:
   - CheckAndThrow
@@ -2201,7 +2591,7 @@ items:
   summary: Throws an <xref href="System.ArgumentNullException" data-throw-if-not-resolved="false"></xref> because the argument is null.
   example: []
   syntax:
-    content: public static TFakeReturn IsNull<TFakeReturn>(string paramName)
+    content: public static TFakeReturn Null<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -2212,15 +2602,183 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNull(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNull*
+    content.vb: Public Shared Function Null(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.Null*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown because the argument is null.
-  nameWithType.vb: Throw.Arg.IsNull(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNull(Of TFakeReturn)(String)
-  name.vb: IsNull(Of TFakeReturn)(String)
+  nameWithType.vb: Throw.Arg.Null(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Null(Of TFakeReturn)(String)
+  name.vb: Null(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NaN(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NaN(System.String)
+  id: NaN(System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: NaN(string)
+  nameWithType: Throw.Arg.NaN(string)
+  fullName: CheckAndThrow.Throw.Arg.NaN(string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Number.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NaN
+    path: ../CheckAndThrow/Throw/Arg/Number.cs
+    startLine: 9
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> when an argument is NaN.
+  example: []
+  syntax:
+    content: public static void NaN(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the NaN parameter.
+    content.vb: Public Shared Sub NaN(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NaN*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Always thrown.
+  nameWithType.vb: Throw.Arg.NaN(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NaN(String)
+  name.vb: NaN(String)
+- uid: CheckAndThrow.Throw.Arg.NaN``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NaN``1(System.String)
+  id: NaN``1(System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: NaN<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NaN<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NaN<TFakeReturn>(string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Number.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NaN
+    path: ../CheckAndThrow/Throw/Arg/Number.cs
+    startLine: 18
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> when an argument is NaN.
+  example: []
+  syntax:
+    content: public static TFakeReturn NaN<TFakeReturn>(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the NaN parameter.
+    typeParameters:
+    - id: TFakeReturn
+      description: The fake return type.
+    return:
+      type: '{TFakeReturn}'
+      description: This method never returns.
+    content.vb: Public Shared Function NaN(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NaN*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Always thrown.
+  nameWithType.vb: Throw.Arg.NaN(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NaN(Of TFakeReturn)(String)
+  name.vb: NaN(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.Infinity(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Infinity(System.String)
+  id: Infinity(System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: Infinity(string)
+  nameWithType: Throw.Arg.Infinity(string)
+  fullName: CheckAndThrow.Throw.Arg.Infinity(string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Number.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Infinity
+    path: ../CheckAndThrow/Throw/Arg/Number.cs
+    startLine: 25
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> when an argument is infinite.
+  example: []
+  syntax:
+    content: public static void Infinity(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the infinite parameter.
+    content.vb: Public Shared Sub Infinity(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.Infinity*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Always thrown.
+  nameWithType.vb: Throw.Arg.Infinity(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Infinity(String)
+  name.vb: Infinity(String)
+- uid: CheckAndThrow.Throw.Arg.Infinity``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.Infinity``1(System.String)
+  id: Infinity``1(System.String)
+  parent: CheckAndThrow.Throw.Arg
+  langs:
+  - csharp
+  - vb
+  name: Infinity<TFakeReturn>(string)
+  nameWithType: Throw.Arg.Infinity<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.Infinity<TFakeReturn>(string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Number.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Infinity
+    path: ../CheckAndThrow/Throw/Arg/Number.cs
+    startLine: 34
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Throws an <xref href="System.ArgumentOutOfRangeException" data-throw-if-not-resolved="false"></xref> when an argument is infinite.
+  example: []
+  syntax:
+    content: public static TFakeReturn Infinity<TFakeReturn>(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+      description: The name of the infinite parameter.
+    typeParameters:
+    - id: TFakeReturn
+      description: The fake return type.
+    return:
+      type: '{TFakeReturn}'
+      description: This method never returns.
+    content.vb: Public Shared Function Infinity(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.Infinity*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Always thrown.
+  nameWithType.vb: Throw.Arg.Infinity(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.Infinity(Of TFakeReturn)(String)
+  name.vb: Infinity(Of TFakeReturn)(String)
 - uid: CheckAndThrow.Throw.Arg.NotNegative(System.Object,System.String)
   commentId: M:CheckAndThrow.Throw.Arg.NotNegative(System.Object,System.String)
   id: NotNegative(System.Object,System.String)
@@ -2233,8 +2791,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotNegative(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/Negative.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotNegative
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\Negative.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/Negative.cs
     startLine: 18
   assemblies:
   - CheckAndThrow
@@ -2271,8 +2833,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotNegative<TFakeReturn>(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/Negative.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotNegative
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\Negative.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/Negative.cs
     startLine: 32
   assemblies:
   - CheckAndThrow
@@ -2315,8 +2881,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotPositive(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/Positive.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotPositive
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\Positive.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/Positive.cs
     startLine: 18
   assemblies:
   - CheckAndThrow
@@ -2353,8 +2923,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotPositive<TFakeReturn>(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/Positive.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotPositive
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\Positive.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/Positive.cs
     startLine: 32
   assemblies:
   - CheckAndThrow
@@ -2397,8 +2971,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.OutOfRange(object, object, object, string, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/Range.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: OutOfRange
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\Range.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/Range.cs
     startLine: 54
   assemblies:
   - CheckAndThrow
@@ -2447,8 +3025,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.OutOfRange<TFakeReturn>(object, object, object, string, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/Range.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: OutOfRange
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\Range.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/Range.cs
     startLine: 84
   assemblies:
   - CheckAndThrow
@@ -2503,8 +3085,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotZeroOrNegative(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/ZeroOrNegative.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotZeroOrNegative
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\ZeroOrNegative.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/ZeroOrNegative.cs
     startLine: 23
   assemblies:
   - CheckAndThrow
@@ -2541,8 +3127,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotZeroOrNegative<TFakeReturn>(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/ZeroOrNegative.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotZeroOrNegative
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\ZeroOrNegative.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/ZeroOrNegative.cs
     startLine: 37
   assemblies:
   - CheckAndThrow
@@ -2585,8 +3175,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotZeroOrPositive(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/ZeroOrPositive.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotZeroOrPositive
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\ZeroOrPositive.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/ZeroOrPositive.cs
     startLine: 23
   assemblies:
   - CheckAndThrow
@@ -2623,8 +3217,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.NotZeroOrPositive<TFakeReturn>(object, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Range/ZeroOrPositive.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotZeroOrPositive
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Range\ZeroOrPositive.cs
+    path: ../CheckAndThrow/Throw/Arg/Range/ZeroOrPositive.cs
     startLine: 37
   assemblies:
   - CheckAndThrow
@@ -2655,20 +3253,24 @@ items:
   nameWithType.vb: Throw.Arg.NotZeroOrPositive(Of TFakeReturn)(Object, String)
   fullName.vb: CheckAndThrow.Throw.Arg.NotZeroOrPositive(Of TFakeReturn)(Object, String)
   name.vb: NotZeroOrPositive(Of TFakeReturn)(Object, String)
-- uid: CheckAndThrow.Throw.Arg.IsNullOrEmpty(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNullOrEmpty(System.String)
-  id: IsNullOrEmpty(System.String)
+- uid: CheckAndThrow.Throw.Arg.NullOrEmpty(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NullOrEmpty(System.String)
+  id: NullOrEmpty(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNullOrEmpty(string)
-  nameWithType: Throw.Arg.IsNullOrEmpty(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNullOrEmpty(string)
+  name: NullOrEmpty(string)
+  nameWithType: Throw.Arg.NullOrEmpty(string)
+  fullName: CheckAndThrow.Throw.Arg.NullOrEmpty(string)
   type: Method
   source:
-    id: IsNullOrEmpty
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NullOrEmpty
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 32
   assemblies:
   - CheckAndThrow
@@ -2676,34 +3278,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the string argument is null or empty.
   example: []
   syntax:
-    content: public static void IsNullOrEmpty(string paramName)
+    content: public static void NullOrEmpty(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNullOrEmpty(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNullOrEmpty*
+    content.vb: Public Shared Sub NullOrEmpty(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NullOrEmpty*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the string is null or empty.
-  nameWithType.vb: Throw.Arg.IsNullOrEmpty(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNullOrEmpty(String)
-  name.vb: IsNullOrEmpty(String)
-- uid: CheckAndThrow.Throw.Arg.IsNullOrEmpty``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNullOrEmpty``1(System.String)
-  id: IsNullOrEmpty``1(System.String)
+  nameWithType.vb: Throw.Arg.NullOrEmpty(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NullOrEmpty(String)
+  name.vb: NullOrEmpty(String)
+- uid: CheckAndThrow.Throw.Arg.NullOrEmpty``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NullOrEmpty``1(System.String)
+  id: NullOrEmpty``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNullOrEmpty<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNullOrEmpty<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNullOrEmpty<TFakeReturn>(string)
+  name: NullOrEmpty<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NullOrEmpty<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NullOrEmpty<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNullOrEmpty
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NullOrEmpty
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 43
   assemblies:
   - CheckAndThrow
@@ -2711,7 +3317,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the string argument is null or empty.
   example: []
   syntax:
-    content: public static TFakeReturn IsNullOrEmpty<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NullOrEmpty<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -2722,29 +3328,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNullOrEmpty(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNullOrEmpty*
+    content.vb: Public Shared Function NullOrEmpty(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NullOrEmpty*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the string is null or empty.
-  nameWithType.vb: Throw.Arg.IsNullOrEmpty(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNullOrEmpty(Of TFakeReturn)(String)
-  name.vb: IsNullOrEmpty(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace(System.String)
-  id: IsNullOrWhiteSpace(System.String)
+  nameWithType.vb: Throw.Arg.NullOrEmpty(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NullOrEmpty(Of TFakeReturn)(String)
+  name.vb: NullOrEmpty(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NullOrWhiteSpace(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NullOrWhiteSpace(System.String)
+  id: NullOrWhiteSpace(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNullOrWhiteSpace(string)
-  nameWithType: Throw.Arg.IsNullOrWhiteSpace(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace(string)
+  name: NullOrWhiteSpace(string)
+  nameWithType: Throw.Arg.NullOrWhiteSpace(string)
+  fullName: CheckAndThrow.Throw.Arg.NullOrWhiteSpace(string)
   type: Method
   source:
-    id: IsNullOrWhiteSpace
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NullOrWhiteSpace
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 53
   assemblies:
   - CheckAndThrow
@@ -2752,34 +3362,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the string argument is null or white space.
   example: []
   syntax:
-    content: public static void IsNullOrWhiteSpace(string paramName)
+    content: public static void NullOrWhiteSpace(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNullOrWhiteSpace(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace*
+    content.vb: Public Shared Sub NullOrWhiteSpace(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NullOrWhiteSpace*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the string is null or white space.
-  nameWithType.vb: Throw.Arg.IsNullOrWhiteSpace(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace(String)
-  name.vb: IsNullOrWhiteSpace(String)
-- uid: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace``1(System.String)
-  id: IsNullOrWhiteSpace``1(System.String)
+  nameWithType.vb: Throw.Arg.NullOrWhiteSpace(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NullOrWhiteSpace(String)
+  name.vb: NullOrWhiteSpace(String)
+- uid: CheckAndThrow.Throw.Arg.NullOrWhiteSpace``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NullOrWhiteSpace``1(System.String)
+  id: NullOrWhiteSpace``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNullOrWhiteSpace<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNullOrWhiteSpace<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace<TFakeReturn>(string)
+  name: NullOrWhiteSpace<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NullOrWhiteSpace<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NullOrWhiteSpace<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNullOrWhiteSpace
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NullOrWhiteSpace
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 64
   assemblies:
   - CheckAndThrow
@@ -2787,7 +3401,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the string argument is null or white space.
   example: []
   syntax:
-    content: public static TFakeReturn IsNullOrWhiteSpace<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NullOrWhiteSpace<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -2798,15 +3412,15 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNullOrWhiteSpace(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace*
+    content.vb: Public Shared Function NullOrWhiteSpace(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NullOrWhiteSpace*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the string is null or white space.
-  nameWithType.vb: Throw.Arg.IsNullOrWhiteSpace(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace(Of TFakeReturn)(String)
-  name.vb: IsNullOrWhiteSpace(Of TFakeReturn)(String)
+  nameWithType.vb: Throw.Arg.NullOrWhiteSpace(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NullOrWhiteSpace(Of TFakeReturn)(String)
+  name.vb: NullOrWhiteSpace(Of TFakeReturn)(String)
 - uid: CheckAndThrow.Throw.Arg.DoesNotMatch(System.String)
   commentId: M:CheckAndThrow.Throw.Arg.DoesNotMatch(System.String)
   id: DoesNotMatch(System.String)
@@ -2819,8 +3433,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotMatch(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotMatch
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 74
   assemblies:
   - CheckAndThrow
@@ -2854,8 +3472,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotMatch<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotMatch
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 85
   assemblies:
   - CheckAndThrow
@@ -2895,8 +3517,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotMatch(string, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotMatch
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 97
   assemblies:
   - CheckAndThrow
@@ -2936,8 +3562,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotMatch<TFakeReturn>(string, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotMatch
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 117
   assemblies:
   - CheckAndThrow
@@ -2983,8 +3613,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidLength(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidLength
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 133
   assemblies:
   - CheckAndThrow
@@ -3018,8 +3652,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidLength<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidLength
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 144
   assemblies:
   - CheckAndThrow
@@ -3059,8 +3697,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidLength(string, object, object)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidLength
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 156
   assemblies:
   - CheckAndThrow
@@ -3100,8 +3742,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidLength<TFakeReturn>(string, object, object)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidLength
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 176
   assemblies:
   - CheckAndThrow
@@ -3147,8 +3793,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooShort(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooShort
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 192
   assemblies:
   - CheckAndThrow
@@ -3182,8 +3832,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooShort<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooShort
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 203
   assemblies:
   - CheckAndThrow
@@ -3223,8 +3877,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooShort(string, object, object)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooShort
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 214
   assemblies:
   - CheckAndThrow
@@ -3264,8 +3922,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooShort<TFakeReturn>(string, object, object)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooShort
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 234
   assemblies:
   - CheckAndThrow
@@ -3311,8 +3973,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooLong(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooLong
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 250
   assemblies:
   - CheckAndThrow
@@ -3346,8 +4012,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooLong<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooLong
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 261
   assemblies:
   - CheckAndThrow
@@ -3387,8 +4057,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooLong(string, object, object)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooLong
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 272
   assemblies:
   - CheckAndThrow
@@ -3428,8 +4102,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.TooLong<TFakeReturn>(string, object, object)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: TooLong
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 292
   assemblies:
   - CheckAndThrow
@@ -3475,8 +4153,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidEmail(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidEmail
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 308
   assemblies:
   - CheckAndThrow
@@ -3510,8 +4192,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidEmail<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidEmail
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 319
   assemblies:
   - CheckAndThrow
@@ -3551,8 +4237,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidEmail(string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidEmail
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 330
   assemblies:
   - CheckAndThrow
@@ -3589,8 +4279,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.InvalidEmail<TFakeReturn>(string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/String.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidEmail
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\String.cs
+    path: ../CheckAndThrow/Throw/Arg/String.cs
     startLine: 345
   assemblies:
   - CheckAndThrow
@@ -3621,20 +4315,24 @@ items:
   nameWithType.vb: Throw.Arg.InvalidEmail(Of TFakeReturn)(String, String)
   fullName.vb: CheckAndThrow.Throw.Arg.InvalidEmail(Of TFakeReturn)(String, String)
   name.vb: InvalidEmail(Of TFakeReturn)(String, String)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableTo(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableTo(System.String)
-  id: IsNotAssignableTo(System.String)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableTo(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableTo(System.String)
+  id: NotAssignableTo(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableTo(string)
-  nameWithType: Throw.Arg.IsNotAssignableTo(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableTo(string)
+  name: NotAssignableTo(string)
+  nameWithType: Throw.Arg.NotAssignableTo(string)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableTo(string)
   type: Method
   source:
-    id: IsNotAssignableTo
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableTo
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 23
   assemblies:
   - CheckAndThrow
@@ -3642,34 +4340,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument is not an instance of the required type.
   example: []
   syntax:
-    content: public static void IsNotAssignableTo(string paramName)
+    content: public static void NotAssignableTo(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNotAssignableTo(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableTo*
+    content.vb: Public Shared Sub NotAssignableTo(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NotAssignableTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument is not an instance of the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableTo(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableTo(String)
-  name.vb: IsNotAssignableTo(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableTo``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableTo``1(System.String)
-  id: IsNotAssignableTo``1(System.String)
+  nameWithType.vb: Throw.Arg.NotAssignableTo(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableTo(String)
+  name.vb: NotAssignableTo(String)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableTo``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableTo``1(System.String)
+  id: NotAssignableTo``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableTo<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNotAssignableTo<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableTo<TFakeReturn>(string)
+  name: NotAssignableTo<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NotAssignableTo<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableTo<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNotAssignableTo
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableTo
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 34
   assemblies:
   - CheckAndThrow
@@ -3677,7 +4379,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument is not an instance of the required type.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotAssignableTo<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NotAssignableTo<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -3688,29 +4390,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotAssignableTo(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableTo*
+    content.vb: Public Shared Function NotAssignableTo(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotAssignableTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument is not an instance of the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableTo(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableTo(Of TFakeReturn)(String)
-  name.vb: IsNotAssignableTo(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableTo(System.String,System.Type,System.Type)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableTo(System.String,System.Type,System.Type)
-  id: IsNotAssignableTo(System.String,System.Type,System.Type)
+  nameWithType.vb: Throw.Arg.NotAssignableTo(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableTo(Of TFakeReturn)(String)
+  name.vb: NotAssignableTo(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableTo(System.String,System.Type,System.Type)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableTo(System.String,System.Type,System.Type)
+  id: NotAssignableTo(System.String,System.Type,System.Type)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableTo(string, Type, Type)
-  nameWithType: Throw.Arg.IsNotAssignableTo(string, Type, Type)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableTo(string, System.Type, System.Type)
+  name: NotAssignableTo(string, Type, Type)
+  nameWithType: Throw.Arg.NotAssignableTo(string, Type, Type)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableTo(string, System.Type, System.Type)
   type: Method
   source:
-    id: IsNotAssignableTo
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableTo
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 46
   assemblies:
   - CheckAndThrow
@@ -3718,7 +4424,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument is not an instance of the required type.
   example: []
   syntax:
-    content: public static void IsNotAssignableTo(string paramName, Type expectedType, Type argumentType)
+    content: public static void NotAssignableTo(string paramName, Type expectedType, Type argumentType)
     parameters:
     - id: paramName
       type: System.String
@@ -3729,29 +4435,33 @@ items:
     - id: argumentType
       type: System.Type
       description: The type of the argument.
-    content.vb: Public Shared Sub IsNotAssignableTo(paramName As String, expectedType As Type, argumentType As Type)
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableTo*
+    content.vb: Public Shared Sub NotAssignableTo(paramName As String, expectedType As Type, argumentType As Type)
+  overload: CheckAndThrow.Throw.Arg.NotAssignableTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument is not an instance of the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableTo(String, Type, Type)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableTo(String, System.Type, System.Type)
-  name.vb: IsNotAssignableTo(String, Type, Type)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableTo``1(System.String,System.Type,System.Type)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableTo``1(System.String,System.Type,System.Type)
-  id: IsNotAssignableTo``1(System.String,System.Type,System.Type)
+  nameWithType.vb: Throw.Arg.NotAssignableTo(String, Type, Type)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableTo(String, System.Type, System.Type)
+  name.vb: NotAssignableTo(String, Type, Type)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableTo``1(System.String,System.Type,System.Type)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableTo``1(System.String,System.Type,System.Type)
+  id: NotAssignableTo``1(System.String,System.Type,System.Type)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableTo<TFakeReturn>(string, Type, Type)
-  nameWithType: Throw.Arg.IsNotAssignableTo<TFakeReturn>(string, Type, Type)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableTo<TFakeReturn>(string, System.Type, System.Type)
+  name: NotAssignableTo<TFakeReturn>(string, Type, Type)
+  nameWithType: Throw.Arg.NotAssignableTo<TFakeReturn>(string, Type, Type)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableTo<TFakeReturn>(string, System.Type, System.Type)
   type: Method
   source:
-    id: IsNotAssignableTo
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableTo
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 66
   assemblies:
   - CheckAndThrow
@@ -3759,7 +4469,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument is not an instance of the required type.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotAssignableTo<TFakeReturn>(string paramName, Type expectedType, Type argumentType)
+    content: public static TFakeReturn NotAssignableTo<TFakeReturn>(string paramName, Type expectedType, Type argumentType)
     parameters:
     - id: paramName
       type: System.String
@@ -3776,29 +4486,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotAssignableTo(Of TFakeReturn)(paramName As String, expectedType As Type, argumentType As Type) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableTo*
+    content.vb: Public Shared Function NotAssignableTo(Of TFakeReturn)(paramName As String, expectedType As Type, argumentType As Type) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotAssignableTo*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument is not an instance of the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableTo(Of TFakeReturn)(String, Type, Type)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableTo(Of TFakeReturn)(String, System.Type, System.Type)
-  name.vb: IsNotAssignableTo(Of TFakeReturn)(String, Type, Type)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableFrom(System.String)
-  id: IsNotAssignableFrom(System.String)
+  nameWithType.vb: Throw.Arg.NotAssignableTo(Of TFakeReturn)(String, Type, Type)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableTo(Of TFakeReturn)(String, System.Type, System.Type)
+  name.vb: NotAssignableTo(Of TFakeReturn)(String, Type, Type)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableFrom(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableFrom(System.String)
+  id: NotAssignableFrom(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableFrom(string)
-  nameWithType: Throw.Arg.IsNotAssignableFrom(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(string)
+  name: NotAssignableFrom(string)
+  nameWithType: Throw.Arg.NotAssignableFrom(string)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableFrom(string)
   type: Method
   source:
-    id: IsNotAssignableFrom
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableFrom
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 82
   assemblies:
   - CheckAndThrow
@@ -3806,34 +4520,38 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument type is not assignable from the required type.
   example: []
   syntax:
-    content: public static void IsNotAssignableFrom(string paramName)
+    content: public static void NotAssignableFrom(string paramName)
     parameters:
     - id: paramName
       type: System.String
       description: The name of the parameter.
-    content.vb: Public Shared Sub IsNotAssignableFrom(paramName As String)
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableFrom*
+    content.vb: Public Shared Sub NotAssignableFrom(paramName As String)
+  overload: CheckAndThrow.Throw.Arg.NotAssignableFrom*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument type is not assignable from the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableFrom(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(String)
-  name.vb: IsNotAssignableFrom(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableFrom``1(System.String)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableFrom``1(System.String)
-  id: IsNotAssignableFrom``1(System.String)
+  nameWithType.vb: Throw.Arg.NotAssignableFrom(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableFrom(String)
+  name.vb: NotAssignableFrom(String)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableFrom``1(System.String)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableFrom``1(System.String)
+  id: NotAssignableFrom``1(System.String)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableFrom<TFakeReturn>(string)
-  nameWithType: Throw.Arg.IsNotAssignableFrom<TFakeReturn>(string)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableFrom<TFakeReturn>(string)
+  name: NotAssignableFrom<TFakeReturn>(string)
+  nameWithType: Throw.Arg.NotAssignableFrom<TFakeReturn>(string)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableFrom<TFakeReturn>(string)
   type: Method
   source:
-    id: IsNotAssignableFrom
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableFrom
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 93
   assemblies:
   - CheckAndThrow
@@ -3841,7 +4559,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument type is not assignable from the required type.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotAssignableFrom<TFakeReturn>(string paramName)
+    content: public static TFakeReturn NotAssignableFrom<TFakeReturn>(string paramName)
     parameters:
     - id: paramName
       type: System.String
@@ -3852,29 +4570,33 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotAssignableFrom(Of TFakeReturn)(paramName As String) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableFrom*
+    content.vb: Public Shared Function NotAssignableFrom(Of TFakeReturn)(paramName As String) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotAssignableFrom*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument type is not assignable from the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableFrom(Of TFakeReturn)(String)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(Of TFakeReturn)(String)
-  name.vb: IsNotAssignableFrom(Of TFakeReturn)(String)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(System.String,System.Type,System.Type)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableFrom(System.String,System.Type,System.Type)
-  id: IsNotAssignableFrom(System.String,System.Type,System.Type)
+  nameWithType.vb: Throw.Arg.NotAssignableFrom(Of TFakeReturn)(String)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableFrom(Of TFakeReturn)(String)
+  name.vb: NotAssignableFrom(Of TFakeReturn)(String)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableFrom(System.String,System.Type,System.Type)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableFrom(System.String,System.Type,System.Type)
+  id: NotAssignableFrom(System.String,System.Type,System.Type)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableFrom(string, Type, Type)
-  nameWithType: Throw.Arg.IsNotAssignableFrom(string, Type, Type)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(string, System.Type, System.Type)
+  name: NotAssignableFrom(string, Type, Type)
+  nameWithType: Throw.Arg.NotAssignableFrom(string, Type, Type)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableFrom(string, System.Type, System.Type)
   type: Method
   source:
-    id: IsNotAssignableFrom
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableFrom
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 105
   assemblies:
   - CheckAndThrow
@@ -3882,7 +4604,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument type is not assignable from the required type.
   example: []
   syntax:
-    content: public static void IsNotAssignableFrom(string paramName, Type expectedType, Type argumentType)
+    content: public static void NotAssignableFrom(string paramName, Type expectedType, Type argumentType)
     parameters:
     - id: paramName
       type: System.String
@@ -3893,29 +4615,33 @@ items:
     - id: argumentType
       type: System.Type
       description: The type of the argument.
-    content.vb: Public Shared Sub IsNotAssignableFrom(paramName As String, expectedType As Type, argumentType As Type)
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableFrom*
+    content.vb: Public Shared Sub NotAssignableFrom(paramName As String, expectedType As Type, argumentType As Type)
+  overload: CheckAndThrow.Throw.Arg.NotAssignableFrom*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument type is not assignable from the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableFrom(String, Type, Type)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(String, System.Type, System.Type)
-  name.vb: IsNotAssignableFrom(String, Type, Type)
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableFrom``1(System.String,System.Type,System.Type)
-  commentId: M:CheckAndThrow.Throw.Arg.IsNotAssignableFrom``1(System.String,System.Type,System.Type)
-  id: IsNotAssignableFrom``1(System.String,System.Type,System.Type)
+  nameWithType.vb: Throw.Arg.NotAssignableFrom(String, Type, Type)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableFrom(String, System.Type, System.Type)
+  name.vb: NotAssignableFrom(String, Type, Type)
+- uid: CheckAndThrow.Throw.Arg.NotAssignableFrom``1(System.String,System.Type,System.Type)
+  commentId: M:CheckAndThrow.Throw.Arg.NotAssignableFrom``1(System.String,System.Type,System.Type)
+  id: NotAssignableFrom``1(System.String,System.Type,System.Type)
   parent: CheckAndThrow.Throw.Arg
   langs:
   - csharp
   - vb
-  name: IsNotAssignableFrom<TFakeReturn>(string, Type, Type)
-  nameWithType: Throw.Arg.IsNotAssignableFrom<TFakeReturn>(string, Type, Type)
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableFrom<TFakeReturn>(string, System.Type, System.Type)
+  name: NotAssignableFrom<TFakeReturn>(string, Type, Type)
+  nameWithType: Throw.Arg.NotAssignableFrom<TFakeReturn>(string, Type, Type)
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableFrom<TFakeReturn>(string, System.Type, System.Type)
   type: Method
   source:
-    id: IsNotAssignableFrom
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotAssignableFrom
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 125
   assemblies:
   - CheckAndThrow
@@ -3923,7 +4649,7 @@ items:
   summary: Throws an <xref href="System.ArgumentException" data-throw-if-not-resolved="false"></xref> because the argument type is not assignable from the required type.
   example: []
   syntax:
-    content: public static TFakeReturn IsNotAssignableFrom<TFakeReturn>(string paramName, Type expectedType, Type argumentType)
+    content: public static TFakeReturn NotAssignableFrom<TFakeReturn>(string paramName, Type expectedType, Type argumentType)
     parameters:
     - id: paramName
       type: System.String
@@ -3940,15 +4666,15 @@ items:
     return:
       type: '{TFakeReturn}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotAssignableFrom(Of TFakeReturn)(paramName As String, expectedType As Type, argumentType As Type) As TFakeReturn
-  overload: CheckAndThrow.Throw.Arg.IsNotAssignableFrom*
+    content.vb: Public Shared Function NotAssignableFrom(Of TFakeReturn)(paramName As String, expectedType As Type, argumentType As Type) As TFakeReturn
+  overload: CheckAndThrow.Throw.Arg.NotAssignableFrom*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown because the argument type is not assignable from the type.
-  nameWithType.vb: Throw.Arg.IsNotAssignableFrom(Of TFakeReturn)(String, Type, Type)
-  fullName.vb: CheckAndThrow.Throw.Arg.IsNotAssignableFrom(Of TFakeReturn)(String, System.Type, System.Type)
-  name.vb: IsNotAssignableFrom(Of TFakeReturn)(String, Type, Type)
+  nameWithType.vb: Throw.Arg.NotAssignableFrom(Of TFakeReturn)(String, Type, Type)
+  fullName.vb: CheckAndThrow.Throw.Arg.NotAssignableFrom(Of TFakeReturn)(String, System.Type, System.Type)
+  name.vb: NotAssignableFrom(Of TFakeReturn)(String, Type, Type)
 - uid: CheckAndThrow.Throw.Arg.DoesNotHaveAttribute(System.String)
   commentId: M:CheckAndThrow.Throw.Arg.DoesNotHaveAttribute(System.String)
   id: DoesNotHaveAttribute(System.String)
@@ -3961,8 +4687,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotHaveAttribute(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotHaveAttribute
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 141
   assemblies:
   - CheckAndThrow
@@ -3996,8 +4726,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotHaveAttribute<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotHaveAttribute
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 152
   assemblies:
   - CheckAndThrow
@@ -4037,8 +4771,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotHaveAttribute(string, System.Type, System.Type)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotHaveAttribute
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 164
   assemblies:
   - CheckAndThrow
@@ -4078,8 +4816,12 @@ items:
   fullName: CheckAndThrow.Throw.Arg.DoesNotHaveAttribute<TFakeReturn>(string, System.Type, System.Type)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Arg/Type.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DoesNotHaveAttribute
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Arg\Type.cs
+    path: ../CheckAndThrow/Throw/Arg/Type.cs
     startLine: 184
   assemblies:
   - CheckAndThrow
@@ -4364,12 +5106,12 @@ references:
   name: ArgumentException
   nameWithType: ArgumentException
   fullName: System.ArgumentException
-- uid: CheckAndThrow.Throw.Arg.IsEmpty*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsEmpty
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsEmpty_System_String_
-  name: IsEmpty
-  nameWithType: Throw.Arg.IsEmpty
-  fullName: CheckAndThrow.Throw.Arg.IsEmpty
+- uid: CheckAndThrow.Throw.Arg.Exception*
+  commentId: Overload:CheckAndThrow.Throw.Arg.Exception
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_Exception_System_String_
+  name: Exception
+  nameWithType: Throw.Arg.Exception
+  fullName: CheckAndThrow.Throw.Arg.Exception
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -4391,6 +5133,12 @@ references:
   name: TFakeReturn
   nameWithType: TFakeReturn
   fullName: TFakeReturn
+- uid: CheckAndThrow.Throw.Arg.Empty*
+  commentId: Overload:CheckAndThrow.Throw.Arg.Empty
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_Empty_System_String_
+  name: Empty
+  nameWithType: Throw.Arg.Empty
+  fullName: CheckAndThrow.Throw.Arg.Empty
 - uid: CheckAndThrow.Throw.Arg.HasNullValue*
   commentId: Overload:CheckAndThrow.Throw.Arg.HasNullValue
   href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_HasNullValue_System_String_
@@ -4428,36 +5176,36 @@ references:
   name: ArgumentOutOfRangeException
   nameWithType: ArgumentOutOfRangeException
   fullName: System.ArgumentOutOfRangeException
-- uid: CheckAndThrow.Throw.Arg.IsInvalidIndex*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsInvalidIndex
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsInvalidIndex_System_String_
-  name: IsInvalidIndex
-  nameWithType: Throw.Arg.IsInvalidIndex
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidIndex
-- uid: CheckAndThrow.Throw.Arg.IsNotInPast*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNotInPast
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNotInPast_System_String_
-  name: IsNotInPast
-  nameWithType: Throw.Arg.IsNotInPast
-  fullName: CheckAndThrow.Throw.Arg.IsNotInPast
-- uid: CheckAndThrow.Throw.Arg.IsNotInFuture*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNotInFuture
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNotInFuture_System_String_
-  name: IsNotInFuture
-  nameWithType: Throw.Arg.IsNotInFuture
-  fullName: CheckAndThrow.Throw.Arg.IsNotInFuture
-- uid: CheckAndThrow.Throw.Arg.IsNotLaterThan*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNotLaterThan
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNotLaterThan_System_String_
-  name: IsNotLaterThan
-  nameWithType: Throw.Arg.IsNotLaterThan
-  fullName: CheckAndThrow.Throw.Arg.IsNotLaterThan
-- uid: CheckAndThrow.Throw.Arg.IsNotEarlierThan*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNotEarlierThan
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNotEarlierThan_System_String_
-  name: IsNotEarlierThan
-  nameWithType: Throw.Arg.IsNotEarlierThan
-  fullName: CheckAndThrow.Throw.Arg.IsNotEarlierThan
+- uid: CheckAndThrow.Throw.Arg.InvalidIndex*
+  commentId: Overload:CheckAndThrow.Throw.Arg.InvalidIndex
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_InvalidIndex_System_String_
+  name: InvalidIndex
+  nameWithType: Throw.Arg.InvalidIndex
+  fullName: CheckAndThrow.Throw.Arg.InvalidIndex
+- uid: CheckAndThrow.Throw.Arg.NotInPast*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NotInPast
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotInPast_System_String_
+  name: NotInPast
+  nameWithType: Throw.Arg.NotInPast
+  fullName: CheckAndThrow.Throw.Arg.NotInPast
+- uid: CheckAndThrow.Throw.Arg.NotInFuture*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NotInFuture
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotInFuture_System_String_
+  name: NotInFuture
+  nameWithType: Throw.Arg.NotInFuture
+  fullName: CheckAndThrow.Throw.Arg.NotInFuture
+- uid: CheckAndThrow.Throw.Arg.NotLaterThan*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NotLaterThan
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotLaterThan_System_String_
+  name: NotLaterThan
+  nameWithType: Throw.Arg.NotLaterThan
+  fullName: CheckAndThrow.Throw.Arg.NotLaterThan
+- uid: CheckAndThrow.Throw.Arg.NotEarlierThan*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NotEarlierThan
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotEarlierThan_System_String_
+  name: NotEarlierThan
+  nameWithType: Throw.Arg.NotEarlierThan
+  fullName: CheckAndThrow.Throw.Arg.NotEarlierThan
 - uid: System.ComponentModel.InvalidEnumArgumentException
   commentId: T:System.ComponentModel.InvalidEnumArgumentException
   isExternal: true
@@ -4465,12 +5213,12 @@ references:
   name: InvalidEnumArgumentException
   nameWithType: InvalidEnumArgumentException
   fullName: System.ComponentModel.InvalidEnumArgumentException
-- uid: CheckAndThrow.Throw.Arg.IsInvalidEnumValue*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsInvalidEnumValue
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsInvalidEnumValue_System_Type_System_Int32_System_String_
-  name: IsInvalidEnumValue
-  nameWithType: Throw.Arg.IsInvalidEnumValue
-  fullName: CheckAndThrow.Throw.Arg.IsInvalidEnumValue
+- uid: CheckAndThrow.Throw.Arg.InvalidEnumValue*
+  commentId: Overload:CheckAndThrow.Throw.Arg.InvalidEnumValue
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_InvalidEnumValue_System_Type_System_Int32_System_String_
+  name: InvalidEnumValue
+  nameWithType: Throw.Arg.InvalidEnumValue
+  fullName: CheckAndThrow.Throw.Arg.InvalidEnumValue
 - uid: System.Type
   commentId: T:System.Type
   parent: System
@@ -4510,12 +5258,12 @@ references:
   name: MissesAllFlags
   nameWithType: Throw.Arg.MissesAllFlags
   fullName: CheckAndThrow.Throw.Arg.MissesAllFlags
-- uid: CheckAndThrow.Throw.Arg.IsGuidEmpty*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsGuidEmpty
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsGuidEmpty_System_String_
-  name: IsGuidEmpty
-  nameWithType: Throw.Arg.IsGuidEmpty
-  fullName: CheckAndThrow.Throw.Arg.IsGuidEmpty
+- uid: CheckAndThrow.Throw.Arg.GuidEmpty*
+  commentId: Overload:CheckAndThrow.Throw.Arg.GuidEmpty
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_GuidEmpty_System_String_
+  name: GuidEmpty
+  nameWithType: Throw.Arg.GuidEmpty
+  fullName: CheckAndThrow.Throw.Arg.GuidEmpty
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -4523,12 +5271,24 @@ references:
   name: ArgumentNullException
   nameWithType: ArgumentNullException
   fullName: System.ArgumentNullException
-- uid: CheckAndThrow.Throw.Arg.IsNull*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNull
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNull_System_String_
-  name: IsNull
-  nameWithType: Throw.Arg.IsNull
-  fullName: CheckAndThrow.Throw.Arg.IsNull
+- uid: CheckAndThrow.Throw.Arg.Null*
+  commentId: Overload:CheckAndThrow.Throw.Arg.Null
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_Null_System_String_
+  name: "Null"
+  nameWithType: Throw.Arg.Null
+  fullName: CheckAndThrow.Throw.Arg.Null
+- uid: CheckAndThrow.Throw.Arg.NaN*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NaN
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NaN_System_String_
+  name: NaN
+  nameWithType: Throw.Arg.NaN
+  fullName: CheckAndThrow.Throw.Arg.NaN
+- uid: CheckAndThrow.Throw.Arg.Infinity*
+  commentId: Overload:CheckAndThrow.Throw.Arg.Infinity
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_Infinity_System_String_
+  name: Infinity
+  nameWithType: Throw.Arg.Infinity
+  fullName: CheckAndThrow.Throw.Arg.Infinity
 - uid: CheckAndThrow.Throw.Arg.NotNegative*
   commentId: Overload:CheckAndThrow.Throw.Arg.NotNegative
   href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotNegative_System_Object_System_String_
@@ -4559,18 +5319,18 @@ references:
   name: NotZeroOrPositive
   nameWithType: Throw.Arg.NotZeroOrPositive
   fullName: CheckAndThrow.Throw.Arg.NotZeroOrPositive
-- uid: CheckAndThrow.Throw.Arg.IsNullOrEmpty*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNullOrEmpty
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNullOrEmpty_System_String_
-  name: IsNullOrEmpty
-  nameWithType: Throw.Arg.IsNullOrEmpty
-  fullName: CheckAndThrow.Throw.Arg.IsNullOrEmpty
-- uid: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNullOrWhiteSpace_System_String_
-  name: IsNullOrWhiteSpace
-  nameWithType: Throw.Arg.IsNullOrWhiteSpace
-  fullName: CheckAndThrow.Throw.Arg.IsNullOrWhiteSpace
+- uid: CheckAndThrow.Throw.Arg.NullOrEmpty*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NullOrEmpty
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NullOrEmpty_System_String_
+  name: NullOrEmpty
+  nameWithType: Throw.Arg.NullOrEmpty
+  fullName: CheckAndThrow.Throw.Arg.NullOrEmpty
+- uid: CheckAndThrow.Throw.Arg.NullOrWhiteSpace*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NullOrWhiteSpace
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NullOrWhiteSpace_System_String_
+  name: NullOrWhiteSpace
+  nameWithType: Throw.Arg.NullOrWhiteSpace
+  fullName: CheckAndThrow.Throw.Arg.NullOrWhiteSpace
 - uid: CheckAndThrow.Throw.Arg.DoesNotMatch*
   commentId: Overload:CheckAndThrow.Throw.Arg.DoesNotMatch
   href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_DoesNotMatch_System_String_
@@ -4601,18 +5361,18 @@ references:
   name: InvalidEmail
   nameWithType: Throw.Arg.InvalidEmail
   fullName: CheckAndThrow.Throw.Arg.InvalidEmail
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableTo*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNotAssignableTo
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNotAssignableTo_System_String_
-  name: IsNotAssignableTo
-  nameWithType: Throw.Arg.IsNotAssignableTo
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableTo
-- uid: CheckAndThrow.Throw.Arg.IsNotAssignableFrom*
-  commentId: Overload:CheckAndThrow.Throw.Arg.IsNotAssignableFrom
-  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_IsNotAssignableFrom_System_String_
-  name: IsNotAssignableFrom
-  nameWithType: Throw.Arg.IsNotAssignableFrom
-  fullName: CheckAndThrow.Throw.Arg.IsNotAssignableFrom
+- uid: CheckAndThrow.Throw.Arg.NotAssignableTo*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NotAssignableTo
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotAssignableTo_System_String_
+  name: NotAssignableTo
+  nameWithType: Throw.Arg.NotAssignableTo
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableTo
+- uid: CheckAndThrow.Throw.Arg.NotAssignableFrom*
+  commentId: Overload:CheckAndThrow.Throw.Arg.NotAssignableFrom
+  href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_NotAssignableFrom_System_String_
+  name: NotAssignableFrom
+  nameWithType: Throw.Arg.NotAssignableFrom
+  fullName: CheckAndThrow.Throw.Arg.NotAssignableFrom
 - uid: CheckAndThrow.Throw.Arg.DoesNotHaveAttribute*
   commentId: Overload:CheckAndThrow.Throw.Arg.DoesNotHaveAttribute
   href: CheckAndThrow.Throw.Arg.html#CheckAndThrow_Throw_Arg_DoesNotHaveAttribute_System_String_

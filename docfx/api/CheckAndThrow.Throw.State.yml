@@ -5,18 +5,18 @@ items:
   id: Throw.State
   parent: CheckAndThrow
   children:
-  - CheckAndThrow.Throw.State.IsDisposed(System.Object)
-  - CheckAndThrow.Throw.State.IsDisposed(System.String)
-  - CheckAndThrow.Throw.State.IsDisposed(System.Type)
-  - CheckAndThrow.Throw.State.IsDisposed``1
-  - CheckAndThrow.Throw.State.IsNotInitialized(System.Object)
-  - CheckAndThrow.Throw.State.IsNotInitialized(System.String)
-  - CheckAndThrow.Throw.State.IsNotInitialized(System.Type)
-  - CheckAndThrow.Throw.State.IsNotInitialized``1
-  - CheckAndThrow.Throw.State.IsNotMutable(System.Object)
-  - CheckAndThrow.Throw.State.IsNotMutable(System.String)
-  - CheckAndThrow.Throw.State.IsNotMutable(System.Type)
-  - CheckAndThrow.Throw.State.IsNotMutable``1
+  - CheckAndThrow.Throw.State.Disposed(System.Object)
+  - CheckAndThrow.Throw.State.Disposed(System.String)
+  - CheckAndThrow.Throw.State.Disposed(System.Type)
+  - CheckAndThrow.Throw.State.Disposed``1
+  - CheckAndThrow.Throw.State.NotInitialized(System.Object)
+  - CheckAndThrow.Throw.State.NotInitialized(System.String)
+  - CheckAndThrow.Throw.State.NotInitialized(System.Type)
+  - CheckAndThrow.Throw.State.NotInitialized``1
+  - CheckAndThrow.Throw.State.NotMutable(System.Object)
+  - CheckAndThrow.Throw.State.NotMutable(System.String)
+  - CheckAndThrow.Throw.State.NotMutable(System.Type)
+  - CheckAndThrow.Throw.State.NotMutable``1
   langs:
   - csharp
   - vb
@@ -25,8 +25,12 @@ items:
   fullName: CheckAndThrow.Throw.State
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: State
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 7
   assemblies:
   - CheckAndThrow
@@ -46,20 +50,24 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: CheckAndThrow.Throw.State.IsDisposed(System.Object)
-  commentId: M:CheckAndThrow.Throw.State.IsDisposed(System.Object)
-  id: IsDisposed(System.Object)
+- uid: CheckAndThrow.Throw.State.Disposed(System.Object)
+  commentId: M:CheckAndThrow.Throw.State.Disposed(System.Object)
+  id: Disposed(System.Object)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsDisposed(object)
-  nameWithType: Throw.State.IsDisposed(object)
-  fullName: CheckAndThrow.Throw.State.IsDisposed(object)
+  name: Disposed(object)
+  nameWithType: Throw.State.Disposed(object)
+  fullName: CheckAndThrow.Throw.State.Disposed(object)
   type: Method
   source:
-    id: IsDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Disposed
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 14
   assemblies:
   - CheckAndThrow
@@ -67,34 +75,38 @@ items:
   summary: Throws an <xref href="System.ObjectDisposedException" data-throw-if-not-resolved="false"></xref> indicating that the specified instance is disposed.
   example: []
   syntax:
-    content: public static void IsDisposed(object instance)
+    content: public static void Disposed(object instance)
     parameters:
     - id: instance
       type: System.Object
       description: The instance that is disposed.
-    content.vb: Public Shared Sub IsDisposed(instance As Object)
-  overload: CheckAndThrow.Throw.State.IsDisposed*
+    content.vb: Public Shared Sub Disposed(instance As Object)
+  overload: CheckAndThrow.Throw.State.Disposed*
   exceptions:
   - type: System.ObjectDisposedException
     commentId: T:System.ObjectDisposedException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsDisposed(Object)
-  fullName.vb: CheckAndThrow.Throw.State.IsDisposed(Object)
-  name.vb: IsDisposed(Object)
-- uid: CheckAndThrow.Throw.State.IsDisposed(System.Type)
-  commentId: M:CheckAndThrow.Throw.State.IsDisposed(System.Type)
-  id: IsDisposed(System.Type)
+  nameWithType.vb: Throw.State.Disposed(Object)
+  fullName.vb: CheckAndThrow.Throw.State.Disposed(Object)
+  name.vb: Disposed(Object)
+- uid: CheckAndThrow.Throw.State.Disposed(System.Type)
+  commentId: M:CheckAndThrow.Throw.State.Disposed(System.Type)
+  id: Disposed(System.Type)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsDisposed(Type)
-  nameWithType: Throw.State.IsDisposed(Type)
-  fullName: CheckAndThrow.Throw.State.IsDisposed(System.Type)
+  name: Disposed(Type)
+  nameWithType: Throw.State.Disposed(Type)
+  fullName: CheckAndThrow.Throw.State.Disposed(System.Type)
   type: Method
   source:
-    id: IsDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Disposed
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 27
   assemblies:
   - CheckAndThrow
@@ -102,31 +114,35 @@ items:
   summary: Throws an <xref href="System.ObjectDisposedException" data-throw-if-not-resolved="false"></xref> indicating that the specified type is disposed.
   example: []
   syntax:
-    content: public static void IsDisposed(Type type)
+    content: public static void Disposed(Type type)
     parameters:
     - id: type
       type: System.Type
       description: The type that is disposed.
-    content.vb: Public Shared Sub IsDisposed(type As Type)
-  overload: CheckAndThrow.Throw.State.IsDisposed*
+    content.vb: Public Shared Sub Disposed(type As Type)
+  overload: CheckAndThrow.Throw.State.Disposed*
   exceptions:
   - type: System.ObjectDisposedException
     commentId: T:System.ObjectDisposedException
     description: Always thrown.
-- uid: CheckAndThrow.Throw.State.IsDisposed(System.String)
-  commentId: M:CheckAndThrow.Throw.State.IsDisposed(System.String)
-  id: IsDisposed(System.String)
+- uid: CheckAndThrow.Throw.State.Disposed(System.String)
+  commentId: M:CheckAndThrow.Throw.State.Disposed(System.String)
+  id: Disposed(System.String)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsDisposed(string)
-  nameWithType: Throw.State.IsDisposed(string)
-  fullName: CheckAndThrow.Throw.State.IsDisposed(string)
+  name: Disposed(string)
+  nameWithType: Throw.State.Disposed(string)
+  fullName: CheckAndThrow.Throw.State.Disposed(string)
   type: Method
   source:
-    id: IsDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Disposed
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 40
   assemblies:
   - CheckAndThrow
@@ -134,34 +150,38 @@ items:
   summary: Throws an <xref href="System.ObjectDisposedException" data-throw-if-not-resolved="false"></xref> indicating that the specified instance name is disposed.
   example: []
   syntax:
-    content: public static void IsDisposed(string instanceName)
+    content: public static void Disposed(string instanceName)
     parameters:
     - id: instanceName
       type: System.String
       description: The name of the instance that is disposed.
-    content.vb: Public Shared Sub IsDisposed(instanceName As String)
-  overload: CheckAndThrow.Throw.State.IsDisposed*
+    content.vb: Public Shared Sub Disposed(instanceName As String)
+  overload: CheckAndThrow.Throw.State.Disposed*
   exceptions:
   - type: System.ObjectDisposedException
     commentId: T:System.ObjectDisposedException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsDisposed(String)
-  fullName.vb: CheckAndThrow.Throw.State.IsDisposed(String)
-  name.vb: IsDisposed(String)
-- uid: CheckAndThrow.Throw.State.IsDisposed``1
-  commentId: M:CheckAndThrow.Throw.State.IsDisposed``1
-  id: IsDisposed``1
+  nameWithType.vb: Throw.State.Disposed(String)
+  fullName.vb: CheckAndThrow.Throw.State.Disposed(String)
+  name.vb: Disposed(String)
+- uid: CheckAndThrow.Throw.State.Disposed``1
+  commentId: M:CheckAndThrow.Throw.State.Disposed``1
+  id: Disposed``1
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsDisposed<T>()
-  nameWithType: Throw.State.IsDisposed<T>()
-  fullName: CheckAndThrow.Throw.State.IsDisposed<T>()
+  name: Disposed<T>()
+  nameWithType: Throw.State.Disposed<T>()
+  fullName: CheckAndThrow.Throw.State.Disposed<T>()
   type: Method
   source:
-    id: IsDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Disposed
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 54
   assemblies:
   - CheckAndThrow
@@ -169,36 +189,40 @@ items:
   summary: Throws an <xref href="System.ObjectDisposedException" data-throw-if-not-resolved="false"></xref> indicating that the type <code class="typeparamref">T</code> is disposed.
   example: []
   syntax:
-    content: public static T IsDisposed<T>()
+    content: public static T Disposed<T>()
     typeParameters:
     - id: T
       description: The type that is disposed.
     return:
       type: '{T}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsDisposed(Of T)() As T
-  overload: CheckAndThrow.Throw.State.IsDisposed*
+    content.vb: Public Shared Function Disposed(Of T)() As T
+  overload: CheckAndThrow.Throw.State.Disposed*
   exceptions:
   - type: System.ObjectDisposedException
     commentId: T:System.ObjectDisposedException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsDisposed(Of T)()
-  fullName.vb: CheckAndThrow.Throw.State.IsDisposed(Of T)()
-  name.vb: IsDisposed(Of T)()
-- uid: CheckAndThrow.Throw.State.IsNotInitialized(System.Object)
-  commentId: M:CheckAndThrow.Throw.State.IsNotInitialized(System.Object)
-  id: IsNotInitialized(System.Object)
+  nameWithType.vb: Throw.State.Disposed(Of T)()
+  fullName.vb: CheckAndThrow.Throw.State.Disposed(Of T)()
+  name.vb: Disposed(Of T)()
+- uid: CheckAndThrow.Throw.State.NotInitialized(System.Object)
+  commentId: M:CheckAndThrow.Throw.State.NotInitialized(System.Object)
+  id: NotInitialized(System.Object)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotInitialized(object)
-  nameWithType: Throw.State.IsNotInitialized(object)
-  fullName: CheckAndThrow.Throw.State.IsNotInitialized(object)
+  name: NotInitialized(object)
+  nameWithType: Throw.State.NotInitialized(object)
+  fullName: CheckAndThrow.Throw.State.NotInitialized(object)
   type: Method
   source:
-    id: IsNotInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInitialized
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 67
   assemblies:
   - CheckAndThrow
@@ -206,34 +230,38 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the specified instance is not initialized.
   example: []
   syntax:
-    content: public static void IsNotInitialized(object instance)
+    content: public static void NotInitialized(object instance)
     parameters:
     - id: instance
       type: System.Object
       description: The instance that is not initialized.
-    content.vb: Public Shared Sub IsNotInitialized(instance As Object)
-  overload: CheckAndThrow.Throw.State.IsNotInitialized*
+    content.vb: Public Shared Sub NotInitialized(instance As Object)
+  overload: CheckAndThrow.Throw.State.NotInitialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsNotInitialized(Object)
-  fullName.vb: CheckAndThrow.Throw.State.IsNotInitialized(Object)
-  name.vb: IsNotInitialized(Object)
-- uid: CheckAndThrow.Throw.State.IsNotInitialized(System.Type)
-  commentId: M:CheckAndThrow.Throw.State.IsNotInitialized(System.Type)
-  id: IsNotInitialized(System.Type)
+  nameWithType.vb: Throw.State.NotInitialized(Object)
+  fullName.vb: CheckAndThrow.Throw.State.NotInitialized(Object)
+  name.vb: NotInitialized(Object)
+- uid: CheckAndThrow.Throw.State.NotInitialized(System.Type)
+  commentId: M:CheckAndThrow.Throw.State.NotInitialized(System.Type)
+  id: NotInitialized(System.Type)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotInitialized(Type)
-  nameWithType: Throw.State.IsNotInitialized(Type)
-  fullName: CheckAndThrow.Throw.State.IsNotInitialized(System.Type)
+  name: NotInitialized(Type)
+  nameWithType: Throw.State.NotInitialized(Type)
+  fullName: CheckAndThrow.Throw.State.NotInitialized(System.Type)
   type: Method
   source:
-    id: IsNotInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInitialized
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 80
   assemblies:
   - CheckAndThrow
@@ -241,31 +269,35 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the specified type is not initialized.
   example: []
   syntax:
-    content: public static void IsNotInitialized(Type type)
+    content: public static void NotInitialized(Type type)
     parameters:
     - id: type
       type: System.Type
       description: The type that is not initialized.
-    content.vb: Public Shared Sub IsNotInitialized(type As Type)
-  overload: CheckAndThrow.Throw.State.IsNotInitialized*
+    content.vb: Public Shared Sub NotInitialized(type As Type)
+  overload: CheckAndThrow.Throw.State.NotInitialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-- uid: CheckAndThrow.Throw.State.IsNotInitialized(System.String)
-  commentId: M:CheckAndThrow.Throw.State.IsNotInitialized(System.String)
-  id: IsNotInitialized(System.String)
+- uid: CheckAndThrow.Throw.State.NotInitialized(System.String)
+  commentId: M:CheckAndThrow.Throw.State.NotInitialized(System.String)
+  id: NotInitialized(System.String)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotInitialized(string)
-  nameWithType: Throw.State.IsNotInitialized(string)
-  fullName: CheckAndThrow.Throw.State.IsNotInitialized(string)
+  name: NotInitialized(string)
+  nameWithType: Throw.State.NotInitialized(string)
+  fullName: CheckAndThrow.Throw.State.NotInitialized(string)
   type: Method
   source:
-    id: IsNotInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInitialized
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 93
   assemblies:
   - CheckAndThrow
@@ -273,34 +305,38 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the specified instance name is not initialized.
   example: []
   syntax:
-    content: public static void IsNotInitialized(string instanceName)
+    content: public static void NotInitialized(string instanceName)
     parameters:
     - id: instanceName
       type: System.String
       description: The name of the instance that is not initialized.
-    content.vb: Public Shared Sub IsNotInitialized(instanceName As String)
-  overload: CheckAndThrow.Throw.State.IsNotInitialized*
+    content.vb: Public Shared Sub NotInitialized(instanceName As String)
+  overload: CheckAndThrow.Throw.State.NotInitialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsNotInitialized(String)
-  fullName.vb: CheckAndThrow.Throw.State.IsNotInitialized(String)
-  name.vb: IsNotInitialized(String)
-- uid: CheckAndThrow.Throw.State.IsNotInitialized``1
-  commentId: M:CheckAndThrow.Throw.State.IsNotInitialized``1
-  id: IsNotInitialized``1
+  nameWithType.vb: Throw.State.NotInitialized(String)
+  fullName.vb: CheckAndThrow.Throw.State.NotInitialized(String)
+  name.vb: NotInitialized(String)
+- uid: CheckAndThrow.Throw.State.NotInitialized``1
+  commentId: M:CheckAndThrow.Throw.State.NotInitialized``1
+  id: NotInitialized``1
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotInitialized<T>()
-  nameWithType: Throw.State.IsNotInitialized<T>()
-  fullName: CheckAndThrow.Throw.State.IsNotInitialized<T>()
+  name: NotInitialized<T>()
+  nameWithType: Throw.State.NotInitialized<T>()
+  fullName: CheckAndThrow.Throw.State.NotInitialized<T>()
   type: Method
   source:
-    id: IsNotInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotInitialized
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 107
   assemblies:
   - CheckAndThrow
@@ -308,36 +344,40 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the type <code class="typeparamref">T</code> is not initialized.
   example: []
   syntax:
-    content: public static T IsNotInitialized<T>()
+    content: public static T NotInitialized<T>()
     typeParameters:
     - id: T
       description: The type that is not initialized.
     return:
       type: '{T}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotInitialized(Of T)() As T
-  overload: CheckAndThrow.Throw.State.IsNotInitialized*
+    content.vb: Public Shared Function NotInitialized(Of T)() As T
+  overload: CheckAndThrow.Throw.State.NotInitialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsNotInitialized(Of T)()
-  fullName.vb: CheckAndThrow.Throw.State.IsNotInitialized(Of T)()
-  name.vb: IsNotInitialized(Of T)()
-- uid: CheckAndThrow.Throw.State.IsNotMutable(System.Object)
-  commentId: M:CheckAndThrow.Throw.State.IsNotMutable(System.Object)
-  id: IsNotMutable(System.Object)
+  nameWithType.vb: Throw.State.NotInitialized(Of T)()
+  fullName.vb: CheckAndThrow.Throw.State.NotInitialized(Of T)()
+  name.vb: NotInitialized(Of T)()
+- uid: CheckAndThrow.Throw.State.NotMutable(System.Object)
+  commentId: M:CheckAndThrow.Throw.State.NotMutable(System.Object)
+  id: NotMutable(System.Object)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotMutable(object)
-  nameWithType: Throw.State.IsNotMutable(object)
-  fullName: CheckAndThrow.Throw.State.IsNotMutable(object)
+  name: NotMutable(object)
+  nameWithType: Throw.State.NotMutable(object)
+  fullName: CheckAndThrow.Throw.State.NotMutable(object)
   type: Method
   source:
-    id: IsNotMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotMutable
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 120
   assemblies:
   - CheckAndThrow
@@ -345,34 +385,38 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the specified instance is not mutable.
   example: []
   syntax:
-    content: public static void IsNotMutable(object instance)
+    content: public static void NotMutable(object instance)
     parameters:
     - id: instance
       type: System.Object
       description: The instance that is not mutable.
-    content.vb: Public Shared Sub IsNotMutable(instance As Object)
-  overload: CheckAndThrow.Throw.State.IsNotMutable*
+    content.vb: Public Shared Sub NotMutable(instance As Object)
+  overload: CheckAndThrow.Throw.State.NotMutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsNotMutable(Object)
-  fullName.vb: CheckAndThrow.Throw.State.IsNotMutable(Object)
-  name.vb: IsNotMutable(Object)
-- uid: CheckAndThrow.Throw.State.IsNotMutable(System.Type)
-  commentId: M:CheckAndThrow.Throw.State.IsNotMutable(System.Type)
-  id: IsNotMutable(System.Type)
+  nameWithType.vb: Throw.State.NotMutable(Object)
+  fullName.vb: CheckAndThrow.Throw.State.NotMutable(Object)
+  name.vb: NotMutable(Object)
+- uid: CheckAndThrow.Throw.State.NotMutable(System.Type)
+  commentId: M:CheckAndThrow.Throw.State.NotMutable(System.Type)
+  id: NotMutable(System.Type)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotMutable(Type)
-  nameWithType: Throw.State.IsNotMutable(Type)
-  fullName: CheckAndThrow.Throw.State.IsNotMutable(System.Type)
+  name: NotMutable(Type)
+  nameWithType: Throw.State.NotMutable(Type)
+  fullName: CheckAndThrow.Throw.State.NotMutable(System.Type)
   type: Method
   source:
-    id: IsNotMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotMutable
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 133
   assemblies:
   - CheckAndThrow
@@ -380,31 +424,35 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the specified type is not mutable.
   example: []
   syntax:
-    content: public static void IsNotMutable(Type instanceType)
+    content: public static void NotMutable(Type instanceType)
     parameters:
     - id: instanceType
       type: System.Type
       description: The type that is not mutable.
-    content.vb: Public Shared Sub IsNotMutable(instanceType As Type)
-  overload: CheckAndThrow.Throw.State.IsNotMutable*
+    content.vb: Public Shared Sub NotMutable(instanceType As Type)
+  overload: CheckAndThrow.Throw.State.NotMutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-- uid: CheckAndThrow.Throw.State.IsNotMutable(System.String)
-  commentId: M:CheckAndThrow.Throw.State.IsNotMutable(System.String)
-  id: IsNotMutable(System.String)
+- uid: CheckAndThrow.Throw.State.NotMutable(System.String)
+  commentId: M:CheckAndThrow.Throw.State.NotMutable(System.String)
+  id: NotMutable(System.String)
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotMutable(string)
-  nameWithType: Throw.State.IsNotMutable(string)
-  fullName: CheckAndThrow.Throw.State.IsNotMutable(string)
+  name: NotMutable(string)
+  nameWithType: Throw.State.NotMutable(string)
+  fullName: CheckAndThrow.Throw.State.NotMutable(string)
   type: Method
   source:
-    id: IsNotMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotMutable
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 146
   assemblies:
   - CheckAndThrow
@@ -412,34 +460,38 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the specified instance name is not mutable.
   example: []
   syntax:
-    content: public static void IsNotMutable(string instanceName)
+    content: public static void NotMutable(string instanceName)
     parameters:
     - id: instanceName
       type: System.String
       description: The name of the instance that is not mutable.
-    content.vb: Public Shared Sub IsNotMutable(instanceName As String)
-  overload: CheckAndThrow.Throw.State.IsNotMutable*
+    content.vb: Public Shared Sub NotMutable(instanceName As String)
+  overload: CheckAndThrow.Throw.State.NotMutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsNotMutable(String)
-  fullName.vb: CheckAndThrow.Throw.State.IsNotMutable(String)
-  name.vb: IsNotMutable(String)
-- uid: CheckAndThrow.Throw.State.IsNotMutable``1
-  commentId: M:CheckAndThrow.Throw.State.IsNotMutable``1
-  id: IsNotMutable``1
+  nameWithType.vb: Throw.State.NotMutable(String)
+  fullName.vb: CheckAndThrow.Throw.State.NotMutable(String)
+  name.vb: NotMutable(String)
+- uid: CheckAndThrow.Throw.State.NotMutable``1
+  commentId: M:CheckAndThrow.Throw.State.NotMutable``1
+  id: NotMutable``1
   parent: CheckAndThrow.Throw.State
   langs:
   - csharp
   - vb
-  name: IsNotMutable<T>()
-  nameWithType: Throw.State.IsNotMutable<T>()
-  fullName: CheckAndThrow.Throw.State.IsNotMutable<T>()
+  name: NotMutable<T>()
+  nameWithType: Throw.State.NotMutable<T>()
+  fullName: CheckAndThrow.Throw.State.NotMutable<T>()
   type: Method
   source:
-    id: IsNotMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\State.cs
+    remote:
+      path: CheckAndThrow/Throw/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: NotMutable
+    path: ../CheckAndThrow/Throw/State.cs
     startLine: 160
   assemblies:
   - CheckAndThrow
@@ -447,22 +499,22 @@ items:
   summary: Throws an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> indicating that the type <code class="typeparamref">T</code> is not mutable.
   example: []
   syntax:
-    content: public static T IsNotMutable<T>()
+    content: public static T NotMutable<T>()
     typeParameters:
     - id: T
       description: The type that is not mutable.
     return:
       type: '{T}'
       description: Nothing is returned as the method always throws.
-    content.vb: Public Shared Function IsNotMutable(Of T)() As T
-  overload: CheckAndThrow.Throw.State.IsNotMutable*
+    content.vb: Public Shared Function NotMutable(Of T)() As T
+  overload: CheckAndThrow.Throw.State.NotMutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Always thrown.
-  nameWithType.vb: Throw.State.IsNotMutable(Of T)()
-  fullName.vb: CheckAndThrow.Throw.State.IsNotMutable(Of T)()
-  name.vb: IsNotMutable(Of T)()
+  nameWithType.vb: Throw.State.NotMutable(Of T)()
+  fullName.vb: CheckAndThrow.Throw.State.NotMutable(Of T)()
+  name.vb: NotMutable(Of T)()
 references:
 - uid: CheckAndThrow
   commentId: N:CheckAndThrow
@@ -714,12 +766,12 @@ references:
   name: ObjectDisposedException
   nameWithType: ObjectDisposedException
   fullName: System.ObjectDisposedException
-- uid: CheckAndThrow.Throw.State.IsDisposed*
-  commentId: Overload:CheckAndThrow.Throw.State.IsDisposed
-  href: CheckAndThrow.Throw.State.html#CheckAndThrow_Throw_State_IsDisposed_System_Object_
-  name: IsDisposed
-  nameWithType: Throw.State.IsDisposed
-  fullName: CheckAndThrow.Throw.State.IsDisposed
+- uid: CheckAndThrow.Throw.State.Disposed*
+  commentId: Overload:CheckAndThrow.Throw.State.Disposed
+  href: CheckAndThrow.Throw.State.html#CheckAndThrow_Throw_State_Disposed_System_Object_
+  name: Disposed
+  nameWithType: Throw.State.Disposed
+  fullName: CheckAndThrow.Throw.State.Disposed
 - uid: System.Type
   commentId: T:System.Type
   parent: System
@@ -756,15 +808,15 @@ references:
   name: InvalidOperationException
   nameWithType: InvalidOperationException
   fullName: System.InvalidOperationException
-- uid: CheckAndThrow.Throw.State.IsNotInitialized*
-  commentId: Overload:CheckAndThrow.Throw.State.IsNotInitialized
-  href: CheckAndThrow.Throw.State.html#CheckAndThrow_Throw_State_IsNotInitialized_System_Object_
-  name: IsNotInitialized
-  nameWithType: Throw.State.IsNotInitialized
-  fullName: CheckAndThrow.Throw.State.IsNotInitialized
-- uid: CheckAndThrow.Throw.State.IsNotMutable*
-  commentId: Overload:CheckAndThrow.Throw.State.IsNotMutable
-  href: CheckAndThrow.Throw.State.html#CheckAndThrow_Throw_State_IsNotMutable_System_Object_
-  name: IsNotMutable
-  nameWithType: Throw.State.IsNotMutable
-  fullName: CheckAndThrow.Throw.State.IsNotMutable
+- uid: CheckAndThrow.Throw.State.NotInitialized*
+  commentId: Overload:CheckAndThrow.Throw.State.NotInitialized
+  href: CheckAndThrow.Throw.State.html#CheckAndThrow_Throw_State_NotInitialized_System_Object_
+  name: NotInitialized
+  nameWithType: Throw.State.NotInitialized
+  fullName: CheckAndThrow.Throw.State.NotInitialized
+- uid: CheckAndThrow.Throw.State.NotMutable*
+  commentId: Overload:CheckAndThrow.Throw.State.NotMutable
+  href: CheckAndThrow.Throw.State.html#CheckAndThrow_Throw_State_NotMutable_System_Object_
+  name: NotMutable
+  nameWithType: Throw.State.NotMutable
+  fullName: CheckAndThrow.Throw.State.NotMutable

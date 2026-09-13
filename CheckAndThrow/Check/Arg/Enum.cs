@@ -15,7 +15,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original enum value if it is defined.</returns>
         /// <exception cref="InvalidEnumArgumentException">Thrown when <paramref name="enumValue"/> is not defined in <typeparamref name="T"/>.</exception>
-        public static T IsValidEnumValue<T>(
+        public static T ValidEnumValue<T>(
             T enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
                 string paramName = ""
@@ -24,7 +24,7 @@ public static partial class Check
         {
             return EnumCache<T>.Values.ContainsValue(enumValue)
                 ? enumValue
-                : IsInvalidEnumValue<T>(typeof(T), enumValue, paramName);
+                : InvalidEnumValue<T>(typeof(T), enumValue, paramName);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ public static partial class Check
         /// <returns>The enum value corresponding to the specified string.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="enumValue"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="enumValue"/> is not defined in <typeparamref name="T"/>.</exception>
-        public static T IsValidEnumValueName<T>(
+        public static T ValidEnumValueName<T>(
             [NotNull] string? enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
                 string paramName = ""
@@ -45,7 +45,7 @@ public static partial class Check
         {
             return EnumCache<T>.Values.TryGetValue(NotNull(enumValue, paramName), out var value)
                 ? value
-                : IsInvalidEnumValue<T>(typeof(T), enumValue, paramName);
+                : InvalidEnumValue<T>(typeof(T), enumValue, paramName);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ public static partial class Check
         /// <returns>The enum value corresponding to the specified string.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="enumValue"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="enumValue"/> is not defined in <typeparamref name="T"/>.</exception>
-        public static T IsValidEnumValueNameIgnoreCase<T>(
+        public static T ValidEnumValueNameIgnoreCase<T>(
             [NotNull] string? enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
                 string paramName = ""
@@ -69,7 +69,7 @@ public static partial class Check
                 out var value
             )
                 ? value
-                : IsInvalidEnumValue<T>(typeof(T), enumValue, paramName);
+                : InvalidEnumValue<T>(typeof(T), enumValue, paramName);
         }
 
         /// <summary>
@@ -109,7 +109,10 @@ public static partial class Check
         )
             where T : struct, Enum, IConvertible
         {
-            if (EnumCache<T>.UnderlyingType == typeof(int) || EnumCache<T>.UnderlyingType == typeof(uint))
+            if (
+                EnumCache<T>.UnderlyingType == typeof(int)
+                || EnumCache<T>.UnderlyingType == typeof(uint)
+            )
             {
                 var valueInt = Unsafe.As<T, int>(ref value);
                 var flagsInt = Unsafe.As<T, int>(ref flags);
@@ -117,7 +120,10 @@ public static partial class Check
                 if (flagsInt == 0 || (valueInt & flagsInt) != 0)
                     return value;
             }
-            else if (EnumCache<T>.UnderlyingType == typeof(long) || EnumCache<T>.UnderlyingType == typeof(ulong))
+            else if (
+                EnumCache<T>.UnderlyingType == typeof(long)
+                || EnumCache<T>.UnderlyingType == typeof(ulong)
+            )
             {
                 var valueLong = Unsafe.As<T, long>(ref value);
                 var flagsLong = Unsafe.As<T, long>(ref flags);

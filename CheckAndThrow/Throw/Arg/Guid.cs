@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Throw
 {
@@ -12,7 +12,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the Guid is empty.</exception>
         [DoesNotReturn]
-        public static void IsGuidEmpty([InvokerParameterName] string paramName) =>
+        public static void GuidEmpty([InvokerParameterName] string paramName) =>
             throw new ArgumentException(GuidEmptyMessage, paramName);
 
         /// <summary>
@@ -23,8 +23,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the Guid is empty.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsGuidEmpty<TFakeReturn>(
-            [InvokerParameterName] string paramName
-        ) => throw new ArgumentException(GuidEmptyMessage, paramName);
+        public static TFakeReturn GuidEmpty<TFakeReturn>([InvokerParameterName] string paramName) =>
+            throw new ArgumentException(GuidEmptyMessage, paramName);
     }
 }

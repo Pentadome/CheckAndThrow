@@ -29,8 +29,12 @@ items:
   fullName: CheckAndThrow.Throw
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Throw
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 5
   assemblies:
   - CheckAndThrow
@@ -62,8 +66,12 @@ items:
   fullName: CheckAndThrow.Throw.Unreachable()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Unreachable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 12
   assemblies:
   - CheckAndThrow
@@ -90,8 +98,12 @@ items:
   fullName: CheckAndThrow.Throw.Unreachable(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Unreachable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 20
   assemblies:
   - CheckAndThrow
@@ -125,8 +137,12 @@ items:
   fullName: CheckAndThrow.Throw.Unreachable<TFakeReturn>()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Unreachable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 29
   assemblies:
   - CheckAndThrow
@@ -162,8 +178,12 @@ items:
   fullName: CheckAndThrow.Throw.Unreachable<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Unreachable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 39
   assemblies:
   - CheckAndThrow
@@ -203,8 +223,12 @@ items:
   fullName: CheckAndThrow.Throw.NotImplemented()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotImplemented
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 47
   assemblies:
   - CheckAndThrow
@@ -231,8 +255,12 @@ items:
   fullName: CheckAndThrow.Throw.NotImplemented(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotImplemented
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 55
   assemblies:
   - CheckAndThrow
@@ -266,8 +294,12 @@ items:
   fullName: CheckAndThrow.Throw.NotImplemented<TFakeReturn>()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotImplemented
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 64
   assemblies:
   - CheckAndThrow
@@ -303,8 +335,12 @@ items:
   fullName: CheckAndThrow.Throw.NotImplemented<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotImplemented
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 74
   assemblies:
   - CheckAndThrow
@@ -344,8 +380,12 @@ items:
   fullName: CheckAndThrow.Throw.NotSupported()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotSupported
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 82
   assemblies:
   - CheckAndThrow
@@ -372,8 +412,12 @@ items:
   fullName: CheckAndThrow.Throw.NotSupported(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotSupported
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 90
   assemblies:
   - CheckAndThrow
@@ -407,8 +451,12 @@ items:
   fullName: CheckAndThrow.Throw.NotSupported<TFakeReturn>()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotSupported
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 99
   assemblies:
   - CheckAndThrow
@@ -444,8 +492,12 @@ items:
   fullName: CheckAndThrow.Throw.NotSupported<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotSupported
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 109
   assemblies:
   - CheckAndThrow
@@ -485,8 +537,12 @@ items:
   fullName: CheckAndThrow.Throw.InvalidOperation()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidOperation
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 117
   assemblies:
   - CheckAndThrow
@@ -513,8 +569,12 @@ items:
   fullName: CheckAndThrow.Throw.InvalidOperation(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidOperation
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 125
   assemblies:
   - CheckAndThrow
@@ -548,8 +608,12 @@ items:
   fullName: CheckAndThrow.Throw.InvalidOperation<TFakeReturn>()
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidOperation
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 135
   assemblies:
   - CheckAndThrow
@@ -585,8 +649,12 @@ items:
   fullName: CheckAndThrow.Throw.InvalidOperation<TFakeReturn>(string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Throw/Throw.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: InvalidOperation
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Throw\Throw.cs
+    path: ../CheckAndThrow/Throw/Throw.cs
     startLine: 146
   assemblies:
   - CheckAndThrow

@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check.Arg;
@@ -48,42 +48,42 @@ public class EnumTests
     }
 
     [Test]
-    public async Task IsValidEnumValue_DeclaredAndUndefined()
+    public async Task ValidEnumValue_DeclaredAndUndefined()
     {
-        await Assert.That(C.Arg.IsValidEnumValue(Flags.None)).IsEqualTo(Flags.None);
-        await Assert.That(C.Arg.IsValidEnumValue(Flags.Both)).IsEqualTo(Flags.Both);
+        await Assert.That(C.Arg.ValidEnumValue(Flags.None)).IsEqualTo(Flags.None);
+        await Assert.That(C.Arg.ValidEnumValue(Flags.Both)).IsEqualTo(Flags.Both);
         var exception = await Assert
-            .That(() => C.Arg.IsValidEnumValue((Flags)4, "input"))
+            .That(() => C.Arg.ValidEnumValue((Flags)4, "input"))
             .ThrowsExactly<InvalidEnumArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsValidEnumValueName_CaseSensitive()
+    public async Task ValidEnumValueName_CaseSensitive()
     {
-        await Assert.That(C.Arg.IsValidEnumValueName<Flags>("One")).IsEqualTo(Flags.One);
+        await Assert.That(C.Arg.ValidEnumValueName<Flags>("One")).IsEqualTo(Flags.One);
         var exception = await Assert
-            .That(() => C.Arg.IsValidEnumValueName<Flags>("one", "input"))
+            .That(() => C.Arg.ValidEnumValueName<Flags>("one", "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
-            .That(() => C.Arg.IsValidEnumValueName<Flags>("1"))
+            .That(() => C.Arg.ValidEnumValueName<Flags>("1"))
             .ThrowsExactly<ArgumentException>();
         await Assert
-            .That(() => C.Arg.IsValidEnumValueName<Flags>(null))
+            .That(() => C.Arg.ValidEnumValueName<Flags>(null))
             .ThrowsExactly<ArgumentNullException>();
     }
 
     [Test]
-    public async Task IsValidEnumValueNameIgnoreCase()
+    public async Task ValidEnumValueNameIgnoreCase()
     {
-        await Assert.That(C.Arg.IsValidEnumValueNameIgnoreCase<Flags>("oNe")).IsEqualTo(Flags.One);
+        await Assert.That(C.Arg.ValidEnumValueNameIgnoreCase<Flags>("oNe")).IsEqualTo(Flags.One);
         var exception = await Assert
-            .That(() => C.Arg.IsValidEnumValueNameIgnoreCase<Flags>("missing", "input"))
+            .That(() => C.Arg.ValidEnumValueNameIgnoreCase<Flags>("missing", "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert
-            .That(() => C.Arg.IsValidEnumValueNameIgnoreCase<Flags>(null))
+            .That(() => C.Arg.ValidEnumValueNameIgnoreCase<Flags>(null))
             .ThrowsExactly<ArgumentNullException>();
     }
 

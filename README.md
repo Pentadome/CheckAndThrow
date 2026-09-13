@@ -56,11 +56,10 @@ This means:
 - **Failure path** → Detailed: `Check` delegates to `Throw` for rich error reporting
 
 ```csharp
-// Check validates efficiently; delegates to Throw on failure
+// Check validates efficiently; throws only when validation fails
 public void ProcessData(int[] data)
 {
-    Check.Arg.NotNull(data);  // Returns immediately if valid
-                               // Calls Throw.Arg.IsNull internally if null
+    Check.Arg.NotNull(data); // Returns immediately if valid
     // ... process data ...
 }
 
@@ -72,7 +71,7 @@ public User GetUser(UserType userType)
         UserType.Admin => GetAdmin(),
         UserType.Customer => GetCustomer(),
         // Generic return type allows usage in switch expressions
-        _ => Throw.Arg.IsNotDefined<User>(typeof(UserType), userType)
+        _ => Throw.Arg.InvalidEnumValue<User>(typeof(UserType), userType)
     };
 }
 ```
@@ -82,6 +81,10 @@ public User GetUser(UserType userType)
 - Your application remains responsive in the common case (success)
 - Rich debugging information available in the exceptional case (failure)
 - Clean, readable validation code everywhere
+
+## Breaking API change
+
+`Is` prefixes were removed from guard and throw helpers (for example, `Check.Arg.IsNotNullOrEmpty` is now `Check.Arg.NotNullOrEmpty`, and `Throw.Arg.IsNull` is now `Throw.Arg.Null`). This is a source and binary breaking change: rename calls and recompile consumers. Compatibility aliases are not provided.
 
 ## Installation
 

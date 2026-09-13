@@ -28,4 +28,161 @@ items:
   - uid: CheckAndThrow.Throw.State
     name: Throw.State
     type: Class
+- uid: CheckAndThrow.Tests.Check
+  name: CheckAndThrow.Tests.Check
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Check.CheckTests
+    name: CheckTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.ExpressionTests
+    name: ExpressionTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.StateTests
+    name: StateTests
+    type: Class
+- uid: CheckAndThrow.Tests.Check.Arg
+  name: CheckAndThrow.Tests.Check.Arg
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Check.Arg.CollectionTests
+    name: CollectionTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.DateTimeTests
+    name: DateTimeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests
+    name: EnumTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests.ByteFlags
+    name: EnumTests.ByteFlags
+    type: Enum
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests.Flags
+    name: EnumTests.Flags
+    type: Enum
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests.LongFlags
+    name: EnumTests.LongFlags
+    type: Enum
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests.ShortFlags
+    name: EnumTests.ShortFlags
+    type: Enum
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests.UIntFlags
+    name: EnumTests.UIntFlags
+    type: Enum
+  - uid: CheckAndThrow.Tests.Check.Arg.EnumTests.UnsignedFlags
+    name: EnumTests.UnsignedFlags
+    type: Enum
+  - uid: CheckAndThrow.Tests.Check.Arg.GuidTests
+    name: GuidTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.NotNullTests
+    name: NotNullTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.NumberTests
+    name: NumberTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.StateTests
+    name: StateTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.StringTests
+    name: StringTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.TypeTests
+    name: TypeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.TypeTests.Derived
+    name: TypeTests.Derived
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.TypeTests.Marked
+    name: TypeTests.Marked
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.TypeTests.MarkerAttribute
+    name: TypeTests.MarkerAttribute
+    type: Class
+- uid: CheckAndThrow.Tests.Check.Arg.Range
+  name: CheckAndThrow.Tests.Check.Arg.Range
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Check.Arg.Range.NegativeTests
+    name: NegativeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.Range.PositiveTests
+    name: PositiveTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.Range.RangeTests
+    name: RangeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.Range.ZeroOrNegativeTests
+    name: ZeroOrNegativeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Check.Arg.Range.ZeroOrPositiveTests
+    name: ZeroOrPositiveTests
+    type: Class
+- uid: CheckAndThrow.Tests.Check.Args
+  name: CheckAndThrow.Tests.Check.Args
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Check.Args.NotNullTests
+    name: NotNullTests
+    type: Class
+- uid: CheckAndThrow.Tests.Throw
+  name: CheckAndThrow.Tests.Throw
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Throw.StateTests
+    name: StateTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.ThrowTests
+    name: ThrowTests
+    type: Class
+- uid: CheckAndThrow.Tests.Throw.Arg
+  name: CheckAndThrow.Tests.Throw.Arg
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Throw.Arg.ArgTests
+    name: ArgTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.CollectionTests
+    name: CollectionTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.DateTimeTests
+    name: DateTimeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.EnumTests
+    name: EnumTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.GuidTests
+    name: GuidTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.NotNullTests
+    name: NotNullTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.NumberTests
+    name: NumberTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.StringTests
+    name: StringTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.TypeTests
+    name: TypeTests
+    type: Class
+- uid: CheckAndThrow.Tests.Throw.Arg.Range
+  name: CheckAndThrow.Tests.Throw.Arg.Range
+  type: Namespace
+  items:
+  - uid: CheckAndThrow.Tests.Throw.Arg.Range.NegativeTests
+    name: NegativeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.Range.PositiveTests
+    name: PositiveTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.Range.RangeTests
+    name: RangeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.Range.ZeroOrNegativeTests
+    name: ZeroOrNegativeTests
+    type: Class
+  - uid: CheckAndThrow.Tests.Throw.Arg.Range.ZeroOrPositiveTests
+    name: ZeroOrPositiveTests
+    type: Class
 memberLayout: SamePage

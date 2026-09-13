@@ -1,4 +1,4 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check;
 
@@ -23,18 +23,18 @@ public class CheckTests
             await Assert.That(C.DefaultTimeProvider).IsSameReferenceAs(provider);
             var now = provider.GetUtcNow();
             await Assert
-                .That(C.Arg.IsInPast(now.AddDays(-1).UtcDateTime))
+                .That(C.Arg.InPast(now.AddDays(-1).UtcDateTime))
                 .IsEqualTo(now.AddDays(-1).UtcDateTime);
-            await Assert.That(C.Arg.IsInPast(now.AddDays(-1))).IsEqualTo(now.AddDays(-1));
+            await Assert.That(C.Arg.InPast(now.AddDays(-1))).IsEqualTo(now.AddDays(-1));
             await Assert
-                .That(C.Arg.IsInPastUtc(now.AddDays(-1).UtcDateTime))
+                .That(C.Arg.InPastUtc(now.AddDays(-1).UtcDateTime))
                 .IsEqualTo(now.AddDays(-1).UtcDateTime);
             await Assert
-                .That(C.Arg.IsInFuture(now.AddDays(1).UtcDateTime))
+                .That(C.Arg.InFuture(now.AddDays(1).UtcDateTime))
                 .IsEqualTo(now.AddDays(1).UtcDateTime);
-            await Assert.That(C.Arg.IsInFuture(now.AddDays(1))).IsEqualTo(now.AddDays(1));
+            await Assert.That(C.Arg.InFuture(now.AddDays(1))).IsEqualTo(now.AddDays(1));
             await Assert
-                .That(C.Arg.IsInFutureUtc(now.AddDays(1).UtcDateTime))
+                .That(C.Arg.InFutureUtc(now.AddDays(1).UtcDateTime))
                 .IsEqualTo(now.AddDays(1).UtcDateTime);
             await Assert
                 .That(() => C.DefaultTimeProvider = null!)
@@ -46,5 +46,4 @@ public class CheckTests
             C.DefaultTimeProvider = original;
         }
     }
-
 }

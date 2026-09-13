@@ -25,7 +25,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the collection is empty.</exception>
         [DoesNotReturn]
-        public static void IsEmpty([InvokerParameterName] string paramName) =>
+        public static void Empty([InvokerParameterName] string paramName) =>
             throw new ArgumentException(CanNotBeEmpty, paramName);
 
         /// <summary>
@@ -36,7 +36,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the collection is empty.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsEmpty<TFakeReturn>([InvokerParameterName] string paramName) =>
+        public static TFakeReturn Empty<TFakeReturn>([InvokerParameterName] string paramName) =>
             throw new ArgumentException(CanNotBeEmpty, paramName);
 
         /// <summary>
@@ -251,7 +251,7 @@ public static partial class Throw
         /// </summary>
         /// <exception cref="ArgumentOutOfRangeException">Thrown because the index is out of range.</exception>
         [DoesNotReturn]
-        public static void IsInvalidIndex([InvokerParameterName] string paramName) =>
+        public static void InvalidIndex([InvokerParameterName] string paramName) =>
             throw new ArgumentOutOfRangeException(paramName);
 
         /// <summary>
@@ -262,7 +262,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown because the index is out of range.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsInvalidIndex<TFakeReturn>(
+        public static TFakeReturn InvalidIndex<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentOutOfRangeException(paramName);
 
@@ -274,7 +274,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentOutOfRangeException">Thrown because the index is out of range.</exception>
         [DoesNotReturn]
-        public static void IsInvalidIndex(
+        public static void InvalidIndex(
             object index,
             object collectionSize,
             [InvokerParameterName] string paramName
@@ -295,7 +295,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown because the index is out of range.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsInvalidIndex<TFakeReturn>(
+        public static TFakeReturn InvalidIndex<TFakeReturn>(
             object index,
             object collectionSize,
             [InvokerParameterName] string paramName

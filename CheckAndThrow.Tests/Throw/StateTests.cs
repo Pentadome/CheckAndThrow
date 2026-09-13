@@ -1,221 +1,221 @@
-using Th = CheckAndThrow.Throw;
+﻿using Th = CheckAndThrow.Throw;
 
 namespace CheckAndThrow.Tests.Throw;
 
 public class StateTests
 {
     [Test]
-    public async Task IsDisposed_object()
+    public async Task Disposed_object()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed(new object()))
+            .That(() => Th.State.Disposed(new object()))
             .ThrowsExactly<ObjectDisposedException>();
         await Assert.That(exception!.ObjectName).IsEqualTo("System.Object");
     }
 
     [Test]
-    public async Task IsDisposed_Type()
+    public async Task Disposed_Type()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed(typeof(object)))
+            .That(() => Th.State.Disposed(typeof(object)))
             .ThrowsExactly<ObjectDisposedException>();
         await Assert.That(exception!.ObjectName).IsEqualTo("System.Object");
     }
 
     [Test]
-    public async Task IsDisposed_string()
+    public async Task Disposed_string()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed("instance"))
+            .That(() => Th.State.Disposed("instance"))
             .ThrowsExactly<ObjectDisposedException>();
         await Assert.That(exception!.ObjectName).IsEqualTo("instance");
     }
 
     [Test]
-    public async Task IsDisposed_Generic_NoArguments()
+    public async Task Disposed_Generic_NoArguments()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed<object>())
+            .That(() => Th.State.Disposed<object>())
             .ThrowsExactly<ObjectDisposedException>();
         await Assert.That(exception!.ObjectName).IsEqualTo("System.Object");
     }
 
     [Test]
-    public async Task IsNotInitialized_object()
+    public async Task NotInitialized_object()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized(new object()))
+            .That(() => Th.State.NotInitialized(new object()))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("System.Object is not initialized.");
     }
 
     [Test]
-    public async Task IsNotInitialized_Type()
+    public async Task NotInitialized_Type()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized(typeof(object)))
+            .That(() => Th.State.NotInitialized(typeof(object)))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("System.Object is not initialized.");
     }
 
     [Test]
-    public async Task IsNotInitialized_string()
+    public async Task NotInitialized_string()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized("instance"))
+            .That(() => Th.State.NotInitialized("instance"))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("instance is not initialized.");
     }
 
     [Test]
-    public async Task IsNotInitialized_Generic_NoArguments()
+    public async Task NotInitialized_Generic_NoArguments()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized<object>())
+            .That(() => Th.State.NotInitialized<object>())
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("System.Object is not initialized.");
     }
 
     [Test]
-    public async Task IsNotMutable_object()
+    public async Task NotMutable_object()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable(new object()))
+            .That(() => Th.State.NotMutable(new object()))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("System.Object is not mutable.");
     }
 
     [Test]
-    public async Task IsNotMutable_Type()
+    public async Task NotMutable_Type()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable(typeof(object)))
+            .That(() => Th.State.NotMutable(typeof(object)))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("System.Object is not mutable.");
     }
 
     [Test]
-    public async Task IsNotMutable_string()
+    public async Task NotMutable_string()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable("instance"))
+            .That(() => Th.State.NotMutable("instance"))
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("instance is not mutable.");
     }
 
     [Test]
-    public async Task IsNotMutable_Generic_NoArguments()
+    public async Task NotMutable_Generic_NoArguments()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable<object>())
+            .That(() => Th.State.NotMutable<object>())
             .ThrowsExactly<InvalidOperationException>();
         await Assert.That(exception!.Message).IsEqualTo("System.Object is not mutable.");
     }
 
     [Test]
-    public async Task IsDisposed_RejectsNull_object()
+    public async Task Disposed_RejectsNull_object()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed((object)null!))
+            .That(() => Th.State.Disposed((object)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instance");
     }
 
     [Test]
-    public async Task IsDisposed_RejectsNull_Type()
+    public async Task Disposed_RejectsNull_Type()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed((Type)null!))
+            .That(() => Th.State.Disposed((Type)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("type");
     }
 
     [Test]
-    public async Task IsDisposed_RejectsNull_string()
+    public async Task Disposed_RejectsNull_string()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed((string)null!))
+            .That(() => Th.State.Disposed((string)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceName");
     }
 
     [Test]
-    public async Task IsDisposed_RejectsEmptyName()
+    public async Task Disposed_RejectsEmptyName()
     {
         var exception = await Assert
-            .That(() => Th.State.IsDisposed(" "))
+            .That(() => Th.State.Disposed(" "))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceName");
     }
 
     [Test]
-    public async Task IsNotInitialized_RejectsNull_object()
+    public async Task NotInitialized_RejectsNull_object()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized((object)null!))
+            .That(() => Th.State.NotInitialized((object)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instance");
     }
 
     [Test]
-    public async Task IsNotInitialized_RejectsNull_Type()
+    public async Task NotInitialized_RejectsNull_Type()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized((Type)null!))
+            .That(() => Th.State.NotInitialized((Type)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("type");
     }
 
     [Test]
-    public async Task IsNotInitialized_RejectsNull_string()
+    public async Task NotInitialized_RejectsNull_string()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized((string)null!))
+            .That(() => Th.State.NotInitialized((string)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceName");
     }
 
     [Test]
-    public async Task IsNotInitialized_RejectsEmptyName()
+    public async Task NotInitialized_RejectsEmptyName()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotInitialized(" "))
+            .That(() => Th.State.NotInitialized(" "))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceName");
     }
 
     [Test]
-    public async Task IsNotMutable_RejectsNull_object()
+    public async Task NotMutable_RejectsNull_object()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable((object)null!))
+            .That(() => Th.State.NotMutable((object)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instance");
     }
 
     [Test]
-    public async Task IsNotMutable_RejectsNull_Type()
+    public async Task NotMutable_RejectsNull_Type()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable((Type)null!))
+            .That(() => Th.State.NotMutable((Type)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceType");
     }
 
     [Test]
-    public async Task IsNotMutable_RejectsNull_string()
+    public async Task NotMutable_RejectsNull_string()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable((string)null!))
+            .That(() => Th.State.NotMutable((string)null!))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceName");
     }
 
     [Test]
-    public async Task IsNotMutable_RejectsEmptyName()
+    public async Task NotMutable_RejectsEmptyName()
     {
         var exception = await Assert
-            .That(() => Th.State.IsNotMutable(" "))
+            .That(() => Th.State.NotMutable(" "))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("instanceName");
     }

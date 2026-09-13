@@ -14,8 +14,12 @@ items:
   fullName: CheckAndThrow.Check
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Check
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
+    path: ../CheckAndThrow/Check/State.cs
     startLine: 2
   assemblies:
   - CheckAndThrow
@@ -47,8 +51,12 @@ items:
   fullName: CheckAndThrow.Check.DefaultTimeProvider
   type: Property
   source:
+    remote:
+      path: CheckAndThrow/Check/Check.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: DefaultTimeProvider
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Check.cs
+    path: ../CheckAndThrow/Check/Check.cs
     startLine: 12
   assemblies:
   - CheckAndThrow

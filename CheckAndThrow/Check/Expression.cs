@@ -98,7 +98,7 @@ public static partial class Check
         /// <param name="expression">The expression to check.</param>
         /// <param name="expressionString">The string representation of the expression.</param>
         /// <exception cref="InvalidOperationException">Thrown when the expression evaluates to false.</exception>
-        public static void IsTrue(
+        public static void True(
             [DoesNotReturnIf(false)] bool expression,
             [CallerArgumentExpression(nameof(expression))] string expressionString = ""
         )
@@ -117,7 +117,7 @@ public static partial class Check
         /// <param name="expression">The expression to check.</param>
         /// <param name="expressionString">The string representation of the expression.</param>
         /// <exception cref="InvalidOperationException">Thrown when the expression evaluates to true.</exception>
-        public static void IsFalse(
+        public static void False(
             [DoesNotReturnIf(true)] bool expression,
             [CallerArgumentExpression(nameof(expression))] string expressionString = ""
         )

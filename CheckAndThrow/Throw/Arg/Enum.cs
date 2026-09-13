@@ -58,7 +58,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="InvalidEnumArgumentException">Thrown because the enum value is not defined.</exception>
         [DoesNotReturn]
-        public static void IsInvalidEnumValue(
+        public static void InvalidEnumValue(
             Type enumType,
             int enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
@@ -75,7 +75,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="InvalidEnumArgumentException">Thrown because the enum value is not defined.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsInvalidEnumValue<TFakeReturn>(
+        public static TFakeReturn InvalidEnumValue<TFakeReturn>(
             Type enumType,
             int enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
@@ -90,7 +90,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="InvalidEnumArgumentException">Thrown because the enum value is not defined.</exception>
         [DoesNotReturn]
-        public static void IsInvalidEnumValue(
+        public static void InvalidEnumValue(
             Type enumType,
             Enum enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
@@ -112,7 +112,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="InvalidEnumArgumentException">Thrown because the enum value is not defined.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsInvalidEnumValue<TFakeReturn>(
+        public static TFakeReturn InvalidEnumValue<TFakeReturn>(
             Type enumType,
             Enum enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
@@ -132,7 +132,7 @@ public static partial class Throw
         /// <param name="paramName">The name of the parameter.</param>
         /// <exception cref="ArgumentException">Thrown because the enum value is not defined.</exception>
         [DoesNotReturn]
-        public static void IsInvalidEnumValue(
+        public static void InvalidEnumValue(
             Type enumType,
             string enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]
@@ -149,7 +149,7 @@ public static partial class Throw
         /// <returns>Nothing is returned as the method always throws.</returns>
         /// <exception cref="ArgumentException">Thrown because the enum value is not defined.</exception>
         [DoesNotReturn]
-        public static TFakeReturn IsInvalidEnumValue<TFakeReturn>(
+        public static TFakeReturn InvalidEnumValue<TFakeReturn>(
             Type enumType,
             string enumValue,
             [CallerArgumentExpression(nameof(enumValue)), InvokerParameterName]

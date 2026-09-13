@@ -5,14 +5,14 @@ items:
   id: Check.State
   parent: CheckAndThrow
   children:
-  - CheckAndThrow.Check.State.IsInitialized(System.Boolean,System.String)
-  - CheckAndThrow.Check.State.IsInitialized(System.Boolean,System.Type)
-  - CheckAndThrow.Check.State.IsInitialized``1(System.Boolean)
-  - CheckAndThrow.Check.State.IsInitialized``1(System.Boolean,``0)
-  - CheckAndThrow.Check.State.IsMutable(System.Boolean,System.String)
-  - CheckAndThrow.Check.State.IsMutable(System.Boolean,System.Type)
-  - CheckAndThrow.Check.State.IsMutable``1(System.Boolean)
-  - CheckAndThrow.Check.State.IsMutable``1(System.Boolean,``0)
+  - CheckAndThrow.Check.State.Initialized(System.Boolean,System.String)
+  - CheckAndThrow.Check.State.Initialized(System.Boolean,System.Type)
+  - CheckAndThrow.Check.State.Initialized``1(System.Boolean)
+  - CheckAndThrow.Check.State.Initialized``1(System.Boolean,``0)
+  - CheckAndThrow.Check.State.Mutable(System.Boolean,System.String)
+  - CheckAndThrow.Check.State.Mutable(System.Boolean,System.Type)
+  - CheckAndThrow.Check.State.Mutable``1(System.Boolean)
+  - CheckAndThrow.Check.State.Mutable``1(System.Boolean,``0)
   - CheckAndThrow.Check.State.NotDisposed(System.Boolean,System.String)
   - CheckAndThrow.Check.State.NotDisposed(System.Boolean,System.Type)
   - CheckAndThrow.Check.State.NotDisposed``1(System.Boolean)
@@ -25,8 +25,12 @@ items:
   fullName: CheckAndThrow.Check.State
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: State
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
+    path: ../CheckAndThrow/Check/State.cs
     startLine: 7
   assemblies:
   - CheckAndThrow
@@ -58,8 +62,12 @@ items:
   fullName: CheckAndThrow.Check.State.NotDisposed<T>(bool, T)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
+    path: ../CheckAndThrow/Check/State.cs
     startLine: 16
   assemblies:
   - CheckAndThrow
@@ -101,9 +109,13 @@ items:
   fullName: CheckAndThrow.Check.State.NotDisposed(bool, System.Type)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 33
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 28
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
@@ -139,9 +151,13 @@ items:
   fullName: CheckAndThrow.Check.State.NotDisposed(bool, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 47
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 42
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
@@ -177,9 +193,13 @@ items:
   fullName: CheckAndThrow.Check.State.NotDisposed<T>(bool)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotDisposed
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 61
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 56
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
@@ -203,28 +223,32 @@ items:
   nameWithType.vb: Check.State.NotDisposed(Of T)(Boolean)
   fullName.vb: CheckAndThrow.Check.State.NotDisposed(Of T)(Boolean)
   name.vb: NotDisposed(Of T)(Boolean)
-- uid: CheckAndThrow.Check.State.IsInitialized``1(System.Boolean,``0)
-  commentId: M:CheckAndThrow.Check.State.IsInitialized``1(System.Boolean,``0)
-  id: IsInitialized``1(System.Boolean,``0)
+- uid: CheckAndThrow.Check.State.Initialized``1(System.Boolean,``0)
+  commentId: M:CheckAndThrow.Check.State.Initialized``1(System.Boolean,``0)
+  id: Initialized``1(System.Boolean,``0)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsInitialized<T>(bool, T)
-  nameWithType: Check.State.IsInitialized<T>(bool, T)
-  fullName: CheckAndThrow.Check.State.IsInitialized<T>(bool, T)
+  name: Initialized<T>(bool, T)
+  nameWithType: Check.State.Initialized<T>(bool, T)
+  fullName: CheckAndThrow.Check.State.Initialized<T>(bool, T)
   type: Method
   source:
-    id: IsInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 76
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Initialized
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 71
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is initialized.
   example: []
   syntax:
-    content: 'public static T IsInitialized<T>(bool isInitialized, T instance) where T : notnull'
+    content: 'public static T Initialized<T>(bool isInitialized, T instance) where T : notnull'
     parameters:
     - id: isInitialized
       type: System.Boolean
@@ -237,37 +261,41 @@ items:
     return:
       type: '{T}'
       description: <code class="paramref">instance</code> if initialized.
-    content.vb: Public Shared Function IsInitialized(Of T)(isInitialized As Boolean, instance As T) As T
-  overload: CheckAndThrow.Check.State.IsInitialized*
+    content.vb: Public Shared Function Initialized(Of T)(isInitialized As Boolean, instance As T) As T
+  overload: CheckAndThrow.Check.State.Initialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isInitialized</code> is false.
-  nameWithType.vb: Check.State.IsInitialized(Of T)(Boolean, T)
-  fullName.vb: CheckAndThrow.Check.State.IsInitialized(Of T)(Boolean, T)
-  name.vb: IsInitialized(Of T)(Boolean, T)
-- uid: CheckAndThrow.Check.State.IsInitialized(System.Boolean,System.Type)
-  commentId: M:CheckAndThrow.Check.State.IsInitialized(System.Boolean,System.Type)
-  id: IsInitialized(System.Boolean,System.Type)
+  nameWithType.vb: Check.State.Initialized(Of T)(Boolean, T)
+  fullName.vb: CheckAndThrow.Check.State.Initialized(Of T)(Boolean, T)
+  name.vb: Initialized(Of T)(Boolean, T)
+- uid: CheckAndThrow.Check.State.Initialized(System.Boolean,System.Type)
+  commentId: M:CheckAndThrow.Check.State.Initialized(System.Boolean,System.Type)
+  id: Initialized(System.Boolean,System.Type)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsInitialized(bool, Type)
-  nameWithType: Check.State.IsInitialized(bool, Type)
-  fullName: CheckAndThrow.Check.State.IsInitialized(bool, System.Type)
+  name: Initialized(bool, Type)
+  nameWithType: Check.State.Initialized(bool, Type)
+  fullName: CheckAndThrow.Check.State.Initialized(bool, System.Type)
   type: Method
   source:
-    id: IsInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 93
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Initialized
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 83
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is initialized.
   example: []
   syntax:
-    content: public static void IsInitialized(bool isInitialized, Type instanceType)
+    content: public static void Initialized(bool isInitialized, Type instanceType)
     parameters:
     - id: isInitialized
       type: System.Boolean
@@ -275,37 +303,41 @@ items:
     - id: instanceType
       type: System.Type
       description: The type of the instance to check.
-    content.vb: Public Shared Sub IsInitialized(isInitialized As Boolean, instanceType As Type)
-  overload: CheckAndThrow.Check.State.IsInitialized*
+    content.vb: Public Shared Sub Initialized(isInitialized As Boolean, instanceType As Type)
+  overload: CheckAndThrow.Check.State.Initialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isInitialized</code> is false.
-  nameWithType.vb: Check.State.IsInitialized(Boolean, Type)
-  fullName.vb: CheckAndThrow.Check.State.IsInitialized(Boolean, System.Type)
-  name.vb: IsInitialized(Boolean, Type)
-- uid: CheckAndThrow.Check.State.IsInitialized(System.Boolean,System.String)
-  commentId: M:CheckAndThrow.Check.State.IsInitialized(System.Boolean,System.String)
-  id: IsInitialized(System.Boolean,System.String)
+  nameWithType.vb: Check.State.Initialized(Boolean, Type)
+  fullName.vb: CheckAndThrow.Check.State.Initialized(Boolean, System.Type)
+  name.vb: Initialized(Boolean, Type)
+- uid: CheckAndThrow.Check.State.Initialized(System.Boolean,System.String)
+  commentId: M:CheckAndThrow.Check.State.Initialized(System.Boolean,System.String)
+  id: Initialized(System.Boolean,System.String)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsInitialized(bool, string)
-  nameWithType: Check.State.IsInitialized(bool, string)
-  fullName: CheckAndThrow.Check.State.IsInitialized(bool, string)
+  name: Initialized(bool, string)
+  nameWithType: Check.State.Initialized(bool, string)
+  fullName: CheckAndThrow.Check.State.Initialized(bool, string)
   type: Method
   source:
-    id: IsInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 110
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Initialized
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 100
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is initialized.
   example: []
   syntax:
-    content: public static void IsInitialized(bool isInitialized, string instanceName)
+    content: public static void Initialized(bool isInitialized, string instanceName)
     parameters:
     - id: isInitialized
       type: System.Boolean
@@ -313,37 +345,41 @@ items:
     - id: instanceName
       type: System.String
       description: The name of the instance to check.
-    content.vb: Public Shared Sub IsInitialized(isInitialized As Boolean, instanceName As String)
-  overload: CheckAndThrow.Check.State.IsInitialized*
+    content.vb: Public Shared Sub Initialized(isInitialized As Boolean, instanceName As String)
+  overload: CheckAndThrow.Check.State.Initialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isInitialized</code> is false.
-  nameWithType.vb: Check.State.IsInitialized(Boolean, String)
-  fullName.vb: CheckAndThrow.Check.State.IsInitialized(Boolean, String)
-  name.vb: IsInitialized(Boolean, String)
-- uid: CheckAndThrow.Check.State.IsInitialized``1(System.Boolean)
-  commentId: M:CheckAndThrow.Check.State.IsInitialized``1(System.Boolean)
-  id: IsInitialized``1(System.Boolean)
+  nameWithType.vb: Check.State.Initialized(Boolean, String)
+  fullName.vb: CheckAndThrow.Check.State.Initialized(Boolean, String)
+  name.vb: Initialized(Boolean, String)
+- uid: CheckAndThrow.Check.State.Initialized``1(System.Boolean)
+  commentId: M:CheckAndThrow.Check.State.Initialized``1(System.Boolean)
+  id: Initialized``1(System.Boolean)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsInitialized<T>(bool)
-  nameWithType: Check.State.IsInitialized<T>(bool)
-  fullName: CheckAndThrow.Check.State.IsInitialized<T>(bool)
+  name: Initialized<T>(bool)
+  nameWithType: Check.State.Initialized<T>(bool)
+  fullName: CheckAndThrow.Check.State.Initialized<T>(bool)
   type: Method
   source:
-    id: IsInitialized
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 127
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Initialized
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 117
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is initialized.
   example: []
   syntax:
-    content: public static void IsInitialized<T>(bool isInitialized)
+    content: public static void Initialized<T>(bool isInitialized)
     parameters:
     - id: isInitialized
       type: System.Boolean
@@ -351,37 +387,41 @@ items:
     typeParameters:
     - id: T
       description: The type of the instance to check.
-    content.vb: Public Shared Sub IsInitialized(Of T)(isInitialized As Boolean)
-  overload: CheckAndThrow.Check.State.IsInitialized*
+    content.vb: Public Shared Sub Initialized(Of T)(isInitialized As Boolean)
+  overload: CheckAndThrow.Check.State.Initialized*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isInitialized</code> is false.
-  nameWithType.vb: Check.State.IsInitialized(Of T)(Boolean)
-  fullName.vb: CheckAndThrow.Check.State.IsInitialized(Of T)(Boolean)
-  name.vb: IsInitialized(Of T)(Boolean)
-- uid: CheckAndThrow.Check.State.IsMutable``1(System.Boolean,``0)
-  commentId: M:CheckAndThrow.Check.State.IsMutable``1(System.Boolean,``0)
-  id: IsMutable``1(System.Boolean,``0)
+  nameWithType.vb: Check.State.Initialized(Of T)(Boolean)
+  fullName.vb: CheckAndThrow.Check.State.Initialized(Of T)(Boolean)
+  name.vb: Initialized(Of T)(Boolean)
+- uid: CheckAndThrow.Check.State.Mutable``1(System.Boolean,``0)
+  commentId: M:CheckAndThrow.Check.State.Mutable``1(System.Boolean,``0)
+  id: Mutable``1(System.Boolean,``0)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsMutable<T>(bool, T)
-  nameWithType: Check.State.IsMutable<T>(bool, T)
-  fullName: CheckAndThrow.Check.State.IsMutable<T>(bool, T)
+  name: Mutable<T>(bool, T)
+  nameWithType: Check.State.Mutable<T>(bool, T)
+  fullName: CheckAndThrow.Check.State.Mutable<T>(bool, T)
   type: Method
   source:
-    id: IsMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 142
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Mutable
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 132
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is mutable.
   example: []
   syntax:
-    content: 'public static T IsMutable<T>(bool isMutable, T instance) where T : notnull'
+    content: 'public static T Mutable<T>(bool isMutable, T instance) where T : notnull'
     parameters:
     - id: isMutable
       type: System.Boolean
@@ -394,37 +434,41 @@ items:
     return:
       type: '{T}'
       description: <code class="paramref">instance</code> if mutable.
-    content.vb: Public Shared Function IsMutable(Of T)(isMutable As Boolean, instance As T) As T
-  overload: CheckAndThrow.Check.State.IsMutable*
+    content.vb: Public Shared Function Mutable(Of T)(isMutable As Boolean, instance As T) As T
+  overload: CheckAndThrow.Check.State.Mutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isMutable</code> is false.
-  nameWithType.vb: Check.State.IsMutable(Of T)(Boolean, T)
-  fullName.vb: CheckAndThrow.Check.State.IsMutable(Of T)(Boolean, T)
-  name.vb: IsMutable(Of T)(Boolean, T)
-- uid: CheckAndThrow.Check.State.IsMutable(System.Boolean,System.Type)
-  commentId: M:CheckAndThrow.Check.State.IsMutable(System.Boolean,System.Type)
-  id: IsMutable(System.Boolean,System.Type)
+  nameWithType.vb: Check.State.Mutable(Of T)(Boolean, T)
+  fullName.vb: CheckAndThrow.Check.State.Mutable(Of T)(Boolean, T)
+  name.vb: Mutable(Of T)(Boolean, T)
+- uid: CheckAndThrow.Check.State.Mutable(System.Boolean,System.Type)
+  commentId: M:CheckAndThrow.Check.State.Mutable(System.Boolean,System.Type)
+  id: Mutable(System.Boolean,System.Type)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsMutable(bool, Type)
-  nameWithType: Check.State.IsMutable(bool, Type)
-  fullName: CheckAndThrow.Check.State.IsMutable(bool, System.Type)
+  name: Mutable(bool, Type)
+  nameWithType: Check.State.Mutable(bool, Type)
+  fullName: CheckAndThrow.Check.State.Mutable(bool, System.Type)
   type: Method
   source:
-    id: IsMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 159
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Mutable
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 144
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is mutable.
   example: []
   syntax:
-    content: public static void IsMutable(bool isMutable, Type instanceType)
+    content: public static void Mutable(bool isMutable, Type instanceType)
     parameters:
     - id: isMutable
       type: System.Boolean
@@ -432,37 +476,41 @@ items:
     - id: instanceType
       type: System.Type
       description: The type of the instance to check.
-    content.vb: Public Shared Sub IsMutable(isMutable As Boolean, instanceType As Type)
-  overload: CheckAndThrow.Check.State.IsMutable*
+    content.vb: Public Shared Sub Mutable(isMutable As Boolean, instanceType As Type)
+  overload: CheckAndThrow.Check.State.Mutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isMutable</code> is false.
-  nameWithType.vb: Check.State.IsMutable(Boolean, Type)
-  fullName.vb: CheckAndThrow.Check.State.IsMutable(Boolean, System.Type)
-  name.vb: IsMutable(Boolean, Type)
-- uid: CheckAndThrow.Check.State.IsMutable(System.Boolean,System.String)
-  commentId: M:CheckAndThrow.Check.State.IsMutable(System.Boolean,System.String)
-  id: IsMutable(System.Boolean,System.String)
+  nameWithType.vb: Check.State.Mutable(Boolean, Type)
+  fullName.vb: CheckAndThrow.Check.State.Mutable(Boolean, System.Type)
+  name.vb: Mutable(Boolean, Type)
+- uid: CheckAndThrow.Check.State.Mutable(System.Boolean,System.String)
+  commentId: M:CheckAndThrow.Check.State.Mutable(System.Boolean,System.String)
+  id: Mutable(System.Boolean,System.String)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsMutable(bool, string)
-  nameWithType: Check.State.IsMutable(bool, string)
-  fullName: CheckAndThrow.Check.State.IsMutable(bool, string)
+  name: Mutable(bool, string)
+  nameWithType: Check.State.Mutable(bool, string)
+  fullName: CheckAndThrow.Check.State.Mutable(bool, string)
   type: Method
   source:
-    id: IsMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 173
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Mutable
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 158
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is mutable.
   example: []
   syntax:
-    content: public static void IsMutable(bool isMutable, string instanceName)
+    content: public static void Mutable(bool isMutable, string instanceName)
     parameters:
     - id: isMutable
       type: System.Boolean
@@ -470,37 +518,41 @@ items:
     - id: instanceName
       type: System.String
       description: The name of the instance to check.
-    content.vb: Public Shared Sub IsMutable(isMutable As Boolean, instanceName As String)
-  overload: CheckAndThrow.Check.State.IsMutable*
+    content.vb: Public Shared Sub Mutable(isMutable As Boolean, instanceName As String)
+  overload: CheckAndThrow.Check.State.Mutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isMutable</code> is false.
-  nameWithType.vb: Check.State.IsMutable(Boolean, String)
-  fullName.vb: CheckAndThrow.Check.State.IsMutable(Boolean, String)
-  name.vb: IsMutable(Boolean, String)
-- uid: CheckAndThrow.Check.State.IsMutable``1(System.Boolean)
-  commentId: M:CheckAndThrow.Check.State.IsMutable``1(System.Boolean)
-  id: IsMutable``1(System.Boolean)
+  nameWithType.vb: Check.State.Mutable(Boolean, String)
+  fullName.vb: CheckAndThrow.Check.State.Mutable(Boolean, String)
+  name.vb: Mutable(Boolean, String)
+- uid: CheckAndThrow.Check.State.Mutable``1(System.Boolean)
+  commentId: M:CheckAndThrow.Check.State.Mutable``1(System.Boolean)
+  id: Mutable``1(System.Boolean)
   parent: CheckAndThrow.Check.State
   langs:
   - csharp
   - vb
-  name: IsMutable<T>(bool)
-  nameWithType: Check.State.IsMutable<T>(bool)
-  fullName: CheckAndThrow.Check.State.IsMutable<T>(bool)
+  name: Mutable<T>(bool)
+  nameWithType: Check.State.Mutable<T>(bool)
+  fullName: CheckAndThrow.Check.State.Mutable<T>(bool)
   type: Method
   source:
-    id: IsMutable
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\State.cs
-    startLine: 187
+    remote:
+      path: CheckAndThrow/Check/State.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: Mutable
+    path: ../CheckAndThrow/Check/State.cs
+    startLine: 172
   assemblies:
   - CheckAndThrow
   namespace: CheckAndThrow
   summary: Ensures that the specified instance is mutable.
   example: []
   syntax:
-    content: public static void IsMutable<T>(bool isMutable)
+    content: public static void Mutable<T>(bool isMutable)
     parameters:
     - id: isMutable
       type: System.Boolean
@@ -508,15 +560,15 @@ items:
     typeParameters:
     - id: T
       description: The type of the instance to check.
-    content.vb: Public Shared Sub IsMutable(Of T)(isMutable As Boolean)
-  overload: CheckAndThrow.Check.State.IsMutable*
+    content.vb: Public Shared Sub Mutable(Of T)(isMutable As Boolean)
+  overload: CheckAndThrow.Check.State.Mutable*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: Thrown when <code class="paramref">isMutable</code> is false.
-  nameWithType.vb: Check.State.IsMutable(Of T)(Boolean)
-  fullName.vb: CheckAndThrow.Check.State.IsMutable(Of T)(Boolean)
-  name.vb: IsMutable(Of T)(Boolean)
+  nameWithType.vb: Check.State.Mutable(Of T)(Boolean)
+  fullName.vb: CheckAndThrow.Check.State.Mutable(Of T)(Boolean)
+  name.vb: Mutable(Of T)(Boolean)
 references:
 - uid: CheckAndThrow
   commentId: N:CheckAndThrow
@@ -821,15 +873,15 @@ references:
   name: InvalidOperationException
   nameWithType: InvalidOperationException
   fullName: System.InvalidOperationException
-- uid: CheckAndThrow.Check.State.IsInitialized*
-  commentId: Overload:CheckAndThrow.Check.State.IsInitialized
-  href: CheckAndThrow.Check.State.html#CheckAndThrow_Check_State_IsInitialized__1_System_Boolean___0_
-  name: IsInitialized
-  nameWithType: Check.State.IsInitialized
-  fullName: CheckAndThrow.Check.State.IsInitialized
-- uid: CheckAndThrow.Check.State.IsMutable*
-  commentId: Overload:CheckAndThrow.Check.State.IsMutable
-  href: CheckAndThrow.Check.State.html#CheckAndThrow_Check_State_IsMutable__1_System_Boolean___0_
-  name: IsMutable
-  nameWithType: Check.State.IsMutable
-  fullName: CheckAndThrow.Check.State.IsMutable
+- uid: CheckAndThrow.Check.State.Initialized*
+  commentId: Overload:CheckAndThrow.Check.State.Initialized
+  href: CheckAndThrow.Check.State.html#CheckAndThrow_Check_State_Initialized__1_System_Boolean___0_
+  name: Initialized
+  nameWithType: Check.State.Initialized
+  fullName: CheckAndThrow.Check.State.Initialized
+- uid: CheckAndThrow.Check.State.Mutable*
+  commentId: Overload:CheckAndThrow.Check.State.Mutable
+  href: CheckAndThrow.Check.State.html#CheckAndThrow_Check_State_Mutable__1_System_Boolean___0_
+  name: Mutable
+  nameWithType: Check.State.Mutable
+  fullName: CheckAndThrow.Check.State.Mutable

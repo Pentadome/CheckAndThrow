@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace CheckAndThrow;
 
@@ -15,7 +15,7 @@ public static partial class Check
         /// <returns>The original argument cast to the required type if it is an instance of that type.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="argument"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not an instance of the required type.</exception>
-        public static T IsAssignableTo<T>(
+        public static T AssignableTo<T>(
             object argument,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )
@@ -25,7 +25,7 @@ public static partial class Check
                 return result;
             }
 
-            return Throw.Arg.IsNotAssignableTo<T>(paramName, typeof(T), argument.GetType());
+            return Throw.Arg.NotAssignableTo<T>(paramName, typeof(T), argument.GetType());
         }
 
         /// <summary>
@@ -37,14 +37,14 @@ public static partial class Check
         /// <returns>The original type if it is assignable from the required type.</returns>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="argument"/> is null.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not assignable from the required type.</exception>
-        public static Type IsAssignableFrom<TTarget>(
+        public static Type AssignableFrom<TTarget>(
             Type argument,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
         )
         {
             return NotNull(argument, paramName).IsAssignableFrom(typeof(TTarget))
                 ? argument
-                : Throw.Arg.IsNotAssignableFrom<Type>(paramName);
+                : Throw.Arg.NotAssignableFrom<Type>(paramName);
         }
 
         /// <summary>

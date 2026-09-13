@@ -6,8 +6,10 @@ items:
   parent: CheckAndThrow
   children:
   - CheckAndThrow.Check.Expression.EqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
+  - CheckAndThrow.Check.Expression.False(System.Boolean,System.String)
   - CheckAndThrow.Check.Expression.NotEqualTo``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.String)
   - CheckAndThrow.Check.Expression.NotNull``1(``0,System.String)
+  - CheckAndThrow.Check.Expression.True(System.Boolean,System.String)
   langs:
   - csharp
   - vb
@@ -16,8 +18,12 @@ items:
   fullName: CheckAndThrow.Check.Expression
   type: Class
   source:
+    remote:
+      path: CheckAndThrow/Check/Expression.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: Expression
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    path: ../CheckAndThrow/Check/Expression.cs
     startLine: 7
   assemblies:
   - CheckAndThrow
@@ -49,8 +55,12 @@ items:
   fullName: CheckAndThrow.Check.Expression.NotNull<T>(T, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/Expression.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotNull
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    path: ../CheckAndThrow/Check/Expression.cs
     startLine: 17
   assemblies:
   - CheckAndThrow
@@ -93,8 +103,12 @@ items:
   fullName: CheckAndThrow.Check.Expression.NotEqualTo<T>(T, T, System.Collections.Generic.IEqualityComparer<T>?, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/Expression.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: NotEqualTo
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    path: ../CheckAndThrow/Check/Expression.cs
     startLine: 45
   assemblies:
   - CheckAndThrow
@@ -146,8 +160,12 @@ items:
   fullName: CheckAndThrow.Check.Expression.EqualTo<T>(T, T, System.Collections.Generic.IEqualityComparer<T>?, string, string)
   type: Method
   source:
+    remote:
+      path: CheckAndThrow/Check/Expression.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
     id: EqualTo
-    path: C:\Users\wrket\RiderProjects\CheckAndThrow\CheckAndThrow\Check\Expression.cs
+    path: ../CheckAndThrow/Check/Expression.cs
     startLine: 75
   assemblies:
   - CheckAndThrow
@@ -187,6 +205,90 @@ items:
   nameWithType.vb: Check.Expression.EqualTo(Of T)(T, T, IEqualityComparer(Of T), String, String)
   fullName.vb: CheckAndThrow.Check.Expression.EqualTo(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T), String, String)
   name.vb: EqualTo(Of T)(T, T, IEqualityComparer(Of T), String, String)
+- uid: CheckAndThrow.Check.Expression.True(System.Boolean,System.String)
+  commentId: M:CheckAndThrow.Check.Expression.True(System.Boolean,System.String)
+  id: True(System.Boolean,System.String)
+  parent: CheckAndThrow.Check.Expression
+  langs:
+  - csharp
+  - vb
+  name: True(bool, string)
+  nameWithType: Check.Expression.True(bool, string)
+  fullName: CheckAndThrow.Check.Expression.True(bool, string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Check/Expression.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: "True"
+    path: ../CheckAndThrow/Check/Expression.cs
+    startLine: 100
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified expression evaluates to true.
+  example: []
+  syntax:
+    content: public static void True(bool expression, string expressionString = "")
+    parameters:
+    - id: expression
+      type: System.Boolean
+      description: The expression to check.
+    - id: expressionString
+      type: System.String
+      description: The string representation of the expression.
+    content.vb: Public Shared Sub [True](expression As Boolean, expressionString As String = "")
+  overload: CheckAndThrow.Check.Expression.True*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the expression evaluates to false.
+  nameWithType.vb: Check.Expression.True(Boolean, String)
+  fullName.vb: CheckAndThrow.Check.Expression.True(Boolean, String)
+  name.vb: True(Boolean, String)
+- uid: CheckAndThrow.Check.Expression.False(System.Boolean,System.String)
+  commentId: M:CheckAndThrow.Check.Expression.False(System.Boolean,System.String)
+  id: False(System.Boolean,System.String)
+  parent: CheckAndThrow.Check.Expression
+  langs:
+  - csharp
+  - vb
+  name: False(bool, string)
+  nameWithType: Check.Expression.False(bool, string)
+  fullName: CheckAndThrow.Check.Expression.False(bool, string)
+  type: Method
+  source:
+    remote:
+      path: CheckAndThrow/Check/Expression.cs
+      branch: master
+      repo: https://github.com/Pentadome/CheckAndThrow
+    id: "False"
+    path: ../CheckAndThrow/Check/Expression.cs
+    startLine: 119
+  assemblies:
+  - CheckAndThrow
+  namespace: CheckAndThrow
+  summary: Ensures that the specified expression evaluates to false.
+  example: []
+  syntax:
+    content: public static void False(bool expression, string expressionString = "")
+    parameters:
+    - id: expression
+      type: System.Boolean
+      description: The expression to check.
+    - id: expressionString
+      type: System.String
+      description: The string representation of the expression.
+    content.vb: Public Shared Sub [False](expression As Boolean, expressionString As String = "")
+  overload: CheckAndThrow.Check.Expression.False*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the expression evaluates to true.
+  nameWithType.vb: Check.Expression.False(Boolean, String)
+  fullName.vb: CheckAndThrow.Check.Expression.False(Boolean, String)
+  name.vb: False(Boolean, String)
 references:
 - uid: CheckAndThrow
   commentId: N:CheckAndThrow
@@ -571,3 +673,26 @@ references:
   name: EqualTo
   nameWithType: Check.Expression.EqualTo
   fullName: CheckAndThrow.Check.Expression.EqualTo
+- uid: CheckAndThrow.Check.Expression.True*
+  commentId: Overload:CheckAndThrow.Check.Expression.True
+  href: CheckAndThrow.Check.Expression.html#CheckAndThrow_Check_Expression_True_System_Boolean_System_String_
+  name: "True"
+  nameWithType: Check.Expression.True
+  fullName: CheckAndThrow.Check.Expression.True
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CheckAndThrow.Check.Expression.False*
+  commentId: Overload:CheckAndThrow.Check.Expression.False
+  href: CheckAndThrow.Check.Expression.html#CheckAndThrow_Check_Expression_False_System_Boolean_System_String_
+  name: "False"
+  nameWithType: Check.Expression.False
+  fullName: CheckAndThrow.Check.Expression.False

@@ -1,4 +1,4 @@
-namespace CheckAndThrow;
+﻿namespace CheckAndThrow;
 
 public static partial class Check
 {
@@ -12,7 +12,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTime if it is in the past.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not in the past.</exception>
-        public static DateTime IsInPast(
+        public static DateTime InPast(
             DateTime argument,
             TimeProvider? timeProvider = null,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -23,7 +23,7 @@ public static partial class Check
             var now = timeProvider.GetLocalNow();
             if (argument >= timeProvider.GetLocalNow())
             {
-                Throw.Arg.IsNotInPast(paramName, argument, now);
+                Throw.Arg.NotInPast(paramName, argument, now);
             }
             return argument;
         }
@@ -36,7 +36,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTimeOffset if it is in the past.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not in the past.</exception>
-        public static DateTimeOffset IsInPast(
+        public static DateTimeOffset InPast(
             DateTimeOffset argument,
             TimeProvider? timeProvider = null,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -46,7 +46,7 @@ public static partial class Check
             var now = timeProvider.GetLocalNow();
             if (argument >= now)
             {
-                Throw.Arg.IsNotInPast(paramName, argument, now);
+                Throw.Arg.NotInPast(paramName, argument, now);
             }
             return argument;
         }
@@ -59,7 +59,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTime if it is in the past.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not in the past.</exception>
-        public static DateTime IsInPastUtc(
+        public static DateTime InPastUtc(
             DateTime argument,
             TimeProvider? timeProvider = null,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -69,7 +69,7 @@ public static partial class Check
             var now = timeProvider.GetUtcNow();
             if (argument >= now)
             {
-                Throw.Arg.IsNotInPast(paramName, argument, now);
+                Throw.Arg.NotInPast(paramName, argument, now);
             }
             return argument;
         }
@@ -82,7 +82,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTime if it is in the future.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not in the future.</exception>
-        public static DateTime IsInFuture(
+        public static DateTime InFuture(
             DateTime argument,
             TimeProvider? timeProvider = null,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -92,7 +92,7 @@ public static partial class Check
             var now = timeProvider.GetLocalNow();
             if (argument <= now)
             {
-                Throw.Arg.IsNotInFuture(paramName, argument, now);
+                Throw.Arg.NotInFuture(paramName, argument, now);
             }
             return argument;
         }
@@ -105,7 +105,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTimeOffset if it is in the future.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not in the future.</exception>
-        public static DateTimeOffset IsInFuture(
+        public static DateTimeOffset InFuture(
             DateTimeOffset argument,
             TimeProvider? timeProvider = null,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -115,7 +115,7 @@ public static partial class Check
             var now = timeProvider.GetLocalNow();
             if (argument <= now)
             {
-                Throw.Arg.IsNotInFuture(paramName, argument, now);
+                Throw.Arg.NotInFuture(paramName, argument, now);
             }
             return argument;
         }
@@ -128,7 +128,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTime if it is in the future.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not in the future.</exception>
-        public static DateTime IsInFutureUtc(
+        public static DateTime InFutureUtc(
             DateTime argument,
             TimeProvider? timeProvider = null,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -138,7 +138,7 @@ public static partial class Check
             var now = timeProvider.GetUtcNow();
             if (argument <= now)
             {
-                Throw.Arg.IsNotInFuture(paramName, argument, now);
+                Throw.Arg.NotInFuture(paramName, argument, now);
             }
             return argument;
         }
@@ -151,7 +151,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTime if it is later than the comparison value.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not later than <paramref name="comparison"/>.</exception>
-        public static DateTime IsLaterThan(
+        public static DateTime LaterThan(
             DateTime argument,
             DateTime comparison,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -159,7 +159,7 @@ public static partial class Check
         {
             if (argument <= comparison)
             {
-                Throw.Arg.IsNotLaterThan(paramName, comparison, argument);
+                Throw.Arg.NotLaterThan(paramName, comparison, argument);
             }
             return argument;
         }
@@ -172,7 +172,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTimeOffset if it is later than the comparison value.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not later than <paramref name="comparison"/>.</exception>
-        public static DateTimeOffset IsLaterThan(
+        public static DateTimeOffset LaterThan(
             DateTimeOffset argument,
             DateTimeOffset comparison,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -180,7 +180,7 @@ public static partial class Check
         {
             if (argument <= comparison)
             {
-                Throw.Arg.IsNotLaterThan(paramName, comparison, argument);
+                Throw.Arg.NotLaterThan(paramName, comparison, argument);
             }
             return argument;
         }
@@ -193,7 +193,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTime if it is earlier than the comparison value.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not earlier than <paramref name="comparison"/>.</exception>
-        public static DateTime IsEarlierThan(
+        public static DateTime EarlierThan(
             DateTime argument,
             DateTime comparison,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -201,7 +201,7 @@ public static partial class Check
         {
             if (argument >= comparison)
             {
-                Throw.Arg.IsNotEarlierThan(paramName, comparison, argument);
+                Throw.Arg.NotEarlierThan(paramName, comparison, argument);
             }
             return argument;
         }
@@ -214,7 +214,7 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The original DateTimeOffset if it is earlier than the comparison value.</returns>
         /// <exception cref="ArgumentException">Thrown when <paramref name="argument"/> is not earlier than <paramref name="comparison"/>.</exception>
-        public static DateTimeOffset IsEarlierThan(
+        public static DateTimeOffset EarlierThan(
             DateTimeOffset argument,
             DateTimeOffset comparison,
             [CallerArgumentExpression(nameof(argument)), InvokerParameterName] string paramName = ""
@@ -222,7 +222,7 @@ public static partial class Check
         {
             if (argument >= comparison)
             {
-                Throw.Arg.IsNotEarlierThan(paramName, comparison, argument);
+                Throw.Arg.NotEarlierThan(paramName, comparison, argument);
             }
             return argument;
         }

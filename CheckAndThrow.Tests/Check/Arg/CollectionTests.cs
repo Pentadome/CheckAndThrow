@@ -1,55 +1,55 @@
-using C = CheckAndThrow.Check;
+﻿using C = CheckAndThrow.Check;
 
 namespace CheckAndThrow.Tests.Check.Arg;
 
 public class CollectionTests
 {
     [Test]
-    public async Task IsNotNullOrEmpty_ReturnsOriginal()
+    public async Task NotNullOrEmpty_ReturnsOriginal()
     {
         var collection = new[] { 1 };
-        await Assert.That(C.Arg.IsNotNullOrEmpty(collection)).IsSameReferenceAs(collection);
+        await Assert.That(C.Arg.NotNullOrEmpty(collection)).IsSameReferenceAs(collection);
     }
 
     [Test]
-    public async Task IsNotNullOrEmpty_RejectsInvalid()
+    public async Task NotNullOrEmpty_RejectsInvalid()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrEmpty(Array.Empty<int>(), "input"))
+            .That(() => C.Arg.NotNullOrEmpty(Array.Empty<int>(), "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsNotNullOrEmpty_RejectsNull()
+    public async Task NotNullOrEmpty_RejectsNull()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullOrEmpty((int[])null!, "input"))
+            .That(() => C.Arg.NotNullOrEmpty((int[])null!, "input"))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsNotNullAndHasNoNulls_ReturnsOriginal()
+    public async Task NotNullAndHasNoNulls_ReturnsOriginal()
     {
         var collection = new object[] { 1 };
-        await Assert.That(C.Arg.IsNotNullAndHasNoNulls(collection)).IsSameReferenceAs(collection);
+        await Assert.That(C.Arg.NotNullAndHasNoNulls(collection)).IsSameReferenceAs(collection);
     }
 
     [Test]
-    public async Task IsNotNullAndHasNoNulls_RejectsInvalid()
+    public async Task NotNullAndHasNoNulls_RejectsInvalid()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullAndHasNoNulls(new object?[] { 1, null }, "input"))
+            .That(() => C.Arg.NotNullAndHasNoNulls(new object?[] { 1, null }, "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
 
     [Test]
-    public async Task IsNotNullAndHasNoNulls_RejectsNull()
+    public async Task NotNullAndHasNoNulls_RejectsNull()
     {
         var exception = await Assert
-            .That(() => C.Arg.IsNotNullAndHasNoNulls((int[])null!, "input"))
+            .That(() => C.Arg.NotNullAndHasNoNulls((int[])null!, "input"))
             .ThrowsExactly<ArgumentNullException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
     }
@@ -200,7 +200,7 @@ public class CollectionTests
     public async Task EmptyEnumerableAndCountBounds()
     {
         var empty = Array.Empty<object>();
-        await Assert.That(C.Arg.IsNotNullAndHasNoNulls(empty)).IsSameReferenceAs(empty);
+        await Assert.That(C.Arg.NotNullAndHasNoNulls(empty)).IsSameReferenceAs(empty);
         await Assert.That(C.Arg.HasCount(empty, 0)).IsSameReferenceAs(empty);
         await Assert.That(C.Arg.HasMinCount(empty, 0)).IsSameReferenceAs(empty);
         await Assert.That(C.Arg.HasMaxCount(empty, 1)).IsSameReferenceAs(empty);

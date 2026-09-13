@@ -1,14 +1,14 @@
-using Th = CheckAndThrow.Throw;
+﻿using Th = CheckAndThrow.Throw;
 
 namespace CheckAndThrow.Tests.Throw.Arg;
 
 public class EnumTests
 {
     [Test]
-    public async Task IsInvalidEnumValue_Type_int_string()
+    public async Task InvalidEnumValue_Type_int_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidEnumValue(typeof(DayOfWeek), 99, "input"))
+            .That(() => Th.Arg.InvalidEnumValue(typeof(DayOfWeek), 99, "input"))
             .ThrowsExactly<System.ComponentModel.InvalidEnumArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Data["enumType"]).IsEqualTo((object)typeof(DayOfWeek));
@@ -16,10 +16,10 @@ public class EnumTests
     }
 
     [Test]
-    public async Task IsInvalidEnumValue_Generic_Type_int_string()
+    public async Task InvalidEnumValue_Generic_Type_int_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidEnumValue<object>(typeof(DayOfWeek), 99, "input"))
+            .That(() => Th.Arg.InvalidEnumValue<object>(typeof(DayOfWeek), 99, "input"))
             .ThrowsExactly<System.ComponentModel.InvalidEnumArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Data["enumType"]).IsEqualTo((object)typeof(DayOfWeek));
@@ -27,10 +27,10 @@ public class EnumTests
     }
 
     [Test]
-    public async Task IsInvalidEnumValue_Type_Enum_string()
+    public async Task InvalidEnumValue_Type_Enum_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidEnumValue(typeof(DayOfWeek), (Enum)(DayOfWeek)99, "input"))
+            .That(() => Th.Arg.InvalidEnumValue(typeof(DayOfWeek), (Enum)(DayOfWeek)99, "input"))
             .ThrowsExactly<System.ComponentModel.InvalidEnumArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Data["enumType"]).IsEqualTo((object)typeof(DayOfWeek));
@@ -38,11 +38,11 @@ public class EnumTests
     }
 
     [Test]
-    public async Task IsInvalidEnumValue_Generic_Type_Enum_string()
+    public async Task InvalidEnumValue_Generic_Type_Enum_string()
     {
         var exception = await Assert
             .That(() =>
-                Th.Arg.IsInvalidEnumValue<object>(typeof(DayOfWeek), (Enum)(DayOfWeek)99, "input")
+                Th.Arg.InvalidEnumValue<object>(typeof(DayOfWeek), (Enum)(DayOfWeek)99, "input")
             )
             .ThrowsExactly<System.ComponentModel.InvalidEnumArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
@@ -51,10 +51,10 @@ public class EnumTests
     }
 
     [Test]
-    public async Task IsInvalidEnumValue_Type_string_string()
+    public async Task InvalidEnumValue_Type_string_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidEnumValue(typeof(DayOfWeek), "missing", "input"))
+            .That(() => Th.Arg.InvalidEnumValue(typeof(DayOfWeek), "missing", "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Data["enumType"]).IsEqualTo((object)typeof(DayOfWeek));
@@ -62,10 +62,10 @@ public class EnumTests
     }
 
     [Test]
-    public async Task IsInvalidEnumValue_Generic_Type_string_string()
+    public async Task InvalidEnumValue_Generic_Type_string_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidEnumValue<object>(typeof(DayOfWeek), "missing", "input"))
+            .That(() => Th.Arg.InvalidEnumValue<object>(typeof(DayOfWeek), "missing", "input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Data["enumType"]).IsEqualTo((object)typeof(DayOfWeek));

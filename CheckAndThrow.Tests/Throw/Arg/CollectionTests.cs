@@ -1,24 +1,24 @@
-using Th = CheckAndThrow.Throw;
+﻿using Th = CheckAndThrow.Throw;
 
 namespace CheckAndThrow.Tests.Throw.Arg;
 
 public class CollectionTests
 {
     [Test]
-    public async Task IsEmpty_string()
+    public async Task Empty_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsEmpty("input"))
+            .That(() => Th.Arg.Empty("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Message).StartsWith("Argument can not be empty.");
     }
 
     [Test]
-    public async Task IsEmpty_Generic_string()
+    public async Task Empty_Generic_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsEmpty<object>("input"))
+            .That(() => Th.Arg.Empty<object>("input"))
             .ThrowsExactly<ArgumentException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.Message).StartsWith("Argument can not be empty.");
@@ -193,30 +193,30 @@ public class CollectionTests
     }
 
     [Test]
-    public async Task IsInvalidIndex_string()
+    public async Task InvalidIndex_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidIndex("input"))
+            .That(() => Th.Arg.InvalidIndex("input"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.ActualValue).IsNull();
     }
 
     [Test]
-    public async Task IsInvalidIndex_Generic_string()
+    public async Task InvalidIndex_Generic_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidIndex<object>("input"))
+            .That(() => Th.Arg.InvalidIndex<object>("input"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.ActualValue).IsNull();
     }
 
     [Test]
-    public async Task IsInvalidIndex_object_object_string()
+    public async Task InvalidIndex_object_object_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidIndex(7, 3, "input"))
+            .That(() => Th.Arg.InvalidIndex(7, 3, "input"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.ActualValue).IsEqualTo((object)7);
@@ -228,10 +228,10 @@ public class CollectionTests
     }
 
     [Test]
-    public async Task IsInvalidIndex_Generic_object_object_string()
+    public async Task InvalidIndex_Generic_object_object_string()
     {
         var exception = await Assert
-            .That(() => Th.Arg.IsInvalidIndex<object>(7, 3, "input"))
+            .That(() => Th.Arg.InvalidIndex<object>(7, 3, "input"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(exception!.ParamName).IsEqualTo("input");
         await Assert.That(exception!.ActualValue).IsEqualTo((object)7);

@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <CheckAndThrowEnableAnalyzers Condition="'$(CheckAndThrowEnableAnalyzers)' == ''">true</CheckAndThrowEnableAnalyzers>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' == '.csproj' and '$(CheckAndThrowEnableAnalyzers)' != 'false'">
+    <Analyzer Include="$(MSBuildThisFileDirectory)..\tools\analyzers\CheckAndThrow.Analyzers.dll" />
+  </ItemGroup>
+</Project>

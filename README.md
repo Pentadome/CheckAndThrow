@@ -94,6 +94,22 @@ Add CheckAndThrow to your project via NuGet:
 dotnet add package CheckAndThrow
 ```
 
+## IDE null guard action
+
+The package includes a Roslyn Quick Action by default. Place the caret on a supported parameter and open your IDE's Quick Actions menu (for example, **Ctrl+.** in Visual Studio or **Alt+Enter** in Rider), then choose **Add Check.Arg.NotNull guard**.
+
+The action supports block-bodied methods and constructors whose parameters are non-nullable reference types or unannotated generic type parameters. It does not appear for explicitly nullable parameters such as `string?` or `T?`, value types, `out` parameters, expression-bodied members, lambdas, local functions, or primary constructors. It inserts a single `global::CheckAndThrow.Check.Arg.NotNull(parameter);` statement and does not report build warnings.
+
+Disable all bundled CheckAndThrow IDE actions for a project or repository without removing the package:
+
+```xml
+<PropertyGroup>
+  <CheckAndThrowEnableAnalyzers>false</CheckAndThrowEnableAnalyzers>
+</PropertyGroup>
+```
+
+To disable only this action, set `dotnet_diagnostic.CAT0001.severity = none` in `.editorconfig`. Roslyn analyzer/code-fix support must be enabled in your IDE; supported hosts include Visual Studio, JetBrains Rider, and VS Code with the Microsoft C# extension.
+
 ## API Documentation
 
 [Full API can be found here](https://pentadome.github.io/CheckAndThrow/)

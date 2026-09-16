@@ -12,7 +12,7 @@ namespace CheckAndThrow.Analyzers.Diagnostics.AddNotNullGuard;
 [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(AddNotNullGuardCodeFixProvider)), Shared]
 public sealed class AddNotNullGuardCodeFixProvider : CodeFixProvider
 {
-    private const string Title = "Add Check.Arg.NotNull guard";
+    const string Title = "Add Check.Arg.NotNull guard";
 
     public override ImmutableArray<string> FixableDiagnosticIds =>
         ImmutableArray.Create(AddNotNullGuardAnalyzer.DiagnosticId);
@@ -34,7 +34,7 @@ public sealed class AddNotNullGuardCodeFixProvider : CodeFixProvider
         return Task.CompletedTask;
     }
 
-    private static async Task<Document> AddGuardAsync(
+    static async Task<Document> AddGuardAsync(
         Document document,
         Diagnostic diagnostic,
         CancellationToken cancellationToken
@@ -60,6 +60,7 @@ public sealed class AddNotNullGuardCodeFixProvider : CodeFixProvider
             ? null
             : semanticModel.GetDeclaredSymbol(parameter, cancellationToken);
         var guard = AddNotNullGuardAnalyzer.FindGuard(compilation);
+        var argsGuardType = AddNotNullGuardAnalyzer.FindArgsGuardType(compilation);
 
         if (
             parameter is null
@@ -72,12 +73,33 @@ public sealed class AddNotNullGuardCodeFixProvider : CodeFixProvider
                 body,
                 parameterSymbol,
                 guard,
+                argsGuardType,
                 semanticModel,
                 cancellationToken
             )
         )
         {
             return document;
+        }
+
+        if (
+            body.Statements.FirstOrDefault() is LocalDeclarationStatementSyntax local
+            && local.Declaration.Variables.Count == 1
+            && local.Declaration.Variables[0].Initializer?.Value
+                is MemberAccessExpressionSyntax { Expression: IdentifierNameSyntax receiver }
+            && SymbolEqualityComparer.Default.Equals(
+                semanticModel.GetSymbolInfo(receiver, cancellationToken).Symbol,
+                parameterSymbol
+            )
+        )
+        {
+            var inlineGuard = SyntaxFactory
+                .ParseExpression(
+                    $"global::CheckAndThrow.Check.Arg.NotNull({parameter.Identifier.Text})"
+                )
+                .WithTriviaFrom(receiver)
+                .WithAdditionalAnnotations(Formatter.Annotation);
+            return document.WithSyntaxRoot(root.ReplaceNode(receiver, inlineGuard));
         }
 
         var statement = SyntaxFactory

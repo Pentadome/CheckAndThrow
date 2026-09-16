@@ -35,8 +35,9 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
                 return;
             }
 
+            var argsGuardType = FindArgsGuardType(startContext.Compilation);
             startContext.RegisterSyntaxNodeAction(
-                context => AnalyzeParameter(context, guard),
+                context => AnalyzeParameter(context, guard, argsGuardType),
                 SyntaxKind.Parameter
             );
         });
@@ -53,11 +54,15 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
             .SingleOrDefault(method => method.Arity == 1 && method.Parameters.Length == 2);
     }
 
-    internal static bool IsEligible(ParameterSyntax parameter, IParameterSymbol parameterSymbol)
+    internal static bool IsEligible(
+        ParameterSyntax parameter,
+        IParameterSymbol parameterSymbol,
+        bool allowExpressionBody = false
+    )
     {
         if (
             parameter.Parent?.Parent is not BaseMethodDeclarationSyntax declaration
-            || declaration.Body is null
+            || (declaration.Body is null && !allowExpressionBody)
             || parameterSymbol.RefKind == RefKind.Out
             || IsExplicitlyNullable(parameter, parameterSymbol)
         )
@@ -72,39 +77,76 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
         };
     }
 
+    internal static INamedTypeSymbol? FindArgsGuardType(Compilation compilation)
+    {
+        return compilation
+            .GetTypeByMetadataName("CheckAndThrow.Check")
+            ?.GetTypeMembers("Args")
+            .SingleOrDefault();
+    }
+
     internal static bool HasExistingGuard(
         BlockSyntax body,
         IParameterSymbol parameter,
         IMethodSymbol guard,
+        INamedTypeSymbol? argsGuardType,
         SemanticModel semanticModel,
         CancellationToken cancellationToken
     )
     {
-        foreach (var statement in body.Statements.OfType<ExpressionStatementSyntax>())
+        foreach (var statement in body.Statements)
         {
+            var invocation = GetTopLevelGuardInvocation(statement);
             if (
-                statement.Expression is not InvocationExpressionSyntax invocation
-                || !SymbolEqualityComparer.Default.Equals(
-                    semanticModel
-                        .GetSymbolInfo(invocation, cancellationToken)
-                        .Symbol?.OriginalDefinition,
+                invocation is null
+                && statement is LocalDeclarationStatementSyntax local
+                && local.Declaration.Variables.Count == 1
+                && local.Declaration.Variables[0].Initializer?.Value
+                    is MemberAccessExpressionSyntax
+                    {
+                        Expression: InvocationExpressionSyntax inlineGuard
+                    }
+            )
+            {
+                invocation = inlineGuard;
+            }
+
+            if (invocation is null)
+            {
+                continue;
+            }
+
+            var method =
+                semanticModel.GetSymbolInfo(invocation, cancellationToken).Symbol as IMethodSymbol;
+            if (
+                SymbolEqualityComparer.Default.Equals(
+                    method?.OriginalDefinition,
                     guard.OriginalDefinition
                 )
             )
             {
-                continue;
-            }
-
-            var argument = invocation.ArgumentList.Arguments.FirstOrDefault();
-            if (argument?.Expression is null)
-            {
-                continue;
+                var argument = invocation.ArgumentList.Arguments.FirstOrDefault();
+                if (
+                    argument?.Expression is not null
+                    && SymbolEqualityComparer.Default.Equals(
+                        semanticModel.GetSymbolInfo(argument.Expression, cancellationToken).Symbol,
+                        parameter
+                    )
+                )
+                {
+                    return true;
+                }
             }
 
             if (
-                SymbolEqualityComparer.Default.Equals(
-                    semanticModel.GetSymbolInfo(argument.Expression, cancellationToken).Symbol,
-                    parameter
+                argsGuardType is not null
+                && method?.Name == "NotNull"
+                && SymbolEqualityComparer.Default.Equals(method.ContainingType, argsGuardType)
+                && invocation.ArgumentList.Arguments.Any(argument =>
+                    SymbolEqualityComparer.Default.Equals(
+                        semanticModel.GetSymbolInfo(argument.Expression, cancellationToken).Symbol,
+                        parameter
+                    )
                 )
             )
             {
@@ -115,7 +157,45 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
         return false;
     }
 
-    private static void AnalyzeParameter(SyntaxNodeAnalysisContext context, IMethodSymbol guard)
+    internal static InvocationExpressionSyntax? GetTopLevelGuardInvocation(
+        StatementSyntax statement
+    )
+    {
+        if (
+            statement is ExpressionStatementSyntax
+            {
+                Expression: InvocationExpressionSyntax invocation
+            }
+        )
+        {
+            return invocation;
+        }
+
+        if (
+            statement is ExpressionStatementSyntax
+            {
+                Expression: AssignmentExpressionSyntax
+                {
+                    Right: InvocationExpressionSyntax assignmentInvocation
+                },
+            }
+        )
+        {
+            return assignmentInvocation;
+        }
+
+        return
+            statement is LocalDeclarationStatementSyntax local
+            && local.Declaration.Variables.Count == 1
+            ? local.Declaration.Variables[0].Initializer?.Value as InvocationExpressionSyntax
+            : null;
+    }
+
+    static void AnalyzeParameter(
+        SyntaxNodeAnalysisContext context,
+        IMethodSymbol guard,
+        INamedTypeSymbol? argsGuardType
+    )
     {
         var parameter = (ParameterSyntax)context.Node;
         var parameterSymbol = context.SemanticModel.GetDeclaredSymbol(
@@ -130,6 +210,7 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
                 body,
                 parameterSymbol,
                 guard,
+                argsGuardType,
                 context.SemanticModel,
                 context.CancellationToken
             )
@@ -143,10 +224,7 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
         );
     }
 
-    private static bool IsExplicitlyNullable(
-        ParameterSyntax parameter,
-        IParameterSymbol parameterSymbol
-    )
+    static bool IsExplicitlyNullable(ParameterSyntax parameter, IParameterSymbol parameterSymbol)
     {
         return parameter.Type is NullableTypeSyntax
             || parameterSymbol.NullableAnnotation == NullableAnnotation.Annotated;

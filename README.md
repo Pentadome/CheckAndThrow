@@ -100,6 +100,8 @@ The package includes a Roslyn Quick Action by default. Place the caret on a supp
 
 The action supports block-bodied methods and constructors whose parameters are non-nullable reference types or unannotated generic type parameters. It does not appear for explicitly nullable parameters such as `string?` or `T?`, value types, `out` parameters, expression-bodied members, lambdas, local functions, or primary constructors. It inserts a single `global::CheckAndThrow.Check.Arg.NotNull(parameter);` statement and does not report build warnings.
 
+For declarations with 2–16 eligible parameters, **Add Check.Args.NotNull guard** adds one `global::CheckAndThrow.Check.Args.NotNull(...)` guard for all eligible parameters. It safely converts replaceable top-level `Check.Arg.NotNull` and `Check.Args.NotNull` guards; when a prior individual guard's return value was assigned or declared, its value is preserved through the returned tuple. Explicitly nullable and other excluded parameters are not included. The bulk action is unavailable when fewer than two or more than 16 parameters are eligible, or when an existing guard has an unsupported result-consuming shape.
+
 Disable all bundled CheckAndThrow IDE actions for a project or repository without removing the package:
 
 ```xml

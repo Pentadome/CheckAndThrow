@@ -74,8 +74,29 @@ public class AddNotNullGuardTests
     }
 
     [Test]
+    public async Task DoesNotReportAnExistingTopLevelGuardWithAssignment()
+    {
+        var diagnostics = await AnalyzeAsync(
+            """
+            using CheckAndThrow;
+
+            class C
+            {
+                void M(string value)
+                {
+                    var valueCopy = Check.Arg.NotNull(value);
+                }
+            }
+            """
+        );
+
+        await Assert.That(diagnostics).IsEmpty();
+    }
+
+    [Test]
     public async Task AddsOneFullyQualifiedGuard()
     {
+        /*language=csharp*/
         const string source = """
             class C
             {
@@ -106,13 +127,57 @@ public class AddNotNullGuardTests
         await Assert.That((await AnalyzeAsync(text)).Length).IsEqualTo(0);
     }
 
-    private static async Task<ImmutableArray<Diagnostic>> AnalyzeAsync(string source)
+    [Test]
+    public async Task AddsOneFullyQualifiedGuardWithDirectMemberUsage()
+    {
+        /*language=csharp*/
+        const string source = """
+            class C
+            {
+                void M(string value)
+                {
+                    var length = value.Length;
+                }
+            }
+            """;
+
+        var (document, diagnostics) = await AnalyzeDocumentAsync(source);
+        var actions = new List<CodeAction>();
+        var provider = new AddNotNullGuardCodeFixProvider();
+        var context = new CodeFixContext(
+            document,
+            diagnostics.Single(),
+            (action, _) => actions.Add(action),
+            CancellationToken.None
+        );
+
+        await provider.RegisterCodeFixesAsync(context);
+        var operation = (ApplyChangesOperation)
+            (await actions.Single().GetOperationsAsync(CancellationToken.None)).Single();
+        var changed = operation.ChangedSolution.GetDocument(document.Id)!;
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert
+            .That(text)
+            .Contains(" var length = global::CheckAndThrow.Check.Arg.NotNull(value).Length;");
+        await Assert.That((await AnalyzeAsync(text)).Length).IsEqualTo(0);
+        var compilation = await changed.Project.GetCompilationAsync();
+        await Assert
+            .That(
+                compilation!
+                    .GetDiagnostics()
+                    .Where(diagnostic => diagnostic.Severity == DiagnosticSeverity.Error)
+            )
+            .IsEmpty();
+    }
+
+    static async Task<ImmutableArray<Diagnostic>> AnalyzeAsync(string source)
     {
         var (_, diagnostics) = await AnalyzeDocumentAsync(source);
         return diagnostics;
     }
 
-    private static async Task<(
+    static async Task<(
         Document Document,
         ImmutableArray<Diagnostic> Diagnostics
     )> AnalyzeDocumentAsync(string source)

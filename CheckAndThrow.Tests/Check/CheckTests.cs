@@ -4,7 +4,7 @@ namespace CheckAndThrow.Tests.Check;
 
 public class CheckTests
 {
-    private sealed class FixedTimeProvider : TimeProvider
+    sealed class FixedTimeProvider : TimeProvider
     {
         public override DateTimeOffset GetUtcNow() => new(2024, 1, 2, 12, 0, 0, TimeSpan.Zero);
 

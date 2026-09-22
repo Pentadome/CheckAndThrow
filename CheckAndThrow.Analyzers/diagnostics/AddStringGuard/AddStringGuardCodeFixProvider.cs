@@ -1,6 +1,7 @@
 using System.Collections.Immutable;
 using System.Composition;
 using CheckAndThrow.Analyzers.Diagnostics.AddNotNullGuard;
+using CheckAndThrow.Analyzers.Diagnostics.PropertyGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CodeActions;
 using Microsoft.CodeAnalysis.CodeFixes;
@@ -74,6 +75,63 @@ public sealed class AddStringGuardCodeFixProvider : CodeFixProvider
         if (root is null || semanticModel is null || compilation is null)
             return document;
 
+        var arg = AddStringGuardAnalyzer.FindArgType(compilation);
+        var callTarget = $"global::CheckAndThrow.Check.Arg.{guard.MethodName}";
+        var notNull = AddNotNullGuardAnalyzer.FindGuard(compilation);
+        var propertyTarget = PropertyGuardSupport.FindTarget(
+            root,
+            diagnostic,
+            semanticModel,
+            cancellationToken
+        );
+        if (propertyTarget is not null)
+        {
+            if (
+                arg is null
+                || AddStringGuardAnalyzer.FindGuard(arg, guard) is null
+                || !AddStringGuardAnalyzer.IsEligible(propertyTarget)
+                || AddStringGuardAnalyzer.HasExistingGuard(
+                    propertyTarget,
+                    arg,
+                    semanticModel,
+                    cancellationToken
+                )
+            )
+                return document;
+
+            var propertyExistingNotNull = notNull is null
+                ? null
+                : AddStringGuardAnalyzer.FindExistingNotNull(
+                    propertyTarget,
+                    notNull,
+                    semanticModel,
+                    cancellationToken
+                );
+            if (propertyExistingNotNull is not null)
+            {
+                var replacement = propertyExistingNotNull
+                    .WithExpression(
+                        SyntaxFactory
+                            .ParseExpression(callTarget)
+                            .WithTriviaFrom(propertyExistingNotNull.Expression)
+                    )
+                    .WithAdditionalAnnotations(Formatter.Annotation);
+                return document.WithSyntaxRoot(
+                    root.ReplaceNode(propertyExistingNotNull, replacement)
+                );
+            }
+
+            var propertyRoot = PropertyGuardSupport.AddGuard(
+                root,
+                propertyTarget,
+                $"{callTarget}({propertyTarget.ValueParameter.Name})",
+                compilation
+            );
+            return document.WithSyntaxRoot(
+                propertyRoot.WithAdditionalAnnotations(Formatter.Annotation)
+            );
+        }
+
         var parameter = root.FindToken(diagnostic.Location.SourceSpan.Start)
             .Parent?.AncestorsAndSelf()
             .OfType<ParameterSyntax>()
@@ -81,7 +139,6 @@ public sealed class AddStringGuardCodeFixProvider : CodeFixProvider
         var parameterSymbol = parameter is null
             ? null
             : semanticModel.GetDeclaredSymbol(parameter, cancellationToken);
-        var arg = AddStringGuardAnalyzer.FindArgType(compilation);
         if (
             parameter is null
             || parameterSymbol is null
@@ -100,8 +157,6 @@ public sealed class AddStringGuardCodeFixProvider : CodeFixProvider
         )
             return document;
 
-        var callTarget = $"global::CheckAndThrow.Check.Arg.{guard.MethodName}";
-        var notNull = AddNotNullGuardAnalyzer.FindGuard(compilation);
         var existingNotNull = notNull is null
             ? null
             : AddStringGuardAnalyzer.FindExistingNotNull(

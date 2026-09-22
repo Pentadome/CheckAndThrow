@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using CheckAndThrow.Analyzers.Diagnostics.PropertyGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -49,8 +50,9 @@ public sealed class AddRangeGuardAnalyzer : DiagnosticAnalyzer
                 return;
 
             startContext.RegisterSyntaxNodeAction(
-                nodeContext => AnalyzeParameter(nodeContext, arg),
-                SyntaxKind.Parameter
+                nodeContext => AnalyzeNode(nodeContext, arg),
+                SyntaxKind.Parameter,
+                SyntaxKind.PropertyDeclaration
             );
         });
     }
@@ -75,6 +77,11 @@ public sealed class AddRangeGuardAnalyzer : DiagnosticAnalyzer
 
         return IsNumber(symbol.Type);
     }
+
+    internal static bool IsEligible(PropertyGuardTarget target) =>
+        target.PropertySymbol.Type.TypeKind is not (TypeKind.Pointer or TypeKind.Enum)
+        && target.PropertySymbol.Type.NullableAnnotation != NullableAnnotation.Annotated
+        && IsNumber(target.PropertySymbol.Type);
 
     internal static bool IsNumber(ITypeSymbol type)
     {
@@ -149,6 +156,40 @@ public sealed class AddRangeGuardAnalyzer : DiagnosticAnalyzer
                 .OfType<InvocationExpressionSyntax>()
                 ?? Enumerable.Empty<InvocationExpressionSyntax>();
 
+        return HasExistingGuard(invocations, parameter, arg, semanticModel, cancellationToken);
+    }
+
+    internal static bool HasExistingGuard(
+        PropertyGuardTarget target,
+        INamedTypeSymbol arg,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    )
+    {
+        IEnumerable<InvocationExpressionSyntax> invocations = target.Setter.Body is { } body
+            ? body.DescendantNodes().OfType<InvocationExpressionSyntax>()
+            : target
+                .Setter.ExpressionBody?.Expression.DescendantNodesAndSelf()
+                .OfType<InvocationExpressionSyntax>()
+                ?? Enumerable.Empty<InvocationExpressionSyntax>();
+
+        return HasExistingGuard(
+            invocations,
+            target.ValueParameter,
+            arg,
+            semanticModel,
+            cancellationToken
+        );
+    }
+
+    static bool HasExistingGuard(
+        IEnumerable<InvocationExpressionSyntax> invocations,
+        IParameterSymbol parameter,
+        INamedTypeSymbol arg,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    )
+    {
         foreach (var invocation in invocations)
         {
             var method =
@@ -180,8 +221,39 @@ public sealed class AddRangeGuardAnalyzer : DiagnosticAnalyzer
         return false;
     }
 
-    static void AnalyzeParameter(SyntaxNodeAnalysisContext context, INamedTypeSymbol arg)
+    static void AnalyzeNode(SyntaxNodeAnalysisContext context, INamedTypeSymbol arg)
     {
+        if (context.Node is PropertyDeclarationSyntax property)
+        {
+            var target = PropertyGuardSupport.CreateTarget(
+                property,
+                context.SemanticModel,
+                context.CancellationToken
+            );
+            if (
+                target is null
+                || !IsEligible(target)
+                || HasExistingGuard(target, arg, context.SemanticModel, context.CancellationToken)
+                || !HasApplicableGuard(
+                    arg,
+                    target.ValueParameter,
+                    context.SemanticModel,
+                    property.SpanStart,
+                    context.CancellationToken
+                )
+            )
+                return;
+
+            context.ReportDiagnostic(
+                Diagnostic.Create(
+                    Rule,
+                    property.Identifier.GetLocation(),
+                    target.PropertySymbol.Name
+                )
+            );
+            return;
+        }
+
         var parameter = (ParameterSyntax)context.Node;
         var symbol = context.SemanticModel.GetDeclaredSymbol(parameter, context.CancellationToken);
         if (

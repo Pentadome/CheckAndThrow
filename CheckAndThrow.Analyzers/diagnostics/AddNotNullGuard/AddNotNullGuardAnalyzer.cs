@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using CheckAndThrow.Analyzers.Diagnostics.PropertyGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -38,8 +39,9 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
 
             var argsGuardType = FindArgsGuardType(startContext.Compilation);
             startContext.RegisterSyntaxNodeAction(
-                context => AnalyzeParameter(context, guard, argsGuardType),
-                SyntaxKind.Parameter
+                context => AnalyzeNode(context, guard, argsGuardType),
+                SyntaxKind.Parameter,
+                SyntaxKind.PropertyDeclaration
             );
         });
     }
@@ -77,6 +79,9 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
             _ => parameterSymbol.Type.IsReferenceType,
         };
     }
+
+    internal static bool IsEligible(PropertyGuardTarget target) =>
+        PropertyGuardSupport.IsEligible(target);
 
     internal static INamedTypeSymbol? FindArgsGuardType(Compilation compilation)
     {
@@ -217,12 +222,112 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
             : null;
     }
 
-    static void AnalyzeParameter(
+    internal static bool HasExistingGuard(
+        PropertyGuardTarget target,
+        IMethodSymbol guard,
+        INamedTypeSymbol? argsGuardType,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    ) =>
+        HasExistingGuard(
+            PropertyGuardSupport.GetTopLevelGuardInvocations(target.Setter),
+            target.ValueParameter,
+            guard,
+            argsGuardType,
+            semanticModel,
+            cancellationToken
+        );
+
+    static bool HasExistingGuard(
+        IEnumerable<InvocationExpressionSyntax> invocations,
+        IParameterSymbol parameter,
+        IMethodSymbol guard,
+        INamedTypeSymbol? argsGuardType,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    )
+    {
+        foreach (var invocation in invocations)
+        {
+            var method =
+                semanticModel.GetSymbolInfo(invocation, cancellationToken).Symbol as IMethodSymbol;
+            if (
+                method is not null
+                && (
+                    SymbolEqualityComparer.Default.Equals(
+                        method.OriginalDefinition,
+                        guard.OriginalDefinition
+                    )
+                    || method.Name is "NotNullOrEmpty" or "NotNullOrWhiteSpace"
+                        && method.Parameters[0].Type.SpecialType == SpecialType.System_String
+                        && SymbolEqualityComparer.Default.Equals(
+                            method.ContainingType,
+                            guard.ContainingType
+                        )
+                )
+                && HasValueArgument(invocation, parameter, semanticModel, cancellationToken)
+            )
+            {
+                return true;
+            }
+
+            if (
+                argsGuardType is not null
+                && method?.Name == "NotNull"
+                && SymbolEqualityComparer.Default.Equals(method.ContainingType, argsGuardType)
+                && invocation.ArgumentList.Arguments.Any(argument =>
+                    SymbolEqualityComparer.Default.Equals(
+                        semanticModel.GetSymbolInfo(argument.Expression, cancellationToken).Symbol,
+                        parameter
+                    )
+                )
+            )
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    static void AnalyzeNode(
         SyntaxNodeAnalysisContext context,
         IMethodSymbol guard,
         INamedTypeSymbol? argsGuardType
     )
     {
+        if (context.Node is PropertyDeclarationSyntax property)
+        {
+            var target = PropertyGuardSupport.CreateTarget(
+                property,
+                context.SemanticModel,
+                context.CancellationToken
+            );
+            if (
+                target is null
+                || !IsEligible(target)
+                || HasExistingGuard(
+                    target,
+                    guard,
+                    argsGuardType,
+                    context.SemanticModel,
+                    context.CancellationToken
+                )
+            )
+            {
+                return;
+            }
+
+            context.ReportDiagnostic(
+                Diagnostic.Create(
+                    Rule,
+                    property.Identifier.GetLocation(),
+                    target.PropertySymbol.Name
+                )
+            );
+            return;
+        }
+
         var parameter = (ParameterSyntax)context.Node;
         var parameterSymbol = context.SemanticModel.GetDeclaredSymbol(
             parameter,

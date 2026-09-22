@@ -94,21 +94,69 @@ public class AddRangeGuardTests
         await Assert.That(actions.Single().Title).IsEqualTo("Add range guard clause");
     }
 
-    static async Task<ImmutableArray<Diagnostic>> AnalyzeAsync(string source)
+    [Test]
+    public async Task AddsGuardToAutoPropertyWithBackingField()
     {
-        var (_, diagnostics) = await AnalyzeDocumentAsync(source);
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            "class C { public int Count { get; set; } }",
+            LanguageVersion.CSharp12
+        );
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await AddRangeGuardCodeFixProvider.AddGuardAsync(
+            document,
+            diagnostics.Single(),
+            AddRangeGuardAnalyzer.Guards.Single(guard => guard.MethodName == "Positive"),
+            CancellationToken.None
+        );
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains("private int _count;");
+        await Assert
+            .That(text)
+            .Contains("set => _count = global::CheckAndThrow.Check.Arg.Positive(value);");
+        await Assert.That(text).DoesNotContain("field =");
+        await Assert.That(await CompilerErrorsAsync(changed)).IsEmpty();
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.CSharp12)).IsEmpty();
+    }
+
+    [Test]
+    public async Task ExistingRangeGuardSuppressesPropertyDiagnostic()
+    {
+        var diagnostics = await AnalyzeAsync(
+            "using CheckAndThrow; class C { public int Count { get; set => field = Check.Arg.Positive(value); } }",
+            LanguageVersion.Preview
+        );
+
+        await Assert.That(diagnostics).IsEmpty();
+    }
+
+    static async Task<ImmutableArray<Diagnostic>> AnalyzeAsync(
+        string source,
+        LanguageVersion languageVersion = LanguageVersion.Preview
+    )
+    {
+        var (_, diagnostics) = await AnalyzeDocumentAsync(source, languageVersion);
         return diagnostics;
     }
+
+    static async Task<IEnumerable<Diagnostic>> CompilerErrorsAsync(Document document) =>
+        (await document.Project.GetCompilationAsync())!
+            .GetDiagnostics()
+            .Where(diagnostic => diagnostic.Severity == DiagnosticSeverity.Error);
 
     static async Task<(
         Document Document,
         ImmutableArray<Diagnostic> Diagnostics
-    )> AnalyzeDocumentAsync(string source)
+    )> AnalyzeDocumentAsync(
+        string source,
+        LanguageVersion languageVersion = LanguageVersion.Preview
+    )
     {
         var workspace = new AdhocWorkspace();
         var project = workspace
             .AddProject("Test", LanguageNames.CSharp)
-            .WithParseOptions(new CSharpParseOptions(LanguageVersion.Preview))
+            .WithParseOptions(new CSharpParseOptions(languageVersion))
             .WithCompilationOptions(
                 new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary)
             );

@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.Composition;
+using CheckAndThrow.Analyzers.Diagnostics.PropertyGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CodeActions;
 using Microsoft.CodeAnalysis.CodeFixes;
@@ -33,19 +34,30 @@ public sealed class AddRangeGuardCodeFixProvider : CodeFixProvider
         if (root is null || model is null || compilation is null)
             return;
 
+        var propertyTarget = PropertyGuardSupport.FindTarget(
+            root,
+            context.Diagnostics[0],
+            model,
+            context.CancellationToken
+        );
         var parameter = root.FindToken(context.Diagnostics[0].Location.SourceSpan.Start)
             .Parent?.AncestorsAndSelf()
             .OfType<ParameterSyntax>()
             .FirstOrDefault();
-        var symbol = parameter is null
-            ? null
-            : model.GetDeclaredSymbol(parameter, context.CancellationToken);
+        var symbol =
+            propertyTarget?.ValueParameter
+            ?? (
+                parameter is null
+                    ? null
+                    : model.GetDeclaredSymbol(parameter, context.CancellationToken)
+            );
         var arg = AddRangeGuardAnalyzer.FindArgType(compilation);
         if (
-            parameter is null
+            arg is null
             || symbol is null
-            || arg is null
-            || !AddRangeGuardAnalyzer.IsEligible(parameter, symbol)
+            || propertyTarget is null
+                && (parameter is null || !AddRangeGuardAnalyzer.IsEligible(parameter, symbol))
+            || propertyTarget is not null && !AddRangeGuardAnalyzer.IsEligible(propertyTarget)
         )
             return;
 
@@ -56,7 +68,7 @@ public sealed class AddRangeGuardCodeFixProvider : CodeFixProvider
                     guard,
                     symbol,
                     model,
-                    parameter.SpanStart,
+                    propertyTarget?.Declaration.SpanStart ?? parameter!.SpanStart,
                     context.CancellationToken
                 )
                     is not null
@@ -99,6 +111,47 @@ public sealed class AddRangeGuardCodeFixProvider : CodeFixProvider
         if (root is null || model is null || compilation is null)
             return document;
 
+        var propertyTarget = PropertyGuardSupport.FindTarget(
+            root,
+            diagnostic,
+            model,
+            cancellationToken
+        );
+        var arg = AddRangeGuardAnalyzer.FindArgType(compilation);
+        if (propertyTarget is not null)
+        {
+            if (
+                arg is null
+                || !AddRangeGuardAnalyzer.IsEligible(propertyTarget)
+                || AddRangeGuardAnalyzer.HasExistingGuard(
+                    propertyTarget,
+                    arg,
+                    model,
+                    cancellationToken
+                )
+                || AddRangeGuardAnalyzer.BindGuard(
+                    arg,
+                    guard,
+                    propertyTarget.ValueParameter,
+                    model,
+                    propertyTarget.Declaration.SpanStart,
+                    cancellationToken
+                )
+                    is null
+            )
+                return document;
+
+            var propertyRoot = PropertyGuardSupport.AddGuard(
+                root,
+                propertyTarget,
+                $"global::CheckAndThrow.Check.Arg.{guard.MethodName}({propertyTarget.ValueParameter.Name})",
+                compilation
+            );
+            return document.WithSyntaxRoot(
+                propertyRoot.WithAdditionalAnnotations(Formatter.Annotation)
+            );
+        }
+
         var parameter = root.FindToken(diagnostic.Location.SourceSpan.Start)
             .Parent?.AncestorsAndSelf()
             .OfType<ParameterSyntax>()
@@ -106,7 +159,6 @@ public sealed class AddRangeGuardCodeFixProvider : CodeFixProvider
         var symbol = parameter is null
             ? null
             : model.GetDeclaredSymbol(parameter, cancellationToken);
-        var arg = AddRangeGuardAnalyzer.FindArgType(compilation);
         if (
             parameter is null
             || symbol is null

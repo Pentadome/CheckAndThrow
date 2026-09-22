@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.Composition;
+using CheckAndThrow.Analyzers.Diagnostics.PropertyGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CodeActions;
 using Microsoft.CodeAnalysis.CodeFixes;
@@ -52,6 +53,42 @@ public sealed class AddNotNullGuardCodeFixProvider : CodeFixProvider
             return document;
         }
 
+        var guard = AddNotNullGuardAnalyzer.FindGuard(compilation);
+        var argsGuardType = AddNotNullGuardAnalyzer.FindArgsGuardType(compilation);
+        var propertyTarget = PropertyGuardSupport.FindTarget(
+            root,
+            diagnostic,
+            semanticModel,
+            cancellationToken
+        );
+        if (propertyTarget is not null)
+        {
+            if (
+                guard is null
+                || !AddNotNullGuardAnalyzer.IsEligible(propertyTarget)
+                || AddNotNullGuardAnalyzer.HasExistingGuard(
+                    propertyTarget,
+                    guard,
+                    argsGuardType,
+                    semanticModel,
+                    cancellationToken
+                )
+            )
+            {
+                return document;
+            }
+
+            var propertyRoot = PropertyGuardSupport.AddGuard(
+                root,
+                propertyTarget,
+                $"global::CheckAndThrow.Check.Arg.NotNull({propertyTarget.ValueParameter.Name})",
+                compilation
+            );
+            return document.WithSyntaxRoot(
+                propertyRoot.WithAdditionalAnnotations(Formatter.Annotation)
+            );
+        }
+
         var parameter = root.FindToken(diagnostic.Location.SourceSpan.Start)
             .Parent?.AncestorsAndSelf()
             .OfType<ParameterSyntax>()
@@ -59,8 +96,6 @@ public sealed class AddNotNullGuardCodeFixProvider : CodeFixProvider
         var parameterSymbol = parameter is null
             ? null
             : semanticModel.GetDeclaredSymbol(parameter, cancellationToken);
-        var guard = AddNotNullGuardAnalyzer.FindGuard(compilation);
-        var argsGuardType = AddNotNullGuardAnalyzer.FindArgsGuardType(compilation);
 
         if (
             parameter is null

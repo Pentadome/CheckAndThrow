@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using CheckAndThrow.Analyzers.Diagnostics.AddNotNullGuard;
+using CheckAndThrow.Analyzers.Diagnostics.PropertyGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -41,8 +42,9 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
                 return;
 
             startContext.RegisterSyntaxNodeAction(
-                nodeContext => AnalyzeParameter(nodeContext, arg),
-                SyntaxKind.Parameter
+                nodeContext => AnalyzeNode(nodeContext, arg),
+                SyntaxKind.Parameter,
+                SyntaxKind.PropertyDeclaration
             );
         });
     }
@@ -66,6 +68,10 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
         symbol.Type.SpecialType == SpecialType.System_String
         && AddNotNullGuardAnalyzer.IsEligible(parameter, symbol);
 
+    internal static bool IsEligible(PropertyGuardTarget target) =>
+        target.PropertySymbol.Type.SpecialType == SpecialType.System_String
+        && AddNotNullGuardAnalyzer.IsEligible(target);
+
     internal static bool HasExistingGuard(
         BlockSyntax body,
         IParameterSymbol parameter,
@@ -84,6 +90,23 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
                 )
             );
 
+    internal static bool HasExistingGuard(
+        PropertyGuardTarget target,
+        INamedTypeSymbol arg,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    ) =>
+        GetGuardInvocations(target)
+            .Any(invocation =>
+                IsStringGuardForParameter(
+                    invocation,
+                    target.ValueParameter,
+                    arg,
+                    semanticModel,
+                    cancellationToken
+                )
+            );
+
     internal static InvocationExpressionSyntax? FindExistingNotNull(
         BlockSyntax body,
         IParameterSymbol parameter,
@@ -91,15 +114,47 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
         SemanticModel semanticModel,
         CancellationToken cancellationToken
     ) =>
-        GetGuardInvocations(body)
-            .FirstOrDefault(invocation =>
-                SymbolEqualityComparer.Default.Equals(
-                    semanticModel
-                        .GetSymbolInfo(invocation, cancellationToken)
-                        .Symbol?.OriginalDefinition,
-                    notNull.OriginalDefinition
-                ) && IsValueArgument(invocation, parameter, semanticModel, cancellationToken)
-            );
+        FindExistingNotNull(
+            GetGuardInvocations(body),
+            parameter,
+            notNull,
+            semanticModel,
+            cancellationToken
+        );
+
+    internal static InvocationExpressionSyntax? FindExistingNotNull(
+        PropertyGuardTarget target,
+        IMethodSymbol notNull,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    ) =>
+        FindExistingNotNull(
+            GetGuardInvocations(target),
+            target.ValueParameter,
+            notNull,
+            semanticModel,
+            cancellationToken
+        );
+
+    static InvocationExpressionSyntax? FindExistingNotNull(
+        IEnumerable<InvocationExpressionSyntax> invocations,
+        IParameterSymbol parameter,
+        IMethodSymbol notNull,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    ) =>
+        invocations.FirstOrDefault(invocation =>
+            SymbolEqualityComparer.Default.Equals(
+                semanticModel
+                    .GetSymbolInfo(invocation, cancellationToken)
+                    .Symbol?.OriginalDefinition,
+                notNull.OriginalDefinition
+            ) && IsValueArgument(invocation, parameter, semanticModel, cancellationToken)
+        );
+
+    static IEnumerable<InvocationExpressionSyntax> GetGuardInvocations(
+        PropertyGuardTarget target
+    ) => PropertyGuardSupport.GetTopLevelGuardInvocations(target.Setter);
 
     static IEnumerable<InvocationExpressionSyntax> GetGuardInvocations(BlockSyntax body)
     {
@@ -168,8 +223,32 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
             );
     }
 
-    static void AnalyzeParameter(SyntaxNodeAnalysisContext context, INamedTypeSymbol arg)
+    static void AnalyzeNode(SyntaxNodeAnalysisContext context, INamedTypeSymbol arg)
     {
+        if (context.Node is PropertyDeclarationSyntax property)
+        {
+            var target = PropertyGuardSupport.CreateTarget(
+                property,
+                context.SemanticModel,
+                context.CancellationToken
+            );
+            if (
+                target is null
+                || !IsEligible(target)
+                || HasExistingGuard(target, arg, context.SemanticModel, context.CancellationToken)
+            )
+                return;
+
+            context.ReportDiagnostic(
+                Diagnostic.Create(
+                    Rule,
+                    property.Identifier.GetLocation(),
+                    target.PropertySymbol.Name
+                )
+            );
+            return;
+        }
+
         var parameter = (ParameterSyntax)context.Node;
         var symbol = context.SemanticModel.GetDeclaredSymbol(parameter, context.CancellationToken);
         if (

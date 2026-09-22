@@ -184,21 +184,70 @@ public class AddStringGuardTests
             .All(message => message.Contains("'value'"));
     }
 
-    static async Task<ImmutableArray<Diagnostic>> AnalyzeAsync(string source)
+    [Test]
+    [Arguments("NotNullOrEmpty")]
+    [Arguments("NotNullOrWhiteSpace")]
+    public async Task AddsGuardToAutoPropertyWithBackingField(string methodName)
     {
-        var (_, diagnostics) = await AnalyzeDocumentAsync(source);
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            """
+            #nullable enable
+            class C { public string Name { get; set; } }
+            """,
+            LanguageVersion.CSharp12
+        );
+        var guard = AddStringGuardAnalyzer.Guards.Single(item => item.MethodName == methodName);
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await AddStringGuardCodeFixProvider.AddGuardAsync(
+            document,
+            diagnostics.Single(),
+            guard,
+            CancellationToken.None
+        );
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains($"private string _name;");
+        await Assert
+            .That(text)
+            .Contains($"set => _name = global::CheckAndThrow.Check.Arg.{methodName}(value);");
+        await Assert.That(text).DoesNotContain("field =");
+        await Assert.That(await CompilerErrorsAsync(changed)).IsEmpty();
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.CSharp12)).IsEmpty();
+    }
+
+    [Test]
+    public async Task ExistingStringGuardSuppressesPropertyAction()
+    {
+        var diagnostics = await AnalyzeAsync(
+            "using CheckAndThrow; class C { public string Name { get; set => field = Check.Arg.NotNullOrEmpty(value); } }",
+            LanguageVersion.Preview
+        );
+
+        await Assert.That(diagnostics).IsEmpty();
+    }
+
+    static async Task<ImmutableArray<Diagnostic>> AnalyzeAsync(
+        string source,
+        LanguageVersion languageVersion = LanguageVersion.Preview
+    )
+    {
+        var (_, diagnostics) = await AnalyzeDocumentAsync(source, languageVersion);
         return diagnostics;
     }
 
     static async Task<(
         Document Document,
         ImmutableArray<Diagnostic> Diagnostics
-    )> AnalyzeDocumentAsync(string source)
+    )> AnalyzeDocumentAsync(
+        string source,
+        LanguageVersion languageVersion = LanguageVersion.Preview
+    )
     {
         var workspace = new AdhocWorkspace();
         var project = workspace
             .AddProject("Test", LanguageNames.CSharp)
-            .WithParseOptions(new CSharpParseOptions(LanguageVersion.Preview))
+            .WithParseOptions(new CSharpParseOptions(languageVersion))
             .WithCompilationOptions(
                 new CSharpCompilationOptions(
                     OutputKind.DynamicallyLinkedLibrary,

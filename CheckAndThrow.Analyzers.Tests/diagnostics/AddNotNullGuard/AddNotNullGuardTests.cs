@@ -196,10 +196,27 @@ public class AddNotNullGuardTests
         var changed = await ApplyFixAsync(document, diagnostics.Single());
         var text = (await changed.GetTextAsync()).ToString();
 
-        await Assert.That(text).Contains("get => field;");
+        await Assert.That(text).Contains("get;");
         await Assert
             .That(text)
             .Contains("set => field = global::CheckAndThrow.Check.Arg.NotNull(value);");
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.Preview)).IsEmpty();
+    }
+
+    [Test]
+    public async Task AddsGuardToExistingFieldBackedProperty()
+    {
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            "#nullable enable\nclass C { public string Name { get; set => field = value; } }",
+            LanguageVersion.Preview
+        );
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await ApplyFixAsync(document, diagnostics.Single());
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains("global::CheckAndThrow.Check.Arg.NotNull(value);");
+        await Assert.That(text).Contains("field = value;");
         await Assert.That(await AnalyzeAsync(text, LanguageVersion.Preview)).IsEmpty();
     }
 

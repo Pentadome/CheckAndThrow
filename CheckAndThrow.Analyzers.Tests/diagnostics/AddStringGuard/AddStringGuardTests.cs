@@ -217,6 +217,58 @@ public class AddStringGuardTests
     }
 
     [Test]
+    [Arguments("NotNullOrEmpty")]
+    [Arguments("NotNullOrWhiteSpace")]
+    public async Task AddsGuardToAutoPropertyUsingField(string methodName)
+    {
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            "#nullable enable\nclass C { public string Name { get; set; } }",
+            LanguageVersion.Preview
+        );
+        var guard = AddStringGuardAnalyzer.Guards.Single(item => item.MethodName == methodName);
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await AddStringGuardCodeFixProvider.AddGuardAsync(
+            document,
+            diagnostics.Single(),
+            guard,
+            CancellationToken.None
+        );
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains("get;");
+        await Assert
+            .That(text)
+            .Contains($"set => field = global::CheckAndThrow.Check.Arg.{methodName}(value);");
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.Preview)).IsEmpty();
+    }
+
+    [Test]
+    [Arguments("NotNullOrEmpty")]
+    [Arguments("NotNullOrWhiteSpace")]
+    public async Task AddsGuardToExistingFieldBackedProperty(string methodName)
+    {
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            "#nullable enable\nclass C { public string Name { get; set => field = value; } }",
+            LanguageVersion.Preview
+        );
+        var guard = AddStringGuardAnalyzer.Guards.Single(item => item.MethodName == methodName);
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await AddStringGuardCodeFixProvider.AddGuardAsync(
+            document,
+            diagnostics.Single(),
+            guard,
+            CancellationToken.None
+        );
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains($"global::CheckAndThrow.Check.Arg.{methodName}(value);");
+        await Assert.That(text).Contains("field = value;");
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.Preview)).IsEmpty();
+    }
+
+    [Test]
     public async Task ExistingStringGuardSuppressesPropertyAction()
     {
         var diagnostics = await AnalyzeAsync(

@@ -121,6 +121,52 @@ public class AddRangeGuardTests
     }
 
     [Test]
+    public async Task AddsGuardToAutoPropertyUsingField()
+    {
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            "class C { public int Count { get; set; } }",
+            LanguageVersion.Preview
+        );
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await AddRangeGuardCodeFixProvider.AddGuardAsync(
+            document,
+            diagnostics.Single(),
+            AddRangeGuardAnalyzer.Guards.Single(guard => guard.MethodName == "Positive"),
+            CancellationToken.None
+        );
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains("get;");
+        await Assert
+            .That(text)
+            .Contains("set => field = global::CheckAndThrow.Check.Arg.Positive(value);");
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.Preview)).IsEmpty();
+    }
+
+    [Test]
+    public async Task AddsGuardToExistingFieldBackedProperty()
+    {
+        var (document, diagnostics) = await AnalyzeDocumentAsync(
+            "class C { public int Count { get; set => field = value; } }",
+            LanguageVersion.Preview
+        );
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        var changed = await AddRangeGuardCodeFixProvider.AddGuardAsync(
+            document,
+            diagnostics.Single(),
+            AddRangeGuardAnalyzer.Guards.Single(guard => guard.MethodName == "Positive"),
+            CancellationToken.None
+        );
+        var text = (await changed.GetTextAsync()).ToString();
+
+        await Assert.That(text).Contains("global::CheckAndThrow.Check.Arg.Positive(value);");
+        await Assert.That(text).Contains("field = value;");
+        await Assert.That(await AnalyzeAsync(text, LanguageVersion.Preview)).IsEmpty();
+    }
+
+    [Test]
     public async Task ExistingRangeGuardSuppressesPropertyDiagnostic()
     {
         var diagnostics = await AnalyzeAsync(

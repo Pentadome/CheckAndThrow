@@ -167,7 +167,13 @@ internal static class PropertyGuardSupport
         var property = target.Declaration;
         var replacement = IsAutoProperty(property)
             ? SupportsField(compilation)
-                ? UseFieldBackedProperty(property, target.Setter, "field", call)
+                ? UseFieldBackedProperty(
+                    property,
+                    target.Setter,
+                    "field",
+                    call,
+                    keepAutoGetter: true
+                )
                 : UseExplicitBackingField(root, target, call)
             : AddGuardToSetter(property, target.Setter, call);
 
@@ -218,7 +224,8 @@ internal static class PropertyGuardSupport
         PropertyDeclarationSyntax property,
         AccessorDeclarationSyntax setter,
         string fieldName,
-        string call
+        string call,
+        bool keepAutoGetter = false
     )
     {
         var accessors = property.AccessorList!.Accessors.Replace(
@@ -228,7 +235,12 @@ internal static class PropertyGuardSupport
         var getter = accessors.FirstOrDefault(accessor =>
             accessor.IsKind(SyntaxKind.GetAccessorDeclaration)
         );
-        if (getter is not null && getter.Body is null && getter.ExpressionBody is null)
+        if (
+            !keepAutoGetter
+            && getter is not null
+            && getter.Body is null
+            && getter.ExpressionBody is null
+        )
         {
             accessors = accessors.Replace(getter, CreateAccessor(getter, fieldName));
         }

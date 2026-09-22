@@ -94,6 +94,19 @@ public class AddNotNullGuardTests
     }
 
     [Test]
+    [Arguments("NotNullOrEmpty")]
+    [Arguments("NotNullOrWhiteSpace")]
+    public async Task ExistingStringGuardSuppressesNullGuardForOnlyItsParameter(string methodName)
+    {
+        var diagnostics = await AnalyzeAsync(
+            $"using CheckAndThrow; class C {{ void M(string guarded, string other) {{ Check.Arg.{methodName}(guarded); }} }}"
+        );
+
+        await Assert.That(diagnostics).Count().IsEqualTo(1);
+        await Assert.That(diagnostics.Single().GetMessage()).Contains("'other'");
+    }
+
+    [Test]
     public async Task AddsOneFullyQualifiedGuard()
     {
         /*language=csharp*/

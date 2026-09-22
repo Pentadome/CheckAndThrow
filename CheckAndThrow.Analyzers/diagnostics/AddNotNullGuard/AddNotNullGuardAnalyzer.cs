@@ -3,6 +3,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
+using Microsoft.CodeAnalysis.Operations;
 
 namespace CheckAndThrow.Analyzers.Diagnostics.AddNotNullGuard;
 
@@ -119,23 +120,23 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
             var method =
                 semanticModel.GetSymbolInfo(invocation, cancellationToken).Symbol as IMethodSymbol;
             if (
-                SymbolEqualityComparer.Default.Equals(
-                    method?.OriginalDefinition,
-                    guard.OriginalDefinition
+                method is not null
+                && (
+                    SymbolEqualityComparer.Default.Equals(
+                        method.OriginalDefinition,
+                        guard.OriginalDefinition
+                    )
+                    || method.Name is "NotNullOrEmpty" or "NotNullOrWhiteSpace"
+                        && method.Parameters[0].Type.SpecialType == SpecialType.System_String
+                        && SymbolEqualityComparer.Default.Equals(
+                            method.ContainingType,
+                            guard.ContainingType
+                        )
                 )
+                && HasValueArgument(invocation, parameter, semanticModel, cancellationToken)
             )
             {
-                var argument = invocation.ArgumentList.Arguments.FirstOrDefault();
-                if (
-                    argument?.Expression is not null
-                    && SymbolEqualityComparer.Default.Equals(
-                        semanticModel.GetSymbolInfo(argument.Expression, cancellationToken).Symbol,
-                        parameter
-                    )
-                )
-                {
-                    return true;
-                }
+                return true;
             }
 
             if (
@@ -155,6 +156,31 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
         }
 
         return false;
+    }
+
+    static bool HasValueArgument(
+        InvocationExpressionSyntax invocation,
+        IParameterSymbol parameter,
+        SemanticModel semanticModel,
+        CancellationToken cancellationToken
+    )
+    {
+        if (
+            semanticModel.GetOperation(invocation, cancellationToken)
+            is not IInvocationOperation operation
+        )
+        {
+            return false;
+        }
+
+        var value = operation.Arguments.FirstOrDefault(argument =>
+            argument.Parameter?.Ordinal == 0
+        );
+        return value is not null
+            && SymbolEqualityComparer.Default.Equals(
+                semanticModel.GetSymbolInfo(value.Value.Syntax, cancellationToken).Symbol,
+                parameter
+            );
     }
 
     internal static InvocationExpressionSyntax? GetTopLevelGuardInvocation(

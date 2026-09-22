@@ -22,7 +22,7 @@ public class AddRangeGuardTests
             .IsEquivalentTo([AddRangeGuardAnalyzer.DiagnosticId]);
         await Assert
             .That(diagnostics.Select(diagnostic => diagnostic.Severity).Distinct())
-            .IsEquivalentTo([DiagnosticSeverity.Info]);
+            .IsEquivalentTo([DiagnosticSeverity.Hidden]);
     }
 
     [Test]

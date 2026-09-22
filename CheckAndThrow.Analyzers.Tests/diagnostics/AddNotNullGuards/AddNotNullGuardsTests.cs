@@ -32,6 +32,50 @@ public class AddNotNullGuardsTests
     }
 
     [Test]
+    public async Task ExcludesStringGuardedParameterFromBulkGuard()
+    {
+        /*language=csharp*/
+        const string source = """
+            using CheckAndThrow;
+            class C
+            {
+                void M(string name, object first, object second)
+                {
+                    Check.Arg.NotNullOrWhiteSpace(name);
+                }
+            }
+            """;
+
+        var text = await ApplyFixAsync(source);
+
+        await Assert
+            .That(text)
+            .Contains("global::CheckAndThrow.Check.Args.NotNull(first, second);");
+        await Assert.That(text).Contains("Check.Arg.NotNullOrWhiteSpace(name);");
+        await Assert.That(text).DoesNotContain("NotNull(name, first, second)");
+    }
+
+    [Test]
+    public async Task DoesNotOfferBulkGuardWhenOnlyOneParameterRemains()
+    {
+        const string source = """
+            using CheckAndThrow;
+            class C
+            {
+                void M(string name, object other)
+                {
+                    Check.Arg.NotNullOrEmpty(name);
+                }
+            }
+            """;
+
+        await Assert.That(await AnalyzeAsync(source)).IsEmpty();
+        var individualDiagnostics = await AnalyzeAllAsync(source);
+        await Assert.That(individualDiagnostics).Count().IsEqualTo(1);
+        await Assert.That(individualDiagnostics.Single().GetMessage()).Contains("'other'");
+    }
+
+    [Test]
     public async Task ConvertsAssignmentsAndLocalDeclarationsUsingTheTupleResult()
     {
         /*language=csharp*/

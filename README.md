@@ -96,9 +96,11 @@ dotnet add package CheckAndThrow
 
 ## IDE guard actions
 
-The package includes Roslyn Quick Actions by default. Place the caret on a supported parameter and open your IDE's Quick Actions menu (for example, **Ctrl+.** in Visual Studio or **Alt+Enter** in Rider). Choose **Add Check.Arg.NotNull guard** for a reference parameter, or expand **Add range guard clause** for a numeric parameter.
+The package includes Roslyn Quick Actions by default. Place the caret on a supported parameter and open your IDE's Quick Actions menu (for example, **Ctrl+.** in Visual Studio or **Alt+Enter** in Rider). Choose **Add Check.Arg.NotNull guard** for a reference parameter, expand **Add string guard clause** for a string parameter, or expand **Add range guard clause** for a numeric parameter.
 
-The action supports block-bodied methods and constructors whose parameters are non-nullable reference types or unannotated generic type parameters. It does not appear for explicitly nullable parameters such as `string?` or `T?`, value types, `out` parameters, expression-bodied members, lambdas, local functions, or primary constructors. It inserts a single `global::CheckAndThrow.Check.Arg.NotNull(parameter);` statement and does not report build warnings.
+The null action supports block-bodied methods and constructors whose parameters are non-nullable reference types or unannotated generic type parameters. It does not appear for explicitly nullable parameters such as `string?` or `T?`, value types, `out` parameters, expression-bodied members, lambdas, local functions, or primary constructors. It inserts a single `global::CheckAndThrow.Check.Arg.NotNull(parameter);` statement and does not report build warnings.
+
+For non-nullable string parameters, **Add string guard clause** offers `Check.Arg.NotNullOrEmpty` and `Check.Arg.NotNullOrWhiteSpace`. If an individual `Check.Arg.NotNull` already guards the parameter, the selected action replaces it while preserving its use and arguments. Either string guard suppresses the individual null action and is excluded from **Add Check.Args.NotNull guard**; the bulk action remains available when 2–16 other eligible parameters remain.
 
 For declarations with 2–16 eligible parameters, **Add Check.Args.NotNull guard** adds one `global::CheckAndThrow.Check.Args.NotNull(...)` guard for all eligible parameters. It safely converts replaceable top-level `Check.Arg.NotNull` and `Check.Args.NotNull` guards; when a prior individual guard's return value was assigned or declared, its value is preserved through the returned tuple. Explicitly nullable and other excluded parameters are not included. The bulk action is unavailable when fewer than two or more than 16 parameters are eligible, or when an existing guard has an unsupported result-consuming shape.
 
@@ -112,7 +114,7 @@ Disable all bundled CheckAndThrow IDE actions for a project or repository withou
 
 For numeric parameters, **Add range guard clause** is hidden by default and offers existing `Check.Arg` sign checks: reject negative (`ZeroOrPositive`), reject negative and zero (`Positive`), reject positive (`ZeroOrNegative`), or reject positive and zero (`Negative`). For floating-point and generic numeric types, it also offers the corresponding infinity-permitting checks when the referenced CheckAndThrow API supports them. Existing `Negative`, `Positive`, `ZeroOrNegative`, `ZeroOrPositive`, infinity, and `InRange` guards suppress the action. The action supports methods and constructors with executable bodies, inserts a top-level guard when needed, and uses the guard's returned value for a safe direct first use.
 
-To disable only an action, set `dotnet_diagnostic.CAT0001.severity = none` or `dotnet_diagnostic.CAT0003.severity = none` in `.editorconfig`. Roslyn analyzer/code-fix support must be enabled in your IDE; supported hosts include Visual Studio, JetBrains Rider, and VS Code with the Microsoft C# extension.
+To disable only an action, set its diagnostic severity to `none` in `.editorconfig`: `CAT0001` for an individual null guard, `CAT0002` for a bulk null guard, `CAT0003` for a range guard, or `CAT0004` for a string guard. Roslyn analyzer/code-fix support must be enabled in your IDE; supported hosts include Visual Studio, JetBrains Rider, and VS Code with the Microsoft C# extension.
 
 ## API Documentation
 

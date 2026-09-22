@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using CheckAndThrow.Analyzers.Diagnostics.AddNotNullGuard;
+using CheckAndThrow.Analyzers.Diagnostics.AddStringGuard;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -64,6 +65,7 @@ public sealed class AddNotNullGuardsAnalyzer : DiagnosticAnalyzer
         CancellationToken cancellationToken
     )
     {
+        var arg = AddStringGuardAnalyzer.FindArgType(semanticModel.Compilation);
         return declaration
             .ParameterList.Parameters.Select(parameter =>
                 (
@@ -77,6 +79,17 @@ public sealed class AddNotNullGuardsAnalyzer : DiagnosticAnalyzer
                     item.Parameter,
                     item.Symbol,
                     allowExpressionBody: declaration is ConstructorDeclarationSyntax
+                )
+                && (
+                    declaration.Body is not { } body
+                    || arg is null
+                    || !AddStringGuardAnalyzer.HasExistingGuard(
+                        body,
+                        item.Symbol,
+                        arg,
+                        semanticModel,
+                        cancellationToken
+                    )
                 )
             )
             .Select(item => item.Symbol!)
@@ -225,8 +238,10 @@ public sealed class AddNotNullGuardsAnalyzer : DiagnosticAnalyzer
                 {
                     return null;
                 }
+
                 expression = invocation.ArgumentList.Arguments[0].Expression;
             }
+
             if (
                 !SymbolEqualityComparer.Default.Equals(
                     semanticModel.GetSymbolInfo(expression, cancellationToken).Symbol,
@@ -237,6 +252,7 @@ public sealed class AddNotNullGuardsAnalyzer : DiagnosticAnalyzer
                 return null;
             }
         }
+
         return tuple;
     }
 

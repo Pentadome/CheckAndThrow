@@ -15,7 +15,7 @@ public static partial class Check
         )
         {
             if (double.IsNaN(value))
-                Throw.Arg.NaN(paramName);
+                Throw.Arg.NaN(value, paramName);
 
             return value;
         }
@@ -31,7 +31,7 @@ public static partial class Check
         )
         {
             if (float.IsNaN(value))
-                Throw.Arg.NaN(paramName);
+                Throw.Arg.NaN(value, paramName);
 
             return value;
         }
@@ -47,7 +47,7 @@ public static partial class Check
         )
         {
             if (double.IsInfinity(value))
-                Throw.Arg.Infinity(paramName);
+                Throw.Arg.Infinity(value, paramName);
 
             return value;
         }
@@ -63,7 +63,7 @@ public static partial class Check
         )
         {
             if (float.IsInfinity(value))
-                Throw.Arg.Infinity(paramName);
+                Throw.Arg.Infinity(value, paramName);
 
             return value;
         }
@@ -79,9 +79,9 @@ public static partial class Check
         )
         {
             if (double.IsNaN(value))
-                Throw.Arg.NaN(paramName);
+                Throw.Arg.NaN(value, paramName);
             if (double.IsInfinity(value))
-                Throw.Arg.Infinity(paramName);
+                Throw.Arg.Infinity(value, paramName);
 
             return value;
         }
@@ -97,9 +97,9 @@ public static partial class Check
         )
         {
             if (float.IsNaN(value))
-                Throw.Arg.NaN(paramName);
+                Throw.Arg.NaN(value, paramName);
             if (float.IsInfinity(value))
-                Throw.Arg.Infinity(paramName);
+                Throw.Arg.Infinity(value, paramName);
 
             return value;
         }

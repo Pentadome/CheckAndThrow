@@ -48,10 +48,12 @@ public static partial class Check
         {
             NotNull(enumerable, paramName);
 
+            var index = 0;
             foreach (var value in enumerable)
             {
                 if (value is null)
-                    Throw.Arg.HasNullValue(paramName);
+                    Throw.Arg.HasNullValue(paramName, index);
+                index++;
             }
             return enumerable;
         }
@@ -74,9 +76,10 @@ public static partial class Check
         )
             where T : ICollection
         {
-            if (NotNull(collection, paramName).Count != count)
+            var actualCount = NotNull(collection, paramName).Count;
+            if (actualCount != count)
             {
-                Throw.Arg.InvalidCount(paramName);
+                Throw.Arg.InvalidCount(actualCount, count, paramName);
             }
             return collection;
         }
@@ -99,9 +102,10 @@ public static partial class Check
         )
             where T : ICollection
         {
-            if (NotNull(collection, paramName).Count < minCount)
+            var actualCount = NotNull(collection, paramName).Count;
+            if (actualCount < minCount)
             {
-                Throw.Arg.TooFewItems(paramName);
+                Throw.Arg.TooFewItems(actualCount, minCount, paramName);
             }
             return collection;
         }
@@ -124,9 +128,10 @@ public static partial class Check
         )
             where T : ICollection
         {
-            if (NotNull(collection, paramName).Count > maxCount)
+            var actualCount = NotNull(collection, paramName).Count;
+            if (actualCount > maxCount)
             {
-                Throw.Arg.TooManyItems(paramName);
+                Throw.Arg.TooManyItems(actualCount, maxCount, paramName);
             }
             return collection;
         }
@@ -152,7 +157,7 @@ public static partial class Check
         {
             if (!NotNull(collection, paramName).Contains(item))
             {
-                Throw.Arg.DoesNotContain(paramName);
+                Throw.Arg.DoesNotContain(paramName, item);
             }
             return collection;
         }

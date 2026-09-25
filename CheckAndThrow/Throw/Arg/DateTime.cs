@@ -164,8 +164,8 @@ public static partial class Throw
         [DoesNotReturn]
         public static void NotLaterThan(
             [InvokerParameterName] string paramName,
-            object comparison,
-            object actual
+            object? comparison,
+            object? actual
         ) =>
             throw new ArgumentException(
                 string.Format(NotLaterThanWithInfoMessage, comparison, actual),

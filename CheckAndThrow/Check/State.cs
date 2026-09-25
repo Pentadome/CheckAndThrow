@@ -17,7 +17,7 @@ public static partial class Check
         public static T NotDisposed<T>([DoesNotReturnIf(true)] bool isDisposed, T instance)
             where T : notnull
         {
-            return !isDisposed ? instance : Throw.State.Disposed<T>();
+            return !isDisposed ? instance : Throw.State.Disposed<T>(instance);
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ public static partial class Check
         public static T Initialized<T>([DoesNotReturnIf(false)] bool isInitialized, T instance)
             where T : notnull
         {
-            return isInitialized ? instance : Throw.State.NotInitialized<T>();
+            return isInitialized ? instance : Throw.State.NotInitialized<T>(instance);
         }
 
         /// <summary>
@@ -133,7 +133,7 @@ public static partial class Check
         public static T Mutable<T>([DoesNotReturnIf(false)] bool isMutable, T instance)
             where T : notnull
         {
-            return isMutable ? instance : Throw.State.NotMutable<T>();
+            return isMutable ? instance : Throw.State.NotMutable<T>(instance);
         }
 
         /// <summary>

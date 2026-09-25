@@ -15,6 +15,23 @@ public static partial class Throw
                 $"{paramName} should have a zero or negative value, but was ${value}."
             );
 
+        /// <summary>Throws when the argument is not zero or negative.</summary>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static void NotZeroOrNegative([InvokerParameterName] string paramName) =>
+            throw new ArgumentOutOfRangeException(paramName, "Argument must be zero or negative.");
+
+        /// <summary>Throws when the argument is not zero or negative.</summary>
+        /// <typeparam name="TFakeReturn">The fake return type.</typeparam>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>This method never returns.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static TFakeReturn NotZeroOrNegative<TFakeReturn>(
+            [InvokerParameterName] string paramName
+        ) => throw new ArgumentOutOfRangeException(paramName, "Argument must be zero or negative.");
+
         /// <summary>
         /// Throws an <see cref="ArgumentOutOfRangeException"/> indicating that the argument was not zero or negative.
         /// </summary>

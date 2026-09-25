@@ -90,7 +90,7 @@ public static partial class Check
         {
             return value.HasFlag(flags)
                 ? value
-                : MissesAnyOfTheFlags<T>(typeof(T), flags.ToString(), paramName);
+                : MissesAnyOfTheFlags<T>(typeof(T), flags.ToString(), value, paramName);
         }
 
         /// <summary>
@@ -148,7 +148,7 @@ public static partial class Check
                     return value;
             }
 
-            return MissesAllFlags<T>(typeof(T), flags.ToString(), paramName);
+            return MissesAllFlags<T>(typeof(T), flags.ToString(), value, paramName);
         }
     }
 }

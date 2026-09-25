@@ -10,6 +10,23 @@ public static partial class Throw
             string paramName
         ) => new(paramName, value, $"{paramName} should have a negative value, but was ${value}.");
 
+        /// <summary>Throws when the argument is not negative.</summary>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static void NotNegative([InvokerParameterName] string paramName) =>
+            throw new ArgumentOutOfRangeException(paramName, "Argument must be negative.");
+
+        /// <summary>Throws when the argument is not negative.</summary>
+        /// <typeparam name="TFakeReturn">The fake return type.</typeparam>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>This method never returns.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static TFakeReturn NotNegative<TFakeReturn>(
+            [InvokerParameterName] string paramName
+        ) => throw new ArgumentOutOfRangeException(paramName, "Argument must be negative.");
+
         /// <summary>
         /// Throws an <see cref="ArgumentOutOfRangeException"/> indicating that the argument was not negative.
         /// </summary>

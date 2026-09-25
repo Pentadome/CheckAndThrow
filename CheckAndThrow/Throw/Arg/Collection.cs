@@ -16,6 +16,8 @@ public static partial class Throw
         const string TooManyItemsMessageWithInfo =
             "Argument has too many items, had {0} items but should have at most {1} items.";
         const string DoesNotContainMessage = "Argument does not contain the required item.";
+        const string DoesNotContainMessageWithInfo =
+            "Argument does not contain the required item: {0}.";
         const string IndexOutOfRangeWithInfo =
             "Argument has an out of range index value. Must be 0 or higher and less than {0}, but was {1}.";
 
@@ -59,6 +61,26 @@ public static partial class Throw
         public static TFakeReturn HasNullValue<TFakeReturn>(
             [InvokerParameterName] string paramName
         ) => throw new ArgumentException(CanNotHaveANullValue, paramName);
+
+        /// <summary>Throws because the collection contains a null element at the specified index.</summary>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <param name="index">The index of the null element.</param>
+        /// <exception cref="ArgumentException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static void HasNullValue([InvokerParameterName] string paramName, int index) =>
+            throw new ArgumentException($"{CanNotHaveANullValue} at index {index}.", paramName);
+
+        /// <summary>Throws because the collection contains a null element at the specified index.</summary>
+        /// <typeparam name="TFakeReturn">The fake return type.</typeparam>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <param name="index">The index of the null element.</param>
+        /// <returns>This method never returns.</returns>
+        /// <exception cref="ArgumentException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static TFakeReturn HasNullValue<TFakeReturn>(
+            [InvokerParameterName] string paramName,
+            int index
+        ) => throw new ArgumentException($"{CanNotHaveANullValue} at index {index}.", paramName);
 
         /// <summary>
         /// Throws an <see cref="ArgumentException"/> because the collection argument has an invalid count.
@@ -245,6 +267,43 @@ public static partial class Throw
         [DoesNotReturn]
         public static void DoesNotContain([InvokerParameterName] string paramName) =>
             throw new ArgumentException(DoesNotContainMessage, paramName);
+
+        /// <summary>Throws because the collection does not contain the required item.</summary>
+        /// <typeparam name="TFakeReturn">The fake return type.</typeparam>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>This method never returns.</returns>
+        /// <exception cref="ArgumentException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static TFakeReturn DoesNotContain<TFakeReturn>(
+            [InvokerParameterName] string paramName
+        ) => throw new ArgumentException(DoesNotContainMessage, paramName);
+
+        /// <summary>Throws because the collection does not contain the required item.</summary>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <param name="item">The missing item.</param>
+        /// <exception cref="ArgumentException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static void DoesNotContain([InvokerParameterName] string paramName, object? item) =>
+            throw new ArgumentException(
+                string.Format(DoesNotContainMessageWithInfo, item),
+                paramName
+            );
+
+        /// <summary>Throws because the collection does not contain the required item.</summary>
+        /// <typeparam name="TFakeReturn">The fake return type.</typeparam>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <param name="item">The missing item.</param>
+        /// <returns>This method never returns.</returns>
+        /// <exception cref="ArgumentException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static TFakeReturn DoesNotContain<TFakeReturn>(
+            [InvokerParameterName] string paramName,
+            object? item
+        ) =>
+            throw new ArgumentException(
+                string.Format(DoesNotContainMessageWithInfo, item),
+                paramName
+            );
 
         /// <summary>
         /// Throws an <see cref="ArgumentOutOfRangeException"/> because the index argument is out of range for the collection.

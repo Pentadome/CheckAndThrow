@@ -42,6 +42,30 @@ public static partial class Throw
             };
         }
 
+        /// <summary>Throws when the argument is outside the allowed range.</summary>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static void OutOfRange([InvokerParameterName] string paramName) =>
+            throw new ArgumentOutOfRangeException(
+                paramName,
+                "Argument is outside the allowed range."
+            );
+
+        /// <summary>Throws when the argument is outside the allowed range.</summary>
+        /// <typeparam name="TFakeReturn">The fake return type.</typeparam>
+        /// <param name="paramName">The name of the parameter.</param>
+        /// <returns>This method never returns.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Always thrown.</exception>
+        [DoesNotReturn]
+        public static TFakeReturn OutOfRange<TFakeReturn>(
+            [InvokerParameterName] string paramName
+        ) =>
+            throw new ArgumentOutOfRangeException(
+                paramName,
+                "Argument is outside the allowed range."
+            );
+
         /// <summary>
         /// Throws an <see cref="ArgumentOutOfRangeException"/> indicating that the argument was outside the specified range.
         /// </summary>

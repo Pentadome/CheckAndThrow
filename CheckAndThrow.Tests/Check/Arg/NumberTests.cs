@@ -14,13 +14,13 @@ public class NumberTests
             .That(() => C.Arg.NotNaN(double.NaN, "doubleValue"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(doubleException!.ParamName).IsEqualTo("doubleValue");
-        await Assert.That(doubleException.ActualValue).IsNull();
+        await Assert.That(double.IsNaN((double)doubleException.ActualValue!)).IsTrue();
 
         var floatException = await Assert
             .That(() => C.Arg.NotNaN(float.NaN, "floatValue"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(floatException!.ParamName).IsEqualTo("floatValue");
-        await Assert.That(floatException.ActualValue).IsNull();
+        await Assert.That(float.IsNaN((float)floatException.ActualValue!)).IsTrue();
     }
 
     [Test]
@@ -33,11 +33,13 @@ public class NumberTests
             .That(() => C.Arg.NotInfinity(double.PositiveInfinity, "doubleValue"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(doubleException!.ParamName).IsEqualTo("doubleValue");
+        await Assert.That(doubleException.ActualValue).IsEqualTo((object)double.PositiveInfinity);
 
         var floatException = await Assert
             .That(() => C.Arg.NotInfinity(float.NegativeInfinity, "floatValue"))
             .ThrowsExactly<ArgumentOutOfRangeException>();
         await Assert.That(floatException!.ParamName).IsEqualTo("floatValue");
+        await Assert.That(floatException.ActualValue).IsEqualTo((object)float.NegativeInfinity);
     }
 
     [Test]
@@ -46,7 +48,9 @@ public class NumberTests
         await Assert.That(C.Arg.RealNumber(1.5)).IsEqualTo(1.5);
         await Assert.That(C.Arg.RealNumber(1.5F)).IsEqualTo(1.5F);
 
-        foreach (var value in new[] { double.NaN, double.PositiveInfinity, double.NegativeInfinity })
+        foreach (
+            var value in new[] { double.NaN, double.PositiveInfinity, double.NegativeInfinity }
+        )
         {
             var exception = await Assert
                 .That(() => C.Arg.RealNumber(value, "doubleValue"))

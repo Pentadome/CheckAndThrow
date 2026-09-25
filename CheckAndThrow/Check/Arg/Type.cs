@@ -44,7 +44,7 @@ public static partial class Check
         {
             return NotNull(argument, paramName).IsAssignableFrom(typeof(TTarget))
                 ? argument
-                : Throw.Arg.NotAssignableFrom<Type>(paramName);
+                : Throw.Arg.NotAssignableFrom<Type>(paramName, typeof(TTarget), argument);
         }
 
         /// <summary>

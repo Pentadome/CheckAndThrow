@@ -193,7 +193,12 @@ public sealed class AddNotNullGuardsAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        context.ReportDiagnostic(Diagnostic.Create(Rule, declaration.ParameterList.GetLocation()));
+        GuardSeverity.Report(
+            context,
+            Rule,
+            declaration.ParameterList.GetLocation(),
+            context.SemanticModel.GetDeclaredSymbol(declaration, context.CancellationToken)
+        );
     }
 
     internal static TupleExpressionSyntax? GetConstructorTuple(

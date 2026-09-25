@@ -114,7 +114,19 @@ Disable all bundled CheckAndThrow IDE actions for a project or repository withou
 
 For numeric parameters, **Add range guard clause** is hidden by default and offers existing `Check.Arg` sign checks: reject negative (`ZeroOrPositive`), reject negative and zero (`Positive`), reject positive (`ZeroOrNegative`), or reject positive and zero (`Negative`). For floating-point and generic numeric types, it also offers the corresponding infinity-permitting checks when the referenced CheckAndThrow API supports them. Existing `Negative`, `Positive`, `ZeroOrNegative`, `ZeroOrPositive`, infinity, and `InRange` guards suppress the action. The action supports methods and constructors with executable bodies, inserts a top-level guard when needed, and uses the guard's returned value for a safe direct first use.
 
-To disable only an action, set its diagnostic severity to `none` in `.editorconfig`: `CAT0001` for an individual null guard, `CAT0002` for a bulk null guard, `CAT0003` for a range guard, or `CAT0004` for a string guard. Roslyn analyzer/code-fix support must be enabled in your IDE; supported hosts include Visual Studio, JetBrains Rider, and VS Code with the Microsoft C# extension.
+Set different default severities for public and non-public members in `.editorconfig`, then override individual analyzers by diagnostic ID:
+
+```editorconfig
+[*.cs]
+checkandthrow_analyzers.public_severity = warning
+checkandthrow_analyzers.non_public_severity = silent
+dotnet_diagnostic.CAT0001.public_severity = error
+dotnet_diagnostic.CAT0001.non_public_severity = none
+```
+
+The same `dotnet_diagnostic.CAT000x.public_severity` and `.non_public_severity` keys work for `CAT0001` (individual null guard), `CAT0002` (bulk null guard), `CAT0003` (range guard), and `CAT0004` (string guard). Per-ID visibility settings override the corresponding all-analyzer visibility setting. Without either, diagnostics remain hidden. Values: `none` (disable), `silent` or `hint` (hidden), `suggestion` (info), `warning`, `error`. Missing or invalid values fall back to the next setting. These settings apply to methods, constructors, and writable properties: only members declared public in publicly accessible types count as public; protected members and public members inside internal types count as non-public. Properties use property visibility, including properties with private setters.
+
+Standard `dotnet_diagnostic.CAT000x.severity` still applies across both visibilities, including `none` to disable an analyzer entirely. Roslyn analyzer/code-fix support must be enabled in your IDE; supported hosts include Visual Studio, JetBrains Rider, and VS Code with the Microsoft C# extension.
 
 ## API Documentation
 

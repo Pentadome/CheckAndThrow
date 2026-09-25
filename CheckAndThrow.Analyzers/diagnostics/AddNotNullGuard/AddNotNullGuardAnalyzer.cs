@@ -318,12 +318,12 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
                 return;
             }
 
-            context.ReportDiagnostic(
-                Diagnostic.Create(
-                    Rule,
-                    property.Identifier.GetLocation(),
-                    target.PropertySymbol.Name
-                )
+            GuardSeverity.Report(
+                context,
+                Rule,
+                property.Identifier.GetLocation(),
+                target.PropertySymbol,
+                target.PropertySymbol.Name
             );
             return;
         }
@@ -350,8 +350,12 @@ public sealed class AddNotNullGuardAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        context.ReportDiagnostic(
-            Diagnostic.Create(Rule, parameter.Identifier.GetLocation(), parameterSymbol.Name)
+        GuardSeverity.Report(
+            context,
+            Rule,
+            parameter.Identifier.GetLocation(),
+            parameterSymbol.ContainingSymbol,
+            parameterSymbol.Name
         );
     }
 

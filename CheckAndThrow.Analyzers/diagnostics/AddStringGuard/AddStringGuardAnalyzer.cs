@@ -239,12 +239,12 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
             )
                 return;
 
-            context.ReportDiagnostic(
-                Diagnostic.Create(
-                    Rule,
-                    property.Identifier.GetLocation(),
-                    target.PropertySymbol.Name
-                )
+            GuardSeverity.Report(
+                context,
+                Rule,
+                property.Identifier.GetLocation(),
+                target.PropertySymbol,
+                target.PropertySymbol.Name
             );
             return;
         }
@@ -259,8 +259,12 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
         )
             return;
 
-        context.ReportDiagnostic(
-            Diagnostic.Create(Rule, parameter.Identifier.GetLocation(), symbol.Name)
+        GuardSeverity.Report(
+            context,
+            Rule,
+            parameter.Identifier.GetLocation(),
+            symbol.ContainingSymbol,
+            symbol.Name
         );
     }
 

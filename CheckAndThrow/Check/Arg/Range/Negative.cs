@@ -140,7 +140,7 @@ public static partial class Check
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not negative or negative infinity.</exception>
         public static double NegativeOrNegativeInfinity(
             double value,
-            [CallerArgumentExpression(nameof(value))] string paramName = ""
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
         )
         {
             if (double.IsNaN(value) || value >= 0)
@@ -156,7 +156,7 @@ public static partial class Check
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not negative or negative infinity.</exception>
         public static float NegativeOrNegativeInfinity(
             float value,
-            [CallerArgumentExpression(nameof(value))] string paramName = ""
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
         )
         {
             if (float.IsNaN(value) || value >= 0)
@@ -165,7 +165,7 @@ public static partial class Check
             return value;
         }
 
-        #if NET7_0_OR_GREATER
+#if NET7_0_OR_GREATER
         /// <summary>
         /// Checks if the argument is negative.
         /// </summary>
@@ -174,15 +174,23 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The value if it is negative.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not negative.</exception>
-        public static TNumber Negative<TNumber>(TNumber value, [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = "")
-            where TNumber: INumberBase<TNumber>
+        public static TNumber Negative<TNumber>(
+            TNumber value,
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
+        )
+            where TNumber : INumberBase<TNumber>
         {
-               if (TNumber.IsNaN(value) || TNumber.IsNegativeInfinity(value) || TNumber.IsZero(value) || !TNumber.IsNegative(value))
-               {
-                   NotNegative(value, paramName);
-               }
-               
-               return value;
+            if (
+                TNumber.IsNaN(value)
+                || TNumber.IsNegativeInfinity(value)
+                || TNumber.IsZero(value)
+                || !TNumber.IsNegative(value)
+            )
+            {
+                NotNegative(value, paramName);
+            }
+
+            return value;
         }
 
         /// <summary>Checks if the argument is negative or negative infinity.</summary>
@@ -191,16 +199,23 @@ public static partial class Check
         /// <param name="paramName">The name of the parameter.</param>
         /// <returns>The value if it is negative or negative infinity.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="value"/> is not negative or negative infinity.</exception>
-        public static TNumber NegativeOrNegativeInfinity<TNumber>(TNumber value, [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = "")
-            where TNumber: INumberBase<TNumber>
+        public static TNumber NegativeOrNegativeInfinity<TNumber>(
+            TNumber value,
+            [CallerArgumentExpression(nameof(value)), InvokerParameterName] string paramName = ""
+        )
+            where TNumber : INumberBase<TNumber>
         {
-               if (TNumber.IsNaN(value) || TNumber.IsZero(value) || (!TNumber.IsNegative(value) && !TNumber.IsNegativeInfinity(value)))
-               {
-                   NotNegative(value, paramName);
-               }
+            if (
+                TNumber.IsNaN(value)
+                || TNumber.IsZero(value)
+                || (!TNumber.IsNegative(value) && !TNumber.IsNegativeInfinity(value))
+            )
+            {
+                NotNegative(value, paramName);
+            }
 
-               return value;
+            return value;
         }
-        #endif
+#endif
     }
 }

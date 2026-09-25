@@ -18,7 +18,7 @@ public sealed class AddStringGuardAnalyzer : DiagnosticAnalyzer
         DiagnosticId,
         "Add string guard clause",
         "Add string guard clause for '{0}'",
-        "Usage",
+        "Style",
         DiagnosticSeverity.Hidden,
         isEnabledByDefault: true
     );

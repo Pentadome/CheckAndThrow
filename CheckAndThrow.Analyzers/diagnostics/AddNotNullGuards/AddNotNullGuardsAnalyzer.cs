@@ -17,7 +17,7 @@ public sealed class AddNotNullGuardsAnalyzer : DiagnosticAnalyzer
         DiagnosticId,
         "Add Check.Args.NotNull guard",
         "Add Check.Args.NotNull guard",
-        "Usage",
+        "Style",
         DiagnosticSeverity.Hidden,
         isEnabledByDefault: true
     );

@@ -1,0 +1,6 @@
+﻿[*.cs]
+
+dotnet_diagnostic.CAT0001.severity = hint
+dotnet_diagnostic.CAT0002.severity = hint
+dotnet_diagnostic.CAT0003.severity = hint
+dotnet_diagnostic.CAT0004.severity = hint     

@@ -16,7 +16,7 @@ public sealed class AddRangeGuardAnalyzer : DiagnosticAnalyzer
         DiagnosticId,
         "Add range guard clause",
         "Add range guard clause for '{0}'",
-        "Usage",
+        "Style",
         DiagnosticSeverity.Hidden,
         isEnabledByDefault: true
     );

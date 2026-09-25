@@ -94,7 +94,7 @@ Add CheckAndThrow to your project via NuGet:
 dotnet add package CheckAndThrow
 ```
 
-## IDE guard actions
+## IDE code-style guard actions
 
 The package includes Roslyn Quick Actions by default. Place the caret on a supported parameter and open your IDE's Quick Actions menu (for example, **Ctrl+.** in Visual Studio or **Alt+Enter** in Rider). Choose **Add Check.Arg.NotNull guard** for a reference parameter, expand **Add string guard clause** for a string parameter, or expand **Add range guard clause** for a numeric parameter.
 
